@@ -1,0 +1,95 @@
+/* Estilo general de la página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+}
+
+/* Contenedor principal */
+#wrap {
+  max-width: 400px;
+  margin: 80px auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+}
+
+/* Título o encabezado opcional */
+#headerlogin {
+  height: 50px;
+  background: url('../patria/5564844.png') no-repeat center center;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+
+/* Tabla de login */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+td {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Botones */
+input[type="submit"],
+button {
+  background-color: #00c3ff;
+  color: white;
+  padding: 10px 18px;
+  margin: 10px 5px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #00b2f3;
+}
+
+/* Enlace de registro */
+a button {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+a button:hover {
+  background-color: #eaeaea;
+}
+
+/* Responsivo */
+@media screen and (max-width: 480px) {
+  #wrap {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  td:first-child {
+    margin-bottom: 5px;
+  }
+}
