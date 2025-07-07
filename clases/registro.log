@@ -126,3 +126,9 @@
 [2025-07-06 04:21:24] [INFO] Verificando contraseña: entrada: 'root2514' vs hash: '$2y$13$7t7dEoMSEUSKnz/O2Cu89.3L84AvV7Eclq0f7ZdjxzYo9R6vCGaUm'
 [2025-07-06 04:21:25] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
 [2025-07-06 04:21:25] [INFO] Intento de login registrado para el usuario: admin con resultado: 0
+[2025-07-07 00:14:01] [INFO] Hash temporal generado para pruebas: $2y$13$Jxgud/P1zmuI4lM9IS1YNegSWrIJDzzt6kmiaX2vBWC3H2OMqb7R.
+[2025-07-07 00:14:01] [WARNING] Usuario no encontrado: root
+[2025-07-07 00:14:14] [INFO] Hash temporal generado para pruebas: $2y$13$Qu3EwyH4WgJMVJQc9R1Z2.ROaDwpoqeyfrrXz81OCQi3cdGqf1QXa
+[2025-07-07 00:14:14] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-07 00:14:14] [INFO] Verificando contraseña: entrada: 'root2514' vs hash: '$2y$13$SQGYjGUqIE05b7eLUYVdrutGQLoRcd0JiGHt16ZvIhNjIvPPOrVgK'
+[2025-07-07 00:14:15] [INFO] Login exitoso para el usuario: admin

@@ -27,22 +27,10 @@ if (isset($tolog) && $tolog == "true" && $_SERVER['REQUEST_METHOD'] === 'POST') 
             $_SESSION['autenticado'] = "SI";
             $_SESSION['Usuario'] = $Logearme->getUsuario();
 
-            // Consultar si tiene secret_2fa
-            $usuarioLogueado = $Logearme->getUsuario();
-            $sql = "SELECT secret_2fa FROM usuarios WHERE Usuario = ?";
-            $stmt = $db->getConexion()->prepare($sql);
-            $stmt->execute([$usuarioLogueado]);
-            $fila = $stmt->fetch(PDO::FETCH_ASSOC);
-
             $Logearme->registrarIntentos();
             $tolog = false;
 
-            if (!empty($fila['secret_2fa'])) {
-                $_SESSION['pendiente_2fa'] = true;
-                redireccionar("EjemploAutenticar.php");
-            } else {
-                redireccionar("formularios/PanelControl.php");
-            }
+            redireccionar("formularios/PanelControl.php");
         } else {
             $Logearme->registrarIntentos();
             $_SESSION["emsg"] = 1;

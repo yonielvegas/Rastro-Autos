@@ -23,19 +23,6 @@ class SanitizarEntrada {
         return htmlspecialchars(strip_tags(trim($cadena)));
     }
 
-    public static function limpiarSecreto($secreto) {
-        if (empty($secreto)) {
-            Logger::warning("Secreto vacío en limpiarSecreto.");
-            return false;
-        }
-
-        if (!preg_match('/^[A-Z2-7=]+$/', $secreto)) {
-            Logger::warning("Secreto con formato inválido: $secreto");
-            return false;
-        }
-
-        return htmlspecialchars(trim($secreto));
-    }
 
     public function sanitizarTodo($post) {
         $datos = [];
