@@ -3,7 +3,7 @@
         <div class="footer-content">
             <div class="footer-column">
                 <h3>PARTSPRO</h3>
-                <p>Proveedores de autopartes premium con los más altos estándares de calidad.</p>
+                <p class="footer-text">Proveedores de autopartes premium con los más altos estándares de calidad.</p>
             </div>
             <div class="footer-column">
                 <h3>Enlaces</h3>
@@ -38,39 +38,40 @@
 </footer>
 
 <style>
-    /* Box-sizing global para evitar problemas de ancho */
     *, *::before, *::after {
         box-sizing: border-box;
-    }
-
-    body, html {
-        margin: 0;
-        padding: 0;
     }
 
     .main-footer {
         width: 100%;
         background-color: #1e293b;
         color: white;
-        padding: 3rem 1.5rem;
+        padding: 2rem 1rem;
         font-family: 'Inter', sans-serif;
+        font-size: 0.85rem;
     }
 
     .footer-container {
-        max-width: 1280px;
+        max-width: 900px;
         margin: 0 auto;
     }
 
     .footer-content {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.5rem;
     }
 
     .footer-column h3 {
-        font-size: 1.125rem;
+        font-size: 1rem;
         font-weight: 600;
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .footer-text {
+        font-size: 0.8rem;
+        color: #cbd5e1;
+        margin: 0;
     }
 
     .footer-links {
@@ -80,8 +81,8 @@
     }
 
     .footer-link {
-        margin-bottom: 0.5rem;
-        font-size: 0.875rem;
+        margin-bottom: 0.4rem;
+        font-size: 0.8rem;
     }
 
     .footer-link a {
@@ -96,22 +97,33 @@
 
     .footer-bottom {
         text-align: center;
-        margin-top: 3rem;
-        padding-top: 1.5rem;
+        margin-top: 2rem;
+        padding-top: 1rem;
         border-top: 1px solid #334155;
         color: #94a3b8;
-        font-size: 0.875rem;
+        font-size: 0.75rem;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
         .footer-content {
             grid-template-columns: 1fr;
-            gap: 1.5rem;
+            gap: 1.25rem;
+        }
+
+        .main-footer {
+            padding: 1.5rem 1rem;
+        }
+
+        .footer-column h3 {
+            font-size: 0.95rem;
+        }
+
+        .footer-text, .footer-link {
+            font-size: 0.75rem;
         }
     }
 </style>
 
 <script>
-    // Año actual automático
     document.getElementById('current-year').textContent = new Date().getFullYear();
 </script>
