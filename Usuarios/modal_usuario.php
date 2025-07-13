@@ -6,13 +6,28 @@
       <input type="hidden" id="id_usuario" name="id_usuario" value="">
 
       <div class="form-group">
-        <label for="nombre">Nombre Completo</label>
-        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez" />
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan" />
       </div>
 
       <div class="form-group">
-        <label for="email">Correo Electrónico</label>
-        <input type="email" id="email" name="email" required placeholder="Ej: usuario@dominio.com" />
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required placeholder="Ej: Pérez" />
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" id="correo" name="correo" required placeholder="Ej: usuario@dominio.com" />
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +507 6000-0000" />
+      </div>
+
+      <div class="form-group">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" required placeholder="Nombre de usuario" />
       </div>
 
       <div class="form-group">
@@ -28,29 +43,13 @@
         <input type="password" id="password2" name="password2" placeholder="Repite la contraseña" />
       </div>
 
-      <div class="form-group">
-        <label for="rol">Rol</label>
-        <select id="rol" name="rol" required>
-          <option value="">-- Seleccione un rol --</option>
-          <option value="1">Administrador</option>
-          <option value="2">Usuario</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="activo">Estado</label>
-        <select id="activo" name="activo" required>
-          <option value="1">Activo</option>
-          <option value="0">Inactivo</option>
-        </select>
-      </div>
-
       <button type="submit">Guardar Usuario</button>
     </form>
   </div>
 </div>
 
 <style>
+  /* El mismo estilo que ya tenías */
   .modal {
     display: none;
     position: fixed;
@@ -218,30 +217,33 @@
     const titulo = modal.querySelector('h2');
     const idInput = document.getElementById('id_usuario');
     const nombre = document.getElementById('nombre');
-    const email = document.getElementById('email');
+    const apellido = document.getElementById('apellido');
+    const correo = document.getElementById('correo');
+    const telefono = document.getElementById('telefono');
+    const usuarioInput = document.getElementById('usuario');
     const password = document.getElementById('password');
     const password2 = document.getElementById('password2');
-    const rol = document.getElementById('rol');
-    const activo = document.getElementById('activo');
 
     if (usuario) {
       titulo.textContent = 'Editar Usuario';
       idInput.value = usuario.id || '';
       nombre.value = usuario.nombre || '';
-      email.value = usuario.email || '';
+      apellido.value = usuario.apellido || '';
+      correo.value = usuario.correo || '';
+      telefono.value = usuario.telefono || '';
+      usuarioInput.value = usuario.usuario || '';
       password.value = '';
       password2.value = '';
-      rol.value = usuario.rol || '';
-      activo.value = usuario.activo != null ? String(usuario.activo) : '1';
     } else {
       titulo.textContent = 'Crear Usuario';
       idInput.value = '';
       nombre.value = '';
-      email.value = '';
+      apellido.value = '';
+      correo.value = '';
+      telefono.value = '';
+      usuarioInput.value = '';
       password.value = '';
       password2.value = '';
-      rol.value = '';
-      activo.value = '1';
     }
   }
 </script>

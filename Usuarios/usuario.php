@@ -1,15 +1,29 @@
 <?php
 include 'modal_usuario.php';
+include '../comunes/navbar.php';
+
 
 // Ejemplo de usuarios — en la práctica los obtienes de base de datos
 $usuarios = [
-  ['id'=>1,'nombre'=>'Juan Pérez','email'=>'juan@example.com','rol'=>1,'activo'=>1],
-  ['id'=>2,'nombre'=>'María García','email'=>'maria@example.com','rol'=>2,'activo'=>0],
+  [
+    'id' => 1,
+    'nombre' => 'Juan',
+    'apellido' => 'Pérez',
+    'correo' => 'juan@example.com',
+    'telefono' => '+507 6000-0000',
+    'usuario' => 'juanp',
+    'activo' => 1
+  ],
+  [
+    'id' => 2,
+    'nombre' => 'María',
+    'apellido' => 'García',
+    'correo' => 'maria@example.com',
+    'telefono' => '+507 6000-1111',
+    'usuario' => 'mariag',
+    'activo' => 0
+  ],
 ];
-
-function nombreRol($rol) {
-  return $rol == 1 ? 'Administrador' : 'Usuario';
-}
 
 function badgeEstado($activo) {
   return $activo == 1 ? '<span class="badge badge-success">Activo</span>' : '<span class="badge badge-danger">Inactivo</span>';
@@ -44,8 +58,10 @@ function badgeEstado($activo) {
           <thead>
             <tr>
               <th>Nombre</th>
-              <th>Email</th>
-              <th>Rol</th>
+              <th>Apellido</th>
+              <th>Correo</th>
+              <th>Teléfono</th>
+              <th>Usuario</th>
               <th>Estado</th>
               <th>Acciones</th>
             </tr>
@@ -54,12 +70,17 @@ function badgeEstado($activo) {
             <?php foreach ($usuarios as $usuario): ?>
               <tr>
                 <td><?= htmlspecialchars($usuario['nombre']) ?></td>
-                <td><?= htmlspecialchars($usuario['email']) ?></td>
-                <td><?= nombreRol($usuario['rol']) ?></td>
+                <td><?= htmlspecialchars($usuario['apellido']) ?></td>
+                <td><?= htmlspecialchars($usuario['correo']) ?></td>
+                <td><?= htmlspecialchars($usuario['telefono']) ?></td>
+                <td><?= htmlspecialchars($usuario['usuario']) ?></td>
                 <td><?= badgeEstado($usuario['activo']) ?></td>
                 <td>
                   <div class="action-buttons">
-                    <a href="#" class="btn btn-sm btn-edit" onclick='abrirModalUsuario(<?= json_encode($usuario) ?>); return false;'>Editar</a>
+                    <a href="#" class="btn btn-sm btn-edit"
+                       onclick='abrirModalUsuario(<?= json_encode($usuario, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP) ?>); return false;'>
+                       Editar
+                    </a>
                     <?php if ($usuario['activo'] == 1): ?>
                       <a href="desactivar_usuario.php?id=<?= $usuario['id'] ?>" class="btn btn-sm btn-deactivate">Desactivar</a>
                     <?php else: ?>
@@ -77,7 +98,7 @@ function badgeEstado($activo) {
 </div>
 
 <script>
-  //Manejar el responsive del sidebar NO TOCARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+  // Manejar el responsive del sidebar NO TOCAR
   document.addEventListener('DOMContentLoaded', function () {
     const toggleBtn = document.getElementById('toggleBtn');
     const sidebar = document.getElementById('sidebar');

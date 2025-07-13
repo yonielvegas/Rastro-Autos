@@ -149,6 +149,10 @@
   </div>
 
   <div class="sidebar-menu">
+    <a href="../home.php" class="menu-item <?php if (in_array($currentFile, ['home.php'])) echo 'active'; ?>">
+      <i class="fas fa-home"></i>
+      <span>Inicio</span>
+    </a>
     <a href="../inventario/inventario.php" class="menu-item <?php if (in_array($currentFile, ['inventario.php'])) echo 'active'; ?>">
       <i class="fas fa-boxes"></i>
       <span>Inventario</span>
@@ -170,4 +174,5 @@
       <span>Cerrar Sesión</span>
     </a>
   </div>
+
 </div>
