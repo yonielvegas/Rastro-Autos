@@ -132,3 +132,40 @@
 [2025-07-07 00:14:14] [INFO] Usuario encontrado en base de datos: admin
 [2025-07-07 00:14:14] [INFO] Verificando contraseña: entrada: 'root2514' vs hash: '$2y$13$SQGYjGUqIE05b7eLUYVdrutGQLoRcd0JiGHt16ZvIhNjIvPPOrVgK'
 [2025-07-07 00:14:15] [INFO] Login exitoso para el usuario: admin
+[2025-07-14 13:17:31] [INFO] Hash temporal generado para pruebas: $2y$13$xTsNa77O9MxfXgGkv/20Re.TFhI0.qeXF/hRd2xubAPKZ8nCJRALi
+[2025-07-14 13:17:31] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-14 13:17:31] [INFO] Verificando contraseña: entrada: 'root2514' vs hash: '$2y$13$7t7dEoMSEUSKnz/O2Cu89.3L84AvV7Eclq0f7ZdjxzYo9R6vCGaUm'
+[2025-07-14 13:17:32] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-14 13:17:32] [INFO] Intento de login registrado para el usuario: admin con resultado: 0
+[2025-07-14 13:17:47] [INFO] Hash temporal generado para pruebas: $2y$13$QM06e2eF2GWzbP8yIhLVMeT0y9Sajf0ljVCoeOHIsDenqv20gbE9y
+[2025-07-14 13:17:47] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-14 13:17:47] [INFO] Verificando contraseña: entrada: 'root2514' vs hash: '$2y$13$7t7dEoMSEUSKnz/O2Cu89.3L84AvV7Eclq0f7ZdjxzYo9R6vCGaUm'
+[2025-07-14 13:17:47] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-14 13:17:47] [INFO] Intento de login registrado para el usuario: admin con resultado: 0
+[2025-07-14 13:18:04] [INFO] Hash temporal generado para pruebas: $2y$13$vXkW79zwXrxM27sq581CxOaH2I9ujWKIYawPzT8ClTV8nnLvhHNH6
+[2025-07-14 13:18:04] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-14 13:18:04] [INFO] Verificando contraseña: entrada: 'root2514' vs hash: '$2y$13$7t7dEoMSEUSKnz/O2Cu89.3L84AvV7Eclq0f7ZdjxzYo9R6vCGaUm'
+[2025-07-14 13:18:05] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-14 13:18:05] [INFO] Intento de login registrado para el usuario: admin con resultado: 0
+[2025-07-14 14:31:07] [INFO] Hash temporal generado para pruebas: $2y$13$rSNe7hWVsSdV4EmsbQWvTeg7ADJ6xlUup2kHiOYeYvh9ygQhpeFOK
+[2025-07-14 14:31:07] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-14 14:31:07] [INFO] Verificando contraseña: entrada: 'root2514' vs hash: '$2y$13$7t7dEoMSEUSKnz/O2Cu89.3L84AvV7Eclq0f7ZdjxzYo9R6vCGaUm'
+[2025-07-14 14:31:07] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-14 14:31:07] [INFO] Intento de login registrado para el usuario: admin con resultado: 0
+[2025-07-14 14:31:19] [INFO] Hash temporal generado para pruebas: $2y$13$AyMWqNfSVJ623mbx5WfKbOreqlSCMaKZrZgdPsGL9sM6DLs4dWxPq
+[2025-07-14 14:31:19] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-14 14:31:19] [INFO] Verificando contraseña: entrada: 'root2514' vs hash: '$2y$13$7t7dEoMSEUSKnz/O2Cu89.3L84AvV7Eclq0f7ZdjxzYo9R6vCGaUm'
+[2025-07-14 14:31:20] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-14 14:31:20] [INFO] Intento de login registrado para el usuario: admin con resultado: 0
+[2025-07-14 14:32:49] [INFO] Hash temporal generado para pruebas: $2y$13$jutOqtCPeaLRyOYTYUYoy.Ofpji8oRx5AukSRtHGKD/lsqhWD5UNi
+[2025-07-14 14:32:49] [WARNING] Usuario no encontrado: root
+[2025-07-14 14:33:09] [INFO] Hash temporal generado para pruebas: $2y$13$FEG7CLs8I1YeDq0UXYcklODTxpHxDUG5p7n7KdKleq7tH3Y/TEn9K
+[2025-07-14 14:33:09] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-14 14:33:09] [INFO] Verificando contraseña: entrada: 'root2514' vs hash: '$2y$13$7t7dEoMSEUSKnz/O2Cu89.3L84AvV7Eclq0f7ZdjxzYo9R6vCGaUm'
+[2025-07-14 14:33:09] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-14 14:33:09] [INFO] Intento de login registrado para el usuario: admin con resultado: 0
+[2025-07-14 18:40:37] [INFO] Hash temporal generado para pruebas: $2y$13$6IrRGJtwwGvRjaIRMX605ui5hudh6TjObO6VRtIIf7dUkCk15RkNy
+[2025-07-14 18:40:37] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-14 18:40:37] [INFO] Verificando contraseña: entrada: 'root2514' vs hash: '$2y$13$7t7dEoMSEUSKnz/O2Cu89.3L84AvV7Eclq0f7ZdjxzYo9R6vCGaUm'
+[2025-07-14 18:40:37] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-14 18:40:37] [INFO] Intento de login registrado para el usuario: admin con resultado: 0

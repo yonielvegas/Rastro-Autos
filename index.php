@@ -30,7 +30,7 @@ if (isset($tolog) && $tolog == "true" && $_SERVER['REQUEST_METHOD'] === 'POST') 
             $Logearme->registrarIntentos();
             $tolog = false;
 
-            redireccionar("formularios/PanelControl.php");
+            redireccionar("../Usuarios/usuario.php");
         } else {
             $Logearme->registrarIntentos();
             $_SESSION["emsg"] = 1;

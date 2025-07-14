@@ -1,0 +1,257 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: url('../imagenes/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+/* Efecto de capa semitransparente oscura */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(1, 1, 87, 0.6), rgba(132, 149, 223, 0.7));
+    z-index: -1;
+}
+
+
+/* Contenedores - Más claros que el fondo */
+.login-container, .register-container {
+    background-color: rgba(245, 245, 250, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-container:hover, .register-container:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+/* Encabezados */
+.login-header, .register-header {
+    background: linear-gradient(135deg, #5a67d8, #8c68cd);
+    color: white;
+    padding: 30px 25px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-header::before, .register-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.15) 0%, 
+        rgba(255, 255, 255, 0) 50%, 
+        rgba(255, 255, 255, 0.15) 100%);
+    transform: rotate(30deg);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.login-header h1, .register-header h1 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login-header p, .register-header p {
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.9;
+    position: relative;
+    z-index: 2;
+}
+
+/* Formularios */
+.login-form, .register-form {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+    font-size: 14px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #8c68cd;
+    box-shadow: 0 0 0 3px rgba(140, 104, 205, 0.2);
+    background-color: #fff;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(40%);
+    color: #8c68cd;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #5a67d8, #8c68cd);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #4a56c8, #7c58bd);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #555;
+    border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+    border-color: #ccc;
+}
+
+/* Pie de formulario */
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.form-footer a {
+    color: #5a67d8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+    color: #4a56c8;
+}
+
+/* Mensajes de error */
+.error-messages {
+    background-color: rgba(255, 235, 235, 0.9);
+    border-left: 4px solid #ff6b6b;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.error-messages ul {
+    list-style: none;
+}
+
+.error-messages li {
+    color: #ff5252;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.error {
+    color: #ff5252;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+.form-control.error {
+    border-color: #ff5252;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-container, .register-container {
+        border-radius: 0;
+        box-shadow: none;
+        width: 100%;
+        height: 100vh;
+        max-width: none;
+        background-color: rgba(255, 255, 255, 0.98);
+    }
+    
+    body {
+        padding: 0;
+        background-attachment: scroll;
+    }
+    
+    .login-header, .register-header {
+        padding: 25px 20px;
+    }
+    
+    .login-form, .register-form {
+        padding: 25px 20px;
+    }
+}
