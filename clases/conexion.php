@@ -135,6 +135,15 @@ class mod_db
 		}
 
 	} 
+
+	public function num_rows($tabla, $condicion) {
+		try {
+			$sql = "SELECT COUNT(*) as total FROM $tabla WHERE $condicion";
+			$stmt = $this->conexion->query($sql);
+			$row = $stmt->fetch(PDO::FETCH_ASSOC);  // ✅ Versión válida con PDO
+			return $row['total'] ?? 0;
+		} catch (PDOException $e) {
+			echo "Error en num_rows: " . $e->getMessage();
 			return 0;
 		}
 	}
