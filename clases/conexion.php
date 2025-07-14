@@ -135,5 +135,8 @@ class mod_db
 		}
 
 	} 
+			return 0;
+		}
+	}
 }
 ?>
