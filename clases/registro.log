@@ -169,3 +169,36 @@
 [2025-07-14 18:40:37] [INFO] Verificando contraseña: entrada: 'root2514' vs hash: '$2y$13$7t7dEoMSEUSKnz/O2Cu89.3L84AvV7Eclq0f7ZdjxzYo9R6vCGaUm'
 [2025-07-14 18:40:37] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
 [2025-07-14 18:40:37] [INFO] Intento de login registrado para el usuario: admin con resultado: 0
+[2025-07-19 19:58:57] [INFO] Hash temporal generado para pruebas: $2y$13$KNABHqPNPraCd4oI7c4tReEJyuJjBAkonEpNO17d2mmhvxpfrssJS
+[2025-07-19 19:58:57] [WARNING] Usuario no encontrado: root
+[2025-07-19 19:59:03] [INFO] Hash temporal generado para pruebas: $2y$13$VVBONkKl569cazBXPhhdQO/bdTfDZsmAtNzSfPQQpc9CrTW6o4o7y
+[2025-07-19 19:59:03] [WARNING] Usuario no encontrado: root
+[2025-07-19 19:59:05] [INFO] Hash temporal generado para pruebas: $2y$13$ZNzf7YKZvlW6KN5DvtltS.Vy5aC7wXUAoYLRZF0UjOuiUVaaLL7FO
+[2025-07-19 19:59:05] [WARNING] Usuario no encontrado: root
+[2025-07-19 19:59:13] [INFO] Hash temporal generado para pruebas: $2y$13$y0cNaOjvAsaDL74CMOW6HelBNEm0XkyBmtLw4XRj3AfQETX4YA/ky
+[2025-07-19 19:59:13] [WARNING] Usuario no encontrado: root
+[2025-07-19 20:08:23] [INFO] Hash temporal generado para pruebas: $2y$13$xV9sNnHTvGEv.iBA1X/h5uEip2Q07Px.ZbdOfHU26lAX0RjqYFGcm
+[2025-07-19 20:08:23] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-19 20:08:23] [INFO] Verificando contraseña: entrada: 'opciones2415' vs hash: '$2y$13$y0cNaOjvAsaDL74CMOW6HelBNEm0XkyBmtLw4XRj3AfQETX4YA/ky'
+[2025-07-19 20:08:24] [INFO] Login exitoso para el usuario: admin
+[2025-07-19 20:08:24] [INFO] Intento de login registrado para el usuario: admin con resultado: 1
+[2025-07-19 20:10:40] [INFO] Hash temporal generado para pruebas: $2y$13$aoJGSfFl5k2mV1hDhzFMkOI4NOx0r4kQ74k9yRtrubYe0ypcRlyTO
+[2025-07-19 20:10:40] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-19 20:10:40] [INFO] Verificando contraseña: entrada: 'opciones2415' vs hash: '$2y$13$y0cNaOjvAsaDL74CMOW6HelBNEm0XkyBmtLw4XRj3AfQETX4YA/ky'
+[2025-07-19 20:10:41] [INFO] Login exitoso para el usuario: admin
+[2025-07-19 20:10:41] [INFO] Intento de login registrado para el usuario: admin con resultado: 1
+[2025-07-19 20:21:33] [INFO] Hash temporal generado para pruebas: $2y$13$ty1q.gc5SSVZ56gjKgeJzOlGAO7NerYVrw2HGqNdATvf89OF7SHdi
+[2025-07-19 20:21:33] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-19 20:21:33] [INFO] Verificando contraseña: entrada: 'opciones2415' vs hash: '$2y$13$y0cNaOjvAsaDL74CMOW6HelBNEm0XkyBmtLw4XRj3AfQETX4YA/ky'
+[2025-07-19 20:21:33] [INFO] Login exitoso para el usuario: admin
+[2025-07-19 20:21:33] [INFO] Intento de login registrado para el usuario: admin con resultado: 1
+[2025-07-19 21:05:32] [INFO] Hash temporal generado para pruebas: $2y$13$33KcSNaTB9ox2lFWl4brCOf5CoAftbvxtzaeCecC3pCg5/qAYWmWa
+[2025-07-19 21:05:32] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-19 21:05:32] [INFO] Verificando contraseña: entrada: 'opciones2415' vs hash: '$2y$13$y0cNaOjvAsaDL74CMOW6HelBNEm0XkyBmtLw4XRj3AfQETX4YA/ky'
+[2025-07-19 21:05:33] [INFO] Login exitoso para el usuario: admin
+[2025-07-19 21:05:33] [INFO] Intento de login registrado para el usuario: admin con resultado: 1
+[2025-07-19 21:24:10] [INFO] Hash temporal generado para pruebas: $2y$13$a/wHlGUYpZLBvc.j.eIZt.MpoeYWxCm0YX3IZSs9CfFj5xh06tACa
+[2025-07-19 21:24:10] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-19 21:24:10] [INFO] Verificando contraseña: entrada: 'opciones2415' vs hash: '$2y$13$y0cNaOjvAsaDL74CMOW6HelBNEm0XkyBmtLw4XRj3AfQETX4YA/ky'
+[2025-07-19 21:24:10] [INFO] Login exitoso para el usuario: admin
+[2025-07-19 21:24:10] [INFO] Intento de login registrado para el usuario: admin con resultado: 1

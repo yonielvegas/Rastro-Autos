@@ -35,8 +35,13 @@
       
       <input type="hidden" name="tolog" id="tolog" value="true">
       
-      <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-      <a href="registro.php" class="btn btn-secondary">Crear Cuenta</a>
+      <div class="btn-group">
+        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        <a href="registro.php" class="btn btn-secondary">Crear Cuenta</a>
+      </div>
+
+      <a href="public/listado_partes.php" class="btn btn-outline">Navegar sin cuenta</a>
+
       
     </form>
   </div>

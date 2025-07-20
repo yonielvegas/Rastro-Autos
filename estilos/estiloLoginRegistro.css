@@ -255,3 +255,36 @@ body::before {
         padding: 25px 20px;
     }
 }
+
+
+
+
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-group .btn {
+  width: 48%;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #5a67d8;
+  color: #5a67d8;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: linear-gradient(135deg, #5a67d8, #8c68cd);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+

@@ -12,6 +12,21 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <!-- Esto para Ajustar el tamaño del input de telefono con la libreria TellInput -->
+    <style>
+        .iti {
+            width: 100% !important;
+        }
+        .iti input {
+            width: 100% !important;
+            padding-left: 50px !important;
+        }
+    </style>
+
+
 </head>
 <body>
     <div class="register-container">
@@ -58,11 +73,23 @@
                     <i class="fas fa-envelope input-icon"></i>
                     <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
                 </div>
-                
+
+                <div class="form-group">
+                    <label for="telefono">Telefono</label>
+                    <i class="fas fa-phone input-icon"></i>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="(+507) Ingresa tu numero de telefono" require>
+                </div>
+
                 <div class="form-group">
                     <label for="password">Contraseña</label>
                     <i class="fas fa-lock input-icon"></i>
                     <input type="password" class="form-control" id="password" name="password" placeholder="Crea una contraseña segura" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Confirmar Contraseña</label>
+                    <i class="fas fa-lock input-icon"></i>
+                    <input type="password" class="form-control" id="password" name="password2" placeholder="Escribe la misma contraseña" required>
                 </div>
                 
                 <button type="submit" class="btn btn-primary">Registrarse</button>
@@ -74,5 +101,21 @@
             </form>
         </div>
     </div>
+
+    <script>
+        const input = document.querySelector("#telefono");
+        window.intlTelInput(input, {
+            initialCountry: "auto",
+            geoIpLookup: callback => {
+            fetch('https://ipinfo.io/json')
+                .then(resp => resp.json())
+                .then(resp => callback(resp.country))
+                .catch(() => callback("us"));
+            },
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+        });
+    </script>
+
+
 </body>
 </html>
