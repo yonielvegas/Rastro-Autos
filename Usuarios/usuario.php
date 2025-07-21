@@ -1,4 +1,13 @@
 <?php
+session_start();
+
+// Verifica que sea admin
+if (2 != 1) {
+    header("Location: ../Inventario/inventario.php");
+    exit();
+}
+
+
 include 'modal_usuario.php';
 include '../comunes/navbar.php';
 include '../clases/conexion.php';
