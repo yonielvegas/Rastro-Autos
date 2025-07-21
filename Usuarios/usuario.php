@@ -1,29 +1,12 @@
 <?php
 include 'modal_usuario.php';
 include '../comunes/navbar.php';
+include '../clases/conexion.php';
 
 
 // Ejemplo de usuarios — en la práctica los obtienes de base de datos
-$usuarios = [
-  [
-    'id' => 1,
-    'nombre' => 'Juan',
-    'apellido' => 'Pérez',
-    'correo' => 'juan@example.com',
-    'telefono' => '+507 6000-0000',
-    'usuario' => 'juanp',
-    'activo' => 1
-  ],
-  [
-    'id' => 2,
-    'nombre' => 'María',
-    'apellido' => 'García',
-    'correo' => 'maria@example.com',
-    'telefono' => '+507 6000-1111',
-    'usuario' => 'mariag',
-    'activo' => 0
-  ],
-];
+$db = new mod_db();
+$usuarios = $db->select("usuarios", "*", "");
 
 function badgeEstado($activo) {
   return $activo == 1 ? '<span class="badge badge-success">Activo</span>' : '<span class="badge badge-danger">Inactivo</span>';
@@ -82,9 +65,9 @@ function badgeEstado($activo) {
                        Editar
                     </a>
                     <?php if ($usuario['activo'] == 1): ?>
-                      <a href="desactivar_usuario.php?id=<?= $usuario['id'] ?>" class="btn btn-sm btn-deactivate">Desactivar</a>
+                      <a href="desactivar_usuario.php?id=<?= $usuario['id_usuario'] ?>" class="btn btn-sm btn-deactivate">Desactivar</a>
                     <?php else: ?>
-                      <a href="activar_usuario.php?id=<?= $usuario['id'] ?>" class="btn btn-sm btn-activate">Activar</a>
+                      <a href="activar_usuario.php?id=<?= $usuario['id_usuario'] ?>" class="btn btn-sm btn-activate">Activar</a>
                     <?php endif; ?>
                   </div>
                 </td>
