@@ -10,7 +10,7 @@
       <i class="fas fa-key"></i>
     </a>
 
-    <a href="logout.php" class="logout-btn" title="Cerrar sesión">
+    <a href="../comunes/logout.php" class="logout-btn" title="Cerrar sesión">
       <i class="fas fa-power-off"></i>
     </a>
   </div>

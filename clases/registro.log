@@ -1518,3 +1518,57 @@
 [2025-07-21 19:19:58] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
 [2025-07-21 19:19:58] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
 [2025-07-21 19:19:58] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-21 19:25:46] [INFO] Hash temporal generado para pruebas: $2y$13$FdQ/0OfEcDfroy3OxqhQ2OHFDwiA.6SoGPyI5GS//kqrHvpf/IoJm
+[2025-07-21 19:25:46] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-21 19:25:46] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-21 19:25:46] [INFO] Verificando contraseña: entrada: 'brocin2429' vs hash: '$2y$13$mTUnkAKpTq1u88EpTzW8xOKJ9J/yqGXDmQcwHOVQOxbFjQoJjJcLW'
+[2025-07-21 19:25:47] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-21 19:25:47] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-21 19:25:47] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-21 19:26:01] [INFO] Hash temporal generado para pruebas: $2y$13$7AxjLZu3jNDmkVksMZqr1OabI0RwUMFQgM8emWp2JhEELO.MA6e/G
+[2025-07-21 19:26:01] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-21 19:26:01] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-21 19:26:01] [INFO] Verificando contraseña: entrada: 'brochin2429' vs hash: '$2y$13$mTUnkAKpTq1u88EpTzW8xOKJ9J/yqGXDmQcwHOVQOxbFjQoJjJcLW'
+[2025-07-21 19:26:02] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-21 19:26:02] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-21 19:26:02] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-21 19:26:35] [INFO] Hash temporal generado para pruebas: $2y$13$iPe5mOEBz5FhyXCADDRWGOs9aVG6y6QMFsq2Zj1G8VQLlihdp8NAO
+[2025-07-21 19:26:35] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-21 19:26:35] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-21 19:26:35] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$mTUnkAKpTq1u88EpTzW8xOKJ9J/yqGXDmQcwHOVQOxbFjQoJjJcLW'
+[2025-07-21 19:26:36] [INFO] Login exitoso para el usuario: admin
+[2025-07-21 19:26:36] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-21 19:26:36] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-21 19:26:36] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-21 19:27:02] [INFO] Hash temporal generado para pruebas: $2y$13$5olCeVHg1tFCZRwAZrQIO.WviMnGpOEuhrDVX.TRbT8HTgIR/lLwa
+[2025-07-21 19:27:02] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-21 19:27:02] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-21 19:27:02] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$mTUnkAKpTq1u88EpTzW8xOKJ9J/yqGXDmQcwHOVQOxbFjQoJjJcLW'
+[2025-07-21 19:27:03] [INFO] Login exitoso para el usuario: admin
+[2025-07-21 19:27:03] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-21 19:27:03] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-21 19:27:03] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-21 19:32:18] [INFO] Hash temporal generado para pruebas: $2y$13$.js8YkYuxM5n5OESF3Lb9uFEZhPYcyasRW4waKGiWmC2SysGQoPcC
+[2025-07-21 19:32:18] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-21 19:32:18] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-21 19:32:18] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$mTUnkAKpTq1u88EpTzW8xOKJ9J/yqGXDmQcwHOVQOxbFjQoJjJcLW'
+[2025-07-21 19:32:19] [INFO] Login exitoso para el usuario: admin
+[2025-07-21 19:32:19] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-21 19:32:19] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-21 19:32:19] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-21 19:32:47] [INFO] Hash temporal generado para pruebas: $2y$13$HtG3UKJ4wBMza1UN8ECOYebA1nwilFkhpltv9iYRZg.yKIOUbx0ua
+[2025-07-21 19:32:47] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-21 19:32:47] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-21 19:32:47] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$mTUnkAKpTq1u88EpTzW8xOKJ9J/yqGXDmQcwHOVQOxbFjQoJjJcLW'
+[2025-07-21 19:32:48] [INFO] Login exitoso para el usuario: admin
+[2025-07-21 19:32:48] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-21 19:32:48] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-21 19:32:48] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-21 19:33:44] [INFO] Hash temporal generado para pruebas: $2y$13$YTxXyuexDQaz3BFeYNmUz.2grjEH5dCXUDXOU9a4t/jm5CBfhkPVC
+[2025-07-21 19:33:44] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-21 19:33:44] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-21 19:33:44] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$mTUnkAKpTq1u88EpTzW8xOKJ9J/yqGXDmQcwHOVQOxbFjQoJjJcLW'
+[2025-07-21 19:33:45] [INFO] Login exitoso para el usuario: admin
+[2025-07-21 19:33:45] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-21 19:33:45] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-21 19:33:45] [INFO] ERRORES DE BLOQUEO: []

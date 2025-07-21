@@ -169,7 +169,7 @@
       <i class="fas fa-th-large"></i>
       <span>Secciones</span>
     </a>
-    <a href="../logout.php" class="menu-item">
+    <a href="../comunes/logout.php" class="menu-item">
       <i class="fas fa-sign-out-alt"></i>
       <span>Cerrar Sesión</span>
     </a>

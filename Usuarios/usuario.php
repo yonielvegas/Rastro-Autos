@@ -2,16 +2,14 @@
 session_start();
 
 // Verifica que sea admin
-if (2 != 1) {
-    header("Location: ../Inventario/inventario.php");
+if (!isset($_SESSION['rol']) || $_SESSION['rol'] != 1) {
+    header("Location: ../Inventario/inventario.php"); //Cambiar Pagina
     exit();
 }
-
 
 include 'modal_usuario.php';
 include '../comunes/navbar.php';
 include '../clases/conexion.php';
-
 
 // Ejemplo de usuarios — en la práctica los obtienes de base de datos
 $db = new mod_db();
