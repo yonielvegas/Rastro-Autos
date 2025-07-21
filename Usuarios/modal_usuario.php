@@ -226,7 +226,7 @@
 
     if (usuario) {
       titulo.textContent = 'Editar Usuario';
-      idInput.value = usuario.id || '';
+      idInput.value = usuario.id_usuario || '';
       nombre.value = usuario.nombre || '';
       apellido.value = usuario.apellido || '';
       correo.value = usuario.correo || '';
