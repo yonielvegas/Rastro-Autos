@@ -5,6 +5,11 @@
   <div class="user-info">
     <div class="welcome-message" id="welcomeMessage">Hola, Invitado</div>
     <img src="" alt="Foto de Usuario" class="user-photo" id="userPhoto" />
+    
+    <a href="cambiar_contrasena.php" class="change-pass-btn" title="Cambiar contraseña">
+      <i class="fas fa-key"></i>
+    </a>
+
     <a href="logout.php" class="logout-btn" title="Cerrar sesión">
       <i class="fas fa-power-off"></i>
     </a>
@@ -42,10 +47,11 @@
     border: 2px solid white;
   }
 
-  .logout-btn {
+  .logout-btn,
+  .change-pass-btn {
     background: transparent;
     border: none;
-    color: #e63946; /* solo el ícono es rojo */
+    color: #e63946; /* rojo por defecto */
     font-size: 20px;
     padding: 6px;
     cursor: pointer;
@@ -55,8 +61,16 @@
     transition: color 0.3s ease;
   }
 
+  .change-pass-btn {
+    color: #fbbc04; /* color dorado para el ícono de cambiar contraseña */
+  }
+
+  .change-pass-btn:hover {
+    color: #ffcd38; /* dorado más claro al pasar el mouse */
+  }
+
   .logout-btn:hover {
-    color: #ff4e5b; /* rojo más claro al pasar el mouse */
+    color: #ff4e5b;
   }
 </style>
 

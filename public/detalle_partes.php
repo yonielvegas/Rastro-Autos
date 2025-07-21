@@ -1,3 +1,7 @@
+<?php 
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,6 +11,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../estilos/estiloDetalles.css">
+    <style>
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            flex: 1;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(37, 99, 235, 0.1);
+        }
+    </style>
 </head>
 <body>
   <?php include('navbar.php'); ?>
@@ -67,51 +112,22 @@
             </div>
           </div>
         </div>
+        <div class="action-buttons">
+          <?php if (isset($_SESSION['usuario'])): ?>
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart"></i> Añadir al carrito
+            </button>
+          <?php endif; ?>
+        </div>
+        </div>
       </div>
     </div>
 
     <!-- Tabs Section -->
     <div class="detail-tabs">
       <div class="tabs-header">
-        <button class="tab-btn active" onclick="openTab(event, 'reviews')">Reseñas</button>
         <button class="tab-btn" onclick="openTab(event, 'shipping')">Envío y Devoluciones</button>
       </div>
-
-      <div id="reviews" class="tab-content active">
-        <div class="review-form">
-          <h3>Deja tu reseña</h3>
-          <textarea class="review-textarea" placeholder="Comparte tu experiencia con este producto..."></textarea>
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <button class="review-submit">Enviar reseña</button>
-          </div>
-        </div>
-
-        <h3>Reseñas de clientes</h3>
-        <div class="reviews-list">
-          <div class="review-item">
-            <div class="review-header">
-              <div class="review-avatar">JM</div>
-              <div>
-                <div class="review-author">Juan Martínez</div>
-                <div class="review-date">15 de marzo, 2023</div>
-              </div>
-            </div>
-            <p>Excelente alternador, llegó antes de lo esperado y funcionó perfectamente en mi Corolla 2016. La instalación fue sencilla siguiendo las instrucciones del manual.</p>
-          </div>
-          
-          <div class="review-item">
-            <div class="review-header">
-              <div class="review-avatar">AC</div>
-              <div>
-                <div class="review-author">Ana Contreras</div>
-                <div class="review-date">2 de febrero, 2023</div>
-              </div>
-            </div>
-            <p>Buen producto, aunque el conector era un poco diferente al original. Tuve que hacer una pequeña modificación pero funciona perfectamente.</p>
-          </div>
-        </div>
-      </div>
-
       <div id="shipping" class="tab-content">
         <h3>Envío y Devoluciones</h3>
         <h4>Opciones de envío:</h4>

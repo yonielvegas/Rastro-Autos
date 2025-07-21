@@ -315,6 +315,7 @@ body {
     color: var(--secondary);
 }
 
+
 /* Responsive */
 @media (max-width: 600px) {
     .detail-title {
