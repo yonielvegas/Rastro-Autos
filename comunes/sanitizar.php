@@ -1,10 +1,11 @@
 <?php
 
-require_once("clases/logger.php"); // ✅ Asegúrate de que esta ruta sea correcta
+require_once(__DIR__ . "/../clases/logger.php");
 
 class SanitizarEntrada {
     private $errores = [];
     private $db;
+    private $rol;
 
     public function __construct($db = null) {
         $this->db = $db;
@@ -34,6 +35,7 @@ class SanitizarEntrada {
         $telefono = $post['telefono'];
         $contraseña = $post['password'];
         $contraseña2 = $post['password2'];
+        $id_rol = $post['id_rol'];
 
 
         // Nombre
@@ -41,7 +43,7 @@ class SanitizarEntrada {
             $this->errores[] = "El nombre es obligatorio.";
             Logger::info("Falta el nombre en el formulario.");
         } else {
-            $datos['Nombre'] = htmlspecialchars(strip_tags(trim($nombre)));
+            $datos['nombre'] = htmlspecialchars(strip_tags(trim($nombre)));
         }
 
         // Apellido
@@ -49,7 +51,7 @@ class SanitizarEntrada {
             $this->errores[] = "El apellido es obligatorio.";
             Logger::info("Falta el apellido en el formulario.");
         } else {
-            $datos['Apellido'] = htmlspecialchars(strip_tags(trim($apellido)));
+            $datos['apellido'] = htmlspecialchars(strip_tags(trim($apellido)));
         }
 
         // Usuario
@@ -66,7 +68,7 @@ class SanitizarEntrada {
             $this->errores[] = "Este Usuario ya está registrado.";
             Logger::info("Usuario duplicado: " . $usuario);
         } else {
-            $datos['Usuario'] = htmlspecialchars(trim($usuario));
+            $datos['usuario'] = htmlspecialchars(trim($usuario));
         }
 
         // Correo
@@ -80,7 +82,7 @@ class SanitizarEntrada {
             $this->errores[] = "El correo ya está registrado.";
             Logger::info("Correo duplicado: " . $correo);
         } else {
-            $datos['Correo'] = filter_var(trim($correo), FILTER_SANITIZE_EMAIL);
+            $datos['correo'] = filter_var(trim($correo), FILTER_SANITIZE_EMAIL);
         }
 
         if(empty($telefono)){
@@ -98,7 +100,7 @@ class SanitizarEntrada {
 
 
         // Password
-        if($contraseña == $contraseña2){
+        if(!($contraseña == $contraseña2)){
             $this->errores[] = "Las contraseña no coinciden";
             Logger::info("Falta la contraseña.");
         }elseif (empty($contraseña)) {
@@ -115,11 +117,22 @@ class SanitizarEntrada {
             Logger::info("Contraseña sin caracteres especiales.");
         } else {
             $passwordLimpia = htmlspecialchars(trim($contraseña));
-            $datos['HashMagic'] = password_hash($passwordLimpia, PASSWORD_DEFAULT);
+            $datos['password'] = password_hash($passwordLimpia, PASSWORD_DEFAULT);
+        }
+
+        if(empty($id_rol)){
+            $this->errores[] = "Error del sistema (Tipo de Usuario no identificado)";
+            Logger::info("FALLO EN DETECTAR TIPO DE USUARIO");
+        }else{
+            $this->rol = (int) $id_rol;
         }
 
         //retornar los datos sanitizados
         return $datos;
+    }
+
+     public function getRol(){
+        return $this->rol;
     }
 
     private function verificarDuplicado($columna, $valor) {

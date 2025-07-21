@@ -1,4 +1,6 @@
 <?php
+require_once ("logger.php");
+
 class mod_db
 {
 	private $conexion; // Conexión a la base de datos
@@ -74,6 +76,7 @@ class mod_db
 			return true;
 		} catch (PDOException $e) {
 			echo "Error en INSERT: " . $e->getMessage();
+			Logger::error("Error al insertar en $tabla: " . $e->getMessage());
 			return false;
 		}
 	}
@@ -135,5 +138,26 @@ class mod_db
 		}
 
 	} 
+
+
+	public function registrarTrazabilidad($tabla, $accion, $codigoRegistro, $usuario) {
+        $fechaSistema = date('Y-m-d H:i:s');
+        $ip = $_SERVER['REMOTE_ADDR'] ?? gethostbyname(gethostname()) ?? 'IP_NO_DETECTADA';
+
+        $traza = [
+            'tabla_afectada' => $tabla,
+            'accion' => $accion,
+            'id_usuario' => $codigoRegistro,
+            'usuario' => $usuario,
+            'ip_usuario' => $ip
+        ];
+
+		Logger::info("Intento de Registrar Trazabilidad: " . json_encode($traza));
+
+
+        if (!$this->insertSeguro('trazabilidad', $traza)) {
+            Logger::error("❌ Error al registrar trazabilidad de $accion en '$tabla' para el usuario '$usuario'.", "ERROR");
+        }
+    }
 }
 ?>

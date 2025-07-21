@@ -24,6 +24,19 @@
             width: 100% !important;
             padding-left: 50px !important;
         }
+
+        .error-messages {
+            color: red;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+        .error-messages ul {
+            padding-left: 20px;
+        }
+        .error-messages li {
+            margin-bottom: 4px;
+        }
+
     </style>
 
 
@@ -49,7 +62,7 @@
                     <?php unset($_SESSION['registro_errores']); ?>
             <?php endif; ?>
             
-            <form method="post" action="clases/Login/procesarRegistro.php">
+            <form method="post" action="clases/Registro/procesarRegistro.php">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
                     <i class="fas fa-user input-icon"></i>
@@ -89,8 +102,22 @@
                 <div class="form-group">
                     <label for="password">Confirmar Contraseña</label>
                     <i class="fas fa-lock input-icon"></i>
-                    <input type="password" class="form-control" id="password" name="password2" placeholder="Escribe la misma contraseña" required>
+                    <input type="password" class="form-control" id="password2" name="password2" placeholder="Escribe la misma contraseña" required>
                 </div>
+                
+                <input type="hidden" id="id_rol" name="id_rol" value="3">
+
+                <?php
+                    if (isset($_SESSION['registro_errores']) && count($_SESSION['registro_errores']) > 0): ?>
+                        <div class="error-messages">
+                            <ul>
+                            <?php foreach ($_SESSION['registro_errores'] as $error): ?>
+                                <li><?= htmlspecialchars($error) ?></li>
+                            <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    <?php unset($_SESSION['registro_errores']); ?>
+                <?php endif; ?>
                 
                 <button type="submit" class="btn btn-primary">Registrarse</button>
                 <a href="login.php" class="btn btn-secondary">Volver al Login</a>
