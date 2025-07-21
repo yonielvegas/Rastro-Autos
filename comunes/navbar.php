@@ -6,7 +6,7 @@
     <div class="welcome-message" id="welcomeMessage">Hola, Invitado</div>
     <img src="" alt="Foto de Usuario" class="user-photo" id="userPhoto" />
     
-    <a href="cambiar_contrasena.php" class="change-pass-btn" title="Cambiar contraseña">
+    <a href="#" class="change-pass-btn" title="Cambiar contraseña" id="openChangePass">
       <i class="fas fa-key"></i>
     </a>
 
@@ -17,6 +17,7 @@
 </nav>
 
 <style>
+  /* ... tu CSS existente ... */
   .navbar {
     height: 70px;
     background-color: #212529;
@@ -72,6 +73,72 @@
   .logout-btn:hover {
     color: #ff4e5b;
   }
+
+  /* Estilos para el modal que cargaremos dinámicamente */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; /* oculto por defecto */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  .modal-content h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .modal-content label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .btn-confirm {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .btn-cancel {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 </style>
 
 <script>
@@ -83,4 +150,51 @@
   document.getElementById('welcomeMessage').textContent = `Hola, ${usuario.nombre}`;
   document.getElementById('userPhoto').src = usuario.foto;
   document.getElementById('userPhoto').alt = `Foto de ${usuario.nombre}`;
+
+  // ---- Modal Dinámico via AJAX ----
+  const openBtn = document.getElementById('openChangePass');
+  let modalContainer = null;
+
+  openBtn.addEventListener('click', async function(e) {
+    e.preventDefault();
+
+    // Si el modal no existe en DOM, lo cargamos
+    if (!modalContainer) {
+      modalContainer = document.createElement('div');
+      document.body.appendChild(modalContainer);
+
+      try {
+        const response = await fetch('modal_cambiar_contrasena.php');
+        if (!response.ok) throw new Error('Error cargando el modal');
+        const html = await response.text();
+        modalContainer.innerHTML = html;
+
+        // Mostrar el modal
+        const overlay = modalContainer.querySelector('.modal-overlay');
+        overlay.style.display = 'flex';
+
+        // Agregar evento para cerrar modal
+        const closeBtn = modalContainer.querySelector('#closeModal');
+        closeBtn.addEventListener('click', () => {
+          overlay.style.display = 'none';
+        });
+
+        // Cerrar modal si se hace click fuera del contenido
+        overlay.addEventListener('click', (event) => {
+          if (event.target === overlay) {
+            overlay.style.display = 'none';
+          }
+        });
+
+      } catch (error) {
+        alert('No se pudo cargar el formulario para cambiar contraseña.');
+        console.error(error);
+      }
+
+    } else {
+      // Ya está cargado, solo mostrarlo
+      const overlay = modalContainer.querySelector('.modal-overlay');
+      overlay.style.display = 'flex';
+    }
+  });
 </script>
