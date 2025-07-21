@@ -72,9 +72,9 @@ function badgeEstado($activo) {
                        Editar
                     </a>
                     <?php if ($usuario['activo'] == 1): ?>
-                      <a href="desactivar_usuario.php?id=<?= $usuario['id_usuario'] ?>" class="btn btn-sm btn-deactivate">Desactivar</a>
+                      <a href="#" class="btn btn-sm btn-deactivate btn-toggle" data-id="<?= $usuario['id_usuario'] ?>" data-action="desactivar">Desactivar</a>
                     <?php else: ?>
-                      <a href="activar_usuario.php?id=<?= $usuario['id_usuario'] ?>" class="btn btn-sm btn-activate">Activar</a>
+                      <a href="#" class="btn btn-sm btn-activate btn-toggle" data-id="<?= $usuario['id_usuario'] ?>" data-action="activar">Activar</a>
                     <?php endif; ?>
                   </div>
                 </td>
@@ -100,6 +100,26 @@ function badgeEstado($activo) {
       if (mainContent) {
         mainContent.classList.toggle('expanded');
       }
+    });
+  });
+  document.querySelectorAll('.btn-toggle').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      const id = this.dataset.id;
+      const accion = this.dataset.action;
+
+      fetch(`${accion}_usuario.php?id=${id}`, {
+        method: 'GET',
+      })
+      .then(response => response.text())
+      .then(data => {
+        console.log("Respuesta del servidor:", data);
+        // Opcional: puedes actualizar la fila, recargar la tabla o solo el estado
+        location.reload(); // O mejora reemplazando solo la fila con JS
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
     });
   });
 </script>
