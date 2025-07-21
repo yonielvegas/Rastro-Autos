@@ -1411,3 +1411,86 @@
 [2025-07-21 18:42:00] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
 [2025-07-21 18:42:00] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
 [2025-07-21 18:42:00] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-21 18:49:22] [INFO] Hash temporal generado para pruebas: $2y$13$cbRVJJu5klTtl/IXADt20ug8flslSHGl8Up/w/I68mDWsyGAjycAC
+[2025-07-21 18:49:22] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-21 18:49:22] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-21 18:49:22] [INFO] Verificando contraseña: entrada: 'dsad' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-21 18:49:23] [WARNING] Login fallido: contraseña incorrecta para el usuario: yonielvegas
+[2025-07-21 18:49:23] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-21 18:49:23] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 0
+[2025-07-21 18:49:29] [INFO] Hash temporal generado para pruebas: $2y$13$kOOeiussvpoOoXTrK3UIzOxFl3GMtmypryCzd3H6qFzm/XVDejRui
+[2025-07-21 18:49:29] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-21 18:49:29] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-21 18:49:29] [INFO] Verificando contraseña: entrada: 'dsa' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-21 18:49:30] [WARNING] Login fallido: contraseña incorrecta para el usuario: yonielvegas
+[2025-07-21 18:49:30] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-21 18:49:30] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 0
+[2025-07-21 18:49:38] [INFO] Hash temporal generado para pruebas: $2y$13$VEno/noNC60pS54AWHgQvuFffrWdTmqmHAHjFG6aKuCBLmL9a/vje
+[2025-07-21 18:49:38] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-21 18:49:38] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-21 18:49:38] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-21 18:49:39] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-21 18:49:39] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-21 18:49:39] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-21 18:49:39] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-21 18:49:49] [INFO] Hash temporal generado para pruebas: $2y$13$34Wsv5TmZBvw1yHLlIcO.e9NEjLWJneo7WAmFi7egFDwmi/lgXrhS
+[2025-07-21 18:49:49] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-21 18:49:49] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-21 18:49:49] [INFO] Verificando contraseña: entrada: 'adas' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-21 18:49:50] [WARNING] Login fallido: contraseña incorrecta para el usuario: yonielvegas
+[2025-07-21 18:49:50] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-21 18:49:50] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 0
+[2025-07-21 18:49:58] [INFO] Hash temporal generado para pruebas: $2y$13$MdkjFF11Ufh5QG3ng.p5ie/PKePz7/gYyDMTiL8V1UBnxWU/8lJQa
+[2025-07-21 18:49:58] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-21 18:49:58] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-21 18:49:58] [INFO] Verificando contraseña: entrada: 'ads' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-21 18:49:58] [WARNING] Login fallido: contraseña incorrecta para el usuario: yonielvegas
+[2025-07-21 18:49:58] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-21 18:49:58] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 0
+[2025-07-21 18:50:02] [INFO] Hash temporal generado para pruebas: $2y$13$RDkzoZ6PwLz77uFsRQQwjOYkRhd4IG7ZR4u1YNN3dA6tmFxdx7AoO
+[2025-07-21 18:50:02] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-21 18:50:02] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-21 18:50:02] [INFO] Verificando contraseña: entrada: 'dasd' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-21 18:50:03] [WARNING] Login fallido: contraseña incorrecta para el usuario: yonielvegas
+[2025-07-21 18:50:03] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-21 18:50:03] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 0
+[2025-07-21 18:50:07] [INFO] Hash temporal generado para pruebas: $2y$13$5R9Fbvfz/eTB1o7xXk0KJusChwHmbWrDy05yc1GIwSpaBF3gMyRMu
+[2025-07-21 18:50:07] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-21 18:50:07] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-21 18:50:07] [INFO] Verificando contraseña: entrada: 'adsa' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-21 18:50:08] [WARNING] Login fallido: contraseña incorrecta para el usuario: yonielvegas
+[2025-07-21 18:50:27] [INFO] Hash temporal generado para pruebas: $2y$13$ZOU/HrVESNbygHkxfLmOPe6GNBPx3vxyOKFw.PIm1ZPqEvsrWjVh2
+[2025-07-21 18:50:27] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-21 18:50:27] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-21 18:50:27] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-21 18:50:27] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-21 18:50:27] [WARNING] Intento de login para usuario bloqueado: yonielvegas
+[2025-07-21 18:50:27] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-21 18:50:27] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-21 18:50:27] [INFO] ERRORES DE BLOQUEO: ["Este Usuario Est\u00e1 Bloqueado"]
+[2025-07-21 18:57:16] [INFO] Hash temporal generado para pruebas: $2y$13$/Tkgtp0KeBWAsRo/o83Chu1gEaK3NzNRK34mThWG5QPPrYrVd22L6
+[2025-07-21 18:57:16] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-21 18:57:16] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-21 18:57:16] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-21 18:57:17] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-21 18:57:17] [WARNING] Intento de login para usuario bloqueado: yonielvegas
+[2025-07-21 18:57:17] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-21 18:57:17] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-21 18:57:17] [INFO] ERRORES DE BLOQUEO: ["Este Usuario Est\u00e1 Bloqueado"]
+[2025-07-21 19:00:57] [INFO] Hash temporal generado para pruebas: $2y$13$LFgbQfuTRf2G2BLQ.0EeOOVTlu6m2BUXFqP0wv9BXMCOVeXbZrQKG
+[2025-07-21 19:00:57] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-21 19:00:57] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-21 19:00:57] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-21 19:00:58] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-21 19:00:58] [WARNING] Intento de login para usuario bloqueado: yonielvegas
+[2025-07-21 19:00:58] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-21 19:00:58] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-21 19:00:58] [INFO] ERRORES DE BLOQUEO: ["Este Usuario Est\u00e1 Bloqueado"]
+[2025-07-21 19:01:04] [INFO] Hash temporal generado para pruebas: $2y$13$yEZMHSWWnVD1aSLOkpQ.te058esvEmRuVwGxU8NXG5WoCpNB9cN3C
+[2025-07-21 19:01:04] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-21 19:01:04] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-21 19:01:04] [INFO] Verificando contraseña: entrada: 'wewer' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-21 19:01:04] [WARNING] Login fallido: contraseña incorrecta para el usuario: yonielvegas
+[2025-07-21 19:01:04] [WARNING] Intento de login para usuario bloqueado: yonielvegas
+[2025-07-21 19:01:04] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-21 19:01:04] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 0
