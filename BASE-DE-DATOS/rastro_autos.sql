@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 21-07-2025 a las 16:37:16
+-- Tiempo de generación: 21-07-2025 a las 16:41:41
 -- Versión del servidor: 9.1.0
 -- Versión de PHP: 8.3.14
 
@@ -135,7 +135,7 @@ CREATE TABLE IF NOT EXISTS `trazabilidad` (
   `registro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_traza`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=MyISAM AUTO_INCREMENT=53 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=56 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `trazabilidad`
@@ -193,7 +193,10 @@ INSERT INTO `trazabilidad` (`id_traza`, `tabla_afectada`, `accion`, `id_usuario`
 (49, 'usuario_intentos', 'Select LOGIN_FAIL', 2, 'yonielvegas', '::1', '2025-07-21 14:56:07'),
 (50, 'usuario_intentos', 'Select LOGIN_FAIL', 2, 'yonielvegas', '::1', '2025-07-21 14:56:16'),
 (51, 'usuario_intentos', 'Select LOGIN_OK', 2, 'yonielvegas', '::1', '2025-07-21 16:33:14'),
-(52, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-21 16:33:24');
+(52, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-21 16:33:24'),
+(53, 'usuario_intentos', 'Select LOGIN_FAIL', 1, 'admin', '::1', '2025-07-21 16:39:35'),
+(54, 'usuario_intentos', 'Select LOGIN_FAIL', 1, 'admin', '::1', '2025-07-21 16:40:22'),
+(55, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-21 16:41:03');
 
 -- --------------------------------------------------------
 
@@ -220,8 +223,8 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `correo`, `telefono`, `usuario`, `password`, `activo`) VALUES
-(1, 'Administrador', 'General', 'admin@example.com', '0000000000', 'admin', '$2y$10$q8VUgCGP8j4VshXUTCZfnuh74WQ9nJnBxwRcl/KSlwoaUnNOT4e9W', 1),
-(2, 'Yoel', 'Samaniego', 'yoelsamaniego4@gmail.com', '62834187', 'yonielvegas', '$2y$10$q8VUgCGP8j4VshXUTCZfnuh74WQ9nJnBxwRcl/KSlwoaUnNOT4e9W', 1),
+(1, 'Administrador', 'General', 'admin@example.com', '0000000000', 'admin', '$2y$13$mTUnkAKpTq1u88EpTzW8xOKJ9J/yqGXDmQcwHOVQOxbFjQoJjJcLW', 1),
+(2, 'Yoel', 'Samaniego', 'yoelsamaniego4@gmail.com', '62834187', 'yonielvegas', '$2y$13$uMBnzXHiPRoP4kjO1x0iLOViA.RiNPnjQe7GJx/fpyD9BRMg2gzE.', 1),
 (3, 'Ana', 'Pinto', 'anapinto@gmail.com', '62873192', 'anap', '$2y$10$aiKOJXZ.r.an3oT5OZNO4eBTB.6YMvGdNGEgCdmBtv5wVSiBbQMbu', 1),
 (4, 'Irina', 'Fong', 'IrinaF@gmail.com', '34675632', 'salmon', '$2y$10$Kca2hIpI079gLHZsSuSnoOz49P/Qc62q5SZFJ8OeQbUeVCjRGyOH6', 1),
 (5, 'pedro', 'perez', 'pedro@gmail.com', '232344534', 'pedro22', '$2y$10$NI6jkzgF60n0FF7HdtXDqOlAIXyrGDjNGPchJ.UvllmpjU5aEhQD2', 1),
