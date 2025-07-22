@@ -140,6 +140,51 @@ class mod_db
 	} 
 
 
+	public function partes($marca, $modelo, $offset = null, $limit = null)
+	{
+		$params = [];
+		$sql = "SELECT 
+			pa.id_parte,
+			pa.nombre,
+			pa.descripcion,
+			pa.precio,
+			pa.cantidad_stock,
+			pa.codigo_serie,
+			pa.id_marca,
+			pa.id_modelo,
+			pa.imagen,
+			pa.imagen_thumbnail,
+			ca.categoria
+			FROM partes_autos AS pa
+			INNER JOIN categoria AS ca ON pa.id_cat = ca.id_cat";
+		if (!empty($marca) && !empty($modelo)) {
+			$sql .= " WHERE pa.id_marca = :marca AND pa.id_modelo = :modelo";
+			$params = [
+				':marca' => $marca,
+				':modelo' => $modelo
+			];
+		}
+		if ($limit !== null) {
+			$sql .= " LIMIT " . intval($limit);
+			if ($offset !== null) {
+				$sql .= " OFFSET " . intval($offset);
+			}
+		}
+		try {
+			$stmt = $this->conexion->prepare($sql);
+			$stmt->execute($params);
+			$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+			$total_partes = $this->select("partes_autos", "COUNT(*) as total", "id_marca = '$marca' AND id_modelo = '$modelo'");
+			$result['total'] = $total_partes[0]['total'] ?? 0;
+			return $result;
+		} catch (PDOException $e) {
+			echo "Error al hacer SELECT: " . $e->getMessage();
+			return false;
+		}
+	}
+
+
 	public function registrarTrazabilidad($tabla, $accion, $codigoRegistro, $usuario) {
         $fechaSistema = date('Y-m-d H:i:s');
         $ip = $_SERVER['REMOTE_ADDR'] ?? gethostbyname(gethostname()) ?? 'IP_NO_DETECTADA';

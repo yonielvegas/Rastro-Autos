@@ -2,7 +2,7 @@
   include('navbar.php');
   include('../clases/conexion.php');
 
- if (isset($_GET['marca']) && isset($_GET['modelo'])) {
+  if (isset($_GET['marca']) && isset($_GET['modelo'])) {
     $marca = htmlspecialchars($_GET['marca']);
     $modelo = htmlspecialchars($_GET['modelo']);
   } else {
@@ -11,8 +11,30 @@
   }
 
   $db = new mod_db();
-  $partes = $db->select("partes_autos", "*", "id_marca = '$marca' AND id_modelo = '$modelo'");
+  $partes = $db->partes($marca, $modelo);
+  $total_productos = $partes['total'] ?? 0;
 
+  // --- Paginación ---
+  $cantidades = [8, 12, 16, 'todos'];
+  $por_pagina = isset($_GET['por_pagina']) && in_array($_GET['por_pagina'], ['8','12','16','todos']) ? $_GET['por_pagina'] : 8;
+  $pagina = isset($_GET['pagina']) ? max(1, intval($_GET['pagina'])) : 1;
+
+  if ($por_pagina === 'todos') {
+    $por_pagina_val = $total_productos > 0 ? $total_productos : 1;
+    $total_paginas = 1;
+    $offset = 0;
+  } else {
+    $por_pagina_val = intval($por_pagina);
+    $total_paginas = $por_pagina_val > 0 ? ceil($total_productos / $por_pagina_val) : 1;
+    $offset = ($pagina - 1) * $por_pagina_val;
+  }
+
+  // Obtener partes de la página actual
+  if ($por_pagina === 'todos') {
+    $partes_pagina = $db->partes($marca, $modelo);
+  } else {
+    $partes_pagina = $db->partes($marca, $modelo, $offset, $por_pagina_val);
+  }
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -21,7 +43,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Partes del Vehículo</title>
   <link rel="stylesheet" href="../estilos/estiloModelo.css" />
-  <style></style>
+  <style>
+    .pagination { margin: 2rem 0; text-align: center; }
+    .pagination a, .pagination span {
+      display: inline-block; padding: 8px 14px; margin: 0 2px; border-radius: 4px;
+      background: #f1f5f9; color: #2563eb; text-decoration: none; font-weight: 500;
+    }
+    .pagination a.active, .pagination span.active { background: #2563eb; color: #fff; }
+    .pagination a.disabled { pointer-events: none; color: #aaa; }
+    .per-page-links { text-align: right; margin: 1rem 0; }
+    .per-page-links a, .per-page-links span {
+      margin-left: 8px; color: #2563eb; text-decoration: underline; cursor: pointer;
+    }
+    .per-page-links span.selected {
+      font-weight: bold; color: #fff; background: #2563eb; padding: 2px 8px; border-radius: 4px; text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <main class="container">
@@ -31,6 +68,7 @@
         <p class="hero-subtitle">Explora las piezas disponibles para tu modelo.</p>
       </div>
     </section>
+
 
     <!-- Barra de búsqueda -->
     <div class="search-container">
@@ -52,49 +90,70 @@
       <div class="filter-chip" data-categoria="vidrios">Vidrios</div>
     </div>
 
+
+    <!-- Selector de cantidad por página como enlaces -->
+    <div class="per-page-links">
+      Cantidad:
+      <?php foreach ($cantidades as $cant): ?>
+        <?php
+          $is_selected = ($por_pagina == $cant);
+          $url = "?marca=" . urlencode($marca) . "&modelo=" . urlencode($modelo) . "&por_pagina=$cant";
+          if ($cant !== 'todos' && $pagina > 1) $url .= "&pagina=1";
+        ?>
+        <?php if ($is_selected): ?>
+          <span class="selected"><?= $cant === 'todos' ? 'Todos' : $cant ?></span>
+        <?php else: ?>
+          <a href="<?= $url ?>"><?= $cant === 'todos' ? 'Todos' : $cant ?></a>
+        <?php endif; ?>
+      <?php endforeach; ?>
+    </div>
+
     <!-- Partes del auto -->
     <div class="parts-grid">
-      <?php foreach ($partes as $parte): ?>
+      <?php foreach ($partes_pagina as $parte): ?>
+        <?php if (!is_array($parte)) continue; ?>
         <div class="part-card" data-categoria="<?= strtolower($parte['categoria'] ?? 'otros') ?>">
           <div class="part-image-container">
-            <img src="../imagenes/<?= htmlspecialchars($parte['imagen'] ?? 'sin-imagen.jpg') ?>" alt="<?= htmlspecialchars($parte['nombre']) ?>" class="part-image" />
-            <a href="detalle_partes.php?id=<?= $parte['id_parte'] ?>" class="zoom-btn" aria-label="Ver detalles">
+            <img src="../imagenes/<?= htmlspecialchars($parte['imagen'] ?? 'sin-imagen.jpg') ?>"
+                 alt="<?= htmlspecialchars($parte['nombre'] ?? 'Sin nombre') ?>" class="part-image" />
+            <a href="detalle_partes.php?id=<?= $parte['id_parte'] ?? 0 ?>" class="zoom-btn" aria-label="Ver detalles">
               <i class="fas fa-search-plus"></i>
             </a>
           </div>
           <div class="part-content">
-            <h3 class="part-title"><?= htmlspecialchars($parte['nombre']) ?></h3>
-            <p class="part-description"><?= htmlspecialchars($parte['descripcion']) ?></p>
+            <h3 class="part-title"><?= htmlspecialchars($parte['nombre'] ?? 'Sin nombre') ?></h3>
+            <p class="part-description"><?= htmlspecialchars($parte['descripcion'] ?? '') ?></p>
           </div>
         </div>
       <?php endforeach; ?>
     </div>
 
-    <!-- Paginación (estática visual) -->
+    <!-- Paginación -->
+    <?php if ($por_pagina !== 'todos' && $total_paginas > 1): ?>
     <div class="pagination">
-      <a href="#" class="disabled">&laquo;</a>
-      <a href="#" class="active">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">&raquo;</a>
+      <?php if ($pagina > 1): ?>
+        <a href="?marca=<?= urlencode($marca) ?>&modelo=<?= urlencode($modelo) ?>&por_pagina=<?= $por_pagina ?>&pagina=<?= $pagina-1 ?>">&laquo;</a>
+      <?php else: ?>
+        <span class="disabled">&laquo;</span>
+      <?php endif; ?>
+
+      <?php for ($i = 1; $i <= $total_paginas; $i++): ?>
+        <?php if ($i == $pagina): ?>
+          <span class="active"><?= $i ?></span>
+        <?php else: ?>
+          <a href="?marca=<?= urlencode($marca) ?>&modelo=<?= urlencode($modelo) ?>&por_pagina=<?= $por_pagina ?>&pagina=<?= $i ?>"><?= $i ?></a>
+        <?php endif; ?>
+      <?php endfor; ?>
+
+      <?php if ($pagina < $total_paginas): ?>
+        <a href="?marca=<?= urlencode($marca) ?>&modelo=<?= urlencode($modelo) ?>&por_pagina=<?= $por_pagina ?>&pagina=<?= $pagina+1 ?>">&raquo;</a>
+      <?php else: ?>
+        <span class="disabled">&raquo;</span>
+      <?php endif; ?>
     </div>
+    <?php endif; ?>
   </main>
 
 <?php include('footer.php'); ?>
-
-<script>
-  // Filtrado visual de partes por categoría
-  document.querySelectorAll('.filter-chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-
-      const categoria = chip.dataset.categoria;
-      document.querySelectorAll('.part-card').forEach(card => {
-        card.style.display = (categoria === 'todos' || card.dataset.categoria === categoria) ? 'block' : 'none';
-      });
-    });
-  });
-</script>
 </body>
 </html>
