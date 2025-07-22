@@ -1,8 +1,19 @@
 <?php 
 include('navbar.php'); 
 
-// Aquí defines la cantidad real de stock (puede venir de base de datos)
-$stockCantidad = 7; // Ejemplo: cambia a 3, 8, 12 o 0 para probar
+include('../clases/conexion.php');
+
+  if (isset($_GET['id'])) {
+    $id_parte = htmlspecialchars($_GET['id']);
+  } else {
+    echo "<script>alert('Marca y modelo no especificados.');</script>";
+    exit;
+  }
+
+  $db = new mod_db();
+  $detalles = $db->obtenerProducto($id_parte);
+  $stock = isset($detalles['cantidad_stock']) ? intval($detalles['cantidad_stock']) : 0;
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -50,7 +61,7 @@ $stockCantidad = 7; // Ejemplo: cambia a 3, 8, 12 o 0 para probar
       <a href="javascript:history.back()" class="back-button">
         <i class="fas fa-arrow-left"></i> Volver
       </a>
-      <h1 class="detail-title">Alternador Premium Toyota Corolla</h1>
+      <h1 class="detail-title"><?php echo $detalles['nombre']  ?></h1>
     </div>
   </section>
 
@@ -60,13 +71,15 @@ $stockCantidad = 7; // Ejemplo: cambia a 3, 8, 12 o 0 para probar
     </div>
 
     <div class="detail-info">
-      <div class="detail-price">$289.99</div>
+      <div class="detail-price"><?php echo $detalles['precio'];?></div>
       <div class="detail-meta">
-        <span class="stock-badge" id="stockBadge">En stock (<?php echo $stockCantidad; ?> unidades)</span>
+        <span class="stock-badge" id="stockBadge">
+          <?= $stock > 0 ? "En stock ($stock unidades)" : "Sin stock disponible" ?>
+        </span>
       </div>
 
       <p class="detail-description">
-        Panel lateral diseñado específicamente para vehículos Ford modelo F-150 del año 2010. Forma parte de la categoría 'Carroceria' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado liso en color azul oscuro, que asegura no solo resistencia y durabilidad, sino también una integración estética con el diseño original del vehículo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones óptimas.
+        <?php echo $detalles['descripcion'];?>
       </p>
 
       <h3 class="specs-title">Especificaciones</h3>
@@ -75,47 +88,47 @@ $stockCantidad = 7; // Ejemplo: cambia a 3, 8, 12 o 0 para probar
           <div class="spec-icon"><i class="fas fa-cog"></i></div>
           <div>
             <div class="spec-label">Parte</div>
-            <div class="spec-value">Alternador</div>
+            <div class="spec-value"><?php echo $detalles['nombre'];?></div>
           </div>
         </div>
         <div class="spec-item">
           <div class="spec-icon"><i class="fas fa-industry"></i></div>
           <div>
             <div class="spec-label">Marca</div>
-            <div class="spec-value">Toyota</div>
+            <div class="spec-value"><?php echo $detalles['marca'];?></div>
           </div>
         </div>
         <div class="spec-item">
           <div class="spec-icon"><i class="fas fa-car-side"></i></div>
           <div>
             <div class="spec-label">Modelo</div>
-            <div class="spec-value">Corolla</div>
+            <div class="spec-value"><?php echo $detalles['modelo'];?></div>
           </div>
         </div>
         <div class="spec-item">
           <div class="spec-icon"><i class="fas fa-calendar-alt"></i></div>
           <div>
             <div class="spec-label">Año</div>
-            <div class="spec-value">2018</div>
+            <div class="spec-value"><?php echo $detalles['anio'];?></div>
           </div>
         </div>
         <div class="spec-item">
           <div class="spec-icon"><i class="fas fa-tags"></i></div>
           <div>
             <div class="spec-label">Categoría</div>
-            <div class="spec-value">Motor</div>
+            <div class="spec-value"><?php echo $detalles['categoria'];?></div>
           </div>
         </div>
         <div class="spec-item">
           <div class="spec-icon"><i class="fas fa-barcode"></i></div>
           <div>
             <div class="spec-label">Código de Serie</div>
-            <div class="spec-value">ALT-TY-COR18-002</div>
+            <div class="spec-value"><?php echo $detalles['codigo_serie'];?></div>
           </div>
         </div>
       </div>
 
-      <?php if (isset($_SESSION['usuario'])): ?>
+      <?php if ($_SESSION['autenticado'] == 'SI'): ?>
       <div class="quantity-controls">
         <div class="quantity-selector">
           <button class="quantity-btn minus-btn" onclick="decrementQuantity()">
@@ -126,7 +139,7 @@ $stockCantidad = 7; // Ejemplo: cambia a 3, 8, 12 o 0 para probar
             id="cantidadProducto" 
             class="quantity-input" 
             min="1" 
-            max="<?php echo $stockCantidad; ?>" 
+            max="<?php echo $stock; ?>" 
             value="1" 
             onchange="validateQuantity()" 
           />

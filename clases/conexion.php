@@ -185,6 +185,42 @@ class mod_db
 	}
 
 
+	public function obtenerProducto($id_parte)
+	{
+		try {
+			$sql = "SELECT 
+			pa.id_parte,
+			pa.nombre,
+			pa.descripcion,
+			pa.precio,
+			pa.cantidad_stock,
+			pa.codigo_serie,
+			pa.id_marca,
+			pa.id_modelo,
+			pa.imagen,
+			pa.imagen_thumbnail,
+			ca.categoria,
+			ma.marca,
+			mo.modelo,
+			mo.anio
+			FROM partes_autos AS pa
+			INNER JOIN categoria AS ca ON pa.id_cat = ca.id_cat
+			INNER JOIN marca AS ma ON pa.id_marca = ma.id_marca
+			INNER JOIN modelo AS mo ON pa.id_modelo = mo.id_modelo
+			WHERE pa.id_parte = :id_parte";
+			$stmt = $this->conexion->prepare($sql);
+			$stmt->bindParam(':id_parte', $id_parte, PDO::PARAM_INT);
+			$stmt->execute();
+			$result = $stmt->fetch(PDO::FETCH_ASSOC);
+			Logger::info("Intento de Registrar Trazabilidad: " . json_encode($result));
+			return $result;	
+		} catch (PDOException $e) {
+			echo "Error al obtener producto: " . $e->getMessage();
+			return false;
+		}
+	}
+
+
 	public function registrarTrazabilidad($tabla, $accion, $codigoRegistro, $usuario) {
         $fechaSistema = date('Y-m-d H:i:s');
         $ip = $_SERVER['REMOTE_ADDR'] ?? gethostbyname(gethostname()) ?? 'IP_NO_DETECTADA';
