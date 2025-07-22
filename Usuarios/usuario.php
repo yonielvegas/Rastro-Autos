@@ -6,7 +6,6 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] != 1) {
     exit();
 }
 
-
 include 'modal_usuario.php';
 include '../comunes/navbar.php';
 include '../clases/conexion.php';
@@ -29,6 +28,19 @@ function badgeEstado($activo) {
   <link rel="stylesheet" href="../estilos/estiloLista.css" />
   <title>Usuarios - Sistema de Inventario</title>
   <style>
+    .search-bar {
+      align-items: left;
+      width: 250px; 
+    }
+
+    .search-bar input {
+      width: 100%; 
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      display: block;
+    }
 
   </style>
 </head>
