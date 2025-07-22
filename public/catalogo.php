@@ -6,149 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Selecciona tu Auto</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --primary: #2563eb;
-      --primary-hover: #1d4ed8;
-      --gray: #f3f4f6;
-      --dark: #111827;
-    }
-    
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--gray);
-      margin: 0;
-    }
-    
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
-    h1 {
-      text-align: center;
-      color: var(--dark);
-      margin-bottom: 40px;
-    }
-    
-    /* Contenedor de logos */
-    .brands-container {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin-bottom: 40px;
-      flex-wrap: wrap;
-    }
-    
-    .brand-logo {
-      width: 100px;
-      height: auto;
-      cursor: pointer;
-      opacity: 0.6;
-      transition: all 0.3s ease;
-      filter: grayscale(100%);
-    }
-    
-    .brand-logo:hover,
-    .brand-logo.active {
-      opacity: 1;
-      filter: none;
-      transform: scale(1.1);
-    }
-    
-    .models-container {
-      display: none;
-      background: white;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    
-    .models-container.active {
-      display: block;
-    }
-    
-    .brand-title {
-      font-size: 1.5rem;
-      margin-top: 0;
-      color: var(--dark);
-      border-bottom: 2px solid var(--primary);
-      padding-bottom: 10px;
-      display: inline-block;
-    }
-    
-    .models-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-    
-    .model-card {
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-    
-    .model-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    
-    .model-image {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-    }
-    
-    .model-info {
-      padding: 15px;
-    }
-    
-    .model-name {
-      font-weight: 600;
-      margin: 0 0 5px 0;
-    }
-    
-    .model-year {
-      color: #6b7280;
-      font-size: 0.9rem;
-      margin: 0 0 15px 0;
-    }
-    
-    .select-btn {
-      display: block;
-      width: 100%;
-      padding: 8px;
-      background: var(--primary);
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-weight: 500;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    
-    .select-btn:hover {
-      background: var(--primary-hover);
-    }
-    
-    @media (max-width: 768px) {
-      .brands-container {
-        flex-direction: column;
-        align-items: center;
-      }
-      
-      .brand-logo {
-        width: 150px;
-        margin-bottom: 20px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../estilos/estiloCatalogo.css" />
 </head>
 <body>
   <div class="container">
@@ -170,7 +28,7 @@
           <div class="model-info">
             <h3 class="model-name">Corolla</h3>
             <p class="model-year">2023</p>
-            <a href="detalle-modelo.php?marca=toyota&modelo=corolla" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=toyota&modelo=corolla" class="select-btn">Seleccionar</a>
           </div>
         </div>
         
@@ -179,7 +37,7 @@
           <div class="model-info">
             <h3 class="model-name">RAV4</h3>
             <p class="model-year">2022</p>
-            <a href="detalle-modelo.php?marca=toyota&modelo=rav4" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=toyota&modelo=rav4" class="select-btn">Seleccionar</a>
           </div>
         </div>
         
@@ -188,7 +46,7 @@
           <div class="model-info">
             <h3 class="model-name">Prado</h3>
             <p class="model-year">2011</p>
-            <a href="detalle-modelo.php?marca=toyota&modelo=prius" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=toyota&modelo=prado" class="select-btn">Seleccionar</a>
           </div>
         </div>
       </div>
@@ -203,7 +61,7 @@
           <div class="model-info">
             <h3 class="model-name">CX-5</h3>
             <p class="model-year">2011</p>
-            <a href="detalle-modelo.php?marca=mazda&modelo=cx-5" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=mazda&modelo=cx-5" class="select-btn">Seleccionar</a>
           </div>
         </div>
         
@@ -212,7 +70,7 @@
           <div class="model-info">
             <h3 class="model-name">MX-5 Miata</h3>
             <p class="model-year">2016</p>
-            <a href="detalle-modelo.php?marca=mazda&modelo=mx-5-miata" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=mazda&modelo=mx-5-miata" class="select-btn">Seleccionar</a>
           </div>
         </div>
         
@@ -221,7 +79,7 @@
           <div class="model-info">
             <h3 class="model-name">CX-30</h3>
             <p class="model-year">2022</p>
-            <a href="detalle-modelo.php?marca=mazda&modelo=cx-30" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=mazda&modelo=cx-30" class="select-btn">Seleccionar</a>
           </div>
         </div>
       </div>
@@ -236,7 +94,7 @@
           <div class="model-info">
             <h3 class="model-name">Mustang</h3>
             <p class="model-year">2005</p>
-            <a href="detalle-modelo.php?marca=ford&modelo=mustang" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=ford&modelo=mustang" class="select-btn">Seleccionar</a>
           </div>
         </div>
         
@@ -245,7 +103,7 @@
           <div class="model-info">
             <h3 class="model-name">Escape</h3>
             <p class="model-year">2012</p>
-            <a href="detalle-modelo.php?marca=ford&modelo=escape" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=ford&modelo=escape" class="select-btn">Seleccionar</a>
           </div>
         </div>
         
@@ -254,7 +112,7 @@
           <div class="model-info">
             <h3 class="model-name">F-150</h3>
             <p class="model-year">2010</p>
-            <a href="detalle-modelo.php?marca=ford&modelo=f-150" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=ford&modelo=f-150" class="select-btn">Seleccionar</a>
           </div>
         </div>
       </div>
