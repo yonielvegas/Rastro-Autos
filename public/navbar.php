@@ -1,8 +1,5 @@
 <?php
 session_start();
-$_SESSION['usuario'] = true; // Cambia a true para simular sesión activa
-$_SESSION['nombre'] = "Juan Pérez";
-$_SESSION['foto'] = "https://via.placeholder.com/32"; // o tu ruta real
 ?>
 
 <!DOCTYPE html>
@@ -281,10 +278,10 @@ $_SESSION['foto'] = "https://via.placeholder.com/32"; // o tu ruta real
         </div>
 
         <div class="user-actions">
-          <?php if (isset($_SESSION['usuario']) && $_SESSION['usuario'] === true): ?>
+          <?php if (isset($_SESSION['autenticado']) && $_SESSION['autenticado'] == "SI"): ?>
             <div class="user-info">
               <img src="<?= $_SESSION['foto'] ?? 'default-user.jpg' ?>" alt="Foto de usuario" class="user-photo">
-              <span class="user-name"><?= htmlspecialchars($_SESSION['nombre']) ?></span>
+              <span class="user-name"><?= htmlspecialchars($_SESSION['usuario']) ?></span>
             </div>
             <a href="carrito.php" class="icon-link" title="Carrito">
               <i class="fas fa-shopping-cart"></i>
@@ -292,8 +289,8 @@ $_SESSION['foto'] = "https://via.placeholder.com/32"; // o tu ruta real
             </a>
             <a href="../comunes/logout.php" class="nav-link">Cerrar sesión</a>
           <?php else: ?>
-            <a href="login.php" class="btn btn-outline">Iniciar sesión</a>
-            <a href="registro.php" class="btn btn-primary">Registrarse</a>
+            <a href="../login.php" class="btn btn-outline">Iniciar sesión</a>
+            <a href="../registro.php" class="btn btn-primary">Registrarse</a>
           <?php endif; ?>
         </div>
       </div>

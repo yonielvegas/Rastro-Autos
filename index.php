@@ -32,6 +32,7 @@ if ($Logearme->logger()) {
     if ($Logearme->getIntentoLogin()) {
         $_SESSION['autenticado'] = "SI";
         $_SESSION['usuario'] = $Logearme->getUsuario();
+        $_SESSION['foto'] = "https://via.placeholder.com/32";
         $Logearme->registrarIntentos(1);
         $tolog = false;
 
@@ -47,7 +48,7 @@ if ($Logearme->logger()) {
             redireccionar("Usuarios/usuario.php");
         } elseif ($rol == 3){
             $_SESSION['rol'] =$rol;
-            redireccionar("public/listado_partes.php");
+            redireccionar("public/catalogo.php");
         } else {
             redireccionar("login.php");
         }
