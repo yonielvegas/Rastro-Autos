@@ -30,27 +30,32 @@ function badgeEstado($activo) {
   <title>Usuarios - Sistema de Inventario</title>
   <style>
 
-
   </style>
 </head>
 <body>
 
 <?php include '../comunes/sidebar.php'; ?>
 
-<div class="main-content" id="mainContent">
+<div class="main-content" id="mainContent" style="padding-top: 70px;">
   <div class="container">
-    <div class="header">
-      <h2>Gestión de Usuarios</h2>
-      <a href="#" class="btn btn-primary" onclick="abrirModalUsuario(); return false;">
-        <i class="fas fa-plus"></i> Nuevo Usuario
-      </a>
-    </div>
+<div class="header">
+  <h2>Gestión de Usuarios</h2>
 
+  <!-- Barra de búsqueda -->
+  <div class="search-bar">
+    <input type="text" id="busqueda" placeholder="Buscar usuario...">
+  </div>
+
+  <a href="#" class="btn btn-primary" onclick="abrirModalUsuario(); return false;">
+    <i class="fas fa-plus"></i> Nuevo Usuario
+  </a>
+</div>
     <div class="card">
       <div class="table-responsive">
         <table>
           <thead>
-            <tr>
+            <tr>              
+              <th>Rol</th>
               <th>Nombre</th>
               <th>Apellido</th>
               <th>Correo</th>
@@ -63,6 +68,7 @@ function badgeEstado($activo) {
           <tbody>
             <?php foreach ($usuarios as $usuario): ?>
               <tr>
+                <!-- ROL -->
                 <td><?= htmlspecialchars($usuario['nombre']) ?></td>
                 <td><?= htmlspecialchars($usuario['apellido']) ?></td>
                 <td><?= htmlspecialchars($usuario['correo']) ?></td>
