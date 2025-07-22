@@ -17,8 +17,11 @@
 </nav>
 
 <style>
-  /* ... tu CSS existente ... */
   .navbar {
+    position: fixed; /* FIJAR ARRIBA */
+    top: 0;
+    left: 0;
+    right: 0;
     height: 70px;
     background-color: #212529;
     color: white;
@@ -27,6 +30,8 @@
     justify-content: flex-end;
     align-items: center;
     box-sizing: border-box;
+    z-index: 90; /* Más alto que el sidebar */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   }
 
   .user-info {
@@ -139,7 +144,18 @@
     border-radius: 4px;
     cursor: pointer;
   }
+
+  /* Para evitar que contenido quede oculto debajo del navbar */
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+  main, .content {
+    padding-top: 70px; /* Altura navbar */
+  }
 </style>
+
 
 <script>
   const usuario = {

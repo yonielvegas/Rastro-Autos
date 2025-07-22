@@ -1,0 +1,199 @@
+
+    :root {
+      --primary: #4361ee;
+    }
+
+    /* Centrar el contenedor principal en la página */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      width: 800px;
+      width: 90%;
+      margin: 0 auto;
+      padding: 30px 35px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(67, 97, 238, 0.15);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .form-container:hover {
+      box-shadow: 0 15px 40px rgba(67, 97, 238, 0.25);
+    }
+
+    .form-container h2 {
+      margin-top: 0;
+      margin-bottom: 25px;
+      color: #2c3e50;
+      font-size: 26px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #34495e;
+      font-size: 14px;
+    }
+
+    .input-wrapper {
+      position: relative;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+      box-sizing: border-box;
+    }
+
+    input[type="text"]:focus,
+    select:focus {
+      border-color: var(--primary);
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
+    }
+
+    .autocomplete-items {
+      position: absolute;
+      border: 1px solid #ddd;
+      border-top: none;
+      z-index: 99;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      border-radius: 0 0 6px 6px;
+      max-height: 200px;
+      overflow-y: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .autocomplete-item {
+      padding: 10px 15px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .autocomplete-item:hover {
+      background-color: #f8f9fa;
+    }
+
+    .autocomplete-item strong {
+      color: var(--primary);
+    }
+
+    .role-badge {
+      background: #e8f4fc;
+      color: #2980b9;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    #permisos-container {
+      margin: 25px 0;
+      padding: 15px;
+      background: #f8f9fa;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    #permisos-container label {
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .checkbox-group label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+
+    .checkbox-group input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--primary);
+      cursor: pointer;
+    }
+
+    /* Botón mejorado */
+    .btn {
+      width: 100%;
+      padding: 14px 0;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(67, 97, 238, 0.4);
+      transition: background-color 0.35s ease, box-shadow 0.35s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #2f4fd4;
+      box-shadow: 0 8px 20px rgba(47, 79, 212, 0.6);
+      transform: translateY(-2px);
+    }
+
+    .btn:active {
+      background-color: #1f3db0;
+      box-shadow: 0 4px 10px rgba(31, 61, 176, 0.7);
+      transform: translateY(0);
+    }
+
+    /* Estilos para el scroll del autocomplete */
+    .autocomplete-items::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .autocomplete-items::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 0 0 6px 0;
+    }
+
+    .autocomplete-items::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 4px;
+    }
+
+    .autocomplete-items::-webkit-scrollbar-thumb:hover {
+      background: #a8a8a8;
+    }
+        body.sidebar-collapsed .main-content {
+      margin-left: var(--sidebar-collapsed-width);
+    }
+    

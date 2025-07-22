@@ -345,3 +345,7 @@ tr:hover {
 .btn-deactivate:hover {
   background-color: #d31b6c;
 }
+
+    body.sidebar-collapsed .main-content {
+      margin-left: var(--sidebar-collapsed-width);
+    }

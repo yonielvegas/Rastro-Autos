@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-// Verifica que sea admin
 if (!isset($_SESSION['rol']) || $_SESSION['rol'] != 1) {
     header("Location: ../Inventario/inventario.php"); //Cambiar Pagina
     exit();
 }
+
 
 include 'modal_usuario.php';
 include '../comunes/navbar.php';
@@ -28,6 +28,10 @@ function badgeEstado($activo) {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="../estilos/estiloLista.css" />
   <title>Usuarios - Sistema de Inventario</title>
+  <style>
+
+
+  </style>
 </head>
 <body>
 
@@ -88,20 +92,6 @@ function badgeEstado($activo) {
 </div>
 
 <script>
-  // Manejar el responsive del sidebar NO TOCAR
-  document.addEventListener('DOMContentLoaded', function () {
-    const toggleBtn = document.getElementById('toggleBtn');
-    const sidebar = document.getElementById('sidebar');
-
-    toggleBtn.addEventListener('click', function () {
-      sidebar.classList.toggle('collapsed');
-
-      const mainContent = document.getElementById('mainContent');
-      if (mainContent) {
-        mainContent.classList.toggle('expanded');
-      }
-    });
-  });
   document.querySelectorAll('.btn-toggle').forEach(btn => {
     btn.addEventListener('click', function (e) {
       e.preventDefault();

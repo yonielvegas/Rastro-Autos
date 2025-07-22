@@ -10,7 +10,8 @@
   --header-height: 70px;
 }
 
-.sidebar {
+/* Aumentamos especificidad con el id del contenedor padre */
+#app-sidebar-container .sidebar {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,17 +25,17 @@
   white-space: nowrap;
 }
 
-.sidebar.collapsed {
+#app-sidebar-container .sidebar.collapsed {
   width: var(--sidebar-collapsed-width);
   overflow: visible;
 }
 
-.sidebar.collapsed:hover {
+#app-sidebar-container .sidebar.collapsed:hover {
   width: var(--sidebar-width);
   overflow-y: auto;
 }
 
-.sidebar-header {
+#app-sidebar-container .sidebar-header {
   height: var(--header-height);
   display: flex;
   align-items: center;
@@ -44,25 +45,25 @@
   white-space: nowrap;
 }
 
-.sidebar-header h3 {
+#app-sidebar-container .sidebar-header h3 {
   opacity: 1;
   transition: opacity 0.3s ease, width 0.3s ease;
 }
 
-.sidebar.collapsed .sidebar-header h3 {
+#app-sidebar-container .sidebar.collapsed .sidebar-header h3 {
   opacity: 0;
   width: 0;
   pointer-events: none;
 }
 
-.sidebar.collapsed:hover .sidebar-header h3 {
+#app-sidebar-container .sidebar.collapsed:hover .sidebar-header h3 {
   opacity: 1;
   width: auto;
   pointer-events: auto;
   transition-delay: 0.2s;
 }
 
-.toggle-btn {
+#app-sidebar-container .toggle-btn {
   background: none;
   border: none;
   color: white;
@@ -71,11 +72,11 @@
   padding: 5px;
 }
 
-.sidebar-menu {
+#app-sidebar-container .sidebar-menu {
   padding: 20px 0;
 }
 
-.menu-item {
+#app-sidebar-container .menu-item {
   display: flex;
   align-items: center;
   padding: 12px 20px;
@@ -86,14 +87,14 @@
   overflow: hidden;
 }
 
-.menu-item:hover,
-.menu-item.active {
+#app-sidebar-container .menu-item:hover,
+#app-sidebar-container .menu-item.active {
   background: rgba(255, 255, 255, 0.1);
   color: white;
 }
 
 /* Íconos siempre alineados a la izquierda con margen a la derecha */
-.menu-item i {
+#app-sidebar-container .menu-item i {
   min-width: 20px;
   font-size: 18px;
   margin-right: 15px;
@@ -101,7 +102,7 @@
 }
 
 /* Texto oculto al colapsar */
-.sidebar.collapsed .menu-item span {
+#app-sidebar-container .sidebar.collapsed .menu-item span {
   opacity: 0;
   width: 0;
   pointer-events: none;
@@ -109,7 +110,7 @@
 }
 
 /* Mostrar texto al hacer hover sobre sidebar colapsado */
-.sidebar.collapsed:hover .menu-item span {
+#app-sidebar-container .sidebar.collapsed:hover .menu-item span {
   opacity: 1;
   width: auto;
   pointer-events: auto;
@@ -117,62 +118,86 @@
 }
 
 @media (max-width: 768px) {
-  .sidebar {
+  #app-sidebar-container .sidebar {
     width: var(--sidebar-collapsed-width);
     overflow: hidden;
   }
-  .sidebar-header h3,
-  .menu-item span {
+  #app-sidebar-container .sidebar-header h3,
+  #app-sidebar-container .menu-item span {
     opacity: 0;
     width: 0;
   }
-  .sidebar:hover {
+  #app-sidebar-container .sidebar:hover {
     width: var(--sidebar-width);
     overflow-y: auto;
   }
-  .sidebar:hover .sidebar-header h3,
-  .sidebar:hover .menu-item span {
+  #app-sidebar-container .sidebar:hover .sidebar-header h3,
+  #app-sidebar-container .sidebar:hover .menu-item span {
     opacity: 1;
     width: auto;
   }
+  
 }
 </style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-header">
-    <h3>Inventario Autos</h3>
-    <button class="toggle-btn" id="toggleBtn" aria-label="Toggle sidebar">
-      <i class="fas fa-bars"></i>
-    </button>
-  </div>
+<div id="app-sidebar-container">
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h3>Inventario Autos</h3>
+      <button class="toggle-btn" id="toggleBtn" aria-label="Toggle sidebar">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
 
-  <div class="sidebar-menu">
-    <a href="../home.php" class="menu-item <?php if (in_array($currentFile, ['home.php'])) echo 'active'; ?>">
-      <i class="fas fa-home"></i>
-      <span>Inicio</span>
-    </a>
-    <a href="../inventario/inventario.php" class="menu-item <?php if (in_array($currentFile, ['inventario.php'])) echo 'active'; ?>">
-      <i class="fas fa-boxes"></i>
-      <span>Inventario</span>
-    </a>
-    <a href="../usuarios/usuario.php" class="menu-item <?php if (in_array($currentFile, ['usuario.php', 'usuario_form.php'])) echo 'active'; ?>">
-      <i class="fas fa-user"></i>
-      <span>Usuario</span>
-    </a>
-    <a href="../roles/roles.php" class="menu-item <?php if (in_array($currentFile, ['roles.php', 'roles_form.php'])) echo 'active'; ?>">
-      <i class="fas fa-user-tag"></i>
-      <span>Roles</span>
-    </a>
-    <a href="../secciones/secciones.php" class="menu-item <?php if (in_array($currentFile, ['secciones.php', 'secciones_form.php'])) echo 'active'; ?>">
-      <i class="fas fa-th-large"></i>
-      <span>Secciones</span>
-    </a>
-    <a href="../comunes/logout.php" class="menu-item">
-      <i class="fas fa-sign-out-alt"></i>
-      <span>Cerrar Sesión</span>
-    </a>
+    <div class="sidebar-menu">
+      <a href="../home.php" class="menu-item <?php if (in_array($currentFile, ['home.php'])) echo 'active'; ?>">
+        <i class="fas fa-home"></i>
+        <span>Inicio</span>
+      </a>
+      <a href="../inventario/inventario.php" class="menu-item <?php if (in_array($currentFile, ['inventario.php'])) echo 'active'; ?>">
+        <i class="fas fa-boxes"></i>
+        <span>Inventario</span>
+      </a>
+      <a href="../usuarios/usuario.php" class="menu-item <?php if (in_array($currentFile, ['usuario.php', 'usuario_form.php'])) echo 'active'; ?>">
+        <i class="fas fa-user"></i>
+        <span>Usuario</span>
+      </a>
+      <a href="../roles/roles.php" class="menu-item <?php if (in_array($currentFile, ['roles.php', 'roles_form.php'])) echo 'active'; ?>">
+        <i class="fas fa-user-tag"></i>
+        <span>Roles</span>
+      </a>
+      <a href="../secciones/secciones.php" class="menu-item <?php if (in_array($currentFile, ['secciones.php', 'secciones_form.php'])) echo 'active'; ?>">
+        <i class="fas fa-th-large"></i>
+        <span>Secciones</span>
+      </a>
+      <a href="../comunes/logout.php" class="menu-item">
+        <i class="fas fa-sign-out-alt"></i>
+        <span>Cerrar Sesión</span>
+      </a>
+    </div>
   </div>
-
 </div>
+
+<script>
+  const sidebar = document.getElementById('sidebar');
+  const toggleBtn = document.getElementById('toggleBtn');
+
+  // Al cargar la página, aplica estado colapsado si estaba guardado
+  if (localStorage.getItem('sidebarCollapsed') === 'true') {
+    sidebar.classList.add('collapsed');
+    document.body.classList.add('sidebar-collapsed');
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('collapsed');
+    const isCollapsed = sidebar.classList.contains('collapsed');
+
+    // También aplica clase al <body> para afectar el contenido
+    document.body.classList.toggle('sidebar-collapsed', isCollapsed);
+
+    // Guarda estado en localStorage
+    localStorage.setItem('sidebarCollapsed', isCollapsed);
+  });
+</script>
