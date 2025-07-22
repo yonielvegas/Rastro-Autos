@@ -155,5 +155,45 @@
   </main>
 
 <?php include('footer.php'); ?>
+
+
+<script>
+  // Filtro por categoría
+  document.querySelectorAll('.filter-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      filtrarPartes();
+    });
+  });
+
+  // Filtro por texto
+  document.querySelector('.search-input').addEventListener('input', filtrarPartes);
+
+  function filtrarPartes() {
+    const categoria = document.querySelector('.filter-chip.active').dataset.categoria;
+    const texto = document.querySelector('.search-input').value.toLowerCase();
+
+    document.querySelectorAll('.part-card').forEach(card => {
+      const cat = card.dataset.categoria;
+      const nombre = card.querySelector('.part-title').textContent.toLowerCase();
+      const desc = card.querySelector('.part-description').textContent.toLowerCase();
+
+      const coincideCategoria = (categoria === 'todos' || cat === categoria);
+      const coincideTexto = (
+        nombre.includes(texto) ||
+        desc.includes(texto) ||
+        cat.includes(texto)
+      );
+
+      if (coincideCategoria && coincideTexto) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
+
 </body>
 </html>
