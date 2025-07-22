@@ -28,7 +28,7 @@
           <div class="model-info">
             <h3 class="model-name">Corolla</h3>
             <p class="model-year">2023</p>
-            <a href="modelos.php?marca=toyota&modelo=corolla" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=1&modelo=1" class="select-btn">Seleccionar</a>
           </div>
         </div>
         
@@ -37,7 +37,7 @@
           <div class="model-info">
             <h3 class="model-name">RAV4</h3>
             <p class="model-year">2022</p>
-            <a href="modelos.php?marca=toyota&modelo=rav4" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=1&modelo=2" class="select-btn">Seleccionar</a>
           </div>
         </div>
         
@@ -46,7 +46,7 @@
           <div class="model-info">
             <h3 class="model-name">Prado</h3>
             <p class="model-year">2011</p>
-            <a href="modelos.php?marca=toyota&modelo=prado" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=1&modelo=3" class="select-btn">Seleccionar</a>
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@
           <div class="model-info">
             <h3 class="model-name">CX-5</h3>
             <p class="model-year">2011</p>
-            <a href="modelos.php?marca=mazda&modelo=cx-5" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=2&modelo=4" class="select-btn">Seleccionar</a>
           </div>
         </div>
         
@@ -70,7 +70,7 @@
           <div class="model-info">
             <h3 class="model-name">MX-5 Miata</h3>
             <p class="model-year">2016</p>
-            <a href="modelos.php?marca=mazda&modelo=mx-5-miata" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=2&modelo=5" class="select-btn">Seleccionar</a>
           </div>
         </div>
         
@@ -79,7 +79,7 @@
           <div class="model-info">
             <h3 class="model-name">CX-30</h3>
             <p class="model-year">2022</p>
-            <a href="modelos.php?marca=mazda&modelo=cx-30" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=2&modelo=6" class="select-btn">Seleccionar</a>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@
           <div class="model-info">
             <h3 class="model-name">Mustang</h3>
             <p class="model-year">2005</p>
-            <a href="modelos.php?marca=ford&modelo=mustang" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=3&modelo=7" class="select-btn">Seleccionar</a>
           </div>
         </div>
         
@@ -103,7 +103,7 @@
           <div class="model-info">
             <h3 class="model-name">Escape</h3>
             <p class="model-year">2012</p>
-            <a href="modelos.php?marca=ford&modelo=escape" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=3&modelo=8" class="select-btn">Seleccionar</a>
           </div>
         </div>
         
@@ -112,7 +112,7 @@
           <div class="model-info">
             <h3 class="model-name">F-150</h3>
             <p class="model-year">2010</p>
-            <a href="modelos.php?marca=ford&modelo=f-150" class="select-btn">Seleccionar</a>
+            <a href="modelos.php?marca=3&modelo=9" class="select-btn">Seleccionar</a>
           </div>
         </div>
       </div>

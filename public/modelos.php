@@ -1,4 +1,19 @@
-<?php include('navbar.php'); ?>
+<?php 
+  include('navbar.php');
+  include('../clases/conexion.php');
+
+ if (isset($_GET['marca']) && isset($_GET['modelo'])) {
+    $marca = htmlspecialchars($_GET['marca']);
+    $modelo = htmlspecialchars($_GET['modelo']);
+  } else {
+    echo "<script>alert('Marca y modelo no especificados.');</script>";
+    exit;
+  }
+
+  $db = new mod_db();
+  $partes = $db->select("partes_autos", "*", "id_marca = '$marca' AND id_modelo = '$modelo'");
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -39,34 +54,20 @@
 
     <!-- Partes del auto -->
     <div class="parts-grid">
-      <!-- Ejemplo de parte -->
-      <div class="part-card" data-categoria="motor">
-        <div class="part-image-container">
-          <img src="../imagenes/alternador_corolla.jpg" alt="Alternador" class="part-image" />
-          <a href="detalle_partes.php" class="zoom-btn" aria-label="Ver detalles">
-            <i class="fas fa-search-plus"></i>
-          </a>
+      <?php foreach ($partes as $parte): ?>
+        <div class="part-card" data-categoria="<?= strtolower($parte['categoria'] ?? 'otros') ?>">
+          <div class="part-image-container">
+            <img src="../imagenes/<?= htmlspecialchars($parte['imagen'] ?? 'sin-imagen.jpg') ?>" alt="<?= htmlspecialchars($parte['nombre']) ?>" class="part-image" />
+            <a href="detalle_partes.php?id=<?= $parte['id_parte'] ?>" class="zoom-btn" aria-label="Ver detalles">
+              <i class="fas fa-search-plus"></i>
+            </a>
+          </div>
+          <div class="part-content">
+            <h3 class="part-title"><?= htmlspecialchars($parte['nombre']) ?></h3>
+            <p class="part-description"><?= htmlspecialchars($parte['descripcion']) ?></p>
+          </div>
         </div>
-        <div class="part-content">
-          <h3 class="part-title">Alternador</h3>
-          <p class="part-description">Cofre compatible con Ford F-150 2010. Color: negro, material: plástico ABS, acabado mate. Pertenece a la categoría 'Carroceria'. Diseñada para encajar perfectamente en el vehículo, resistente al desgaste y condiciones climáticas adversas.</p>
-        </div>
-      </div>
-
-      <div class="part-card" data-categoria="puertas">
-        <div class="part-image-container">
-          <img src="../imagenes/puerta_corolla.jpg" alt="Puerta delantera" class="part-image" />
-          <a href="detalle_partes.php" class="zoom-btn" aria-label="Ver detalles">
-            <i class="fas fa-search-plus"></i>
-          </a>
-        </div>
-        <div class="part-content">
-          <h3 class="part-title">Puerta Delantera Izquierda</h3>
-          <p class="part-description">Puerta original color gris metálico con vidrio incluido.</p>
-        </div>
-      </div>
-
-      <!-- Más tarjetas de partes... -->
+      <?php endforeach; ?>
     </div>
 
     <!-- Paginación (estática visual) -->
