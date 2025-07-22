@@ -290,7 +290,7 @@ $_SESSION['foto'] = "https://via.placeholder.com/32"; // o tu ruta real
               <i class="fas fa-shopping-cart"></i>
               <span class="cart-count">3</span>
             </a>
-            <a href="logout.php" class="nav-link">Cerrar sesión</a>
+            <a href="../comunes/logout.php" class="nav-link">Cerrar sesión</a>
           <?php else: ?>
             <a href="login.php" class="btn btn-outline">Iniciar sesión</a>
             <a href="registro.php" class="btn btn-primary">Registrarse</a>
