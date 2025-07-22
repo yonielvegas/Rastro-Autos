@@ -121,13 +121,26 @@ body {
 }
 
 .stock-badge {
-    background: var(--success);
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
 }
+
+.stock-high {
+  background-color: #10b981; /* verde */
+}
+
+.stock-low {
+  background-color: #f59e0b; /* naranja */
+}
+
+.stock-out {
+  background-color: #ef4444; /* rojo */
+}
+
 
 .detail-description {
     margin-bottom: 1.5rem;

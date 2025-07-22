@@ -1,4 +1,9 @@
-<?php include('navbar.php'); ?>
+<?php 
+include('navbar.php'); 
+
+// Aquí defines la cantidad real de stock (puede venir de base de datos)
+$stockCantidad = 7; // Ejemplo: cambia a 3, 8, 12 o 0 para probar
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,10 +11,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Detalles de Parte | Rastro de Partes de Autos</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="../estilos/estiloDetalles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="../estilos/estiloDetalles.css" />
   <style>
+    /* para el stock */
+    .stock-badge {
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-weight: 600;
+      font-size: 20px;
+      display: inline-block;
+    }
 
+    /* Colores específicos */
+    .stock-high {
+      background-color: #10b981; /* verde */
+    }
+
+    .stock-medium {
+      background-color: #ffb700ff; /* amarillo */
+    }
+
+    .stock-low {
+      background-color: #ff6a00ff; /* naranja */
+    }
+
+    .stock-out {
+      background-color: #e20404ff; /* rojo */
+    }
   </style>
 </head>
 <body>
@@ -32,11 +62,12 @@
     <div class="detail-info">
       <div class="detail-price">$289.99</div>
       <div class="detail-meta">
-        <span class="stock-badge">En stock (5 unidades)</span>
+        <span class="stock-badge" id="stockBadge">En stock (<?php echo $stockCantidad; ?> unidades)</span>
       </div>
-      
+
       <p class="detail-description">
-Panel lateral diseñado específicamente para vehículos Ford modelo F-150 del año 2010. Forma parte de la categoría 'Carroceria' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado liso en color azul oscuro, que asegura no solo resistencia y durabilidad, sino también una integración estética con el diseño original del vehículo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones óptimas.      </p>
+        Panel lateral diseñado específicamente para vehículos Ford modelo F-150 del año 2010. Forma parte de la categoría 'Carroceria' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado liso en color azul oscuro, que asegura no solo resistencia y durabilidad, sino también una integración estética con el diseño original del vehículo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones óptimas.
+      </p>
 
       <h3 class="specs-title">Especificaciones</h3>
       <div class="specs-grid">
@@ -68,30 +99,46 @@ Panel lateral diseñado específicamente para vehículos Ford modelo F-150 del a
             <div class="spec-value">2018</div>
           </div>
         </div>
+        <div class="spec-item">
+          <div class="spec-icon"><i class="fas fa-tags"></i></div>
+          <div>
+            <div class="spec-label">Categoría</div>
+            <div class="spec-value">Motor</div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon"><i class="fas fa-barcode"></i></div>
+          <div>
+            <div class="spec-label">Código de Serie</div>
+            <div class="spec-value">ALT-TY-COR18-002</div>
+          </div>
+        </div>
       </div>
 
       <?php if (isset($_SESSION['usuario'])): ?>
-        <div class="quantity-controls">
-          <div class="quantity-selector">
-            <button class="quantity-btn minus-btn" onclick="decrementQuantity()">
-              <i class="fas fa-minus"></i>
-            </button>
-            <input type="number" 
-                   id="cantidadProducto" 
-                   class="quantity-input" 
-                   min="1" 
-                   max="5" 
-                   value="1" 
-                   onchange="validateQuantity()" />
-            <button class="quantity-btn plus-btn" onclick="incrementQuantity()">
-              <i class="fas fa-plus"></i>
-            </button>
-          </div>
-
-          <button class="btn btn-primary" id="addToCartBtn">
-            <i class="fas fa-shopping-cart"></i> Añadir al carrito
+      <div class="quantity-controls">
+        <div class="quantity-selector">
+          <button class="quantity-btn minus-btn" onclick="decrementQuantity()">
+            <i class="fas fa-minus"></i>
+          </button>
+          <input 
+            type="number" 
+            id="cantidadProducto" 
+            class="quantity-input" 
+            min="1" 
+            max="<?php echo $stockCantidad; ?>" 
+            value="1" 
+            onchange="validateQuantity()" 
+          />
+          <button class="quantity-btn plus-btn" onclick="incrementQuantity()">
+            <i class="fas fa-plus"></i>
           </button>
         </div>
+
+        <button class="btn btn-primary" id="addToCartBtn">
+          <i class="fas fa-shopping-cart"></i> Añadir al carrito
+        </button>
+      </div>
       <?php endif; ?>
 
     </div>
@@ -109,7 +156,7 @@ Panel lateral diseñado específicamente para vehículos Ford modelo F-150 del a
         <li><strong>Express:</strong> 1-2 días hábiles - $12.99</li>
         <li><strong>Recogida en tienda:</strong> Gratis - Disponible en 24 horas</li>
       </ul>
-      
+
       <h4>Política de devoluciones:</h4>
       <p>Aceptamos devoluciones dentro de los 30 días posteriores a la compra. El producto debe estar en su empaque original y sin usar. Los gastos de envío de devolución corren por cuenta del cliente, excepto en casos de productos defectuosos.</p>
     </div>
@@ -131,7 +178,41 @@ Panel lateral diseñado específicamente para vehículos Ford modelo F-150 del a
     document.querySelector('.tab-btn').click();
   });
 
-  // Cantidad
+  // Función para actualizar texto y estilo según stock
+  function actualizarEstadoStock() {
+    const stockBadge = document.getElementById('stockBadge');
+    const cantidadInput = document.getElementById('cantidadProducto');
+    if (!stockBadge || !cantidadInput) return;
+
+    const maxStock = parseInt(cantidadInput.max);
+
+    stockBadge.classList.remove('stock-high', 'stock-medium', 'stock-low', 'stock-out');
+
+    if (maxStock > 10) {
+      stockBadge.textContent = `En stock (${maxStock} unidades)`;
+      stockBadge.classList.add('stock-high');
+    } else if (maxStock >= 6 && maxStock <= 10) {
+      stockBadge.textContent = `Stock bajo (${maxStock} unidades)`;
+      stockBadge.classList.add('stock-medium');
+    } else if (maxStock >= 1 && maxStock <= 5) {
+      stockBadge.textContent = `Últimas piezas (${maxStock} unidades)`;
+      stockBadge.classList.add('stock-low');
+    } else {
+      stockBadge.textContent = 'Agotado';
+      stockBadge.classList.add('stock-out');
+    }
+
+    // Deshabilita input y botón si no hay stock
+    cantidadInput.disabled = maxStock === 0;
+    const addBtn = document.getElementById('addToCartBtn');
+    if (addBtn) addBtn.disabled = maxStock === 0;
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    actualizarEstadoStock();
+  });
+
+  // Cantidad: increment, decrement y validación
   function incrementQuantity() {
     const input = document.getElementById('cantidadProducto');
     if (parseInt(input.value) < parseInt(input.max)) {
@@ -156,7 +237,7 @@ Panel lateral diseñado específicamente para vehículos Ford modelo F-150 del a
     }
   }
 
-  // Animación de botón
+  // Animación botón Añadir al carrito
   document.getElementById('addToCartBtn')?.addEventListener('click', function() {
     this.innerHTML = '<i class="fas fa-check"></i> Añadido';
     this.style.backgroundColor = '#10b981';

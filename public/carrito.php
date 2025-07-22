@@ -117,5 +117,7 @@ $total_con_impuesto = $total + $impuesto;
       </div>
     <?php endif; ?>
   </main>
+  <?php include('footer.php'); ?>
+
 </body>
 </html>
