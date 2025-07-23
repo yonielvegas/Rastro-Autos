@@ -119,12 +119,13 @@ elseif ($orden === 'menos_vendidas') {
         <button type="submit" class="btn btn-primary">
           <i class="fas fa-filter"></i> Filtrar
         </button>
-        <button type="submit" name="exportar" value="1" class="btn btn-secondary">
-          <i class="fas fa-file-excel"></i> Exportar
-        </button>
         <button type="button" id="btnLimpiar" class="btn btn-secondary" style="margin-left: 10px;">
           <i class="fas fa-eraser"></i> Limpiar filtros
         </button>
+        <button type="submit" name="exportar" value="1" class="btn btn-secondary">
+          <i class="fas fa-file-excel"></i> Exportar
+        </button>
+
       </form>
 
       <div class="table-container">

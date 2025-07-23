@@ -1,6 +1,7 @@
 <?php
   //session_start();
   $currentFile = basename($_SERVER['PHP_SELF']); // Nombre del archivo actual
+
 ?>
 <style>
 :root {
@@ -161,15 +162,19 @@
         <i class="fas fa-boxes"></i>
         <span>Inventario</span>
       </a>
-      <a href="../usuarios/usuario.php" class="menu-item <?php if (in_array($currentFile, ['usuario.php', 'usuario_form.php'])) echo 'active'; ?>">
-        <i class="fas fa-user"></i>
-        <span>Usuario</span>
-      </a>
-      <a href="../roles/roles.php" class="menu-item <?php if (in_array($currentFile, ['roles.php', 'roles_form.php'])) echo 'active'; ?>">
-        <i class="fas fa-user-tag"></i>
-        <span>Roles</span>
-      </a>
-      <a href="../secciones/seccionMarca.php" class="menu-item <?php if (in_array($currentFile, ['seccionMarca.php', 'seccionEspecifica.php'])) echo 'active'; ?>">
+
+      <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == 1): ?>
+        <a href="../usuarios/usuario.php" class="menu-item <?php if (in_array($currentFile, ['usuario.php', 'usuario_form.php'])) echo 'active'; ?>">
+          <i class="fas fa-user"></i>
+          <span>Usuario</span>
+        </a>
+        <a href="../roles/roles.php" class="menu-item <?php if (in_array($currentFile, ['roles.php', 'roles_form.php'])) echo 'active'; ?>">
+          <i class="fas fa-user-tag"></i>
+          <span>Roles</span>
+        </a>
+      <?php endif; ?>
+
+      <a href="../seccion/seccionMarca.php" class="menu-item <?php if (in_array($currentFile, ['seccionMarca.php', 'seccionEspecifica.php'])) echo 'active'; ?>">
         <i class="fas fa-th-large"></i>
         <span>Secciones</span>
       </a>
@@ -185,7 +190,6 @@
   const sidebar = document.getElementById('sidebar');
   const toggleBtn = document.getElementById('toggleBtn');
 
-  // Al cargar la página, aplica estado colapsado si estaba guardado
   if (localStorage.getItem('sidebarCollapsed') === 'true') {
     sidebar.classList.add('collapsed');
     document.body.classList.add('sidebar-collapsed');
@@ -194,11 +198,7 @@
   toggleBtn.addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
     const isCollapsed = sidebar.classList.contains('collapsed');
-
-    // También aplica clase al <body> para afectar el contenido
     document.body.classList.toggle('sidebar-collapsed', isCollapsed);
-
-    // Guarda estado en localStorage
     localStorage.setItem('sidebarCollapsed', isCollapsed);
   });
 </script>
