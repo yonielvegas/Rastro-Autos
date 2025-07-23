@@ -3026,3 +3026,69 @@
 [2025-07-23 17:22:20] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":3,"usuario":"anap","ip_usuario":"::1"}
 [2025-07-23 17:22:20] [INFO] Intento de login registrado para el usuario: anap ID : 3 con resultado: 1
 [2025-07-23 17:22:20] [INFO] ERRORES DE BLOQUEO: ["Este Usuario Est\u00e1 Bloqueado"]
+[2025-07-23 17:33:59] [INFO] Hash temporal generado para pruebas: $2y$13$gESBwrAPulNk0gfAaPtJ2e0/KjtMC7lyeNNFNQrOLZP28bdsw2lL.
+[2025-07-23 17:33:59] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-23 17:33:59] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-23 17:33:59] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-23 17:34:00] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-23 17:34:00] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-23 17:34:00] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-23 17:34:00] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 17:38:25] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 17:38:28] [INFO] id de usuario detalles partes: 2
+[2025-07-23 17:38:28] [INFO] Intento de Registrar Trazabilidad: {"id_parte":16,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Rav4 del a\u00f1o 2022. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con acero reforzado de alta calidad. Presenta un acabado texturizado en color negro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"197.10","cantidad_stock":14,"codigo_serie":"TOY-RAV-2022-GU","id_marca":1,"id_modelo":2,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Rav4","anio":"2022"}
+[2025-07-23 17:38:37] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:38:37] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 16, Cantidad 3
+[2025-07-23 17:38:38] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 16, Cantidad 3
+[2025-07-23 17:38:38] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 16, Cantidad 3
+[2025-07-23 17:38:38] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":16,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 17:38:38] [INFO] ✅ Producto con ID 16 agregado al carrito del usuario con ID 2.
+[2025-07-23 17:38:38] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 16, Cantidad 3
+[2025-07-23 17:38:39] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"591.30"}]
+[2025-07-23 17:38:44] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:38:44] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 16, Cantidad 2
+[2025-07-23 17:38:44] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 16, Cantidad 2
+[2025-07-23 17:38:44] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 16, Cantidad 2
+[2025-07-23 17:38:44] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":16,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 17:38:44] [INFO] ✅ Producto con ID 16 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 17:38:44] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 16, Cantidad 2
+[2025-07-23 17:38:44] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"394.20"}]
+[2025-07-23 17:38:46] [INFO] id de usuario detalles partes: 2
+[2025-07-23 17:38:46] [INFO] Intento de Registrar Trazabilidad: {"id_parte":16,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Rav4 del a\u00f1o 2022. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con acero reforzado de alta calidad. Presenta un acabado texturizado en color negro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"197.10","cantidad_stock":14,"codigo_serie":"TOY-RAV-2022-GU","id_marca":1,"id_modelo":2,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Rav4","anio":"2022"}
+[2025-07-23 17:38:48] [INFO] id de usuario detalles partes: 2
+[2025-07-23 17:38:48] [INFO] Intento de Registrar Trazabilidad: {"id_parte":23,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Rav4 del a\u00f1o 2022. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"69.33","cantidad_stock":9,"codigo_serie":"TOY-RAV-2022-BU","id_marca":1,"id_modelo":2,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Rav4","anio":"2022"}
+[2025-07-23 17:38:51] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:38:51] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 23, Cantidad 3
+[2025-07-23 17:38:51] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 23, Cantidad 3
+[2025-07-23 17:38:51] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 23, Cantidad 3
+[2025-07-23 17:38:51] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":23,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 17:38:51] [INFO] ✅ Producto con ID 23 agregado al carrito del usuario con ID 2.
+[2025-07-23 17:38:51] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 23, Cantidad 3
+[2025-07-23 17:38:53] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"602.19"}]
+[2025-07-23 17:38:57] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:38:57] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 23, Cantidad 2
+[2025-07-23 17:38:57] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 23, Cantidad 2
+[2025-07-23 17:38:57] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 23, Cantidad 2
+[2025-07-23 17:38:57] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":23,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 17:38:57] [INFO] ✅ Producto con ID 23 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 17:38:57] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 23, Cantidad 2
+[2025-07-23 17:38:58] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"532.86"}]
+[2025-07-23 17:39:01] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 23 del carrito del usuario 2
+[2025-07-23 17:39:01] [INFO] Se intentará eliminar el producto con ID 23 del carrito del usuario con ID 2.
+[2025-07-23 17:39:01] [INFO] Producto con ID 23 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 17:39:03] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"394.20"}]
+[2025-07-23 17:50:11] [INFO] Hash temporal generado para pruebas: $2y$13$JjSWZL700Rtgrp7WOgkptuezcrK6.qHo1gCMTLr19HaOhK6HDgzo2
+[2025-07-23 17:50:11] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-23 17:50:11] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-23 17:50:11] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-23 17:50:12] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-23 17:50:12] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-23 17:50:12] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-23 17:50:21] [INFO] Hash temporal generado para pruebas: $2y$13$g.99e7kIW6s6jInaiRpvcezSwlKr8hHqsKaQLKAWRVtrRyKjg/i9i
+[2025-07-23 17:50:21] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-23 17:50:21] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-23 17:50:21] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-23 17:50:22] [INFO] Login exitoso para el usuario: admin
+[2025-07-23 17:50:22] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-23 17:50:22] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-23 17:50:22] [INFO] ERRORES DE BLOQUEO: []
