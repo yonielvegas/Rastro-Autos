@@ -276,8 +276,17 @@ class mod_db implements ICRUD
 				$stmt->bindParam(':id_factura', $id_factura, PDO::PARAM_INT);
 
 				if ($stmt->execute()) {
-					$sql = "UPDATE factura SET total_factura = :precio_total WHERE id_factura = :id_factura";
+					$total = 0;
+
+					foreach ($carrousuario as $item) {
+						if ($item['id_parte'] != $id_parte) {
+							$total += $item['precio_total'];
+						}
+					}
+
+					$sql = "UPDATE factura SET total_factura = :total + :precio_total WHERE id_factura = :id_factura";
 					$stmt = $this->conexion->prepare($sql);
+					$stmt->bindParam(':total', $total, PDO::PARAM_STR);
 					$stmt->bindParam(':precio_total', $precio_total, PDO::PARAM_STR);
 					$stmt->bindParam(':id_factura', $id_factura, PDO::PARAM_INT);
 					$stmt->execute();

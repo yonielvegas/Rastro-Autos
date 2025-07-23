@@ -44,9 +44,9 @@ $total_con_impuesto = $total + $impuesto;
                 <p class="cart-item-price">$<?= number_format($producto['precio'], 2) ?></p>
                 <div class="cart-item-actions">
                   <div class="quantity-control">
-                    <button class="quantity-btn">-</button>
-                    <span class="quantity-value"><?= $producto['cantidad'] ?></span>
-                    <button class="quantity-btn">+</button>
+                    <button class="quantity-btn minus-btn" data-id="<?= $producto['id_parte'] ?>">-</button>
+                    <span class="quantity-value" id="cantidad-<?= $producto['id_parte'] ?>"><?= $producto['cantidad'] ?></span>
+                    <button class="quantity-btn plus-btn" data-id="<?= $producto['id_parte'] ?>">+</button>
                   </div>
                   <button class="remove-btn" data-id="<?= $producto['id_parte'] ?>">
                     <i class="fas fa-trash-alt"></i> Eliminar
@@ -95,6 +95,41 @@ $total_con_impuesto = $total + $impuesto;
   <?php include('footer.php'); ?>
 
   <script>
+
+    document.querySelectorAll('.quantity-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const id_parte = this.dataset.id;
+        const cantidadSpan = document.getElementById('cantidad-' + id_parte);
+        let cantidad = parseInt(cantidadSpan.textContent);
+
+        if (this.classList.contains('minus-btn')) {
+          if (cantidad > 0) cantidad--;
+        } else if (this.classList.contains('plus-btn')) {
+          cantidad++;
+        }
+
+        // Actualiza el span visualmente
+        cantidadSpan.textContent = cantidad;
+
+        // Llama a agregar_carrito.php por AJAX
+        fetch('agregar_carrito.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: `id_parte=${id_parte}&cantidad=${cantidad}`
+        })
+        .then(res => res.json())
+        .then(data => {
+          if (!data.ok) {
+            Swal.fire('Error', data.msg || 'Error al actualizar cantidad', 'error');
+          } else {
+            // Opcional: recarga totales o la página si quieres reflejar el cambio
+            location.reload();
+          }
+        });
+      });
+    });
+
+
     document.querySelectorAll('.remove-btn').forEach(btn => {
       btn.addEventListener('click', function () {
         const id_parte = this.dataset.id;
