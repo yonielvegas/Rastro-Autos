@@ -1,4 +1,5 @@
 <?php
+  //session_start();
   $currentFile = basename($_SERVER['PHP_SELF']); // Nombre del archivo actual
 ?>
 <style>
