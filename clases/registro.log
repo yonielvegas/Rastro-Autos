@@ -2993,3 +2993,36 @@
 [2025-07-23 17:12:45] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
 [2025-07-23 17:12:45] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
 [2025-07-23 17:12:45] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 17:21:48] [INFO] Hash temporal generado para pruebas: $2y$13$UJJFMLSgITf/ytlKWhN2GO4yv1iOHqkne0CnsbPwD.7j3MtGMa1Ku
+[2025-07-23 17:21:48] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-23 17:21:48] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-23 17:21:48] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-23 17:21:49] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-23 17:21:49] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-23 17:21:49] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-23 17:21:49] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 17:22:01] [INFO] Hash temporal generado para pruebas: $2y$13$hV4ApcaBltlfWajtKyUlReRgz5Y3YDMzDowm0R6uFLEbo7odJUDdW
+[2025-07-23 17:22:01] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-23 17:22:01] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-23 17:22:01] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$EzDMd99mA87WwNFOxRDNLOBaSzOMyacQ9lA.q9U/rv6KOD7mjUU9S'
+[2025-07-23 17:22:01] [INFO] Login exitoso para el usuario: admin
+[2025-07-23 17:22:01] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-23 17:22:01] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-23 17:22:01] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 17:22:12] [INFO] Hash temporal generado para pruebas: $2y$13$kyXyPNj56Ncnc.KPEM9DkeSni4R9cXXD6MHlSTWUSVA.JtsAUYRba
+[2025-07-23 17:22:12] [INFO] ROL del usuario con ID 3 es: 3
+[2025-07-23 17:22:12] [INFO] Usuario encontrado en base de datos: anap
+[2025-07-23 17:22:12] [INFO] Verificando contraseña: entrada: 'Opciones-241' vs hash: '$2y$10$aiKOJXZ.r.an3oT5OZNO4eBTB.6YMvGdNGEgCdmBtv5wVSiBbQMbu'
+[2025-07-23 17:22:12] [WARNING] Login fallido: contraseña incorrecta para el usuario: anap
+[2025-07-23 17:22:12] [WARNING] Intento de login para usuario bloqueado: anap
+[2025-07-23 17:22:12] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":3,"usuario":"anap","ip_usuario":"::1"}
+[2025-07-23 17:22:12] [INFO] Intento de login registrado para el usuario: anap ID : 3 con resultado: 0
+[2025-07-23 17:22:20] [INFO] Hash temporal generado para pruebas: $2y$13$cafdER/RZ.Rs02jeZsPQIOyw89NDl.qF0wZ3B1H6jWz3VtESE0d0O
+[2025-07-23 17:22:20] [INFO] ROL del usuario con ID 3 es: 3
+[2025-07-23 17:22:20] [INFO] Usuario encontrado en base de datos: anap
+[2025-07-23 17:22:20] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$aiKOJXZ.r.an3oT5OZNO4eBTB.6YMvGdNGEgCdmBtv5wVSiBbQMbu'
+[2025-07-23 17:22:20] [INFO] Login exitoso para el usuario: anap
+[2025-07-23 17:22:20] [WARNING] Intento de login para usuario bloqueado: anap
+[2025-07-23 17:22:20] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":3,"usuario":"anap","ip_usuario":"::1"}
+[2025-07-23 17:22:20] [INFO] Intento de login registrado para el usuario: anap ID : 3 con resultado: 1
+[2025-07-23 17:22:20] [INFO] ERRORES DE BLOQUEO: ["Este Usuario Est\u00e1 Bloqueado"]
