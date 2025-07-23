@@ -3406,3 +3406,11 @@
 [2025-07-23 22:18:09] [INFO] Ejecutando registrar_pago.php
 [2025-07-23 22:18:09] [INFO] Intento de registrar pago para el usuario ID 2
 [2025-07-23 22:18:09] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 17:12:18","total_factura":"1223.54","estado":0}]
+[2025-07-23 22:19:38] [INFO] Hash temporal generado para pruebas: $2y$13$PJRblVabhVUgFPHc7lUFQOLJpsUInbecCxTu1sGo1FRyOkfOIYNo.
+[2025-07-23 22:19:38] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-23 22:19:38] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-23 22:19:38] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-23 22:19:39] [INFO] Login exitoso para el usuario: admin
+[2025-07-23 22:19:39] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-23 22:19:39] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-23 22:19:39] [INFO] ERRORES DE BLOQUEO: []

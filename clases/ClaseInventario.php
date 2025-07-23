@@ -24,7 +24,7 @@ public function obtenerPartesLimitOffset($limit, $offset) {
             pa.id_marca,
             pa.id_modelo,
             pa.imagen,
-            pa.fecha_registro,
+            DATE(pa.fecha_registro) AS fecha_registro,
             pa.imagen_thumbnail,
             ca.categoria,
             ma.marca,
