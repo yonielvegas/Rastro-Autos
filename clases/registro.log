@@ -2955,3 +2955,41 @@
 [2025-07-23 17:04:17] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
 [2025-07-23 17:04:17] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
 [2025-07-23 17:04:17] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:10:51] [INFO] id de usuario detalles partes: No autenticado
+[2025-07-23 17:10:51] [INFO] Intento de Registrar Trazabilidad: {"id_parte":42,"nombre":"Alternador","descripcion":"Alternador dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado liso en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"129.91","cantidad_stock":18,"codigo_serie":"FOR-F-1-2010-AL","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-23 17:11:14] [INFO] Hash temporal generado para pruebas: $2y$13$Lc5F5qh6OPMU5DksUAFnletyEAcRPD2wfz9ZIjksBoN0azgUmCnsO
+[2025-07-23 17:11:14] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-23 17:11:14] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-23 17:11:14] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-23 17:11:15] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-23 17:11:15] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-23 17:11:15] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-23 17:11:15] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 17:11:26] [INFO] id de usuario detalles partes: 2
+[2025-07-23 17:11:26] [INFO] Intento de Registrar Trazabilidad: {"id_parte":42,"nombre":"Alternador","descripcion":"Alternador dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado liso en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"129.91","cantidad_stock":18,"codigo_serie":"FOR-F-1-2010-AL","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-23 17:11:38] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:11:38] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 42, Cantidad 18
+[2025-07-23 17:11:38] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 42, Cantidad 18
+[2025-07-23 17:11:38] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 42, Cantidad 18
+[2025-07-23 17:11:38] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":42,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 17:11:38] [INFO] ✅ Producto con ID 42 agregado al carrito del usuario con ID 2.
+[2025-07-23 17:11:38] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 42, Cantidad 18
+[2025-07-23 17:11:42] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":16,"fecha":"2025-07-23 12:03:46","total_factura":"3056.61"}]
+[2025-07-23 17:11:57] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:11:57] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 42, Cantidad 19
+[2025-07-23 17:11:57] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 42, Cantidad 19
+[2025-07-23 17:11:57] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 42, Cantidad 19
+[2025-07-23 17:11:57] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 42.
+[2025-07-23 17:11:57] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 42, Cantidad 19
+[2025-07-23 17:12:08] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 42 del carrito del usuario 2
+[2025-07-23 17:12:08] [INFO] Se intentará eliminar el producto con ID 42 del carrito del usuario con ID 2.
+[2025-07-23 17:12:08] [INFO] Producto con ID 42 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 17:12:10] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":16,"fecha":"2025-07-23 12:03:46","total_factura":"718.23"}]
+[2025-07-23 17:12:45] [INFO] Hash temporal generado para pruebas: $2y$13$gyM/zCzA.KBoG3bTeTL2jeie8RwcLKiVtNTa/oO7T5ZkEac1rJyyS
+[2025-07-23 17:12:45] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-23 17:12:45] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-23 17:12:45] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$EzDMd99mA87WwNFOxRDNLOBaSzOMyacQ9lA.q9U/rv6KOD7mjUU9S'
+[2025-07-23 17:12:45] [INFO] Login exitoso para el usuario: admin
+[2025-07-23 17:12:45] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-23 17:12:45] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-23 17:12:45] [INFO] ERRORES DE BLOQUEO: []
