@@ -7,7 +7,7 @@ session_start();
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PARTSPRO</title>
+  <title>Rappi-Rastry</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
@@ -266,9 +266,9 @@ session_start();
     <div class="header-container">
       <div class="header-content">
         <div class="left-section" style="display: flex; align-items: center; gap: 2rem;">
-          <a href="index.html" class="logo">
+          <a href="homePublic.php" class="logo">
             <i class="fas fa-cogs logo-icon"></i>
-            <span>PARTSPRO</span>
+            <span>Rappi-Rastry</span>
           </a>
 
           <nav class="nav-links">

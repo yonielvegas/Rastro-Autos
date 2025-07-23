@@ -4,210 +4,369 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio - Rastro Partes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --primary: #2563eb;
-      --primary-hover: #1d4ed8;
-      --gray: #f3f4f6;
-      --dark: #111827;
+      --primary-light: #3b82f6;
+      --primary-dark: #1d4ed8;
+      --secondary: #10b981;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-700: #374151;
+      --white: #ffffff;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+      --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+      --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
       font-family: 'Inter', sans-serif;
-      background: var(--gray);
-      margin: 0;
+      background-color: var(--gray-100);
+      color: var(--gray-700);
+      line-height: 1.6;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 2rem 1.5rem;
     }
 
-    h1 {
+    /* Hero Section */
+    .hero {
       text-align: center;
-      color: var(--dark);
-      margin-bottom: 20px;
+      padding: 3rem 0;
+      margin-bottom: 2rem;
+background: linear-gradient(135deg, #001affff 0%, #5d00a0ff 100%);
+      color: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+
+    /* Section Styling */
+    section {
+      margin-bottom: 3rem;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
     }
 
     h2 {
       color: var(--primary);
-      margin-top: 40px;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 0.5rem;
     }
 
-    p {
-      color: #374151;
-      line-height: 1.6;
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--primary);
+      border-radius: 2px;
     }
 
+    h3 {
+      color: var(--gray-900);
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
 
+    /* Project Origin */
+    .project-origin {
+      position: relative;
+    }
+
+    .img-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .img-container img {
+      flex: 1 1 300px;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .img-container img:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+/* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* más ancho */
+  gap: 2rem;
+  margin-top: 1.5rem;
+  max-width: 1200px; /* centra el grid */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+    .team-member {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      border-top: 4px solid var(--primary);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .team-member h4 {
+      color: var(--primary);
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-member .role {
+      color: var(--secondary);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Features Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .feature-card {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      border-left: 4px solid var(--primary);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card h3 {
+      color: var(--primary);
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+      
+      section {
+        padding: 1.5rem;
+      }
+    }
+
+    /* Utility Classes */
     .highlight {
-      font-weight: bold;
+      font-weight: 600;
       color: var(--primary);
     }
 
-    .authors {
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      margin-top: 30px;
+    .text-center {
+      text-align: center;
     }
 
-    .authors h3 {
-      margin-bottom: 15px;
-      color: var(--dark);
-    }
+    .mb-1 { margin-bottom: 0.5rem; }
+    .mb-2 { margin-bottom: 1rem; }
+    .mb-3 { margin-bottom: 1.5rem; }
+    .mb-4 { margin-bottom: 2rem; }
 
-    .authors .member {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 6px solid var(--primary);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
+.catalogo-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: var(--white);
+  color: var(--primary-dark);
+  border: 2px solid var(--white);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
 
-    .authors .member p:first-child {
-    font-weight: 600;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    }
+.catalogo-btn:hover {
+  background-color: var(--gray-100);
+  color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
 
-    .project-origin {
-    position: relative;
-    padding: 10px 20px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    }
+.catalogo-btn:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-md);
+}
 
-    .img-left {
-    float: left;
-    width: 40%;
-    margin: 0 15px 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    }
+/* Versión alternativa con borde azul */
+.catalogo-btn.outline {
+  background-color: transparent;
+  color: var(--white);
+  border-color: var(--white);
+}
 
-    .img-right {
-    float: right;
-    width: 40%;
-    margin: 20px 0 0 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    }
-
-    .project-origin::after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-
-    @media (max-width: 768px) {
-    .img-left, .img-right {
-        float: none;
-        width: 100%;
-        margin: 10px 0;
-    }
-    }
-
+.catalogo-btn.outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+}
 
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Bienvenidos a Rastro Partes</h1>
-    <p>
-      <strong>Rastro Partes</strong> es una plataforma enfocada en facilitar el inventario, búsqueda y gestión de partes de vehículos. Su propósito principal es ayudar a talleres, mecánicos y entusiastas a encontrar piezas de forma rápida y eficiente.
-    </p>
+<div class="container">
+<section class="hero">
+  <h1>Bienvenidos a Rappi-Rastry</h1>
+  <p>La plataforma definitiva para la gestión inteligente de repuestos automotrices</p>
+  <a href="catalogo.php" class="catalogo-btn">Explorar Catálogo</a>
+</section>
 
-    <div class="project-origin">
-    <h2>¿Cómo nació el proyecto?</h2>
-    <br>
-    <img src="../imagenes/vidrios.jpeg" alt="Vidrios" class="img-left" />
-    <div>
-    <p>
-        La idea de desarrollar este proyecto surgió de una observación casual durante una visita a una pequeña ferretería local 
-        ubicada en las afueras de la ciudad. El dueño, un hombre mayor que llevaba décadas manejando su negocio, nos contó entre 
-        risas cómo aún anotaba sus ventas en una libreta desgastada, llena de números y tachones. Nos sorprendió saber que, a pesar 
-        de los avances tecnológicos, muchos negocios similares aún dependían de métodos manuales para controlar su inventario, 
-        ventas y pedidos. Esto nos llevó a investigar más a fondo, visitando más de diez negocios similares en distintos puntos 
-        del país. Durante estas visitas, tomamos nota de los principales dolores de cabeza de los propietarios: pérdida de productos 
-        por falta de control, dificultad para hacer cierres de caja, problemas con el registro de entradas y salidas, e incluso la 
-        imposibilidad de saber qué productos estaban por agotarse. 
-        <br><br>
-        Motivados por estas realidades, decidimos crear un sistema que no solo resolviera estos problemas, sino que también fuera 
-        fácil de usar, visualmente atractivo y accesible desde diferentes dispositivos. Queríamos que cualquier comerciante, sin 
-        importar su nivel técnico, pudiera aprovecharlo al máximo. En nuestras primeras reuniones de lluvia de ideas, surgieron 
-        preguntas como: ¿Cómo hacemos para que el sistema sea realmente útil? ¿Qué funciones serían imprescindibles desde el primer día? 
-        ¿Cómo podríamos diseñar una interfaz tan intuitiva que no necesite manual? Gracias a esas preguntas y a las ideas aportadas 
-        por cada miembro del equipo, se fue moldeando lo que hoy conocemos como Rastro Partes. Este sistema no nació de una necesidad 
-        técnica, sino de una necesidad humana: la de simplificar la vida de quienes dedican su tiempo y esfuerzo a mantener vivos 
-        sus negocios. Cada botón, cada pantalla y cada función fue pensada no desde la teoría, sino desde la práctica, escuchando 
-        directamente a quienes serán los verdaderos usuarios del sistema. 
-        <br><br>
-        <img src="../imagenes/puertas.jpg" alt="Puertas" class="img-right" />
-        Además, este proyecto también significó para nosotros una oportunidad de crecimiento académico y profesional. Fue el primer 
-        desarrollo donde pusimos en práctica herramientas y metodologías aprendidas en clase, como el trabajo con bases de datos, 
-        diseño centrado en el usuario, y desarrollo colaborativo. Las decisiones de diseño, funcionalidad e implementación fueron 
-        consensuadas y evolucionaron con el tiempo, conforme entendíamos mejor el contexto de uso. La motivación detrás de cada línea 
-        de código era clara: brindar una solución real, efectiva y adaptable. Este proyecto no solo fue una entrega académica, sino 
-        el inicio de una visión a largo plazo donde la tecnología puede y debe servir a quienes más lo necesitan.  
-        
+  <section>
+    <h2>Sobre Rappi-Rastry</h2>
+    <p class="mb-3">
+      <strong class="highlight">Rappi-Rastry</strong> es una tienda online especializada en repuestos y partes para autos. Ofrecemos una amplia variedad de piezas originales y genéricas para distintas marcas y modelos, brindando a nuestros clientes acceso rápido, seguro y confiable a los componentes que necesitan para mantener sus vehículos en óptimas condiciones.
     </p>
+    
+    <div class="img-container">
+      <img src="../imagenes/vidrios.jpeg" alt="Vidrios automotrices">
+      <img src="../imagenes/puertas.jpg" alt="Puertas de vehículos">
     </div>
+  </section>
+
+  <section class="project-origin">
+    <h2>¿Cómo nació Rappi-Rastry?</h2>
+    <div class="mb-3">
+      <p>La idea de Rappi-Rastry nació al observar las dificultades de muchas personas para encontrar repuestos específicos sin tener que recorrer múltiples tiendas físicas. Nuestro objetivo fue claro: facilitar la compra de partes automotrices desde la comodidad del hogar.</p>
+      
+      <p class="mb-2">Desde entonces, nos hemos enfocado en resolver problemas comunes como:</p>
+      
+      <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+        <li>Demoras en la entrega de piezas</li>
+        <li>Falta de disponibilidad de marcas confiables</li>
+        <li>Precios poco competitivos</li>
+        <li>Dificultad para encontrar repuestos específicos por modelo</li>
+      </ul>
+      
+      <p>Rappi-Rastry fue creado para eliminar estas barreras y ofrecer una experiencia de compra moderna, eficiente y segura. Nuestro compromiso es conectar a nuestros clientes con los mejores repuestos, sin complicaciones.</p>
     </div>
-    <br>
-    <h2>Autores del Proyecto</h2>
-    <div class="authors">
-    <h3>Equipo de desarrollo:</h3>
-        <div class="member">
-            <p><span class="highlight">Yini Pan</span> – Coordinadora General, Frontend y Diseño UX</p>
-            <p>
-                Yini Pan asumió el rol de coordinadora general del proyecto, supervisando cada fase de desarrollo y asegurando la comunicación efectiva entre los miembros del equipo. 
-                Además, lideró el diseño del frontend y la experiencia de usuario (UX), definiendo la identidad visual del sistema Rastro Partes. 
-                Estableció criterios de usabilidad, organizó la estructura de navegación y seleccionó los estilos visuales adecuados para ofrecer una interfaz limpia, moderna y funcional. 
-                Su trabajo permitió una experiencia coherente en todas las vistas del sistema, facilitando la interacción por parte de los usuarios finales.
-            </p>
-        </div>
-        
-        <div class="member">
-            <p><span class="highlight">Yoel Samaniego</span> – Backend y Base de Datos (Login y Registro)</p>
-            <p>
-            Yoel Samaniego fue el encargado de desarrollar el sistema de autenticación, incluyendo el registro de nuevos usuarios y el login con verificación segura. 
-            Diseñó y estructuró la base de datos para almacenar la información de los usuarios, validó formularios y manejó errores comunes del lado del servidor. 
-            También implementó mecanismos de encriptación para proteger contraseñas y reforzar la seguridad. 
-            Su código backend está construido en PHP, trabajando en conjunto con MySQL para garantizar una gestión eficiente y segura de los accesos.
-            </p>
-        </div>
+  </section>
 
-        <div class="member">
-            <p><span class="highlight">Eric Ruiz</span> – Documentación y Backend</p>
-            <p>
-            Eric Ruiz se enfocó en dos áreas fundamentales: la elaboración de documentación técnica y el apoyo en el backend del sistema. 
-            Fue el responsable de registrar todo el proceso de desarrollo, describir los módulos del proyecto, flujos de datos, 
-            y el funcionamiento general del sistema. También participó en la programación de funciones del backend, principalmente 
-            en operaciones relacionadas con el inventario y validaciones de datos. Su participación ayudó a mantener la coherencia y claridad del proyecto.
-            </p>
-        </div>
+  <section>
+    <h2>Nuestro Equipo</h2>
+    <h3>Quienes hacen posible Rappi-Rastry</h3>
+    
+    <div class="team-grid">
+      <div class="team-member">
+        <h4>Yini Pan</h4>
+        <p class="role">Líder de Diseño y Experiencia de Usuario</p>
+        <p>Encargada de que la tienda sea visualmente atractiva y fácil de navegar para nuestros clientes.</p>
+      </div>
+      
+      <div class="team-member">
+        <h4>Yoel Samaniego</h4>
+        <p class="role">Desarrollador Backend & Seguridad</p>
+        <p>Responsable del sistema de pedidos, pagos en línea y protección de datos del cliente.</p>
+      </div>
+      
+      <div class="team-member">
+        <h4>Eric Ruiz</h4>
+        <p class="role">Especialista en Catálogo de Productos</p>
+        <p>Administra el inventario en línea y asegura que cada pieza tenga la información y fotos correctas.</p>
+      </div>
+      
+      <div class="team-member">
+        <h4>Gabriel González</h4>
+        <p class="role">Logística & Atención al Cliente</p>
+        <p>Encargado de las entregas rápidas y la resolución efectiva de dudas o problemas postventa.</p>
+      </div>
+    </div>
+  </section>
 
-        <div class="member">
-            <p><span class="highlight">Gabriel González</span> – Backend (Manejo de Inventario)</p>
-            <p>
-            Gabriel González fue el principal desarrollador del módulo de inventario de partes, núcleo funcional del sistema. 
-            Programó las funciones para registrar nuevas piezas, editar registros existentes, eliminarlos y listarlos desde la base de datos. 
-            También trabajó en la conexión con el frontend, asegurando que los datos ingresados por los usuarios se reflejaran correctamente en la interfaz. 
-            Su enfoque fue asegurar estabilidad en las operaciones CRUD y una lógica eficiente en el manejo de la información almacenada.
-            </p>
-        </div>
-        </div>
-    <h2>¿Qué encontrarás en esta página?</h2>
-    <p>
-      Explora marcas, modelos, piezas disponibles, y accede a funciones como login, registro de nuevos usuarios y gestión de inventario. Todo con una interfaz clara, intuitiva y responsiva.
-    </p>
-  </div>
+  <section>
+    <h2>¿Qué ofrecemos?</h2>
+    <p class="mb-3">En Rappi-Rastry ponemos a tu alcance productos y servicios que hacen la diferencia:</p>
+    
+    <div class="features">
+      <div class="feature-card">
+        <h3>Amplio Catálogo</h3>
+        <p>Piezas para múltiples marcas y modelos, incluyendo carrocería, vidrios, puertas, luces, y más.</p>
+      </div>
+      
+      <div class="feature-card">
+        <h3>Filtros de Búsqueda Inteligente</h3>
+        <p>Encuentra exactamente lo que buscas por tipo, marca, modelo, año o categoría.</p>
+      </div>
+      
+      <div class="feature-card">
+        <h3>Compra Segura</h3>
+        <p>Procesos de pago protegidos y múltiples métodos de envío confiables en todo el país.</p>
+      </div>
+      
+      <div class="feature-card">
+        <h3>Soporte Personalizado</h3>
+        <p>Asistencia en línea para resolver tus dudas y ayudarte a elegir la pieza adecuada.</p>
+      </div>
+    </div>
+  </section>
+</div>
 
 <?php include 'footer.php'; ?>
 </body>

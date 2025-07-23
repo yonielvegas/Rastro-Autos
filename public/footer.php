@@ -2,37 +2,35 @@
     <div class="footer-container">
         <div class="footer-content">
             <div class="footer-column">
-                <h3>PARTSPRO</h3>
+                <h3>Rappi-Rastry</h3>
                 <p class="footer-text">Proveedores de autopartes premium con los más altos estándares de calidad.</p>
             </div>
             <div class="footer-column">
                 <h3>Enlaces</h3>
                 <ul class="footer-links">
-                    <li class="footer-link"><a href="index.html">Inicio</a></li>
-                    <li class="footer-link"><a href="catalogo.html">Catálogo</a></li>
-                    <li class="footer-link"><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-                    <li class="footer-link"><a href="contacto.html">Contacto</a></li>
+                    <li class="footer-link"><a href="homePublic.php">Inicio</a></li>
+                    <li class="footer-link"><a href="catalogo.php">Catálogo</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>Legal</h3>
                 <ul class="footer-links">
-                    <li class="footer-link"><a href="terminos.html">Términos y condiciones</a></li>
-                    <li class="footer-link"><a href="privacidad.html">Política de privacidad</a></li>
-                    <li class="footer-link"><a href="garantias.html">Garantías</a></li>
+                    <li class="footer-link"><a href="">Términos y condiciones</a></li>
+                    <li class="footer-link"><a href="">Política de privacidad</a></li>
+                    <li class="footer-link"><a href="">Garantías</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>Contacto</h3>
                 <ul class="footer-links">
-                    <li class="footer-link"><a href="mailto:contacto@partspro.mx">contacto@partspro.mx</a></li>
-                    <li class="footer-link"><a href="tel:5512345678">Tel: 55 1234 5678</a></li>
+                    <li class="footer-link"><a href="mailto:brochin@rappirastry.pa">brochin@rappirastry.pa</a></li>
+                    <li class="footer-link"><a href="tel:6666-6666">Tel: 6666-6666</a></li>
                     <li class="footer-link">Horario: L-V 9am-6pm</li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; <span id="current-year"></span> PARTSPRO. Todos los derechos reservados.
+            &copy; <span id="current-year"></span> Rappi-Rastry. Todos los derechos reservados.
         </div>
     </div>
 </footer>
