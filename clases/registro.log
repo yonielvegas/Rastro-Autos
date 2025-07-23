@@ -2688,3 +2688,270 @@
 [2025-07-23 15:56:50] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
 [2025-07-23 15:56:50] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 3
 [2025-07-23 15:56:50] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":13,"fecha":"2025-07-23 10:46:16","total_factura":"718.23"}]
+[2025-07-23 16:51:30] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":13,"fecha":"2025-07-23 10:46:16","total_factura":"718.23"}]
+[2025-07-23 16:51:31] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:51:31] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:51:31] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:51:31] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:51:31] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 16:51:32] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 16:51:32] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:51:32] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":13,"fecha":"2025-07-23 10:46:16","total_factura":"957.64"}]
+[2025-07-23 16:51:34] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:51:34] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:51:34] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:51:34] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:51:34] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 16:51:34] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 16:51:34] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:51:34] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":13,"fecha":"2025-07-23 10:46:16","total_factura":"718.23"}]
+[2025-07-23 16:51:36] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:51:36] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:51:36] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:51:36] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:51:36] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 16:51:36] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 16:51:36] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:51:37] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":13,"fecha":"2025-07-23 10:46:16","total_factura":"478.82"}]
+[2025-07-23 16:51:37] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:51:37] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 16:51:37] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 16:51:37] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 16:51:37] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 16:51:37] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 16:51:37] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 16:51:37] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":13,"fecha":"2025-07-23 10:46:16","total_factura":"239.41"}]
+[2025-07-23 16:51:41] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 68 del carrito del usuario 2
+[2025-07-23 16:51:41] [INFO] Se intentará eliminar el producto con ID 68 del carrito del usuario con ID 2.
+[2025-07-23 16:51:41] [INFO] Producto con ID 68 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 16:51:42] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 16:51:44] [INFO] id de usuario detalles partes: 2
+[2025-07-23 16:51:44] [INFO] Intento de Registrar Trazabilidad: {"id_parte":68,"nombre":"Parabrisas delantero","descripcion":"Parabrisas delantero dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Vidrios' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado mate en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"239.41","cantidad_stock":5,"codigo_serie":"MAZ-MX--2016-PA","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Vidrios","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 16:51:45] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:51:45] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:51:45] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:51:45] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:51:45] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 16:51:45] [INFO] ✅ Producto con ID 68 agregado al carrito del usuario con ID 2.
+[2025-07-23 16:51:45] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:51:48] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:51:48] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:51:48] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:51:48] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:51:48] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 16:51:48] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:51:55] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:51:55] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:51:55] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:51:55] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:51:55] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 16:51:55] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:52:01] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:52:01] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:52:01] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:52:01] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:52:01] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 16:52:01] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 16:52:01] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:52:07] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":14,"fecha":"2025-07-23 11:51:45","total_factura":"478.82"}]
+[2025-07-23 16:52:16] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:52:16] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:52:16] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:52:16] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:52:16] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 16:52:16] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:52:19] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:52:19] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:52:19] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:52:19] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:52:19] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 16:52:19] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:52:21] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:52:21] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 5
+[2025-07-23 16:52:21] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 5
+[2025-07-23 16:52:21] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 5
+[2025-07-23 16:52:21] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 16:52:21] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 5
+[2025-07-23 16:52:24] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:52:24] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:52:24] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:52:24] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:52:24] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 16:52:24] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:52:26] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:52:26] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:52:26] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:52:26] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:52:26] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 16:52:26] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:52:28] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:52:28] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:52:28] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:52:28] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:52:28] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 16:52:28] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 16:52:28] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:52:28] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":14,"fecha":"2025-07-23 11:51:45","total_factura":"478.82"}]
+[2025-07-23 16:52:29] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:52:29] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 16:52:29] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 16:52:29] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 16:52:29] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 16:52:29] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 16:52:29] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 16:52:29] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":14,"fecha":"2025-07-23 11:51:45","total_factura":"239.41"}]
+[2025-07-23 16:52:30] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:52:30] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:52:30] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:52:30] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:52:30] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 16:52:30] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 16:52:30] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 16:52:30] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":14,"fecha":"2025-07-23 11:51:45","total_factura":"478.82"}]
+[2025-07-23 16:52:33] [INFO] id de usuario detalles partes: 2
+[2025-07-23 16:52:33] [INFO] Intento de Registrar Trazabilidad: {"id_parte":68,"nombre":"Parabrisas delantero","descripcion":"Parabrisas delantero dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Vidrios' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado mate en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"239.41","cantidad_stock":3,"codigo_serie":"MAZ-MX--2016-PA","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Vidrios","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 16:53:32] [INFO] id de usuario detalles partes: 2
+[2025-07-23 16:53:32] [INFO] Intento de Registrar Trazabilidad: {"id_parte":68,"nombre":"Parabrisas delantero","descripcion":"Parabrisas delantero dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Vidrios' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado mate en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"239.41","cantidad_stock":3,"codigo_serie":"MAZ-MX--2016-PA","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Vidrios","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 16:53:37] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:53:37] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:53:37] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:53:37] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:53:37] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 16:53:37] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:53:40] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":14,"fecha":"2025-07-23 11:51:45","total_factura":"478.82"}]
+[2025-07-23 16:53:42] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 68 del carrito del usuario 2
+[2025-07-23 16:53:42] [INFO] Se intentará eliminar el producto con ID 68 del carrito del usuario con ID 2.
+[2025-07-23 16:53:42] [INFO] Producto con ID 68 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 16:53:43] [INFO] id de usuario detalles partes: 2
+[2025-07-23 16:53:43] [INFO] Intento de Registrar Trazabilidad: {"id_parte":68,"nombre":"Parabrisas delantero","descripcion":"Parabrisas delantero dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Vidrios' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado mate en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"239.41","cantidad_stock":3,"codigo_serie":"MAZ-MX--2016-PA","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Vidrios","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 16:53:44] [INFO] id de usuario detalles partes: 2
+[2025-07-23 16:53:44] [INFO] Intento de Registrar Trazabilidad: {"id_parte":68,"nombre":"Parabrisas delantero","descripcion":"Parabrisas delantero dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Vidrios' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado mate en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"239.41","cantidad_stock":3,"codigo_serie":"MAZ-MX--2016-PA","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Vidrios","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 16:53:45] [INFO] id de usuario detalles partes: 2
+[2025-07-23 16:53:45] [INFO] Intento de Registrar Trazabilidad: {"id_parte":68,"nombre":"Parabrisas delantero","descripcion":"Parabrisas delantero dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Vidrios' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado mate en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"239.41","cantidad_stock":3,"codigo_serie":"MAZ-MX--2016-PA","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Vidrios","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 16:53:45] [INFO] id de usuario detalles partes: 2
+[2025-07-23 16:53:45] [INFO] Intento de Registrar Trazabilidad: {"id_parte":68,"nombre":"Parabrisas delantero","descripcion":"Parabrisas delantero dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Vidrios' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado mate en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"239.41","cantidad_stock":3,"codigo_serie":"MAZ-MX--2016-PA","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Vidrios","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 16:53:45] [INFO] id de usuario detalles partes: 2
+[2025-07-23 16:53:45] [INFO] Intento de Registrar Trazabilidad: {"id_parte":68,"nombre":"Parabrisas delantero","descripcion":"Parabrisas delantero dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Vidrios' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado mate en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"239.41","cantidad_stock":3,"codigo_serie":"MAZ-MX--2016-PA","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Vidrios","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 16:53:46] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:53:46] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 16:53:47] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 16:53:47] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 16:53:47] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 16:53:47] [INFO] ✅ Producto con ID 68 agregado al carrito del usuario con ID 2.
+[2025-07-23 16:53:47] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 16:53:49] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:53:49] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:53:49] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:53:49] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:53:49] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 16:53:49] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:54:05] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:54:05] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:54:05] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:54:05] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:54:05] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 16:54:05] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:55:49] [INFO] id de usuario detalles partes: 2
+[2025-07-23 16:55:49] [INFO] Intento de Registrar Trazabilidad: {"id_parte":68,"nombre":"Parabrisas delantero","descripcion":"Parabrisas delantero dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Vidrios' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado mate en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"239.41","cantidad_stock":3,"codigo_serie":"MAZ-MX--2016-PA","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Vidrios","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 16:55:50] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:55:50] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:55:50] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:55:50] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:55:50] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 16:55:50] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 16:55:50] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 16:55:55] [INFO] id de usuario detalles partes: 2
+[2025-07-23 16:55:56] [INFO] Intento de Registrar Trazabilidad: {"id_parte":68,"nombre":"Parabrisas delantero","descripcion":"Parabrisas delantero dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Vidrios' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado mate en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"239.41","cantidad_stock":3,"codigo_serie":"MAZ-MX--2016-PA","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Vidrios","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 16:55:57] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":15,"fecha":"2025-07-23 11:53:47","total_factura":"718.23"}]
+[2025-07-23 16:55:59] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 16:55:59] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:55:59] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:55:59] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 16:55:59] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 16:55:59] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:03:31] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":15,"fecha":"2025-07-23 11:53:47","total_factura":"718.23"}]
+[2025-07-23 17:03:32] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:03:32] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:03:32] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:03:32] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:03:32] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 17:03:32] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:03:36] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:03:36] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 17:03:36] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 17:03:36] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 17:03:36] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 17:03:36] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 17:03:36] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 17:03:36] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":15,"fecha":"2025-07-23 11:53:47","total_factura":"478.82"}]
+[2025-07-23 17:03:37] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:03:37] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 17:03:37] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 17:03:37] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 17:03:37] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 17:03:37] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 17:03:37] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 17:03:37] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":15,"fecha":"2025-07-23 11:53:47","total_factura":"239.41"}]
+[2025-07-23 17:03:37] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:03:37] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 0
+[2025-07-23 17:03:37] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 0
+[2025-07-23 17:03:37] [INFO] Se intentará eliminar el producto con ID 68 del carrito del usuario con ID 2.
+[2025-07-23 17:03:37] [INFO] Producto con ID 68 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 17:03:37] [INFO] Carrito comunes Producto eliminado del carrito: Usuario ID 2, Parte ID 68
+[2025-07-23 17:03:37] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 17:03:40] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 17:03:41] [INFO] id de usuario detalles partes: 2
+[2025-07-23 17:03:41] [INFO] Intento de Registrar Trazabilidad: {"id_parte":68,"nombre":"Parabrisas delantero","descripcion":"Parabrisas delantero dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Vidrios' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado mate en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"239.41","cantidad_stock":3,"codigo_serie":"MAZ-MX--2016-PA","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Vidrios","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 17:03:46] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:03:46] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 17:03:46] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 17:03:46] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 17:03:46] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 17:03:46] [INFO] ✅ Producto con ID 68 agregado al carrito del usuario con ID 2.
+[2025-07-23 17:03:46] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 17:03:47] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":16,"fecha":"2025-07-23 12:03:46","total_factura":"718.23"}]
+[2025-07-23 17:03:48] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:03:48] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:03:48] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:03:48] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:03:48] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 17:03:48] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:03:50] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:03:50] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 17:03:50] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 17:03:50] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 17:03:50] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 17:03:50] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 17:03:50] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 2
+[2025-07-23 17:03:50] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":16,"fecha":"2025-07-23 12:03:46","total_factura":"478.82"}]
+[2025-07-23 17:03:52] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:03:52] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 17:03:52] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 17:03:52] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 17:03:52] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 17:03:52] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 17:03:52] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 1
+[2025-07-23 17:03:52] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":16,"fecha":"2025-07-23 12:03:46","total_factura":"239.41"}]
+[2025-07-23 17:03:54] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":16,"fecha":"2025-07-23 12:03:46","total_factura":"239.41"}]
+[2025-07-23 17:03:56] [INFO] id de usuario detalles partes: 2
+[2025-07-23 17:03:56] [INFO] Intento de Registrar Trazabilidad: {"id_parte":68,"nombre":"Parabrisas delantero","descripcion":"Parabrisas delantero dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Vidrios' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado mate en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"239.41","cantidad_stock":3,"codigo_serie":"MAZ-MX--2016-PA","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Vidrios","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 17:04:03] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:04:03] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 17:04:03] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 17:04:03] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 17:04:03] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":68,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 17:04:03] [INFO] ✅ Producto con ID 68 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 17:04:03] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 3
+[2025-07-23 17:04:14] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":16,"fecha":"2025-07-23 12:03:46","total_factura":"718.23"}]
+[2025-07-23 17:04:16] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:04:16] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:04:16] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:04:16] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:04:16] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 17:04:16] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:04:16] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 17:04:16] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:04:17] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:04:17] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 68, Cantidad 4
+[2025-07-23 17:04:17] [ERROR] ❌ Error al agregar al carrito: No hay suficiente stock para el producto con ID 68.
+[2025-07-23 17:04:17] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 68, Cantidad 4

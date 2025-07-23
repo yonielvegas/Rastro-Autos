@@ -242,7 +242,7 @@ class mod_db implements ICRUD
 
 		// Verificar si hay stock suficiente
 		$existecant = $this->stockproducto($id_parte);
-		if ($existecant['cantidad_stock'] > $cantidad) {
+		if ($existecant['cantidad_stock'] >= $cantidad) {
 
 			// Obtener todas las partes en el carrito del usuario
 			$sql = "SELECT * FROM parte_vendida WHERE id_usuario = :id_usuario AND en_carrito = 1;";
@@ -333,12 +333,6 @@ class mod_db implements ICRUD
 
 				// Registrar trazabilidad e insertar en stock
 				$this->registrarTrazabilidad('parte_vendida', 'inserción', $id_parte, $id_usuario);
-
-				$sql = "UPDATE partes_autos SET cantidad_stock = cantidad_stock - :cantidad WHERE id_parte = :id_parte";
-				$stmt = $this->conexion->prepare($sql);
-				$stmt->bindParam(':cantidad', $cantidad, PDO::PARAM_INT);
-				$stmt->bindParam(':id_parte', $id_parte, PDO::PARAM_INT);
-				$stmt->execute();
 
 				Logger::info("✅ Producto con ID $id_parte agregado al carrito del usuario con ID $id_usuario.");
 				return true;
@@ -438,6 +432,8 @@ class mod_db implements ICRUD
 			return false;
 		}
 	}
+
+
 
 	public function contarProductosCarrito($id_usuario) {
 		try {

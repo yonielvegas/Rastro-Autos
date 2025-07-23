@@ -101,6 +101,7 @@ $total_con_impuesto = $total + $impuesto;
         const id_parte = this.dataset.id;
         const cantidadSpan = document.getElementById('cantidad-' + id_parte);
         let cantidad = parseInt(cantidadSpan.textContent);
+        const cantidadAnterior = cantidad; // Guardamos el valor anterior
 
         if (this.classList.contains('minus-btn')) {
           if (cantidad > 0) cantidad--;
@@ -120,6 +121,8 @@ $total_con_impuesto = $total + $impuesto;
         .then(res => res.json())
         .then(data => {
           if (!data.ok) {
+            // Si hay error, restaurar el valor anterior
+            cantidadSpan.textContent = cantidadAnterior;
             Swal.fire('Error', data.msg || 'Error al actualizar cantidad', 'error');
           } else {
             // Opcional: recarga totales o la página si quieres reflejar el cambio
