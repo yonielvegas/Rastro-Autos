@@ -3092,3 +3092,45 @@
 [2025-07-23 17:50:22] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
 [2025-07-23 17:50:22] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
 [2025-07-23 17:50:22] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 18:47:09] [INFO] Hash temporal generado para pruebas: $2y$13$B6X29HDRnf/SXUtNU/hOh.Av7I50Ijm6/3JeYCg/4YgaI/GG.ry/a
+[2025-07-23 18:47:09] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-23 18:47:09] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-23 18:47:09] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-23 18:47:09] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-23 18:47:09] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-23 18:47:09] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-23 18:47:09] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 18:47:24] [INFO] id de usuario detalles partes: 2
+[2025-07-23 18:47:24] [INFO] Intento de Registrar Trazabilidad: {"id_parte":21,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"53.83","cantidad_stock":13,"codigo_serie":"FOR-F-1-2010-GU","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-23 18:47:26] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 18:47:26] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 21, Cantidad 1
+[2025-07-23 18:47:26] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 21, Cantidad 1
+[2025-07-23 18:47:26] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 21, Cantidad 1
+[2025-07-23 18:47:26] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":21,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 18:47:26] [INFO] ✅ Producto con ID 21 agregado al carrito del usuario con ID 2.
+[2025-07-23 18:47:26] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 21, Cantidad 1
+[2025-07-23 18:47:30] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"448.03"}]
+[2025-07-23 18:47:33] [INFO] id de usuario detalles partes: 2
+[2025-07-23 18:47:33] [INFO] Intento de Registrar Trazabilidad: {"id_parte":21,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"53.83","cantidad_stock":13,"codigo_serie":"FOR-F-1-2010-GU","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-23 18:47:36] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 18:47:36] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 21, Cantidad 0
+[2025-07-23 18:47:36] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 21, Cantidad 0
+[2025-07-23 18:47:36] [INFO] Se intentará eliminar el producto con ID 21 del carrito del usuario con ID 2.
+[2025-07-23 18:47:36] [INFO] Producto con ID 21 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 18:47:36] [INFO] Carrito comunes Producto eliminado del carrito: Usuario ID 2, Parte ID 21
+[2025-07-23 18:47:38] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 18:47:38] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 21, Cantidad 1
+[2025-07-23 18:47:38] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 21, Cantidad 1
+[2025-07-23 18:47:38] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 21, Cantidad 1
+[2025-07-23 18:47:38] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":21,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 18:47:38] [INFO] ✅ Producto con ID 21 agregado al carrito del usuario con ID 2.
+[2025-07-23 18:47:38] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 21, Cantidad 1
+[2025-07-23 18:47:39] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"448.03"}]
+[2025-07-23 18:47:41] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 16 del carrito del usuario 2
+[2025-07-23 18:47:41] [INFO] Se intentará eliminar el producto con ID 16 del carrito del usuario con ID 2.
+[2025-07-23 18:47:41] [INFO] Producto con ID 16 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 18:47:43] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"53.83"}]
+[2025-07-23 18:47:46] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"53.83"}]
+[2025-07-23 18:47:46] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"53.83"}]
+[2025-07-23 18:47:47] [INFO] id de usuario detalles partes: 2
+[2025-07-23 18:47:47] [INFO] Intento de Registrar Trazabilidad: {"id_parte":21,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"53.83","cantidad_stock":13,"codigo_serie":"FOR-F-1-2010-GU","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}

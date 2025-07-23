@@ -48,7 +48,7 @@ if (isset($_POST["tolog"])) {
                 redireccionar("Usuarios/usuario.php");
             } elseif ($rol == 3){
                 $_SESSION['rol'] = $rol;
-                redireccionar("public/catalogo.php");
+                redireccionar("public/homePublic.php");
             } else {
                 redireccionar("login.php");
             }

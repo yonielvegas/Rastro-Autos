@@ -68,7 +68,7 @@
         <a href="registro.php" class="btn btn-secondary">Crear Cuenta</a>
       </div>
 
-      <a href="public/catalogo.php" class="btn btn-outline">Navegar sin cuenta</a>
+      <a href="public/homePublic.php" class="btn btn-outline">Navegar sin cuenta</a>
 
       
     </form>

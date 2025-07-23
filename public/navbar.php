@@ -272,7 +272,7 @@ session_start();
           </a>
 
           <nav class="nav-links">
-            <a href="home.php" class="nav-link">Inicio</a>
+            <a href="homePublic.php" class="nav-link">Inicio</a>
             <a href="catalogo.php" class="nav-link">Catálogo</a>
           </nav>
         </div>
