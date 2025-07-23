@@ -108,7 +108,6 @@
 </div>
 
 <script>
-  // El JavaScript permanece igual que en tu código original
   const modelosPorMarca = {
     toyota: ['Corolla', 'RAV4', 'Prado'],
     mazda: ['CX-5', 'MX-5 Miata', 'CX-30'],

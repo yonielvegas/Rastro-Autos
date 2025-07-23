@@ -1,4 +1,39 @@
-<?php include '../comunes/navbar.php'; ?>
+<?php 
+include '../comunes/navbar.php'; 
+require_once '../clases/Conexion.php';
+require_once '../clases/ClaseInventario.php';
+
+$conexion = new mod_db();
+$inventario = new Inventario($conexion);
+
+$totalRegistros = $inventario->contarPartes();
+
+$opcionesMostrar = [10];
+for ($i = 25; $i < $totalRegistros; $i += 25) {
+    $opcionesMostrar[] = $i;
+}
+if (!in_array($totalRegistros, $opcionesMostrar)) {
+    $opcionesMostrar[] = $totalRegistros;
+}
+sort($opcionesMostrar);
+
+$mostrar = isset($_GET['mostrar']) && in_array((int)$_GET['mostrar'], $opcionesMostrar) ? (int)$_GET['mostrar'] : 10;
+
+// Página actual desde GET, por defecto 1
+$pagina = isset($_GET['pagina']) && is_numeric($_GET['pagina']) && $_GET['pagina'] > 0 ? (int)$_GET['pagina'] : 1;
+
+// Total de páginas
+$totalPaginas = max(1, ceil($totalRegistros / $mostrar));
+
+// Limitar página a máximo totalPaginas
+if ($pagina > $totalPaginas) $pagina = $totalPaginas;
+
+// Calcular offset
+$offset = ($pagina - 1) * $mostrar;
+
+// Obtener partes paginadas (ajusta el método en tu clase Inventario)
+$partes = $inventario->obtenerPartesLimitOffset($mostrar, $offset);
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -9,23 +44,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="../estilos/estiloInventario.css" />
   <link rel="stylesheet" href="../estilos/estiloModales.css" />
-  <style>
-  .search-bar {
-    margin: 20px 0;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .search-bar input {
-    padding: 10px;
-    width: 100%;
-    max-width: 500px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-  }
-</style>
-
 </head>
 <body>
 <?php include '../comunes/sidebar.php'; ?>
@@ -40,7 +58,17 @@
     </header>
 
     <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Buscar por código, nombre, categoría, marca o modelo...">
+      <input type="text" id="searchInput" placeholder="Buscar por código, nombre, categoría, marca o modelo...">
+    </div>
+
+    <!-- Selector para cantidad a mostrar -->
+    <div class="show-select">
+      <label for="mostrarSelect">Mostrar: </label>
+        <select id="mostrarSelect" name="mostrar">
+          <?php foreach ($opcionesMostrar as $opcion): ?>
+            <option value="<?= $opcion ?>" <?= $mostrar == $opcion ? 'selected' : '' ?>><?= $opcion ?></option>
+          <?php endforeach; ?>
+        </select>
     </div>
 
     <div class="card">
@@ -61,240 +89,160 @@
             </tr>
           </thead>
           <tbody>
+          <?php if (!empty($partes)): ?>
+            <?php foreach ($partes as $parte): ?>
+              <tr>
+                <td><img src="<?= htmlspecialchars($parte['imagen_thumbnail'] ?? '') ?>" alt="Miniatura" class="thumbnail" /></td>
+                <td><?= htmlspecialchars($parte['codigo_serie'] ?? '') ?></td>
+                <td><?= htmlspecialchars($parte['nombre'] ?? '') ?></td>
+                <td><?= htmlspecialchars($parte['marca'] ?? '') ?></td>
+                <td><?= htmlspecialchars($parte['modelo'] ?? '') ?></td>
+                <td><?= htmlspecialchars($parte['anio'] ?? '') ?></td>
+                <td><?= htmlspecialchars($parte['fecha_registro'] ?? '') ?></td>
+                <td><?= htmlspecialchars($parte['categoria'] ?? '') ?></td>
+                <td><?= htmlspecialchars($parte['cantidad_stock'] ?? '') ?></td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn btn-sm btn-view" onclick="viewPart(<?= $parte['id_parte'] ?>)">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                    <button class="btn btn-sm btn-edit" onclick='editPart(<?= json_encode($parte, JSON_HEX_TAG | JSON_HEX_AMP) ?>)'>
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-sm btn-delete" onclick="deletePart(<?= $parte['id_parte'] ?>)">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            <?php endforeach; ?>
+          <?php else: ?>
             <tr>
-              <td class="thumbnail-cell">
-                <img src="https://via.placeholder.com/60" alt="Puerta" class="thumbnail" />
-              </td>
-              <td>PT-2020-001</td>
-              <td>Puerta delantera izquierda</td>
-              <td>Toyota</td>
-              <td>Corolla</td>
-              <td>2020</td>
-              <td>2023-05-10</td>
-              <td>Carrocería</td>
-              <td>10</td>
-              <td>
-                <div class="action-buttons">
-                  <button class="btn btn-sm btn-view" onclick="viewPart(1)">
-                    <i class="fas fa-eye"></i>
-                  </button>
-                  <button class="btn btn-sm btn-edit" onclick="editPart(1)">
-                    <i class="fas fa-edit"></i>
-                  </button>
-                  <button class="btn btn-sm btn-delete" onclick="deletePart(1)">
-                    <i class="fas fa-trash"></i>
-                  </button>
-                </div>
-              </td>
+              <td colspan="10" style="text-align:center;">No hay partes registradas.</td>
             </tr>
-            <tr>
-              <td class="thumbnail-cell">
-                <img src="https://mobilize-fs.es/wp-content/uploads/2023/02/chasis-de-un-coche.jpg" alt="Motor" class="thumbnail" />
-              </td>
-              <td>MO-2018-002</td>
-              <td>Motor 2.0L</td>
-              <td>Ford</td>
-              <td>Mustang</td> <!-- Cambiado de Focus a Mustang -->
-              <td>2018</td>
-              <td>2022-11-20</td>
-              <td>Motor</td>
-              <td>2</td>
-              <td>
-                <div class="action-buttons">
-                  <button class="btn btn-sm btn-view" onclick="viewPart(2)">
-                    <i class="fas fa-eye"></i>
-                  </button>
-                  <button class="btn btn-sm btn-edit" onclick="editPart(2)">
-                    <i class="fas fa-edit"></i>
-                  </button>
-                  <button class="btn btn-sm btn-delete" onclick="deletePart(2)">
-                    <i class="fas fa-trash"></i>
-                  </button>
-                </div>
-              </td>
-            </tr>
+          <?php endif; ?>
           </tbody>
         </table>
       </div>
     </div>
+
+    <!-- Barra de paginación -->
+    <div class="pagination">
+      <?php if ($pagina > 1): ?>
+        <a href="?mostrar=<?= $mostrar ?>&pagina=<?= $pagina - 1 ?>">&laquo; Anterior</a>
+      <?php endif; ?>
+
+      <?php
+      $rango = 3; // Páginas antes y después de la actual
+      $inicio = max(1, $pagina - $rango);
+      $fin = min($totalPaginas, $pagina + $rango);
+      for ($i = $inicio; $i <= $fin; $i++): ?>
+        <a href="?mostrar=<?= $mostrar ?>&pagina=<?= $i ?>" class="<?= $pagina == $i ? 'active' : '' ?>"><?= $i ?></a>
+      <?php endfor; ?>
+
+      <?php if ($pagina < $totalPaginas): ?>
+        <a href="?mostrar=<?= $mostrar ?>&pagina=<?= $pagina + 1 ?>">Siguiente &raquo;</a>
+      <?php endif; ?>
+    </div>
+
   </div>
 </div>
 
 <?php
-  include 'modal_EditarAgregarPartes.php';   // Modal agregar/editar parte (debe incluir input entryDate)
-  include 'modalVerParte.php';  // Modal solo para ver detalles (modo solo lectura)
+  include 'modal_EditarAgregarPartes.php';
+  include 'modalVerParte.php';
 ?>
 
 <script>
-  // Funciones para el modal de partes
-  function openModal() {
-    document.getElementById('partModal').style.display = 'flex';
+// Al cambiar cantidad mostrar, reinicia a página 1 para evitar página inválida
+document.getElementById('mostrarSelect').addEventListener('change', function() {
+  const mostrar = this.value;
+  window.location.href = '?mostrar=' + mostrar + '&pagina=1';
+});
+
+function openModal() {
+  document.getElementById('partModal').style.display = 'flex';
+}
+function closeModal() {
+  document.getElementById('partModal').style.display = 'none';
+  document.getElementById('partForm').reset();
+  document.getElementById('imagePreview').innerHTML = '';
+}
+
+function editPart(parte) {
+  document.getElementById('modalTitle').textContent = 'Editar Parte';
+  document.getElementById('partId').value = parte.id_parte;
+  document.getElementById('partName').value = parte.nombre ?? '';
+  document.getElementById('partCode').value = parte.codigo_serie ?? '';
+  document.getElementById('carBrand').value = (parte.marca ?? '').toLowerCase();
+  document.getElementById('carBrand').dispatchEvent(new Event('change'));
+  document.getElementById('carModel').value = parte.modelo ?? '';
+  document.getElementById('carYear').value = parte.anio ?? '';
+  document.getElementById('entryDate').value = parte.fecha_registro ?? '';
+  document.getElementById('carCategory').value = (parte.categoria ?? '').toLowerCase();
+  document.getElementById('partStock').value = parte.cantidad_stock ?? 0;
+  document.getElementById('partPrice').value = parte.precio ?? '';
+  document.getElementById('partDescription').value = parte.descripcion ?? '';
+  openModal();
+}
+
+function viewPart(id) {
+  alert('Implementa lógica AJAX para ver la parte con ID: ' + id);
+}
+
+function deletePart(id) {
+  if (confirm('¿Estás seguro de eliminar esta parte?')) {
+    alert(`Parte ${id} eliminada`);
+    // Aquí iría la lógica AJAX para eliminar
   }
+}
 
-  function closeModal() {
-    document.getElementById('partModal').style.display = 'none';
-    document.getElementById('partForm').reset();
-    document.getElementById('imagePreview').innerHTML = '';
-  }
+document.getElementById('addPartBtn').addEventListener('click', () => {
+  document.getElementById('modalTitle').textContent = 'Agregar Nueva Parte';
+  document.getElementById('partForm').reset();
+  document.getElementById('partId').value = '';
+  openModal();
+});
 
-  function editPart(id) {
-    document.getElementById('modalTitle').textContent = 'Editar Parte';
-    document.getElementById('partId').value = id;
-
-    if(id === 1){
-      document.getElementById('partName').value = 'Puerta delantera izquierda';
-      document.getElementById('partCode').value = 'PT-2020-001';
-      document.getElementById('carBrand').value = 'toyota';
-      carBrand.dispatchEvent(new Event('change'));
-      document.getElementById('carModel').value = 'Corolla';
-      document.getElementById('carYear').value = '2020';
-      document.getElementById('entryDate').value = '2023-05-10';
-      document.getElementById('carCategory').value = 'carroceria';
-      document.getElementById('partStock').value = '10';
-      document.getElementById('partPrice').value = '150.00';
-      document.getElementById('partDescription').value = 'Puerta delantera izquierda para Toyota Corolla 2020, color blanco.';
-    }
-    if(id === 2){
-      document.getElementById('partName').value = 'Motor 2.0L';
-      document.getElementById('partCode').value = 'MO-2018-002';
-      document.getElementById('carBrand').value = 'ford';
-      carBrand.dispatchEvent(new Event('change'));
-      document.getElementById('carModel').value = 'Mustang';
-      document.getElementById('carYear').value = '2018';
-      document.getElementById('entryDate').value = '2022-11-20';
-      document.getElementById('carCategory').value = 'motor';
-      document.getElementById('partStock').value = '2';
-      document.getElementById('partPrice').value = '750.00';
-      document.getElementById('partDescription').value = 'Motor 2.0L para Ford Mustang 2018.';
-    }
-
-    openModal();
-  }
-
-  document.getElementById('addPartBtn').addEventListener('click', () => {
-    document.getElementById('modalTitle').textContent = 'Agregar Nueva Parte';
-    document.getElementById('partId').value = '';
-    openModal();
-  });
-
-  // Funciones para el manejo de imágenes (subida y vista previa)
-  document.getElementById('fileInput').addEventListener('change', function(e) {
-    const preview = document.getElementById('imagePreview');
-    preview.innerHTML = '';
-
-    if(this.files) {
-      Array.from(this.files).forEach(file => {
-        if(file.type.match('image.*')) {
-          const reader = new FileReader();
-
-          reader.onload = function(e) {
-            const thumbContainer = document.createElement('div');
-            thumbContainer.className = 'thumb-container';
-
-            const img = document.createElement('img');
-            img.src = e.target.result;
-
-            const thumbActions = document.createElement('div');
-            thumbActions.className = 'thumb-actions';
-
-            thumbContainer.appendChild(img);
-            thumbContainer.appendChild(thumbActions);
-            preview.appendChild(thumbContainer);
-          }
-
-          reader.readAsDataURL(file);
-        }
-      });
-    }
-  });
-
-  // Validación y envío del formulario
-  document.getElementById('partForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const stock = parseInt(document.getElementById('partStock').value, 10);
-
-    if (isNaN(stock) || stock < 0) {
-      alert('El stock debe ser un número válido y no negativo.');
-      return;
-    }
-
-    // Aquí la lógica para guardar la parte (ajax o submit)
-    alert('Parte guardada exitosamente');
-    closeModal();
-  });
-
-  function deletePart(id) {
-    if(confirm('¿Estás seguro de eliminar esta parte?')) {
-      // Lógica para eliminar parte
-      alert(`Parte ${id} eliminada`);
-    }
-  }
-
-  // --- Función para ver la parte en modo solo lectura ---
-  function viewPart(id) {
-    let parte = null;
-
-    if (id === 1) {
-      parte = {
-        nombre: 'Puerta delantera izquierda',
-        codigo: 'PT-2020-001',
-        marca: 'Toyota',
-        modelo: 'Corolla',
-        anio: 2020,
-        fecha: '2023-05-10',
-        categoria: 'Carrocería',
-        stock: 10,
-        precio: 150.00,
-        descripcion: 'Puerta delantera izquierda para Toyota Corolla 2020, color blanco.',
-        imagen: 'https://mobilize-fs.es/wp-content/uploads/2023/02/chasis-de-un-coche.jpg',
-        imagen_thumbnail: 'https://via.placeholder.com/60?text=Thumb'
+document.getElementById('fileInput').addEventListener('change', function () {
+  const preview = document.getElementById('imagePreview');
+  preview.innerHTML = '';
+  Array.from(this.files).forEach(file => {
+    if (file.type.startsWith('image/')) {
+      const reader = new FileReader();
+      reader.onload = e => {
+        const div = document.createElement('div');
+        div.className = 'thumb-container';
+        div.innerHTML = `<img src="${e.target.result}" />`;
+        preview.appendChild(div);
       };
-    } else if (id === 2) {
-      parte = {
-        nombre: 'Motor 2.0L',
-        codigo: 'MO-2018-002',
-        marca: 'Ford',
-        modelo: 'Mustang',
-        anio: 2018,
-        fecha: '2022-11-20',
-        categoria: 'Motor',
-        stock: 2,
-        precio: 750.00,
-        descripcion: 'Motor 2.0L para Ford Mustang 2018.',
-        imagen: 'https://mobilize-fs.es/wp-content/uploads/2023/02/chasis-de-un-coche.jpg',
-        imagen_thumbnail: 'https://mobilize-fs.es/wp-content/uploads/2023/02/chasis-de-un-coche.jpg'
-      };
-    } else {
-      alert('Parte no encontrada');
-      return;
+      reader.readAsDataURL(file);
     }
+  });
+});
 
-    openViewModal(parte);
+document.getElementById('partForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const stock = parseInt(document.getElementById('partStock').value);
+  if (isNaN(stock) || stock < 0) {
+    alert('El stock debe ser un número válido y no negativo.');
+    return;
   }
-  //para busqueda
-    document.getElementById('searchInput').addEventListener('input', function () {
-    const filtro = this.value.toLowerCase();
-    const filas = document.querySelectorAll('table tbody tr');
+  alert('Parte guardada exitosamente.');
+  closeModal();
+});
 
-    filas.forEach(fila => {
-        const codigo = fila.cells[1].textContent.toLowerCase();
-        const nombre = fila.cells[2].textContent.toLowerCase();
-        const marca = fila.cells[3].textContent.toLowerCase();
-        const modelo = fila.cells[4].textContent.toLowerCase();
-        const categoria = fila.cells[7].textContent.toLowerCase();
-
-        const coincide =
-        codigo.includes(filtro) ||
-        nombre.includes(filtro) ||
-        categoria.includes(filtro) ||
-        marca.includes(filtro) ||
-        modelo.includes(filtro);
-
-        fila.style.display = coincide ? '' : 'none';
-    });
-    });
-
+// Filtro búsqueda simple (en la tabla ya cargada)
+document.getElementById('searchInput').addEventListener('input', function () {
+  const filtro = this.value.toLowerCase();
+  document.querySelectorAll('table tbody tr').forEach(fila => {
+    const [_, codigo, nombre, marca, modelo, , , categoria] = fila.cells;
+    const coincide = [codigo, nombre, marca, modelo, categoria].some(cell =>
+      cell.textContent.toLowerCase().includes(filtro)
+    );
+    fila.style.display = coincide ? '' : 'none';
+  });
+});
 </script>
 
 </body>
