@@ -147,7 +147,7 @@ class mod_db implements ICRUD
 		$sql = "SELECT 
 			pa.id_parte,
 			pa.nombre,
-			pa.descripcion,
+			SUBSTRING_INDEX(pa.descripcion, '.', 1) AS descripcion,
 			pa.precio,
 			pa.cantidad_stock,
 			pa.codigo_serie,
