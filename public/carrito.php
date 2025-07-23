@@ -1,48 +1,22 @@
 <?php
 include 'navbar.php';
+require_once('../clases/conexion.php');
 
 // Verificar si el usuario está logueado
 if (!isset($_SESSION['usuario'])) {
     header('Location: login.php');
     exit();
 }
-// Datos de ejemplo del carrito (en un caso real esto vendría de la base de datos)
-$productos_carrito = [
-    [
-        'id' => 1,
-        'nombre' => 'Filtro de Aceite Premium',
-        'imagen' => 'https://via.placeholder.com/80',
-        'precio' => 24.99,
-        'cantidad' => 2,
-        'subtotal' => 49.98
-    ],
-    [
-        'id' => 2,
-        'nombre' => 'Pastillas de Freno Delanteras',
-        'imagen' => 'https://via.placeholder.com/80',
-        'precio' => 35.50,
-        'cantidad' => 1,
-        'subtotal' => 35.50
-    ],
-    [
-        'id' => 3,
-        'nombre' => 'Bujías de Iridio',
-        'imagen' => 'https://via.placeholder.com/80',
-        'precio' => 12.99,
-        'cantidad' => 4,
-        'subtotal' => 51.96
-    ]
-];
 
-$total = array_sum(array_column($productos_carrito, 'subtotal'));
+$db = new mod_db();
+$id_usuario = $_SESSION['id_usuario'] ?? null;
+$productos_carrito = $db->obtenerCarrito($id_usuario);
+$factura = $db->obtenerFactura($id_usuario);
 
-// Calcular impuesto 7%
+$total = is_array($factura) && isset($factura[0]['total_factura']) ? $factura[0]['total_factura'] : 0;
 $impuesto = $total * 0.07;
-
-// Total final con impuesto incluido
 $total_con_impuesto = $total + $impuesto;
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -64,7 +38,7 @@ $total_con_impuesto = $total + $impuesto;
         <div class="cart-items">
           <?php foreach ($productos_carrito as $producto): ?>
             <div class="cart-item">
-              <img src="<?= $producto['imagen'] ?>" alt="<?= $producto['nombre'] ?>" class="cart-item-img">
+              <img src="<?= $producto['imagen_thumbnail'] ?>" alt="<?= $producto['nombre'] ?>" class="cart-item-img">
               <div class="cart-item-details">
                 <h3 class="cart-item-name"><?= $producto['nombre'] ?></h3>
                 <p class="cart-item-price">$<?= number_format($producto['precio'], 2) ?></p>
@@ -111,7 +85,7 @@ $total_con_impuesto = $total + $impuesto;
           <i class="fas fa-shopping-cart"></i>
         </div>
         <h3 class="empty-cart-message">Tu carrito está vacío</h3>
-        <a href="catalogo.php" class="continue-shopping">
+        <a href="catalogo.html" class="continue-shopping">
           <i class="fas fa-arrow-left"></i> Continuar comprando
         </a>
       </div>
