@@ -112,7 +112,7 @@ $total_con_impuesto = $total + $impuesto;
         cantidadSpan.textContent = cantidad;
 
         // Llama a agregar_carrito.php por AJAX
-        fetch('agregar_carrito.php', {
+        fetch('../controller_public/agregar_carrito.php', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: `id_parte=${id_parte}&cantidad=${cantidad}`
@@ -145,7 +145,7 @@ $total_con_impuesto = $total + $impuesto;
           cancelButtonText: 'Cancelar'
         }).then((result) => {
           if (result.isConfirmed) {
-            fetch('eliminar_carrito.php', {
+            fetch('../controller_public/eliminar_carrito.php', {
               method: 'POST',
               headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
               body: `id_parte=${id_parte}`

@@ -211,7 +211,7 @@ $stock = intval($detalles['cantidad_stock'] ?? 0);
     const id_parte = <?= intval($detalles['id_parte']) ?>;
     const cantidad = parseInt(document.getElementById('cantidadProducto').value);
 
-    fetch('agregar_carrito.php', {
+    fetch('../controller_public/agregar_carrito.php', {
       method: 'POST',
       headers: {'Content-Type': 'application/x-www-form-urlencoded'},
       body: `id_parte=${id_parte}&cantidad=${cantidad}`
