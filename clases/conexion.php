@@ -223,13 +223,13 @@ class mod_db implements ICRUD
 
 	public function stockproducto($id_parte){
 		try {
-			$sql = "SELECT cantidad_stock, precio FROM partes_autos WHERE id_parte = :id_parte";
+			$sql = "SELECT cantidad_stock, precio, nombre FROM partes_autos WHERE id_parte = :id_parte";
 			$stmt = $this->conexion->prepare($sql);
 			$stmt->bindParam(':id_parte', $id_parte, PDO::PARAM_INT);
 			$stmt->execute();
 			$result = $stmt->fetch(PDO::FETCH_ASSOC);
 
-			return $result ?: ['cantidad_stock' => 0, 'precio' => 0];
+			return $result ?: ['cantidad_stock' => 0, 'precio' => 0, 'nombre' => ''];
 		} catch (PDOException $e) {
 			echo "Error al obtener stock y precio del producto: " . $e->getMessage();
 			return false;
@@ -354,7 +354,7 @@ class mod_db implements ICRUD
 					FROM parte_vendida AS pv
 					INNER JOIN partes_autos AS pa ON pv.id_parte = pa.id_parte
 					INNER JOIN factura AS f ON pv.id_factura = f.id_factura
-					WHERE pv.id_usuario = :id_usuario AND pv.en_carrito = 1";
+					WHERE pv.id_usuario = :id_usuario AND pv.en_carrito = 1 AND f.estado = 0";
 			$stmt = $this->conexion->prepare($sql);
 			$stmt->bindParam(':id_usuario', $id_usuario, PDO::PARAM_INT);
 			$stmt->execute();
@@ -370,7 +370,7 @@ class mod_db implements ICRUD
 			$sql = "SELECT f.*
 					FROM factura AS f
 					INNER JOIN parte_vendida AS pv ON f.id_factura = pv.id_factura
-					WHERE pv.id_usuario = :id_usuario AND pv.en_carrito = 1
+					WHERE pv.id_usuario = :id_usuario AND pv.en_carrito = 1 AND f.estado = 0
 					LIMIT 1";
 			$stmt = $this->conexion->prepare($sql);
 			$stmt->bindParam(':id_usuario', $id_usuario, PDO::PARAM_INT);
@@ -383,6 +383,68 @@ class mod_db implements ICRUD
 			return false;
 		}
 	}
+
+	public function registrarPago($id_cliente) {
+		try {
+			$this->conexion->beginTransaction();
+
+			$factura = $this->obtenerFactura($id_cliente);
+			if (!$factura) {
+				$this->conexion->rollBack();
+				return ['ok' => false, 'mensaje' => "❌ No se encontró factura para el usuario con ID $id_cliente."];
+			}
+
+			$carrito = $this->obtenerCarrito($id_cliente);
+			if (!$carrito) {
+				$this->conexion->rollBack();
+				return ['ok' => false, 'mensaje' => "❌ No se encontró carrito para el usuario con ID $id_cliente."];
+			}
+
+			foreach ($carrito as $item) {
+				$stock = $this->stockproducto($item['id_parte']);
+				if ($stock['cantidad_stock'] < $item['cantidad']) {
+					$this->conexion->rollBack();
+					return ['ok' => false, 'mensaje' => "❌ No hay suficiente stock para el producto {$item['nombre']}"];
+				}
+
+				$sql = "UPDATE partes_autos SET cantidad_stock = cantidad_stock - :cantidad WHERE id_parte = :id_parte";
+				$stmt = $this->conexion->prepare($sql);
+				$stmt->bindParam(':cantidad', $item['cantidad'], PDO::PARAM_INT);
+				$stmt->bindParam(':id_parte', $item['id_parte'], PDO::PARAM_INT);
+				if (!$stmt->execute()) {
+					$this->conexion->rollBack();
+					return ['ok' => false, 'mensaje' => "❌ Error al actualizar el stock del producto con ID {$item['id_parte']}."];
+				}
+			}
+
+			$sql = "UPDATE parte_vendida SET en_carrito = 0 WHERE id_usuario = :id_usuario AND en_carrito = 1";
+			$stmt = $this->conexion->prepare($sql);
+			$stmt->bindParam(':id_usuario', $id_cliente, PDO::PARAM_INT);
+			if (!$stmt->execute()) {
+				$this->conexion->rollBack();
+				return ['ok' => false, 'mensaje' => "❌ Error al actualizar parte_vendida para el usuario con ID $id_cliente."];
+			}
+
+			$id_factura = is_array($factura) ? $factura[0]['id_factura'] : $factura['id_factura'];
+			$sql = "UPDATE factura SET estado = 1 WHERE id_factura = :id_factura";
+			$stmt = $this->conexion->prepare($sql);
+			$stmt->bindParam(':id_factura', $id_factura, PDO::PARAM_INT);
+			if (!$stmt->execute()) {
+				$this->conexion->rollBack();
+				return ['ok' => false, 'mensaje' => "❌ Error al actualizar estado de la factura con ID $id_factura."];
+			}
+
+			$this->conexion->commit();
+
+			return ['ok' => true, 'mensaje' => "✅ Pago registrado correctamente."];
+		} catch (PDOException $e) {
+			$this->conexion->rollBack();
+			return ['ok' => false, 'mensaje' => "❌ Error PDO al registrar el pago: " . $e->getMessage()];
+		}
+	}
+
+
+
 
 	public function eliminarProductoCarrito($id_usuario, $id_parte) {
 		Logger::info("Se intentará eliminar el producto con ID $id_parte del carrito del usuario con ID $id_usuario.");

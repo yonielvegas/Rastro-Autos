@@ -16,6 +16,8 @@ $factura = $db->obtenerFactura($id_usuario);
 $total = is_array($factura) && isset($factura[0]['total_factura']) ? $factura[0]['total_factura'] : 0;
 $impuesto = $total * 0.07;
 $total_con_impuesto = $total + $impuesto;
+$fecha_actual = date('Y-m-d H:i');
+$nombre_cliente = $_SESSION['usuario'] ?? 'Cliente Desconocido';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -85,7 +87,7 @@ $total_con_impuesto = $total + $impuesto;
           <i class="fas fa-shopping-cart"></i>
         </div>
         <h3 class="empty-cart-message">Tu carrito está vacío</h3>
-        <a href="catalogo.html" class="continue-shopping">
+        <a href="homePublic.php" class="continue-shopping">
           <i class="fas fa-arrow-left"></i> Continuar comprando
         </a>
       </div>
@@ -93,15 +95,15 @@ $total_con_impuesto = $total + $impuesto;
   </main>
 
   <?php include('footer.php'); ?>
+  <?php include('modal_factura_detalle.php'); ?>
 
   <script>
-
     document.querySelectorAll('.quantity-btn').forEach(btn => {
       btn.addEventListener('click', function () {
         const id_parte = this.dataset.id;
         const cantidadSpan = document.getElementById('cantidad-' + id_parte);
         let cantidad = parseInt(cantidadSpan.textContent);
-        const cantidadAnterior = cantidad; // Guardamos el valor anterior
+        const cantidadAnterior = cantidad;
 
         if (this.classList.contains('minus-btn')) {
           if (cantidad > 0) cantidad--;
@@ -109,10 +111,8 @@ $total_con_impuesto = $total + $impuesto;
           cantidad++;
         }
 
-        // Actualiza el span visualmente
         cantidadSpan.textContent = cantidad;
 
-        // Llama a agregar_carrito.php por AJAX
         fetch('../controller_public/agregar_carrito.php', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -121,17 +121,14 @@ $total_con_impuesto = $total + $impuesto;
         .then(res => res.json())
         .then(data => {
           if (!data.ok) {
-            // Si hay error, restaurar el valor anterior
             cantidadSpan.textContent = cantidadAnterior;
             Swal.fire('Error', data.msg || 'Error al actualizar cantidad', 'error');
           } else {
-            // Opcional: recarga totales o la página si quieres reflejar el cambio
             location.reload();
           }
         });
       });
     });
-
 
     document.querySelectorAll('.remove-btn').forEach(btn => {
       btn.addEventListener('click', function () {
@@ -173,7 +170,54 @@ $total_con_impuesto = $total + $impuesto;
         });
       });
     });
+
+    document.querySelector('.checkout-btn')?.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      // Enviar solicitud al backend para registrar el pago
+      fetch('../controller_public/registrar_pago.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          id_usuario: <?= json_encode($id_usuario) ?>
+        })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.ok) {
+          Swal.fire({
+            title: '¡Pago realizado con éxito!',
+            text: 'Gracias por tu compra.',
+            icon: 'success',
+            confirmButtonText: 'Ver factura'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              document.getElementById('modal-factura-detalle').style.display = 'flex';
+            }
+          });
+        } else {
+          Swal.fire({
+            title: 'Error al procesar el pago',
+            text: data.msg || 'Ocurrió un error inesperado.',
+            icon: 'error'
+          });
+        }
+      })
+      .catch(error => {
+        console.error('Error en la solicitud:', error);
+        Swal.fire({
+          title: 'Error de red',
+          text: 'No se pudo completar la transacción.',
+          icon: 'error'
+        });
+      });
+    });
+
+
   </script>
 
+  
 </body>
 </html>

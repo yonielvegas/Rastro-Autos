@@ -35,4 +35,26 @@ class Carrito {
 
         return ['ok' => false, 'msg' => 'Error desconocido al agregar al carrito'];
     }
+
+    public function pagar($id_usuario) {
+        if (!$id_usuario) {
+            return ['ok' => false, 'msg' => 'Datos inválidos'];
+        }
+
+        logger::info("Intento de registrar pago para el usuario ID $id_usuario");
+
+        $resultado = $this->db->registrarPago($id_usuario);
+
+        // $resultado es un array con 'ok' y 'mensaje'
+        if (is_array($resultado) && isset($resultado['ok'], $resultado['mensaje'])) {
+            return [
+                'ok' => $resultado['ok'],
+                'msg' => $resultado['mensaje']
+            ];
+        }
+
+        // Si no es lo esperado, error genérico
+        return ['ok' => false, 'msg' => 'Error desconocido al registrar el pago'];
+    }
+
 }

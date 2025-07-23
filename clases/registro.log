@@ -3134,3 +3134,275 @@
 [2025-07-23 18:47:46] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"53.83"}]
 [2025-07-23 18:47:47] [INFO] id de usuario detalles partes: 2
 [2025-07-23 18:47:47] [INFO] Intento de Registrar Trazabilidad: {"id_parte":21,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"53.83","cantidad_stock":13,"codigo_serie":"FOR-F-1-2010-GU","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-23 19:54:11] [INFO] id de usuario detalles partes: 2
+[2025-07-23 19:54:11] [INFO] Intento de Registrar Trazabilidad: {"id_parte":21,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"53.83","cantidad_stock":13,"codigo_serie":"FOR-F-1-2010-GU","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-23 19:54:12] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"53.83"}]
+[2025-07-23 19:54:50] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"53.83"}]
+[2025-07-23 20:10:23] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"53.83"}]
+[2025-07-23 20:10:24] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"53.83"}]
+[2025-07-23 20:12:55] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"53.83"}]
+[2025-07-23 20:15:17] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"53.83"}]
+[2025-07-23 20:20:59] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"53.83"}]
+[2025-07-23 20:21:22] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"53.83"}]
+[2025-07-23 20:22:05] [INFO] id de usuario detalles partes: 2
+[2025-07-23 20:22:05] [INFO] Intento de Registrar Trazabilidad: {"id_parte":21,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"53.83","cantidad_stock":13,"codigo_serie":"FOR-F-1-2010-GU","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-23 20:22:09] [INFO] id de usuario detalles partes: 2
+[2025-07-23 20:22:09] [INFO] Intento de Registrar Trazabilidad: {"id_parte":56,"nombre":"Bisagra de puerta","descripcion":"Bisagra de puerta dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Puertas' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado texturizado en color negro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"98.98","cantidad_stock":12,"codigo_serie":"FOR-F-1-2010-BI","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Puertas","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-23 20:22:11] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 20:22:11] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 56, Cantidad 1
+[2025-07-23 20:22:11] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 56, Cantidad 1
+[2025-07-23 20:22:11] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 56, Cantidad 1
+[2025-07-23 20:22:11] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":56,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 20:22:11] [INFO] ✅ Producto con ID 56 agregado al carrito del usuario con ID 2.
+[2025-07-23 20:22:11] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 56, Cantidad 1
+[2025-07-23 20:22:16] [INFO] id de usuario detalles partes: 2
+[2025-07-23 20:22:16] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 20:22:19] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 20:22:19] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 20:22:19] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 20:22:19] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 20:22:19] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":24,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 20:22:19] [INFO] ✅ Producto con ID 24 agregado al carrito del usuario con ID 2.
+[2025-07-23 20:22:19] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 20:22:20] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:22:57] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:23:06] [INFO] id de usuario detalles partes: 2
+[2025-07-23 20:23:06] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 20:23:08] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:23:15] [INFO] id de usuario detalles partes: 2
+[2025-07-23 20:23:15] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 20:23:16] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:25:57] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:26:17] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:27:49] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:28:52] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:29:54] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:31:01] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:33:37] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:36:14] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:38:45] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:39:29] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:41:39] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:42:21] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:42:51] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:45:29] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:50:06] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:50:55] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:51:31] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 20:51:48] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-23 12:38:38","total_factura":"614.81"}]
+[2025-07-23 21:36:03] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 21:36:05] [INFO] id de usuario detalles partes: 2
+[2025-07-23 21:36:05] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 21:36:06] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 21:36:06] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 21:36:06] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 21:36:06] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 21:36:06] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":24,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 21:36:06] [INFO] ✅ Producto con ID 24 agregado al carrito del usuario con ID 2.
+[2025-07-23 21:36:06] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 21:36:11] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-23 16:36:06","total_factura":"462.00","estado":0}]
+[2025-07-23 21:38:55] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-23 16:36:06","total_factura":"462.00","estado":0}]
+[2025-07-23 21:40:49] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-23 16:36:06","total_factura":"462.00","estado":0}]
+[2025-07-23 21:41:01] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-23 16:36:06","total_factura":"462.00","estado":0}]
+[2025-07-23 21:41:02] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-23 16:36:06","total_factura":"462.00","estado":0}]
+[2025-07-23 21:41:03] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-23 16:36:06","total_factura":"462.00","estado":0}]
+[2025-07-23 21:42:40] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-23 16:36:06","total_factura":"462.00","estado":0}]
+[2025-07-23 21:44:05] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-23 16:36:06","total_factura":"462.00","estado":0}]
+[2025-07-23 21:44:06] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-23 16:36:06","total_factura":"462.00","estado":0}]
+[2025-07-23 21:45:26] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-23 16:36:06","total_factura":"462.00","estado":0}]
+[2025-07-23 21:48:31] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-23 16:36:06","total_factura":"462.00","estado":0}]
+[2025-07-23 21:48:34] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 21:48:34] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID , Cantidad 
+[2025-07-23 21:48:34] [INFO] Intento de registrar pago para el usuario ID 2
+[2025-07-23 21:48:34] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-23 16:36:06","total_factura":"462.00","estado":0}]
+[2025-07-23 21:48:34] [INFO] ✅ Pago registrado correctamente para el usuario con ID 2.
+[2025-07-23 21:48:37] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 21:48:37] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID , Cantidad 
+[2025-07-23 21:48:37] [INFO] Intento de registrar pago para el usuario ID 2
+[2025-07-23 21:48:37] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 21:48:37] [ERROR] ❌ No se encontró factura para el usuario con ID 2.
+[2025-07-23 21:48:40] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 21:49:28] [INFO] id de usuario detalles partes: 2
+[2025-07-23 21:49:28] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 21:49:29] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 21:49:29] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 21:49:29] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 21:49:29] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 21:49:29] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":24,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 21:49:29] [INFO] ✅ Producto con ID 24 agregado al carrito del usuario con ID 2.
+[2025-07-23 21:49:29] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 21:49:34] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":3,"fecha":"2025-07-23 16:49:29","total_factura":"462.00","estado":0}]
+[2025-07-23 21:49:41] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 21:49:41] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID , Cantidad 
+[2025-07-23 21:49:41] [INFO] Intento de registrar pago para el usuario ID 2
+[2025-07-23 21:49:41] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":3,"fecha":"2025-07-23 16:49:29","total_factura":"462.00","estado":0}]
+[2025-07-23 21:49:41] [INFO] ✅ Pago registrado correctamente para el usuario con ID 2.
+[2025-07-23 21:50:59] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 21:51:01] [INFO] id de usuario detalles partes: 2
+[2025-07-23 21:51:01] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 21:51:04] [INFO] id de usuario detalles partes: 2
+[2025-07-23 21:51:04] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 21:51:04] [INFO] id de usuario detalles partes: 2
+[2025-07-23 21:51:04] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 21:51:05] [INFO] id de usuario detalles partes: 2
+[2025-07-23 21:51:05] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 21:51:05] [INFO] id de usuario detalles partes: 2
+[2025-07-23 21:51:05] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 21:51:05] [INFO] id de usuario detalles partes: 2
+[2025-07-23 21:51:05] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 21:51:13] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 21:51:13] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 21:51:13] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 21:51:13] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 21:51:13] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":24,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 21:51:13] [INFO] ✅ Producto con ID 24 agregado al carrito del usuario con ID 2.
+[2025-07-23 21:51:13] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 21:51:14] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":4,"fecha":"2025-07-23 16:51:13","total_factura":"462.00","estado":0}]
+[2025-07-23 21:51:17] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 21:51:17] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID , Cantidad 
+[2025-07-23 21:51:17] [INFO] Intento de registrar pago para el usuario ID 2
+[2025-07-23 21:51:17] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":4,"fecha":"2025-07-23 16:51:13","total_factura":"462.00","estado":0}]
+[2025-07-23 21:51:17] [INFO] ✅ Pago registrado correctamente para el usuario con ID 2.
+[2025-07-23 21:51:18] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 21:51:23] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 21:51:48] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 21:51:50] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 22:03:47] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 22:03:48] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 22:03:48] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 22:03:49] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 22:03:50] [INFO] id de usuario detalles partes: 2
+[2025-07-23 22:03:50] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 22:03:55] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 22:03:55] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 22:03:55] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 22:03:55] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 22:03:55] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":24,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 22:03:55] [INFO] ✅ Producto con ID 24 agregado al carrito del usuario con ID 2.
+[2025-07-23 22:03:55] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 22:03:57] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":5,"fecha":"2025-07-23 17:03:55","total_factura":"154.00","estado":0}]
+[2025-07-23 22:03:58] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 22:03:58] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID , Cantidad 
+[2025-07-23 22:03:58] [INFO] Intento de registrar pago para el usuario ID 2
+[2025-07-23 22:03:58] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":5,"fecha":"2025-07-23 17:03:55","total_factura":"154.00","estado":0}]
+[2025-07-23 22:06:06] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 22:06:11] [INFO] id de usuario detalles partes: 2
+[2025-07-23 22:06:11] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":19,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 22:06:13] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 22:06:13] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 22:06:13] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 22:06:13] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 22:06:13] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":24,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 22:06:13] [INFO] ✅ Producto con ID 24 agregado al carrito del usuario con ID 2.
+[2025-07-23 22:06:13] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 22:06:15] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 17:06:13","total_factura":"154.00","estado":0}]
+[2025-07-23 22:06:18] [INFO] Ejecutando registrar_pago.php
+[2025-07-23 22:06:18] [INFO] Intento de registrar pago para el usuario ID 2
+[2025-07-23 22:06:18] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 17:06:13","total_factura":"154.00","estado":0}]
+[2025-07-23 22:09:46] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 22:09:47] [INFO] id de usuario detalles partes: 2
+[2025-07-23 22:09:47] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":18,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 22:09:49] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 22:09:49] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 22:09:49] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 22:09:49] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 22:09:49] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":24,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 22:09:49] [INFO] ✅ Producto con ID 24 agregado al carrito del usuario con ID 2.
+[2025-07-23 22:09:49] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 22:09:50] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":7,"fecha":"2025-07-23 17:09:49","total_factura":"154.00","estado":0}]
+[2025-07-23 22:09:53] [INFO] Ejecutando registrar_pago.php
+[2025-07-23 22:09:53] [INFO] Intento de registrar pago para el usuario ID 2
+[2025-07-23 22:09:53] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":7,"fecha":"2025-07-23 17:09:49","total_factura":"154.00","estado":0}]
+[2025-07-23 22:09:56] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 22:09:58] [INFO] id de usuario detalles partes: 2
+[2025-07-23 22:09:58] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":17,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 22:12:04] [INFO] id de usuario detalles partes: 2
+[2025-07-23 22:12:04] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":17,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 22:12:08] [INFO] id de usuario detalles partes: 2
+[2025-07-23 22:12:08] [INFO] Intento de Registrar Trazabilidad: {"id_parte":4,"nombre":"Panel lateral","descripcion":"Panel lateral dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado liso en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"83.82","cantidad_stock":12,"codigo_serie":"TOY-PRA-2011-PA","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 22:12:18] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 22:12:18] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 4, Cantidad 3
+[2025-07-23 22:12:18] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 4, Cantidad 3
+[2025-07-23 22:12:18] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 4, Cantidad 3
+[2025-07-23 22:12:18] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":4,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 22:12:18] [INFO] ✅ Producto con ID 4 agregado al carrito del usuario con ID 2.
+[2025-07-23 22:12:18] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 4, Cantidad 3
+[2025-07-23 22:12:45] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 22:12:45] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 4, Cantidad 12
+[2025-07-23 22:12:45] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 4, Cantidad 12
+[2025-07-23 22:12:45] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 4, Cantidad 12
+[2025-07-23 22:12:45] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":4,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 22:12:45] [INFO] ✅ Producto con ID 4 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 22:12:45] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 4, Cantidad 12
+[2025-07-23 22:12:46] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 17:12:18","total_factura":"1005.84","estado":0}]
+[2025-07-23 22:13:25] [INFO] Hash temporal generado para pruebas: $2y$13$JloxURQTiT4a0R3c6eUmg.XpswbQ.bdUw58pWw51UrAOiK0ckUSjG
+[2025-07-23 22:13:25] [INFO] ROL del usuario con ID 4 es: 2
+[2025-07-23 22:13:25] [INFO] Usuario encontrado en base de datos: salmon
+[2025-07-23 22:13:25] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$Kca2hIpI079gLHZsSuSnoOz49P/Qc62q5SZFJ8OeQbUeVCjRGyOH6'
+[2025-07-23 22:13:25] [INFO] Login exitoso para el usuario: salmon
+[2025-07-23 22:13:25] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":4,"usuario":"salmon","ip_usuario":"::1"}
+[2025-07-23 22:13:25] [INFO] Intento de login registrado para el usuario: salmon ID : 4 con resultado: 1
+[2025-07-23 22:13:25] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 22:13:47] [INFO] Hash temporal generado para pruebas: $2y$13$nZs3AMpp5Zx.I89fKWa2MO78VlxABTJehxHWBpAD3iUhBYrZFS8fu
+[2025-07-23 22:13:47] [INFO] ROL del usuario con ID 6 es: 3
+[2025-07-23 22:13:47] [INFO] Usuario encontrado en base de datos: juanp
+[2025-07-23 22:13:47] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$ITgGFjNb/T6RXxSLIPNjf.EDv2d3RDo0mqrikV.eAi3VkLNnOO09a'
+[2025-07-23 22:13:47] [INFO] Login exitoso para el usuario: juanp
+[2025-07-23 22:13:47] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":6,"usuario":"juanp","ip_usuario":"::1"}
+[2025-07-23 22:13:47] [INFO] Intento de login registrado para el usuario: juanp ID : 6 con resultado: 1
+[2025-07-23 22:13:47] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 22:14:16] [INFO] Hash temporal generado para pruebas: $2y$13$i.W.aeLzCwu39TDpgx4X3.z/wEHESdq2OkfY0fk61.DCxo2A56UZe
+[2025-07-23 22:14:16] [INFO] ROL del usuario con ID 6 es: 3
+[2025-07-23 22:14:16] [INFO] Usuario encontrado en base de datos: juanp
+[2025-07-23 22:14:16] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$ITgGFjNb/T6RXxSLIPNjf.EDv2d3RDo0mqrikV.eAi3VkLNnOO09a'
+[2025-07-23 22:14:16] [INFO] Login exitoso para el usuario: juanp
+[2025-07-23 22:14:16] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":6,"usuario":"juanp","ip_usuario":"::1"}
+[2025-07-23 22:14:16] [INFO] Intento de login registrado para el usuario: juanp ID : 6 con resultado: 1
+[2025-07-23 22:14:16] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 22:14:45] [INFO] id de usuario detalles partes: 6
+[2025-07-23 22:14:45] [INFO] Intento de Registrar Trazabilidad: {"id_parte":4,"nombre":"Panel lateral","descripcion":"Panel lateral dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado liso en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"83.82","cantidad_stock":12,"codigo_serie":"TOY-PRA-2011-PA","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 22:14:50] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 22:14:50] [INFO] Intento de agregar al carrito: Usuario ID 6, Parte ID 4, Cantidad 12
+[2025-07-23 22:14:50] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 6, Parte ID 4, Cantidad 12
+[2025-07-23 22:14:50] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 6, Parte ID 4, Cantidad 12
+[2025-07-23 22:14:50] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":4,"usuario":6,"ip_usuario":"::1"}
+[2025-07-23 22:14:50] [INFO] ✅ Producto con ID 4 agregado al carrito del usuario con ID 6.
+[2025-07-23 22:14:50] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 6, Parte ID 4, Cantidad 12
+[2025-07-23 22:14:51] [INFO] Intento de obtener factura para el usuario con ID 6: [{"id_factura":9,"fecha":"2025-07-23 17:14:50","total_factura":"1005.84","estado":0}]
+[2025-07-23 22:14:53] [INFO] Ejecutando registrar_pago.php
+[2025-07-23 22:14:53] [INFO] Intento de registrar pago para el usuario ID 6
+[2025-07-23 22:14:53] [INFO] Intento de obtener factura para el usuario con ID 6: [{"id_factura":9,"fecha":"2025-07-23 17:14:50","total_factura":"1005.84","estado":0}]
+[2025-07-23 22:14:55] [INFO] Intento de obtener factura para el usuario con ID 6: []
+[2025-07-23 22:14:56] [INFO] id de usuario detalles partes: 6
+[2025-07-23 22:14:56] [INFO] Intento de Registrar Trazabilidad: {"id_parte":4,"nombre":"Panel lateral","descripcion":"Panel lateral dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado liso en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"83.82","cantidad_stock":0,"codigo_serie":"TOY-PRA-2011-PA","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 22:15:06] [INFO] Hash temporal generado para pruebas: $2y$13$/pCfWmvtnVlBPTKiy8glJe.tinHlx57zOM6yFiDDqI.CSnfDUIGOy
+[2025-07-23 22:15:06] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-23 22:15:06] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-23 22:15:06] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-23 22:15:07] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-23 22:15:07] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-23 22:15:07] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-23 22:15:07] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 22:15:08] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 17:12:18","total_factura":"1005.84","estado":0}]
+[2025-07-23 22:15:09] [INFO] Ejecutando registrar_pago.php
+[2025-07-23 22:15:09] [INFO] Intento de registrar pago para el usuario ID 2
+[2025-07-23 22:15:09] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 17:12:18","total_factura":"1005.84","estado":0}]
+[2025-07-23 22:17:36] [INFO] Ejecutando registrar_pago.php
+[2025-07-23 22:17:36] [INFO] Intento de registrar pago para el usuario ID 2
+[2025-07-23 22:17:36] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 17:12:18","total_factura":"1005.84","estado":0}]
+[2025-07-23 22:17:52] [INFO] Ejecutando registrar_pago.php
+[2025-07-23 22:17:52] [INFO] Intento de registrar pago para el usuario ID 2
+[2025-07-23 22:17:52] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 17:12:18","total_factura":"1005.84","estado":0}]
+[2025-07-23 22:18:03] [INFO] id de usuario detalles partes: 2
+[2025-07-23 22:18:03] [INFO] Intento de Registrar Trazabilidad: {"id_parte":10,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Rav4 del a\u00f1o 2022. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"217.70","cantidad_stock":19,"codigo_serie":"TOY-RAV-2022-CO","id_marca":1,"id_modelo":2,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Rav4","anio":"2022"}
+[2025-07-23 22:18:04] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 22:18:04] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 10, Cantidad 1
+[2025-07-23 22:18:04] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 10, Cantidad 1
+[2025-07-23 22:18:04] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 10, Cantidad 1
+[2025-07-23 22:18:04] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":10,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 22:18:04] [INFO] ✅ Producto con ID 10 agregado al carrito del usuario con ID 2.
+[2025-07-23 22:18:04] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 10, Cantidad 1
+[2025-07-23 22:18:07] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 17:12:18","total_factura":"1223.54","estado":0}]
+[2025-07-23 22:18:09] [INFO] Ejecutando registrar_pago.php
+[2025-07-23 22:18:09] [INFO] Intento de registrar pago para el usuario ID 2
+[2025-07-23 22:18:09] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 17:12:18","total_factura":"1223.54","estado":0}]
