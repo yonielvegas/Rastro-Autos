@@ -138,7 +138,7 @@ include('../clases/conexion.php');
             type="number" 
             id="cantidadProducto" 
             class="quantity-input" 
-            min="1" 
+            min="0" 
             max="<?php echo $stock; ?>" 
             value="1" 
             onchange="validateQuantity()" 

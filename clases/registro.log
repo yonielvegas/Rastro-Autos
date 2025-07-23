@@ -1556,3 +1556,416 @@
 [2025-07-22 22:17:53] [INFO] Intento de Registrar Trazabilidad: {"id_parte":9,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"134.73","cantidad_stock":14,"codigo_serie":"TOY-COR-2023-CO","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
 [2025-07-22 22:17:59] [INFO] Intento de Registrar Trazabilidad: {"id_parte":9,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"134.73","cantidad_stock":14,"codigo_serie":"TOY-COR-2023-CO","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
 [2025-07-22 22:18:04] [INFO] Intento de Registrar Trazabilidad: {"id_parte":22,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado liso en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"115.34","cantidad_stock":15,"codigo_serie":"TOY-COR-2023-BU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+[2025-07-22 22:26:43] [INFO] Intento de Registrar Trazabilidad: {"id_parte":96,"nombre":"Cristal de espejo de repuesto","descripcion":"Cristal de espejo de repuesto dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o ","precio":"147.73","cantidad_stock":17,"codigo_serie":"TOY-COR-2023-CR","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Espejos","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-22 22:26:58] [INFO] Intento de Registrar Trazabilidad: {"id_parte":96,"nombre":"Cristal de espejo de repuesto","descripcion":"Cristal de espejo de repuesto dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o ","precio":"147.73","cantidad_stock":17,"codigo_serie":"TOY-COR-2023-CR","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Espejos","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-22 23:20:10] [INFO] Hash temporal generado para pruebas: $2y$13$Giz7JL7PpWZCHLRqTWFPl.zO.1MB0JOABubG2jRtAvNshCRRQ2ZTC
+[2025-07-22 23:20:10] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-22 23:20:10] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-22 23:20:10] [INFO] Verificando contraseña: entrada: 'brochin' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-22 23:20:11] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-22 23:20:11] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-22 23:20:11] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-22 23:20:33] [INFO] Hash temporal generado para pruebas: $2y$13$Wk98l1dp5cRPJqLa9QtzYO0aE6jZz8uSNhisj42/8bja2VDx4q0PK
+[2025-07-22 23:20:33] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-22 23:20:33] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-22 23:20:33] [INFO] Verificando contraseña: entrada: 'Brochin' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-22 23:20:34] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-22 23:20:34] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-22 23:20:34] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-22 23:20:46] [INFO] Hash temporal generado para pruebas: $2y$13$/Azc1nY0i7029kETqdwJHe29mRHXXmkHiW4pVjJo.oLfumwrm.ewm
+[2025-07-22 23:20:46] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-22 23:20:46] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-22 23:20:46] [INFO] Verificando contraseña: entrada: 'brochin' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-22 23:20:47] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-22 23:20:47] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-22 23:20:47] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-22 23:21:48] [INFO] Hash temporal generado para pruebas: $2y$13$EOrNRan7rWg5YgwdNI3s/ujjUdbvXx/k3r7FljX23LmObmlBDlppm
+[2025-07-22 23:21:48] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-22 23:21:48] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-22 23:21:48] [INFO] Verificando contraseña: entrada: 'Brochin' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-22 23:21:49] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-22 23:22:38] [INFO] Hash temporal generado para pruebas: $2y$13$y6wFnXfvgK04lcRyLYq3v.QbSUvGL9sKHqCjmDXXDCsX2bzWAdUc2
+[2025-07-22 23:22:38] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-22 23:22:38] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-22 23:22:38] [INFO] Verificando contraseña: entrada: 'Brochin' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-22 23:22:38] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-22 23:22:38] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-22 23:22:38] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-22 23:22:46] [INFO] Hash temporal generado para pruebas: $2y$13$cBZ0Lx/.w986f973APoPz.QV/Jy/C4iHG5UNJZLR19qRmCfOCX9Mq
+[2025-07-22 23:22:46] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-22 23:22:46] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-22 23:22:46] [INFO] Verificando contraseña: entrada: 'brochin' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-22 23:22:46] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-22 23:22:46] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-22 23:22:46] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+=======
+[2025-07-22 22:21:26] [INFO] Hash temporal generado para pruebas: $2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO
+[2025-07-22 22:21:26] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-22 22:21:26] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-22 22:21:26] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$EzDMd99mA87WwNFOxRDNLOBaSzOMyacQ9lA.q9U/rv6KOD7mjUU9S'
+[2025-07-22 22:21:26] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-22 22:21:26] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-22 22:21:26] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-22 22:37:57] [INFO] Hash temporal generado para pruebas: $2y$13$htfOiBUaVNYaTn7qemHlbO81AQVf0ZZBDKfqYNCjpdX4fvcIogaD6
+[2025-07-22 22:37:57] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-22 22:37:57] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-22 22:37:57] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-22 22:37:58] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-22 22:37:58] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-22 22:37:58] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-22 22:37:58] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-22 22:38:10] [INFO] Intento de Registrar Trazabilidad: {"id_parte":14,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado liso en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"42.50","cantidad_stock":15,"codigo_serie":"FOR-F-1-2010-CO","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-22 22:41:11] [INFO] Intento de Registrar Trazabilidad: {"id_parte":14,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado liso en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"42.50","cantidad_stock":15,"codigo_serie":"FOR-F-1-2010-CO","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-22 23:46:45] [INFO] Intento de Registrar Trazabilidad: {"id_parte":14,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado liso en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"42.50","cantidad_stock":15,"codigo_serie":"FOR-F-1-2010-CO","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-22 23:46:52] [INFO] Intento de Registrar Trazabilidad: {"id_parte":21,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"53.83","cantidad_stock":13,"codigo_serie":"FOR-F-1-2010-GU","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-22 23:47:11] [INFO] Intento de Registrar Trazabilidad: {"id_parte":21,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"53.83","cantidad_stock":13,"codigo_serie":"FOR-F-1-2010-GU","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-22 23:47:45] [INFO] Intento de Registrar Trazabilidad: {"id_parte":21,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"53.83","cantidad_stock":13,"codigo_serie":"FOR-F-1-2010-GU","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-22 23:47:47] [INFO] Intento de agregar al carrito: Usuario ID , Parte ID 21, Cantidad 1
+[2025-07-22 23:50:31] [INFO] id de usuario: No autenticado
+[2025-07-22 23:50:31] [INFO] Intento de Registrar Trazabilidad: {"id_parte":21,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"53.83","cantidad_stock":13,"codigo_serie":"FOR-F-1-2010-GU","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-22 23:51:30] [INFO] id de usuario en Modelos: No autenticado
+[2025-07-22 23:51:41] [INFO] id de usuario en Modelos: No autenticado
+[2025-07-22 23:52:02] [INFO] id de usuario catalogo: No autenticado
+[2025-07-22 23:53:00] [INFO] id de usuario catalogo: No autenticado
+[2025-07-22 23:53:04] [INFO] id de usuario catalogo: No autenticado
+[2025-07-22 23:53:51] [INFO] id de usuario catalogo: No autenticado
+[2025-07-22 23:53:55] [INFO] id de usuario catalogo: No autenticado
+[2025-07-22 23:55:28] [INFO] Hash temporal generado para pruebas: $2y$13$aBoVOkWBFQMMQr.0H4RncO3oiKKpgXKEWPX1GwJnCNijKSbRaxCbe
+[2025-07-22 23:55:28] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-22 23:55:28] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-22 23:55:28] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-22 23:55:28] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-22 23:55:28] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-22 23:55:28] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-22 23:55:28] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-22 23:55:28] [INFO] id de usuario catalogo: 2
+[2025-07-22 23:55:37] [INFO] id de usuario en Modelos: 2
+[2025-07-22 23:55:45] [INFO] id de usuario detalles partes: 2
+[2025-07-22 23:55:45] [INFO] Intento de Registrar Trazabilidad: {"id_parte":31,"nombre":"Radiador","descripcion":"Radiador dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"235.97","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-RA","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-22 23:55:51] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 31, Cantidad 1
+[2025-07-22 23:55:51] [INFO] Producto con ID 31 agregado al carrito del usuario con ID 2.
+[2025-07-22 23:56:17] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 31, Cantidad 2
+[2025-07-22 23:56:17] [INFO] Producto con ID 31 actualizado en el carrito del usuario con ID 2.
+[2025-07-22 23:56:31] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 31, Cantidad 1
+[2025-07-22 23:56:31] [INFO] Producto con ID 31 actualizado en el carrito del usuario con ID 2.
+>>>>>>> 0ed9e95 (Funcionalidad de que el usuario pueda agregar productos al carrito)
+[2025-07-23 00:26:29] [INFO] id de usuario detalles partes: 2
+[2025-07-23 00:26:29] [INFO] Intento de Registrar Trazabilidad: {"id_parte":31,"nombre":"Radiador","descripcion":"Radiador dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"235.97","cantidad_stock":19,"codigo_serie":"TOY-PRA-2011-RA","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 00:26:29] [INFO] id de usuario en Modelos: 2
+[2025-07-23 00:26:44] [INFO] id de usuario catalogo: No autenticado
+[2025-07-23 00:26:53] [INFO] id de usuario en Modelos: No autenticado
+[2025-07-23 00:27:01] [INFO] id de usuario en Modelos: No autenticado
+[2025-07-23 00:27:05] [INFO] id de usuario en Modelos: No autenticado
+[2025-07-23 00:27:08] [INFO] id de usuario en Modelos: No autenticado
+[2025-07-23 00:27:10] [INFO] id de usuario en Modelos: No autenticado
+[2025-07-23 00:27:12] [INFO] id de usuario en Modelos: No autenticado
+[2025-07-23 00:27:40] [INFO] Hash temporal generado para pruebas: $2y$13$azFu.EGuidl5ntNImlTMruuXZa2MKih8FZXNtxMEKM7KgyXbr48Ou
+[2025-07-23 00:27:40] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-23 00:27:40] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-23 00:27:40] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$EzDMd99mA87WwNFOxRDNLOBaSzOMyacQ9lA.q9U/rv6KOD7mjUU9S'
+[2025-07-23 00:27:40] [INFO] Login exitoso para el usuario: admin
+[2025-07-23 00:27:40] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-23 00:27:40] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-23 00:27:40] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 00:28:14] [INFO] Hash temporal generado para pruebas: $2y$13$hYRHu1yWQSdLLw98fGtnge6pdMCWiMx5S3m.Ma6s/C2GVBUeT8ipW
+[2025-07-23 00:28:14] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-23 00:28:14] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-23 00:28:14] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-23 00:28:15] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-23 00:28:15] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-23 00:28:15] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-23 00:28:15] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 00:28:15] [INFO] id de usuario catalogo: 2
+[2025-07-23 00:28:22] [INFO] id de usuario en Modelos: 2
+[2025-07-23 00:28:24] [INFO] id de usuario detalles partes: 2
+[2025-07-23 00:28:24] [INFO] Intento de Registrar Trazabilidad: {"id_parte":10,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Rav4 del a\u00f1o 2022. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"217.70","cantidad_stock":19,"codigo_serie":"TOY-RAV-2022-CO","id_marca":1,"id_modelo":2,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Rav4","anio":"2022"}
+[2025-07-23 01:23:36] [INFO] id de usuario detalles partes: 2
+[2025-07-23 01:23:39] [INFO] id de usuario detalles partes: 2
+[2025-07-23 01:24:31] [INFO] id de usuario detalles partes: 2
+[2025-07-23 01:24:31] [INFO] Intento de Registrar Trazabilidad: {"id_parte":10,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Rav4 del a\u00f1o 2022. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"217.70","cantidad_stock":19,"codigo_serie":"TOY-RAV-2022-CO","id_marca":1,"id_modelo":2,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Rav4","anio":"2022"}
+[2025-07-23 01:24:35] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 10, Cantidad 2
+[2025-07-23 01:24:35] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":10,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 01:24:35] [INFO] Producto con ID 10 agregado al carrito del usuario con ID 2.
+[2025-07-23 01:45:25] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"435.40"}]
+[2025-07-23 01:48:00] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"435.40"}]
+[2025-07-23 01:49:08] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"435.40"}]
+[2025-07-23 01:49:36] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"435.40"}]
+[2025-07-23 01:49:48] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"435.40"}]
+[2025-07-23 01:51:05] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"435.40"}]
+[2025-07-23 01:54:06] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"571.37"}]
+[2025-07-23 03:10:44] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"571.37"}]
+[2025-07-23 03:40:28] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"571.37"}]
+[2025-07-23 03:40:31] [INFO] id de usuario detalles partes: 2
+[2025-07-23 03:40:31] [INFO] Intento de Registrar Trazabilidad: {"id_parte":10,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Rav4 del a\u00f1o 2022. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"217.70","cantidad_stock":17,"codigo_serie":"TOY-RAV-2022-CO","id_marca":1,"id_modelo":2,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Rav4","anio":"2022"}
+[2025-07-23 03:40:34] [INFO] id de usuario en Modelos: 2
+[2025-07-23 03:40:36] [INFO] id de usuario catalogo: 2
+[2025-07-23 03:40:47] [INFO] Hash temporal generado para pruebas: $2y$13$gjzd5Ivji3yI3QgSmCxBLugxEjfAw8pbAkL.6ryR3cSyIF3p9QHg6
+[2025-07-23 03:40:47] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-23 03:40:47] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-23 03:40:47] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-23 03:40:48] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-23 03:40:48] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-23 03:40:48] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-23 03:40:48] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 03:40:48] [INFO] id de usuario catalogo: 2
+[2025-07-23 03:43:51] [INFO] Hash temporal generado para pruebas: $2y$13$ZnaAUvNs6H.ZoNq2Wc8F9eR6W05jQVcMNXHwJ6KiMC356vdhooqsq
+[2025-07-23 03:43:51] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-23 03:43:51] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-23 03:43:51] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-23 03:43:51] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-23 03:43:51] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-23 03:43:51] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-23 03:43:51] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 03:43:51] [INFO] id de usuario catalogo: 2
+[2025-07-23 03:50:57] [INFO] id de usuario en Modelos: 2
+[2025-07-23 03:51:27] [INFO] id de usuario detalles partes: 2
+[2025-07-23 03:51:27] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":19,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 03:58:12] [INFO] id de usuario detalles partes: 2
+[2025-07-23 03:58:12] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":19,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 03:58:14] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"571.37"}]
+[2025-07-23 03:58:18] [INFO] id de usuario detalles partes: 2
+[2025-07-23 03:58:18] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":19,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 03:58:23] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"571.37"}]
+[2025-07-23 03:58:54] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"571.37"}]
+[2025-07-23 03:59:04] [INFO] id de usuario detalles partes: 2
+[2025-07-23 03:59:04] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":19,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 03:59:53] [INFO] id de usuario detalles partes: 2
+[2025-07-23 03:59:53] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":19,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:01:33] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"571.37"}]
+[2025-07-23 04:01:35] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:01:35] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":19,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:04:27] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:04:27] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":19,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:04:28] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:04:38] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"571.37"}]
+[2025-07-23 04:04:44] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"571.37"}]
+[2025-07-23 04:05:55] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"571.37"}]
+[2025-07-23 04:05:56] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:05:56] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":19,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:05:57] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:05:57] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":19,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:07:03] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:07:03] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":19,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:07:47] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:07:47] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":19,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:07:48] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:07:48] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:07:48] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:07:48] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":15,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 04:07:48] [INFO] Producto con ID 15 agregado al carrito del usuario con ID 2.
+[2025-07-23 04:08:02] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"636.60"}]
+[2025-07-23 04:08:13] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:08:14] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":18,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:08:19] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:08:19] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 2
+[2025-07-23 04:08:19] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 2
+[2025-07-23 04:08:19] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":15,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 04:08:19] [INFO] Producto con ID 15 agregado al carrito del usuario con ID 2.
+[2025-07-23 04:09:34] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:09:34] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":16,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:16:57] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:16:57] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:16:57] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:16:57] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":15,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 04:16:57] [INFO] Producto con ID 15 agregado al carrito del usuario con ID 2.
+[2025-07-23 04:17:37] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"832.29"}]
+[2025-07-23 04:26:16] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"832.29"}]
+[2025-07-23 04:27:33] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"832.29"}]
+[2025-07-23 04:28:05] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"832.29"}]
+[2025-07-23 04:30:05] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"832.29"}]
+[2025-07-23 04:30:09] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 15 del carrito del usuario 2
+[2025-07-23 04:30:09] [INFO] Se intentará eliminar el producto con ID 15 del carrito del usuario con ID 2.
+[2025-07-23 04:30:09] [INFO] Producto con ID 15 eliminado del carrito del usuario con ID 2.
+[2025-07-23 04:30:09] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"0.00"}]
+[2025-07-23 04:33:05] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:33:05] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":15,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:35:22] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:35:22] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:35:28] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"0.00"}]
+[2025-07-23 04:35:36] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"0.00"}]
+[2025-07-23 04:35:38] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:35:38] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":15,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:35:41] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:35:41] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 2
+[2025-07-23 04:38:38] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:38:38] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":15,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:38:41] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:38:41] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:38:41] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:39:41] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:39:41] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":15,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:39:48] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:39:48] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":15,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:39:50] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:39:50] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:39:50] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:41:39] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:41:39] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":15,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:41:44] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:41:44] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:41:44] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:42:23] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:42:24] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":15,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:42:27] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:42:27] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:42:27] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:42:27] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:45:35] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:45:35] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":15,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:45:38] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"0.00"}]
+[2025-07-23 04:45:42] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:45:42] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":15,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:45:43] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:45:43] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:45:43] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:45:43] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:45:43] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":15,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 04:45:43] [INFO] ✅ Producto con ID 15 agregado al carrito del usuario con ID 2.
+[2025-07-23 04:45:43] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:45:50] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"65.23"}]
+[2025-07-23 04:45:52] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:45:52] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":14,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:45:54] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:45:54] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:45:54] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:45:54] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:45:54] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":15,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 04:45:54] [INFO] ✅ Producto con ID 15 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 04:45:54] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:45:55] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"65.23"}]
+[2025-07-23 04:46:04] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:46:04] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":14,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:46:11] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:46:11] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:46:11] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:46:11] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:46:11] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":15,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 04:46:11] [INFO] ✅ Producto con ID 15 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 04:46:11] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:47:02] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:47:02] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":14,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:47:08] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:47:08] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:47:08] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:47:08] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:47:08] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":15,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 04:47:08] [INFO] ✅ Producto con ID 15 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 04:47:08] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:49:04] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:49:04] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":14,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:49:09] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:49:09] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 0
+[2025-07-23 04:49:09] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 0
+[2025-07-23 04:49:09] [INFO] Se intentará eliminar el producto con ID 15 del carrito del usuario con ID 2.
+[2025-07-23 04:49:09] [INFO] Producto con ID 15 eliminado del carrito del usuario con ID 2.
+[2025-07-23 04:49:09] [INFO] Carrito comunes Producto eliminado del carrito: Usuario ID 2, Parte ID 15
+[2025-07-23 04:49:09] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 0
+[2025-07-23 04:49:09] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":15,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 04:49:09] [INFO] ✅ Producto con ID 15 agregado al carrito del usuario con ID 2.
+[2025-07-23 04:49:09] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 15, Cantidad 0
+[2025-07-23 04:49:25] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"0.00"}]
+[2025-07-23 04:50:19] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:50:19] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":14,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:50:21] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:50:21] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:50:21] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:50:21] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:50:21] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":15,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 04:50:21] [INFO] ✅ Producto con ID 15 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 04:50:21] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:50:27] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:50:27] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":14,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:50:34] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:50:34] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 0
+[2025-07-23 04:50:34] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 0
+[2025-07-23 04:50:34] [INFO] Se intentará eliminar el producto con ID 15 del carrito del usuario con ID 2.
+[2025-07-23 04:50:34] [INFO] Producto con ID 15 eliminado del carrito del usuario con ID 2.
+[2025-07-23 04:50:34] [INFO] Carrito comunes Producto eliminado del carrito: Usuario ID 2, Parte ID 15
+[2025-07-23 04:50:38] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"0.00"}]
+[2025-07-23 04:50:40] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:50:40] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":14,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:50:52] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"0.00"}]
+[2025-07-23 04:52:20] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"0.00"}]
+[2025-07-23 04:53:41] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"0.00"}]
+[2025-07-23 04:53:47] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 10 del carrito del usuario 2
+[2025-07-23 04:53:47] [INFO] Se intentará eliminar el producto con ID 10 del carrito del usuario con ID 2.
+[2025-07-23 04:53:47] [INFO] Producto con ID 10 eliminado del carrito del usuario con ID 2.
+[2025-07-23 04:53:48] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":1,"fecha":"2025-07-22 18:55:51","total_factura":"0.00"}]
+[2025-07-23 04:54:40] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 31 del carrito del usuario 2
+[2025-07-23 04:54:40] [INFO] Se intentará eliminar el producto con ID 31 del carrito del usuario con ID 2.
+[2025-07-23 04:54:40] [INFO] Producto con ID 31 eliminado del carrito del usuario con ID 2.
+[2025-07-23 04:54:42] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 04:54:47] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 04:54:49] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:54:49] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":14,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:54:52] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:54:52] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:54:52] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:54:52] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:54:52] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":15,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 04:54:52] [INFO] ✅ Producto con ID 15 agregado al carrito del usuario con ID 2.
+[2025-07-23 04:54:52] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 15, Cantidad 1
+[2025-07-23 04:54:53] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-22 23:54:52","total_factura":"65.23"}]
+[2025-07-23 04:54:58] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:54:58] [INFO] Intento de Registrar Trazabilidad: {"id_parte":15,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"65.23","cantidad_stock":13,"codigo_serie":"TOY-COR-2023-GU","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:55:14] [INFO] id de usuario en Modelos: 2
+[2025-07-23 04:55:16] [INFO] id de usuario detalles partes: 2
+[2025-07-23 04:55:16] [INFO] Intento de Registrar Trazabilidad: {"id_parte":50,"nombre":"Bisagra de puerta","descripcion":"Bisagra de puerta dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Puertas' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"205.75","cantidad_stock":9,"codigo_serie":"TOY-COR-2023-BI","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Puertas","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 04:55:20] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 04:55:20] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 50, Cantidad 2
+[2025-07-23 04:55:20] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 50, Cantidad 2
+[2025-07-23 04:55:20] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 50, Cantidad 2
+[2025-07-23 04:55:20] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":50,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 04:55:20] [INFO] ✅ Producto con ID 50 agregado al carrito del usuario con ID 2.
+[2025-07-23 04:55:20] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 50, Cantidad 2
+[2025-07-23 04:55:21] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-22 23:54:52","total_factura":"476.73"}]
+[2025-07-23 04:55:25] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 15 del carrito del usuario 2
+[2025-07-23 04:55:25] [INFO] Se intentará eliminar el producto con ID 15 del carrito del usuario con ID 2.
+[2025-07-23 04:55:25] [INFO] Producto con ID 15 eliminado del carrito del usuario con ID 2.
+[2025-07-23 04:55:26] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-22 23:54:52","total_factura":"0.00"}]
+[2025-07-23 04:59:39] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":2,"fecha":"2025-07-22 23:54:52","total_factura":"0.00"}]
+[2025-07-23 04:59:41] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 50 del carrito del usuario 2
+[2025-07-23 04:59:41] [INFO] Se intentará eliminar el producto con ID 50 del carrito del usuario con ID 2.
+[2025-07-23 04:59:41] [INFO] Producto con ID 50 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 04:59:43] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 04:59:45] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 05:00:19] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 05:00:19] [INFO] id de usuario catalogo: 2
+[2025-07-23 05:00:23] [INFO] id de usuario en Modelos: 2
+[2025-07-23 05:00:25] [INFO] id de usuario detalles partes: 2
+[2025-07-23 05:00:25] [INFO] Intento de Registrar Trazabilidad: {"id_parte":20,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo Escape del a\u00f1o 2012. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado texturizado en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"35.82","cantidad_stock":10,"codigo_serie":"FOR-ESC-2012-GU","id_marca":3,"id_modelo":8,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"Escape","anio":"2012"}
+[2025-07-23 05:00:31] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 05:00:31] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 20, Cantidad 1
+[2025-07-23 05:00:31] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 20, Cantidad 1
+[2025-07-23 05:00:31] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 20, Cantidad 1
+[2025-07-23 05:00:31] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":20,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 05:00:31] [INFO] ✅ Producto con ID 20 agregado al carrito del usuario con ID 2.
+[2025-07-23 05:00:31] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 20, Cantidad 1
+[2025-07-23 05:00:32] [INFO] id de usuario en Modelos: 2
+[2025-07-23 05:00:34] [INFO] id de usuario catalogo: 2
+[2025-07-23 05:00:35] [INFO] id de usuario en Modelos: 2
+[2025-07-23 05:00:38] [INFO] id de usuario detalles partes: 2
+[2025-07-23 05:00:38] [INFO] Intento de Registrar Trazabilidad: {"id_parte":50,"nombre":"Bisagra de puerta","descripcion":"Bisagra de puerta dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Puertas' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"205.75","cantidad_stock":7,"codigo_serie":"TOY-COR-2023-BI","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Puertas","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 05:00:41] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 05:00:41] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 50, Cantidad 1
+[2025-07-23 05:00:41] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 50, Cantidad 1
+[2025-07-23 05:00:41] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 50, Cantidad 1
+[2025-07-23 05:00:41] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":50,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 05:00:41] [INFO] ✅ Producto con ID 50 agregado al carrito del usuario con ID 2.
+[2025-07-23 05:00:41] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 50, Cantidad 1
+[2025-07-23 05:00:42] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":3,"fecha":"2025-07-23 00:00:31","total_factura":"241.57"}]
+[2025-07-23 05:01:06] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 20 del carrito del usuario 2
+[2025-07-23 05:01:06] [INFO] Se intentará eliminar el producto con ID 20 del carrito del usuario con ID 2.
+[2025-07-23 05:01:06] [INFO] Producto con ID 20 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 05:01:07] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":3,"fecha":"2025-07-23 00:00:31","total_factura":"205.75"}]
+>>>>>>> 89d7472 (El carrito permite eliminar y actualizar el total. tambien arregle bugs con la actualizacion de cantidad al carrito.)
+[2025-07-23 05:21:14] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":3,"fecha":"2025-07-23 00:00:31","total_factura":"205.75"}]
+[2025-07-23 05:21:16] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 50 del carrito del usuario 2
+[2025-07-23 05:21:17] [INFO] Se intentará eliminar el producto con ID 50 del carrito del usuario con ID 2.
+[2025-07-23 05:21:17] [INFO] Producto con ID 50 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 05:21:18] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 05:21:20] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 05:21:22] [INFO] Intento de Registrar Trazabilidad: {"id_parte":50,"nombre":"Bisagra de puerta","descripcion":"Bisagra de puerta dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Puertas' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado brillante en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"205.75","cantidad_stock":6,"codigo_serie":"TOY-COR-2023-BI","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Puertas","marca":"Toyota","modelo":"Corolla","anio":"2023"}
