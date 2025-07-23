@@ -2169,3 +2169,87 @@
 [2025-07-23 06:12:49] [INFO] ✅ Producto con ID 24 actualizado en el carrito del usuario con ID 2.
 [2025-07-23 06:12:49] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 3
 [2025-07-23 06:12:53] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 00:55:14","total_factura":"462.00"}]
+[2025-07-23 14:31:28] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 00:55:14","total_factura":"462.00"}]
+[2025-07-23 14:31:28] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 00:55:14","total_factura":"462.00"}]
+[2025-07-23 14:31:31] [INFO] id de usuario detalles partes: 2
+[2025-07-23 14:31:31] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":18,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 14:31:32] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 14:31:32] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 4
+[2025-07-23 14:31:32] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 4
+[2025-07-23 14:31:32] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 4
+[2025-07-23 14:31:32] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":24,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 14:31:32] [INFO] ✅ Producto con ID 24 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 14:31:32] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 4
+[2025-07-23 14:31:34] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 00:55:14","total_factura":"616.00"}]
+[2025-07-23 14:31:41] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 24 del carrito del usuario 2
+[2025-07-23 14:31:41] [INFO] Se intentará eliminar el producto con ID 24 del carrito del usuario con ID 2.
+[2025-07-23 14:31:41] [INFO] Producto con ID 24 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 14:31:42] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 14:31:44] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 14:31:45] [INFO] id de usuario detalles partes: 2
+[2025-07-23 14:31:45] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":18,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 14:32:40] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 14:32:40] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 2
+[2025-07-23 14:32:40] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 2
+[2025-07-23 14:32:40] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 2
+[2025-07-23 14:32:40] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":24,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 14:32:40] [INFO] ✅ Producto con ID 24 agregado al carrito del usuario con ID 2.
+[2025-07-23 14:32:40] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 2
+[2025-07-23 14:32:41] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":7,"fecha":"2025-07-23 09:32:40","total_factura":"308.00"}]
+[2025-07-23 14:33:51] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":7,"fecha":"2025-07-23 09:32:40","total_factura":"308.00"}]
+[2025-07-23 14:33:55] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":7,"fecha":"2025-07-23 09:32:40","total_factura":"308.00"}]
+[2025-07-23 14:33:57] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":7,"fecha":"2025-07-23 09:32:40","total_factura":"308.00"}]
+[2025-07-23 14:34:00] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":7,"fecha":"2025-07-23 09:32:40","total_factura":"308.00"}]
+[2025-07-23 14:36:14] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":7,"fecha":"2025-07-23 09:32:40","total_factura":"308.00"}]
+[2025-07-23 14:37:57] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":7,"fecha":"2025-07-23 09:32:40","total_factura":"308.00"}]
+[2025-07-23 14:37:57] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":7,"fecha":"2025-07-23 09:32:40","total_factura":"308.00"}]
+[2025-07-23 14:38:11] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":7,"fecha":"2025-07-23 09:32:40","total_factura":"308.00"}]
+[2025-07-23 14:38:18] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":7,"fecha":"2025-07-23 09:32:40","total_factura":"308.00"}]
+[2025-07-23 14:38:22] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 24 del carrito del usuario 2
+[2025-07-23 14:38:22] [INFO] Se intentará eliminar el producto con ID 24 del carrito del usuario con ID 2.
+[2025-07-23 14:38:22] [INFO] Producto con ID 24 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 14:38:24] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 14:38:27] [INFO] id de usuario detalles partes: 2
+[2025-07-23 14:38:27] [INFO] Intento de Registrar Trazabilidad: {"id_parte":11,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado mate en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"137.18","cantidad_stock":18,"codigo_serie":"MAZ-MX--2016-CO","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 14:38:30] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 14:38:30] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 11, Cantidad 3
+[2025-07-23 14:38:30] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 11, Cantidad 3
+[2025-07-23 14:38:30] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 11, Cantidad 3
+[2025-07-23 14:38:30] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":11,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 14:38:30] [INFO] ✅ Producto con ID 11 agregado al carrito del usuario con ID 2.
+[2025-07-23 14:38:30] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 11, Cantidad 3
+[2025-07-23 14:38:39] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 09:38:30","total_factura":"411.54"}]
+[2025-07-23 14:38:40] [INFO] id de usuario detalles partes: 2
+[2025-07-23 14:38:40] [INFO] Intento de Registrar Trazabilidad: {"id_parte":11,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado mate en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"137.18","cantidad_stock":15,"codigo_serie":"MAZ-MX--2016-CO","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 14:39:14] [INFO] id de usuario detalles partes: 2
+[2025-07-23 14:39:14] [INFO] Intento de Registrar Trazabilidad: {"id_parte":11,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado mate en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"137.18","cantidad_stock":15,"codigo_serie":"MAZ-MX--2016-CO","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 14:40:27] [INFO] id de usuario detalles partes: 2
+[2025-07-23 14:40:27] [INFO] Intento de Registrar Trazabilidad: {"id_parte":11,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado mate en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"137.18","cantidad_stock":15,"codigo_serie":"MAZ-MX--2016-CO","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 14:40:29] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 14:40:29] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 11, Cantidad 1
+[2025-07-23 14:40:29] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 11, Cantidad 1
+[2025-07-23 14:40:29] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 11, Cantidad 1
+[2025-07-23 14:40:29] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":11,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 14:40:29] [INFO] ✅ Producto con ID 11 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 14:40:29] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 11, Cantidad 1
+[2025-07-23 14:40:30] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 09:38:30","total_factura":"137.18"}]
+[2025-07-23 14:40:31] [INFO] id de usuario detalles partes: 2
+[2025-07-23 14:40:31] [INFO] Intento de Registrar Trazabilidad: {"id_parte":11,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado mate en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"137.18","cantidad_stock":15,"codigo_serie":"MAZ-MX--2016-CO","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 14:43:28] [INFO] id de usuario detalles partes: 2
+[2025-07-23 14:43:28] [INFO] Intento de Registrar Trazabilidad: {"id_parte":18,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado mate en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"231.58","cantidad_stock":14,"codigo_serie":"MAZ-MX--2016-GU","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 14:51:05] [INFO] id de usuario detalles partes: 2
+[2025-07-23 14:51:05] [INFO] Intento de Registrar Trazabilidad: {"id_parte":25,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con pl\u00e1stico ABS de alta calidad. Presenta un acabado mate en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"208.69","cantidad_stock":5,"codigo_serie":"MAZ-MX--2016-BU","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-23 14:51:07] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 14:51:07] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 25, Cantidad 2
+[2025-07-23 14:51:07] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 25, Cantidad 2
+[2025-07-23 14:51:07] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 25, Cantidad 2
+[2025-07-23 14:51:07] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":25,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 14:51:07] [INFO] ✅ Producto con ID 25 agregado al carrito del usuario con ID 2.
+[2025-07-23 14:51:07] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 25, Cantidad 2
+[2025-07-23 14:51:09] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 14:51:09] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 25, Cantidad 1
+[2025-07-23 14:51:09] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 25, Cantidad 1
+[2025-07-23 14:51:09] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 25, Cantidad 1
+[2025-07-23 14:51:09] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":25,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 14:51:09] [INFO] ✅ Producto con ID 25 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 14:51:09] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 25, Cantidad 1

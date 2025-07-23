@@ -300,7 +300,7 @@ session_start();
   <script>
     async function actualizarContadorCarrito() {
       try {
-        const response = await fetch('contar_carrito.php');
+        const response = await fetch('../controller_public/contar_carrito.php');
         const data = await response.json();
         const contador = document.querySelector('.cart-count');
         if (contador && data.total !== undefined) {

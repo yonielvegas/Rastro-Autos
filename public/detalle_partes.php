@@ -194,7 +194,7 @@ $stock = intval($detalles['cantidad_stock'] ?? 0);
   // Función para actualizar el contador del carrito en el navbar
   async function actualizarContadorCarrito() {
     try {
-      const response = await fetch('contar_carrito.php');
+      const response = await fetch('../controller_public/contar_carrito.php');
       const data = await response.json();
       const contador = document.querySelector('.cart-count');
       if (contador && data.total !== undefined) {
