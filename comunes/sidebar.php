@@ -169,7 +169,7 @@
         <i class="fas fa-user-tag"></i>
         <span>Roles</span>
       </a>
-      <a href="../secciones/secciones.php" class="menu-item <?php if (in_array($currentFile, ['secciones.php', 'secciones_form.php'])) echo 'active'; ?>">
+      <a href="../secciones/seccionMarca.php" class="menu-item <?php if (in_array($currentFile, ['seccionMarca.php', 'seccionEspecifica.php'])) echo 'active'; ?>">
         <i class="fas fa-th-large"></i>
         <span>Secciones</span>
       </a>
