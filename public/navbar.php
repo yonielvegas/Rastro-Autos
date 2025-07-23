@@ -285,7 +285,7 @@ session_start();
             </div>
             <a href="carrito.php" class="icon-link" title="Carrito">
               <i class="fas fa-shopping-cart"></i>
-              <span class="cart-count">3</span>
+              <span class="cart-count">0</span>
             </a>
             <a href="../comunes/logout.php" class="nav-link">Cerrar sesión</a>
           <?php else: ?>
@@ -296,5 +296,27 @@ session_start();
       </div>
     </div>
   </header>
+
+  <script>
+    async function actualizarContadorCarrito() {
+      try {
+        const response = await fetch('contar_carrito.php');
+        const data = await response.json();
+        const contador = document.querySelector('.cart-count');
+        if (contador && data.total !== undefined) {
+          contador.textContent = data.total;
+        }
+      } catch (error) {
+        console.error('Error al actualizar contador del carrito:', error);
+      }
+    }
+
+    // Actualiza al cargar la página
+    actualizarContadorCarrito();
+
+    // Opcional: actualizar cada 15 segundos
+    setInterval(actualizarContadorCarrito, 15000);
+  </script>
+
 </body>
 </html>

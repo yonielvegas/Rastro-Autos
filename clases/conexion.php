@@ -430,7 +430,41 @@ class mod_db implements ICRUD
 		}
 	}
 
+	public function contarProductosCarrito($id_usuario) {
+		try {
+			$sql = "SELECT SUM(cantidad) AS total FROM parte_vendida WHERE id_usuario = :id_usuario AND en_carrito = 1";
+			$stmt = $this->conexion->prepare($sql);
+			$stmt->bindParam(':id_usuario', $id_usuario, PDO::PARAM_INT);
+			$stmt->execute();
+			$result = $stmt->fetch(PDO::FETCH_ASSOC);
+			return intval($result['total'] ?? 0);
+		} catch (PDOException $e) {
+			echo "Error al contar productos del carrito: " . $e->getMessage();
+			return 0;
+		}
+	}
 
+	public function eliminarDelCarrito($id_usuario, $id_parte) {
+		Logger::info("Intento de eliminar el producto con ID $id_parte del carrito del usuario con ID $id_usuario.");
+
+		try {
+			$sql = "DELETE FROM parte_vendida WHERE id_usuario = :id_usuario AND id_parte = :id_parte AND en_carrito = 1";
+			$stmt = $this->conexion->prepare($sql);
+			$stmt->bindParam(':id_usuario', $id_usuario, PDO::PARAM_INT);
+			$stmt->bindParam(':id_parte', $id_parte, PDO::PARAM_INT);
+
+			if ($stmt->execute()) {
+				Logger::info("Producto con ID $id_parte eliminado correctamente del carrito del usuario con ID $id_usuario.");
+				return true;
+			} else {
+				Logger::error("❌ Error al eliminar el producto con ID $id_parte del carrito del usuario con ID $id_usuario.");
+				return false;
+			}
+		} catch (PDOException $e) {
+			echo "Error al eliminar el producto del carrito: " . $e->getMessage();
+			return false;
+		}
+	}
 
 	public function registrarTrazabilidad($tabla, $accion, $codigoRegistro, $usuario) {
         $fechaSistema = date('Y-m-d H:i:s');

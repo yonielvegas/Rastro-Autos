@@ -191,6 +191,20 @@ $stock = intval($detalles['cantidad_stock'] ?? 0);
     else if (val > parseInt(input.max)) input.value = input.max;
   }
 
+  // Función para actualizar el contador del carrito en el navbar
+  async function actualizarContadorCarrito() {
+    try {
+      const response = await fetch('contar_carrito.php');
+      const data = await response.json();
+      const contador = document.querySelector('.cart-count');
+      if (contador && data.total !== undefined) {
+        contador.textContent = data.total;
+      }
+    } catch (error) {
+      console.error('Error al actualizar contador del carrito:', error);
+    }
+  }
+
   // Añadir al carrito
   document.getElementById('addToCartBtn')?.addEventListener('click', function(e) {
     e.preventDefault();
@@ -207,6 +221,9 @@ $stock = intval($detalles['cantidad_stock'] ?? 0);
       if(data.ok){
         this.innerHTML = '<i class="fas fa-check"></i> Añadido';
         this.style.backgroundColor = '#10b981';
+
+        // Actualizar contador del carrito aquí
+        actualizarContadorCarrito();
       } else {
         alert(data.msg);
       }
@@ -216,6 +233,7 @@ $stock = intval($detalles['cantidad_stock'] ?? 0);
       }, 2000);
     });
   });
+
 </script>
 
 <?php include('footer.php'); ?>

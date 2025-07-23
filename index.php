@@ -32,6 +32,7 @@ if ($Logearme->logger()) {
     if ($Logearme->getIntentoLogin()) {
         $_SESSION['autenticado'] = "SI";
         $_SESSION['usuario'] = $Logearme->getUsuario();
+        $_SESSION['id_usuario'] = $Logearme->getIdUsuario();
         $_SESSION['foto'] = "https://via.placeholder.com/32";
         $Logearme->registrarIntentos(1);
         $tolog = false;

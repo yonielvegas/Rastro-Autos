@@ -2064,3 +2064,108 @@
 [2025-07-23 05:49:55] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":5,"fecha":"2025-07-23 00:47:31","total_factura":"168.21"}]
 [2025-07-23 05:49:57] [INFO] id de usuario detalles partes: 2
 [2025-07-23 05:49:57] [INFO] Intento de Registrar Trazabilidad: {"id_parte":2,"nombre":"Panel lateral","descripcion":"Panel lateral dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con acero reforzado de alta calidad. Presenta un acabado brillante en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"55.83","cantidad_stock":11,"codigo_serie":"TOY-COR-2023-PA","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 05:51:27] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":5,"fecha":"2025-07-23 00:47:31","total_factura":"168.21"}]
+[2025-07-23 05:51:32] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 36 del carrito del usuario 2
+[2025-07-23 05:51:33] [INFO] Se intentará eliminar el producto con ID 36 del carrito del usuario con ID 2.
+[2025-07-23 05:51:33] [INFO] Producto con ID 36 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 05:51:34] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 05:51:36] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 05:53:18] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 05:53:19] [INFO] id de usuario detalles partes: 2
+[2025-07-23 05:53:19] [INFO] Intento de Registrar Trazabilidad: {"id_parte":2,"nombre":"Panel lateral","descripcion":"Panel lateral dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con acero reforzado de alta calidad. Presenta un acabado brillante en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"55.83","cantidad_stock":11,"codigo_serie":"TOY-COR-2023-PA","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 05:54:18] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 05:54:22] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 05:54:25] [INFO] id de usuario detalles partes: 2
+[2025-07-23 05:54:25] [INFO] Intento de Registrar Trazabilidad: {"id_parte":2,"nombre":"Panel lateral","descripcion":"Panel lateral dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Corolla del a\u00f1o 2023. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con acero reforzado de alta calidad. Presenta un acabado brillante en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"55.83","cantidad_stock":11,"codigo_serie":"TOY-COR-2023-PA","id_marca":1,"id_modelo":1,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Corolla","anio":"2023"}
+[2025-07-23 05:55:09] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 05:55:12] [INFO] id de usuario detalles partes: 2
+[2025-07-23 05:55:12] [INFO] Intento de Registrar Trazabilidad: {"id_parte":16,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Rav4 del a\u00f1o 2022. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con acero reforzado de alta calidad. Presenta un acabado texturizado en color negro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"197.10","cantidad_stock":14,"codigo_serie":"TOY-RAV-2022-GU","id_marca":1,"id_modelo":2,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Rav4","anio":"2022"}
+[2025-07-23 05:55:14] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 05:55:14] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 16, Cantidad 3
+[2025-07-23 05:55:14] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 16, Cantidad 3
+[2025-07-23 05:55:14] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 16, Cantidad 3
+[2025-07-23 05:55:14] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":16,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 05:55:14] [INFO] ✅ Producto con ID 16 agregado al carrito del usuario con ID 2.
+[2025-07-23 05:55:14] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 16, Cantidad 3
+[2025-07-23 05:55:15] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 00:55:14","total_factura":"591.30"}]
+[2025-07-23 06:00:07] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 00:55:14","total_factura":"591.30"}]
+[2025-07-23 06:00:08] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 00:55:14","total_factura":"591.30"}]
+[2025-07-23 06:00:10] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 00:55:14","total_factura":"591.30"}]
+[2025-07-23 06:05:56] [INFO] Hash temporal generado para pruebas: $2y$13$9DeO0hh2GpEfc73Kvz1LtuoGdU2lk049yHCg3y8FWNNfR1Oh3QMQO
+[2025-07-23 06:05:56] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-23 06:05:56] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-23 06:05:56] [INFO] Verificando contraseña: entrada: 'Opciones2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-23 06:05:57] [WARNING] Login fallido: contraseña incorrecta para el usuario: yonielvegas
+[2025-07-23 06:05:57] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-23 06:05:57] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 0
+[2025-07-23 06:06:06] [INFO] Hash temporal generado para pruebas: $2y$13$TQ3F0V7ep6mbTlvAGWJ/6eehSZVxuiRFT0/IFiJe8fGU5seeVokRy
+[2025-07-23 06:06:06] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-23 06:06:06] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-23 06:06:06] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-23 06:06:07] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-23 06:06:07] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-23 06:06:07] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-23 06:06:07] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 06:07:36] [INFO] Intento de obtener factura para el usuario con ID : []
+[2025-07-23 06:07:41] [INFO] id de usuario detalles partes: No autenticado
+[2025-07-23 06:07:41] [INFO] Intento de Registrar Trazabilidad: {"id_parte":10,"nombre":"Cofre","descripcion":"Cofre dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Rav4 del a\u00f1o 2022. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado texturizado en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"217.70","cantidad_stock":17,"codigo_serie":"TOY-RAV-2022-CO","id_marca":1,"id_modelo":2,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Rav4","anio":"2022"}
+[2025-07-23 06:07:44] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 06:07:44] [INFO] Intento de agregar al carrito: Usuario ID , Parte ID 10, Cantidad 2
+[2025-07-23 06:07:53] [INFO] id de usuario detalles partes: No autenticado
+[2025-07-23 06:07:53] [INFO] Intento de Registrar Trazabilidad: {"id_parte":16,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Rav4 del a\u00f1o 2022. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con acero reforzado de alta calidad. Presenta un acabado texturizado en color negro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"197.10","cantidad_stock":11,"codigo_serie":"TOY-RAV-2022-GU","id_marca":1,"id_modelo":2,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Rav4","anio":"2022"}
+[2025-07-23 06:07:55] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 06:07:55] [INFO] Intento de agregar al carrito: Usuario ID , Parte ID 16, Cantidad 1
+[2025-07-23 06:10:01] [INFO] id de usuario detalles partes: No autenticado
+[2025-07-23 06:10:01] [INFO] Intento de Registrar Trazabilidad: {"id_parte":16,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Rav4 del a\u00f1o 2022. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con acero reforzado de alta calidad. Presenta un acabado texturizado en color negro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"197.10","cantidad_stock":11,"codigo_serie":"TOY-RAV-2022-GU","id_marca":1,"id_modelo":2,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Toyota","modelo":"Rav4","anio":"2022"}
+[2025-07-23 06:10:10] [INFO] Hash temporal generado para pruebas: $2y$13$MFmzjdnNJV/tOh9LUb3XHe.vhA5JJOdWQL.dGTLiv85.HShX2ejCq
+[2025-07-23 06:10:10] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-23 06:10:10] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-23 06:10:10] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-23 06:10:11] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-23 06:10:11] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-23 06:10:11] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-23 06:10:11] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 06:10:18] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 00:55:14","total_factura":"591.30"}]
+[2025-07-23 06:10:23] [INFO] id de usuario detalles partes: 2
+[2025-07-23 06:10:23] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":20,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 06:10:26] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 06:10:26] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 2
+[2025-07-23 06:10:26] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 2
+[2025-07-23 06:10:26] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 2
+[2025-07-23 06:10:26] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":24,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 06:10:26] [INFO] ✅ Producto con ID 24 agregado al carrito del usuario con ID 2.
+[2025-07-23 06:10:26] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 2
+[2025-07-23 06:10:29] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 00:55:14","total_factura":"899.30"}]
+[2025-07-23 06:10:31] [INFO] id de usuario detalles partes: 2
+[2025-07-23 06:10:31] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":18,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 06:12:28] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 06:12:28] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 06:12:28] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 06:12:28] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 06:12:28] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":24,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 06:12:28] [INFO] ✅ Producto con ID 24 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 06:12:28] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 1
+[2025-07-23 06:12:30] [INFO] id de usuario detalles partes: 2
+[2025-07-23 06:12:30] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":18,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 06:12:33] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 06:12:33] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 2
+[2025-07-23 06:12:33] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 2
+[2025-07-23 06:12:33] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 2
+[2025-07-23 06:12:33] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":24,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 06:12:33] [INFO] ✅ Producto con ID 24 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 06:12:33] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 2
+[2025-07-23 06:12:36] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 00:55:14","total_factura":"308.00"}]
+[2025-07-23 06:12:39] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 16 del carrito del usuario 2
+[2025-07-23 06:12:39] [INFO] Se intentará eliminar el producto con ID 16 del carrito del usuario con ID 2.
+[2025-07-23 06:12:39] [INFO] Producto con ID 16 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 06:12:41] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 00:55:14","total_factura":"-283.30"}]
+[2025-07-23 06:12:46] [INFO] id de usuario detalles partes: 2
+[2025-07-23 06:12:46] [INFO] Intento de Registrar Trazabilidad: {"id_parte":24,"nombre":"Buj\u00edas","descripcion":"Buj\u00edas dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Prado del a\u00f1o 2011. Forma parte de la categor\u00eda 'Motor' y ha sido fabricado con material compuesto de alta calidad. Presenta un acabado brillante en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"154.00","cantidad_stock":18,"codigo_serie":"TOY-PRA-2011-BU","id_marca":1,"id_modelo":3,"imagen":null,"imagen_thumbnail":null,"categoria":"Motor","marca":"Toyota","modelo":"Prado","anio":"2011"}
+[2025-07-23 06:12:49] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 06:12:49] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 06:12:49] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 06:12:49] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 06:12:49] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"actualizaci\u00f3n","id_usuario":24,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 06:12:49] [INFO] ✅ Producto con ID 24 actualizado en el carrito del usuario con ID 2.
+[2025-07-23 06:12:49] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 24, Cantidad 3
+[2025-07-23 06:12:53] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":6,"fecha":"2025-07-23 00:55:14","total_factura":"462.00"}]

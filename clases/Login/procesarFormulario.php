@@ -86,6 +86,10 @@ class ValidacionLogin {
         }
     }
 
+    public function getIdUsuario() {
+        return $this->id;
+    }
+
 
     public function getIntentoLogin() {
         return $this->loginExitoso;
