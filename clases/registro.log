@@ -3487,3 +3487,11 @@
 [2025-07-24 00:00:28] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
 [2025-07-24 00:00:28] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
 [2025-07-24 00:00:28] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 14:15:56] [INFO] Hash temporal generado para pruebas: $2y$13$jYO8x2CzR2Smdgcrn9MIuO92.d4RVQHvQfRqgaPiP1mjIMd7oaitO
+[2025-07-24 14:15:56] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-24 14:15:56] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-24 14:15:56] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-24 14:15:57] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-24 14:15:57] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-24 14:15:57] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-24 14:15:57] [INFO] ERRORES DE BLOQUEO: []
