@@ -3422,3 +3422,68 @@
 [2025-07-23 22:39:28] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
 [2025-07-23 22:39:28] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
 [2025-07-23 22:39:28] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 22:45:36] [INFO] Hash temporal generado para pruebas: $2y$13$qfS3zcInhyejkN01dXKHweqv5P6t1RoclPyikF2z67mkDsEUeF37S
+[2025-07-23 22:45:36] [WARNING] Usuario no encontrado: salom
+[2025-07-23 22:45:47] [INFO] Hash temporal generado para pruebas: $2y$13$vuMJHGoK/EvCNAxS6pBvK.aqtz.UPk3wEIR9Z2I9JUxPku3NPZN4G
+[2025-07-23 22:45:47] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-23 22:45:47] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-23 22:45:47] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-23 22:45:48] [INFO] Login exitoso para el usuario: admin
+[2025-07-23 22:45:48] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-23 22:45:48] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-23 22:45:48] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 22:49:38] [INFO] Hash temporal generado para pruebas: $2y$13$d3fVvnSs5m3hXm6xcZuEQ.RfYIfuDQQQfGq8wmqd5jxOKtY3Jp/S6
+[2025-07-23 22:49:38] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-23 22:49:38] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-23 22:49:38] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-23 22:49:39] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-23 22:49:39] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-23 22:49:39] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-23 22:49:39] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-23 22:50:00] [INFO] id de usuario detalles partes: 2
+[2025-07-23 22:50:00] [INFO] Intento de Registrar Trazabilidad: {"id_parte":8,"nombre":"Panel lateral","descripcion":"Panel lateral dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado liso en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"162.70","cantidad_stock":8,"codigo_serie":"FOR-F-1-2010-PA","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-23 22:50:05] [INFO] Ejecutando agregar_carrito.php
+[2025-07-23 22:50:05] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 8, Cantidad 1
+[2025-07-23 22:50:05] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 8, Cantidad 1
+[2025-07-23 22:50:05] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 8, Cantidad 1
+[2025-07-23 22:50:05] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":8,"usuario":2,"ip_usuario":"::1"}
+[2025-07-23 22:50:05] [INFO] ✅ Producto con ID 8 agregado al carrito del usuario con ID 2.
+[2025-07-23 22:50:05] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 8, Cantidad 1
+[2025-07-23 22:50:07] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 17:12:18","total_factura":"1386.24","estado":0}]
+[2025-07-23 22:50:30] [INFO] Ejecutando registrar_pago.php
+[2025-07-23 22:50:30] [INFO] Intento de registrar pago para el usuario ID 2
+[2025-07-23 22:50:30] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 17:12:18","total_factura":"1386.24","estado":0}]
+[2025-07-23 22:50:42] [INFO]  ANtes de llamar el metrodo Eliminando producto con ID 4 del carrito del usuario 2
+[2025-07-23 22:50:42] [INFO] Se intentará eliminar el producto con ID 4 del carrito del usuario con ID 2.
+[2025-07-23 22:50:42] [INFO] Producto con ID 4 eliminado correctamente del carrito del usuario con ID 2.
+[2025-07-23 22:50:44] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 17:12:18","total_factura":"380.40","estado":0}]
+[2025-07-23 22:50:46] [INFO] Ejecutando registrar_pago.php
+[2025-07-23 22:50:46] [INFO] Intento de registrar pago para el usuario ID 2
+[2025-07-23 22:50:46] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":8,"fecha":"2025-07-23 17:12:18","total_factura":"380.40","estado":0}]
+[2025-07-23 22:50:52] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 22:50:56] [INFO] id de usuario detalles partes: 2
+[2025-07-23 22:50:56] [INFO] Intento de Registrar Trazabilidad: {"id_parte":8,"nombre":"Panel lateral","descripcion":"Panel lateral dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado liso en color azul oscuro, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"162.70","cantidad_stock":7,"codigo_serie":"FOR-F-1-2010-PA","id_marca":3,"id_modelo":9,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-23 22:51:08] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-23 22:51:23] [INFO] Hash temporal generado para pruebas: $2y$13$QI592bCiqAMzrUJeC3/0SuSi3Rqc71425RBMZY67gxh92kagwkSmu
+[2025-07-23 22:51:23] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-23 22:51:23] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-23 22:51:23] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-23 22:51:24] [INFO] Login exitoso para el usuario: admin
+[2025-07-23 22:51:24] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-23 22:51:24] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-23 22:51:24] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 00:00:13] [INFO] Hash temporal generado para pruebas: $2y$13$Rre.gEnMm.N3fhxkyC8fLu1pZo8quv1WpBNLFJ2xBr39kEOAU6JxW
+[2025-07-24 00:00:13] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 00:00:13] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 00:00:13] [INFO] Verificando contraseña: entrada: 'Brochin-2415' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-24 00:00:13] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-24 00:00:13] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 00:00:13] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-24 00:00:27] [INFO] Hash temporal generado para pruebas: $2y$13$48kdsSqgIyWGZodj8lTup.WplUAajRAeVvwO4INtTQ17r3gK8fGd2
+[2025-07-24 00:00:27] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 00:00:27] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 00:00:27] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-24 00:00:28] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 00:00:28] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 00:00:28] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 00:00:28] [INFO] ERRORES DE BLOQUEO: []
