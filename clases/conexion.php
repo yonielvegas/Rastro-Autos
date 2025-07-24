@@ -81,6 +81,25 @@ class mod_db implements ICRUD
 		}
 	}
 
+		public function query($sql) {
+		try {
+			$stmt = $this->conexion->query($sql);
+			return $stmt->fetchAll(PDO::FETCH_ASSOC);
+		} catch (PDOException $e) {
+			echo "Error en query(): " . $e->getMessage();
+			return false;
+		}
+	}
+	public function lastInsertId() {
+		try {
+			return $this->conexion->lastInsertId();
+		} catch (PDOException $e) {
+			echo "Error en lastInsertId(): " . $e->getMessage();
+			return false;
+		}
+	}
+
+
     public function updateSeguro($tabla, $data, $condiciones) {
 		// Construir partes de SET dinámicamente
 		$set = [];
