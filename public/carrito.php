@@ -31,7 +31,7 @@ $nombre_cliente = $_SESSION['usuario'] ?? 'Cliente Desconocido';
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-
+<div class="page-wrapper"><div class="main-content">
   <main class="cart-container">
     <h1 class="cart-title"><i class="fas fa-shopping-cart"></i> Tu Carrito de Compras</h1>
     
@@ -93,6 +93,7 @@ $nombre_cliente = $_SESSION['usuario'] ?? 'Cliente Desconocido';
       </div>
     <?php endif; ?>
   </main>
+</div></div>
 
   <?php include('footer.php'); ?>
   <?php include('modal_factura_detalle.php'); ?>
