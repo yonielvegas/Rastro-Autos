@@ -18,4 +18,8 @@ class SeccionController {
     public function getMarcasPorSeccion($seccionId) {
         return $this->db->select("marcas", "*", "id_seccion = $seccionId");
     }
+
+    public function getSeccion(){
+        return $this->db->select("categoria", "categoria", "id_cat = " . $this->id_seccion);
+    }
 }

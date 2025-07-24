@@ -41,6 +41,7 @@ $marcasDisponibles = array_keys($marcasModelos);
 // Obtener partes desde el controlador
 $pt = new SeccionController($seccion);
 $partes = $pt->getSecciones();
+$cate = $pt->getSeccion();
 
 // Filtrar partes
 $partesFiltradas = array_filter($partes, function($parte) use ($filtroMarca, $filtroModelo) {
@@ -74,7 +75,7 @@ if ($orden === 'vendidas') {
         <i class="fas fa-arrow-left"></i> Volver a Secciones
       </a>
 
-      <h1>Partes de <?= ucfirst($seccion) ?></h1>
+      <h1>Partes de <?= htmlspecialchars($cate[0]['categoria'] ?? 'Categoría no encontrada') ?></h1>
 
       <form method="GET" class="filter-form" id="filterForm">
         <input type="hidden" name="seccion" value="<?= htmlspecialchars($seccion) ?>" />
