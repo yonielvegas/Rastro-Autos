@@ -12,7 +12,7 @@
       </button>
     </div>
 
-    <form class="part-edit-modal__form" id="partForm" method="POST" action="agregar_parte.php" enctype="multipart/form-data">
+    <form class="part-edit-modal__form" id="partForm">
       <input type="hidden" id="partId">
 
       <div class="form-grid">
