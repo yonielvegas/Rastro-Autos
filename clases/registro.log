@@ -6242,3 +6242,49 @@ Array
 [2025-07-24 16:49:43] [INFO] Intento de obtener factura para el usuario con ID 2: []
 [2025-07-24 16:49:53] [INFO] id de usuario detalles partes: 2
 [2025-07-24 16:49:53] [INFO] Intento de Registrar Trazabilidad: {"id_parte":18,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado mate en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"231.58","cantidad_stock":14,"codigo_serie":"MAZ-MX--2016-GU","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-24 17:47:51] [INFO] id de usuario detalles partes: 2
+[2025-07-24 17:47:51] [INFO] Intento de Registrar Trazabilidad: {"id_parte":18,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado mate en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"231.58","cantidad_stock":14,"codigo_serie":"MAZ-MX--2016-GU","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
+[2025-07-24 17:48:02] [INFO] Hash temporal generado para pruebas: $2y$13$NiHuAHeP7agv8JArjdvKFufx4HvJC7LNdEVGsOLfTNmC.ehIKKgpG
+[2025-07-24 17:48:02] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 17:48:02] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 17:48:02] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$H/pm0ydBBgz1eW.pJNxWA.lRaJwUTqJ3OuthUS4opexiHY9XhMokK'
+[2025-07-24 17:48:02] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 17:48:02] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 17:48:02] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 17:48:02] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 17:48:02] [INFO] Permisos obtenidos para el usuario: admin
+[2025-07-24 17:48:02] [INFO] Permisos del usuario: [1,2,3]
+[2025-07-24 17:48:02] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 17:48:02] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
