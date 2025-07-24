@@ -1,12 +1,18 @@
 <?php
 include '../comunes/navbar.php';
 include '../comunes/sidebar.php';
+require_once '../Seccion/controller_seccion.php';
 
-// Limpieza de parámetros GET
-$seccion = isset($_GET['seccion']) ? htmlspecialchars($_GET['seccion']) : '';
-$filtroMarca = isset($_GET['marca']) ? htmlspecialchars($_GET['marca']) : '';
-$filtroModelo = isset($_GET['modelo']) ? htmlspecialchars($_GET['modelo']) : '';
-$orden = isset($_GET['orden']) ? htmlspecialchars($_GET['orden']) : '';
+// Inicializar variables
+$seccion = $_GET['seccion'] ?? '';
+$filtroMarca = $_GET['marca'] ?? '';
+$filtroModelo = $_GET['modelo'] ?? '';
+$orden = $_GET['orden'] ?? '';
+
+$seccion = htmlspecialchars($seccion);
+$filtroMarca = htmlspecialchars($filtroMarca);
+$filtroModelo = htmlspecialchars($filtroModelo);
+$orden = htmlspecialchars($orden);
 
 // Marcas y modelos agrupados
 $marcasModelos = [
@@ -15,7 +21,7 @@ $marcasModelos = [
   'Ford'  => ['Mustang', 'Escape', 'F-150']
 ];
 
-// Si sólo eligió modelo pero no marca, determinar la marca automáticamente
+// Autoasignar marca si solo hay modelo
 if ($filtroMarca === '' && $filtroModelo !== '') {
   foreach ($marcasModelos as $marca => $modelos) {
     if (in_array($filtroModelo, $modelos)) {
@@ -25,26 +31,16 @@ if ($filtroMarca === '' && $filtroModelo !== '') {
   }
 }
 
-// Construimos arrays planos para dropdowns según la marca seleccionada o no
-if ($filtroMarca !== '' && isset($marcasModelos[$filtroMarca])) {
-  $modelosDisponibles = $marcasModelos[$filtroMarca];
-} else {
-  // Si no hay marca seleccionada, mostramos todos los modelos
-  $modelosDisponibles = [];
-  foreach ($marcasModelos as $modList) {
-    $modelosDisponibles = array_merge($modelosDisponibles, $modList);
-  }
-}
+// Obtener modelos disponibles según la marca seleccionada
+$modelosDisponibles = $filtroMarca && isset($marcasModelos[$filtroMarca])
+  ? $marcasModelos[$filtroMarca]
+  : array_merge(...array_values($marcasModelos));
 
-// Marcas disponibles (todo el arreglo de keys)
 $marcasDisponibles = array_keys($marcasModelos);
 
-// Simulación de partes
-$partes = [
-  ['miniatura' => 'motor.png', 'nombre' => 'Motor V8', 'marca' => 'Toyota', 'modelo' => 'Corolla', 'anio' => 2020, 'stock' => 10, 'vendidas' => 5],
-  ['miniatura' => 'puerta.png', 'nombre' => 'Puerta Delantera', 'marca' => 'Mazda', 'modelo' => 'CX-5', 'anio' => 2021, 'stock' => 3, 'vendidas' => 12],
-  ['miniatura' => 'espejo.png', 'nombre' => 'Espejo Retrovisor', 'marca' => 'Ford', 'modelo' => 'Mustang', 'anio' => 2019, 'stock' => 8, 'vendidas' => 9],
-];
+// Obtener partes desde el controlador
+$pt = new SeccionController($seccion);
+$partes = $pt->getSecciones();
 
 // Filtrar partes
 $partesFiltradas = array_filter($partes, function($parte) use ($filtroMarca, $filtroModelo) {
@@ -52,13 +48,12 @@ $partesFiltradas = array_filter($partes, function($parte) use ($filtroMarca, $fi
          ($filtroModelo === '' || $parte['modelo'] === $filtroModelo);
 });
 
+// Ordenar si se seleccionó opción
 if ($orden === 'vendidas') {
-  usort($partesFiltradas, fn($a, $b) => $b['vendidas'] - $a['vendidas']);
+  usort($partesFiltradas, fn($a, $b) => $b['cantidad_vendida'] - $a['cantidad_vendida']);
+} elseif ($orden === 'menos_vendidas') {
+  usort($partesFiltradas, fn($a, $b) => $a['cantidad_vendida'] - $b['cantidad_vendida']);
 }
-elseif ($orden === 'menos_vendidas') {
-  usort($partesFiltradas, fn($a, $b) => $a['vendidas'] - $b['vendidas']);
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -67,15 +62,17 @@ elseif ($orden === 'menos_vendidas') {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Partes de <?= ucfirst($seccion) ?></title>
+  <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="../estilos/estiloEspecifica.css" />
 </head>
 <body>
   <div class="main-content" id="mainContent" style="padding-top: 100px;">
     <div class="container">
-    <a href="SeccionMarca.php" class="btn btn-primary" style="margin-bottom: 15px;">
+      <a href="SeccionMarca.php" class="btn btn-primary" style="margin-bottom: 15px;">
         <i class="fas fa-arrow-left"></i> Volver a Secciones
-    </a>
+      </a>
 
       <h1>Partes de <?= ucfirst($seccion) ?></h1>
 
@@ -87,8 +84,8 @@ elseif ($orden === 'menos_vendidas') {
           <select name="marca" id="marca" onchange="filtrarModelos()">
             <option value="">Todas las marcas</option>
             <?php foreach ($marcasDisponibles as $marca): ?>
-              <option value="<?= htmlspecialchars($marca) ?>" <?= ($marca == $filtroMarca) ? 'selected' : '' ?>>
-                <?= $marca ?>
+              <option value="<?= htmlspecialchars($marca) ?>" <?= ($marca === $filtroMarca) ? 'selected' : '' ?>>
+                <?= htmlspecialchars($marca) ?>
               </option>
             <?php endforeach; ?>
           </select>
@@ -99,8 +96,8 @@ elseif ($orden === 'menos_vendidas') {
           <select name="modelo" id="modelo">
             <option value="">Todos los modelos</option>
             <?php foreach ($modelosDisponibles as $modelo): ?>
-              <option value="<?= htmlspecialchars($modelo) ?>" <?= ($modelo == $filtroModelo) ? 'selected' : '' ?>>
-                <?= $modelo ?>
+              <option value="<?= htmlspecialchars($modelo) ?>" <?= ($modelo === $filtroModelo) ? 'selected' : '' ?>>
+                <?= htmlspecialchars($modelo) ?>
               </option>
             <?php endforeach; ?>
           </select>
@@ -108,12 +105,11 @@ elseif ($orden === 'menos_vendidas') {
 
         <div class="filter-group">
           <label for="orden">Ordenar por</label>
-        <select name="orden" id="orden">
-        <option value="">Seleccionar...</option>
-        <option value="vendidas" <?= ($orden == 'vendidas') ? 'selected' : '' ?>>Más vendidas</option>
-        <option value="menos_vendidas" <?= ($orden == 'menos_vendidas') ? 'selected' : '' ?>>Menos vendidas</option> <!-- NUEVO -->
-        </select>
-
+          <select name="orden" id="orden">
+            <option value="">Seleccionar...</option>
+            <option value="vendidas" <?= ($orden === 'vendidas') ? 'selected' : '' ?>>Más vendidas</option>
+            <option value="menos_vendidas" <?= ($orden === 'menos_vendidas') ? 'selected' : '' ?>>Menos vendidas</option>
+          </select>
         </div>
 
         <button type="submit" class="btn btn-primary">
@@ -125,14 +121,13 @@ elseif ($orden === 'menos_vendidas') {
         <button type="submit" name="exportar" value="1" class="btn btn-secondary">
           <i class="fas fa-file-excel"></i> Exportar
         </button>
-
       </form>
 
       <div class="table-container">
         <table>
           <thead>
             <tr>
-              <th>miniatura</th>
+              <th>Miniatura</th>
               <th>Nombre</th>
               <th>Marca</th>
               <th>Modelo</th>
@@ -146,14 +141,14 @@ elseif ($orden === 'menos_vendidas') {
               <?php foreach ($partesFiltradas as $parte): ?>
                 <tr>
                   <td data-label="Miniatura">
-                    <img src="../imagenes/<?= htmlspecialchars($parte['miniatura']) ?>" alt="<?= htmlspecialchars($parte['nombre']) ?>" class="parte-img" />
+                    <img src="../imagenes/<?= htmlspecialchars($parte['imagen_thumbnail'] ?? '') ?>" class="parte-img" alt="<?= htmlspecialchars($parte['nombre'] ?? '') ?>" />
                   </td>
-                  <td data-label="Nombre"><?= htmlspecialchars($parte['nombre']) ?></td>
-                  <td data-label="Marca"><?= htmlspecialchars($parte['marca']) ?></td>
-                  <td data-label="Modelo"><?= htmlspecialchars($parte['modelo']) ?></td>
-                  <td data-label="Año"><?= htmlspecialchars($parte['anio']) ?></td>
-                  <td data-label="Stock"><?= $parte['stock'] ?> unidades</span></td>
-                  <td data-label="Vendidas"><?= $parte['vendidas'] ?> vendidas</span></td>
+                  <td data-label="Nombre"><?= htmlspecialchars($parte['nombre'] ?? '') ?></td>
+                  <td data-label="Marca"><?= htmlspecialchars($parte['marca'] ?? '') ?></td>
+                  <td data-label="Modelo"><?= htmlspecialchars($parte['modelo'] ?? '') ?></td>
+                  <td data-label="Año"><?= htmlspecialchars($parte['anio'] ?? '') ?></td>
+                  <td data-label="Stock"><?= htmlspecialchars($parte['cantidad_stock'] ?? '0') ?> unidades</td>
+                  <td data-label="Vendidas"><?= htmlspecialchars($parte['cantidad_vendida'] ?? '0') ?> vendidas</td>
                 </tr>
               <?php endforeach; ?>
             <?php else: ?>
@@ -173,93 +168,44 @@ elseif ($orden === 'menos_vendidas') {
     </div>
   </div>
 
-<script>
-const marcasModelos = <?= json_encode($marcasModelos) ?>;
+  <script>
+    function filtrarModelos() {
+      const marcaSelect = document.getElementById('marca');
+      const modeloSelect = document.getElementById('modelo');
 
-function filtrarModelos() {
-  const marcaSelect = document.getElementById('marca');
-  const modeloSelect = document.getElementById('modelo');
-  const marcaSeleccionada = marcaSelect.value;
+      const modelosPorMarca = <?= json_encode($marcasModelos) ?>;
+      const marcaSeleccionada = marcaSelect.value;
 
-  // Guardamos modelo actual para mantenerlo
-  const modeloPrevio = modeloSelect.value;
+      // Limpiar modelos
+      modeloSelect.innerHTML = '<option value="">Todos los modelos</option>';
 
-  // Limpiar opciones actuales excepto la primera
-  modeloSelect.options.length = 1;
-
-  if (marcaSeleccionada && marcasModelos[marcaSeleccionada]) {
-    // Añadir solo modelos de la marca seleccionada
-    marcasModelos[marcaSeleccionada].forEach(modelo => {
-      const option = document.createElement('option');
-      option.value = modelo;
-      option.text = modelo;
-      modeloSelect.appendChild(option);
-    });
-  } else {
-    // Mostrar todos los modelos
-    Object.values(marcasModelos).flat().forEach(modelo => {
-      const option = document.createElement('option');
-      option.value = modelo;
-      option.text = modelo;
-      modeloSelect.appendChild(option);
-    });
-  }
-
-  // Restaurar selección si sigue disponible
-  for (let i = 0; i < modeloSelect.options.length; i++) {
-    if (modeloSelect.options[i].value === modeloPrevio) {
-      modeloSelect.selectedIndex = i;
-      break;
+      if (marcaSeleccionada && modelosPorMarca[marcaSeleccionada]) {
+        modelosPorMarca[marcaSeleccionada].forEach(modelo => {
+          const option = document.createElement('option');
+          option.value = modelo;
+          option.textContent = modelo;
+          modeloSelect.appendChild(option);
+        });
+      }
     }
-  }
-}
 
-// Cuando cambie modelo, actualizar marca automáticamente
-function actualizarMarcaSegunModelo() {
-  const marcaSelect = document.getElementById('marca');
-  const modeloSelect = document.getElementById('modelo');
-  const modeloSeleccionado = modeloSelect.value;
+    document.getElementById("btnLimpiar").addEventListener("click", () => {
+      // Recargar la página con solo el parámetro seccion para limpiar filtros
+      const params = new URLSearchParams();
+      params.set('seccion', <?= json_encode($seccion) ?>);
+      window.location.href = window.location.pathname + '?' + params.toString();
+    });
 
-  if (!modeloSeleccionado) {
-    // Si no hay modelo seleccionado, no cambiar marca
-    return;
-  }
-
-  // Buscar marca del modelo seleccionado
-  let marcaEncontrada = '';
-  for (const [marca, modelos] of Object.entries(marcasModelos)) {
-    if (modelos.includes(modeloSeleccionado)) {
-      marcaEncontrada = marca;
-      break;
-    }
-  }
-
-  if (marcaEncontrada && marcaSelect.value !== marcaEncontrada) {
-    marcaSelect.value = marcaEncontrada;
-    // Actualizamos modelos porque marca cambió
-    filtrarModelos();
-  }
-}
-
-// Eventos
-document.addEventListener('DOMContentLoaded', () => {
-  filtrarModelos();
-
-  // Al cambiar marca, actualizar modelos
-  document.getElementById('marca').addEventListener('change', filtrarModelos);
-
-  // Al cambiar modelo, actualizar marca
-  document.getElementById('modelo').addEventListener('change', actualizarMarcaSegunModelo);
-
-  // Botón limpiar filtros
-  document.getElementById('btnLimpiar').addEventListener('click', () => {
-    const form = document.getElementById('filterForm');
-    form.querySelector('#marca').value = '';
-    form.querySelector('#modelo').value = '';
-    form.querySelector('#orden').value = '';
-    form.submit();
-  });
-});
-</script>
+    // Ejecutar filtrarModelos para actualizar opciones modelo según marca al cargar la página
+    window.addEventListener('DOMContentLoaded', () => {
+      filtrarModelos();
+      // Si hay modelo seleccionado, volver a seleccionarlo tras recargar las opciones
+      const modeloSelect = document.getElementById('modelo');
+      const modeloActual = <?= json_encode($filtroModelo) ?>;
+      if(modeloActual){
+        modeloSelect.value = modeloActual;
+      }
+    });
+  </script>
 </body>
 </html>

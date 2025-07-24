@@ -532,6 +532,41 @@ class mod_db implements ICRUD
 		}
 	}
 
+	public function obtenerSeccion($id_seccion){
+        $sql = "SELECT 
+                pa.imagen_thumbnail, 
+                pa.nombre, 
+                ma.marca, 
+                mo.modelo, 
+                mo.anio, 
+                pa.cantidad_stock, 
+                pa.id_parte,
+                COUNT(pv.id_parte) AS cantidad_vendida
+            FROM partes_autos AS pa
+            INNER JOIN marca AS ma ON ma.id_marca = pa.id_marca
+            INNER JOIN modelo AS mo ON mo.id_modelo = pa.id_modelo
+            LEFT JOIN parte_vendida AS pv ON pv.id_parte = pa.id_parte
+            WHERE pa.id_cat = :id_seccion
+            GROUP BY 
+                pa.id_parte, 
+                pa.imagen_thumbnail, 
+                pa.nombre, 
+                ma.marca, 
+                mo.modelo, 
+                mo.anio, 
+                pa.cantidad_stock";
+            $stmt = $this->conexion->prepare($sql);
+            $stmt->bindParam(':id_seccion', $id_seccion, PDO::PARAM_INT);
+            $stmt->execute();
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            if ($result) {
+                return $result;
+            } else {
+                logger::error("No se encontraron partes para la sección con ID: " . $this->id_seccion);
+                return [];
+            }
+    }
+
 	public function registrarTrazabilidad($tabla, $accion, $codigoRegistro, $usuario) {
         $fechaSistema = date('Y-m-d H:i:s');
         $ip = $_SERVER['REMOTE_ADDR'] ?? gethostbyname(gethostname()) ?? 'IP_NO_DETECTADA';
