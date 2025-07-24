@@ -13,11 +13,17 @@ if (!isset($_SESSION['rol'])) {
 
 include 'modal_usuario.php';
 include '../comunes/navbar.php';
-include '../clases/conexion.php';
+require_once '../clases/conexion.php';
 
-// Ejemplo de usuarios — en la práctica los obtienes de base de datos
 $db = new mod_db();
-$usuarios = $db->select("usuarios", "*", "");
+$usuarios = $db->query("
+  SELECT u.*, r.nombre_rol
+  FROM usuarios u
+  LEFT JOIN usuarios_roles ur ON u.id_usuario = ur.id_usuario
+  LEFT JOIN roles r ON ur.id_rol = r.id_rol
+  WHERE r.id_rol IN (1, 2)
+");
+
 
 function badgeEstado($activo) {
   return $activo == 1 ? '<span class="badge badge-success">Activo</span>' : '<span class="badge badge-danger">Inactivo</span>';
@@ -69,7 +75,7 @@ function badgeEstado($activo) {
 </div>
     <div class="card">
       <div class="table-responsive">
-        <table>
+        <table id="tablaUsuarios">
           <thead>
             <tr>              
               <th>Rol</th>
@@ -85,7 +91,7 @@ function badgeEstado($activo) {
           <tbody>
             <?php foreach ($usuarios as $usuario): ?>
               <tr>
-                <!-- ROL -->
+                <td><?= htmlspecialchars($usuario['nombre_rol']) ?></td>
                 <td><?= htmlspecialchars($usuario['nombre']) ?></td>
                 <td><?= htmlspecialchars($usuario['apellido']) ?></td>
                 <td><?= htmlspecialchars($usuario['correo']) ?></td>
@@ -115,6 +121,17 @@ function badgeEstado($activo) {
 </div>
 
 <script>
+  // Búsqueda en tabla por nombre, apellido, correo, usuario, etc.
+  document.getElementById('busqueda').addEventListener('input', function () {
+    const filtro = this.value.toLowerCase();
+    const filas = document.querySelectorAll('#tablaUsuarios tbody tr');
+
+    filas.forEach(fila => {
+      const texto = fila.textContent.toLowerCase();
+      fila.style.display = texto.includes(filtro) ? '' : 'none';
+    });
+  });
+
   document.querySelectorAll('.btn-toggle').forEach(btn => {
     btn.addEventListener('click', function (e) {
       e.preventDefault();

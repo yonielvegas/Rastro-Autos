@@ -1,3 +1,12 @@
+<?php
+// usuario.php o donde esté tu modal, antes de salida HTML
+
+require_once '../clases/conexion.php';
+$db = new mod_db();
+$roles = $db->query("SELECT * FROM roles WHERE id_rol IN (1, 2)");
+?>
+
+<!-- Modal -->
 <div class="modal" id="modalUserForm" style="display:none;">
   <div class="modal-content">
     <button class="close-btn" id="closeModalBtn" aria-label="Cerrar modal">&times;</button>
@@ -30,6 +39,16 @@
         <input type="text" id="usuario" name="usuario" required placeholder="Nombre de usuario" />
       </div>
 
+      <div class="form-group" id="rolGroup">
+        <label for="rol">Rol</label>
+        <select id="rol" name="rol" required>
+          <option value="">-- Seleccione un rol --</option>
+          <?php foreach ($roles as $r): ?>
+            <option value="<?= htmlspecialchars($r['id_rol']) ?>"><?= htmlspecialchars($r['nombre_rol']) ?></option>
+          <?php endforeach; ?>
+        </select>
+      </div>
+
       <div class="form-group">
         <label for="password">Contraseña</label>
         <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" />
@@ -47,7 +66,6 @@
     </form>
   </div>
 </div>
-
 <style>
   /* El mismo estilo que ya tenías */
   .modal {
@@ -170,6 +188,10 @@
 <script>
   const modal = document.getElementById('modalUserForm');
   const closeModalBtn = document.getElementById('closeModalBtn');
+  const rolSelect = document.getElementById('rol');
+  const rolGroup = document.getElementById('rolGroup');
+  const passwordInput = document.getElementById('password');
+  const strengthBar = document.getElementById('strength-bar');
 
   closeModalBtn.addEventListener('click', () => {
     modal.style.display = 'none';
@@ -184,11 +206,8 @@
   });
 
   // Password strength bar
-  const password = document.getElementById('password');
-  const strengthBar = document.getElementById('strength-bar');
-
-  password.addEventListener('input', function () {
-    const val = password.value;
+  passwordInput.addEventListener('input', function () {
+    const val = this.value;
     let strength = 0;
 
     if (val.length > 0) strength += 1;
@@ -209,7 +228,6 @@
     }
   });
 
-  // Función para abrir el modal con datos opcionales (crear o editar)
   function abrirModalUsuario(usuario = null) {
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
@@ -232,8 +250,11 @@
       correo.value = usuario.correo || '';
       telefono.value = usuario.telefono || '';
       usuarioInput.value = usuario.usuario || '';
+      rolGroup.style.display = 'none'; // Ocultar select rol al editar
       password.value = '';
       password2.value = '';
+      strengthBar.style.width = '0%';
+      strengthBar.style.backgroundColor = '#e0e0e0';
     } else {
       titulo.textContent = 'Crear Usuario';
       idInput.value = '';
@@ -242,8 +263,12 @@
       correo.value = '';
       telefono.value = '';
       usuarioInput.value = '';
+      rolGroup.style.display = 'block'; // Mostrar select rol al crear
+      rolSelect.value = ''; // Reset valor
       password.value = '';
       password2.value = '';
+      strengthBar.style.width = '0%';
+      strengthBar.style.backgroundColor = '#e0e0e0';
     }
   }
 </script>
