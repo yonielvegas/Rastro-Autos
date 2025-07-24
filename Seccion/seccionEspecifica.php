@@ -1,4 +1,34 @@
 <?php
+
+// Manejar exportaciones ANTES de cualquier salida HTML
+if (isset($_GET['exportar'])) {
+    // Verificar si PhpSpreadsheet está disponible
+    if (!file_exists(__DIR__ . '/../vendor/autoload.php')) {
+        die("Error: PhpSpreadsheet no está instalado. Ejecuta 'composer require phpoffice/phpspreadsheet'");
+    }
+    
+    require_once __DIR__ . '/../vendor/autoload.php';
+    require_once __DIR__ . '/../Seccion/controller_seccion.php';
+    
+    $controller = new SeccionController($_GET['seccion'] ?? '');
+    
+    try {
+        if ($_GET['exportar'] == '1') {
+            $controller->generarReporteExcel([
+                'marca' => $_GET['marca'] ?? '',  // Cambiado de 'id_marca' a 'marca'
+                'modelo' => $_GET['modelo'] ?? '', // Cambiado de 'id_modelo' a 'modelo'
+                'orden' => $_GET['orden'] ?? ''
+            ]);
+        } elseif ($_GET['exportar'] == 'estadisticas') {
+            $controller->generarEstadisticasExcel();
+        }
+    } catch (Exception $e) {
+        die("Error al generar el reporte: " . $e->getMessage());
+    }
+    exit;
+}
+
+// Solo después de manejar exportaciones, incluir el resto
 include '../comunes/navbar.php';
 include '../comunes/sidebar.php';
 require_once '../Seccion/controller_seccion.php';
@@ -120,7 +150,10 @@ if ($orden === 'vendidas') {
           <i class="fas fa-eraser"></i> Limpiar filtros
         </button>
         <button type="submit" name="exportar" value="1" class="btn btn-secondary">
-          <i class="fas fa-file-excel"></i> Exportar
+            <i class="fas fa-file-excel"></i> Exportar Inventario
+        </button>
+        <button type="submit" name="exportar" value="estadisticas" class="btn btn-secondary">
+            <i class="fas fa-chart-bar"></i> Exportar Estadísticas
         </button>
       </form>
 
@@ -191,13 +224,11 @@ if ($orden === 'vendidas') {
     }
 
     document.getElementById("btnLimpiar").addEventListener("click", () => {
-      // Recargar la página con solo el parámetro seccion para limpiar filtros
       const params = new URLSearchParams();
       params.set('seccion', <?= json_encode($seccion) ?>);
       window.location.href = window.location.pathname + '?' + params.toString();
     });
 
-    // Ejecutar filtrarModelos para actualizar opciones modelo según marca al cargar la página
     window.addEventListener('DOMContentLoaded', () => {
       const marcaSelect = document.getElementById('marca');
       const modeloSelect = document.getElementById('modelo');
@@ -207,14 +238,12 @@ if ($orden === 'vendidas') {
         filtrarModelos();
 
         if (modeloActual) {
-          // Esperar brevemente para que las opciones se generen antes de seleccionar
           setTimeout(() => {
             modeloSelect.value = modeloActual;
           }, 10);
         }
       }
     });
-
   </script>
 </body>
 </html>
