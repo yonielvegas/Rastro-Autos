@@ -77,7 +77,6 @@ class mod_db implements ICRUD
 			return true;
 		} catch (PDOException $e) {
 			echo "Error en INSERT: " . $e->getMessage();
-			Logger::error("Error al insertar en $tabla: " . $e->getMessage());
 			return false;
 		}
 	}

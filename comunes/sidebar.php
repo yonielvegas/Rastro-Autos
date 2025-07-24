@@ -20,7 +20,6 @@ if (!in_array($rol, [1, 2])) {
 }
 ?>
 
-
 <style>
 :root {
   --primary: #4361ee;
@@ -173,14 +172,9 @@ if (!in_array($rol, [1, 2])) {
 
     <div class="sidebar-menu">
       <!-- Menú siempre visible para todos -->
-      <a href="../home.php" class="menu-item <?php if ($currentFile == 'home.php') echo 'active'; ?>">
+      <a href="../comunes/homeSistema.php" class="menu-item <?php if ($currentFile == 'homeSistema.php') echo 'active'; ?>">
         <i class="fas fa-home"></i>
         <span>Inicio</span>
-      </a>
-
-      <a href="../inventario/inventario.php" class="menu-item <?php if ($currentFile == 'inventario.php') echo 'active'; ?>">
-        <i class="fas fa-boxes"></i>
-        <span>Inventario</span>
       </a>
 
       <!-- Solo para rol 1 (Admin) -->
@@ -198,6 +192,12 @@ if (!in_array($rol, [1, 2])) {
 
       <!-- Para rol 1 y 2 -->
       <?php if (in_array($rol, [1, 2])): ?>
+
+        <a href="../inventario/inventario.php" class="menu-item <?php if ($currentFile == 'inventario.php') echo 'active'; ?>">
+          <i class="fas fa-boxes"></i>
+          <span>Inventario</span>
+        </a>
+
         <a href="../seccion/seccionMarca.php" class="menu-item <?php if (in_array($currentFile, ['seccionMarca.php', 'seccionEspecifica.php'])) echo 'active'; ?>">
           <i class="fas fa-th-large"></i>
           <span>Secciones</span>
