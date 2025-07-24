@@ -199,14 +199,22 @@ if ($orden === 'vendidas') {
 
     // Ejecutar filtrarModelos para actualizar opciones modelo según marca al cargar la página
     window.addEventListener('DOMContentLoaded', () => {
-      filtrarModelos();
-      // Si hay modelo seleccionado, volver a seleccionarlo tras recargar las opciones
+      const marcaSelect = document.getElementById('marca');
       const modeloSelect = document.getElementById('modelo');
       const modeloActual = <?= json_encode($filtroModelo) ?>;
-      if(modeloActual){
-        modeloSelect.value = modeloActual;
+
+      if (marcaSelect.value) {
+        filtrarModelos();
+
+        if (modeloActual) {
+          // Esperar brevemente para que las opciones se generen antes de seleccionar
+          setTimeout(() => {
+            modeloSelect.value = modeloActual;
+          }, 10);
+        }
       }
     });
+
   </script>
 </body>
 </html>
