@@ -29,6 +29,7 @@ if (isset($_POST["tolog"])) {
         $rol = $Logearme->getRol();
 
         if ($Logearme->getIntentoLogin()) {
+
             $_SESSION['autenticado'] = "SI";
             $_SESSION['usuario'] = $Logearme->getUsuario();
             $_SESSION['id_usuario'] = $Logearme->getIdUsuario();
@@ -44,6 +45,10 @@ if (isset($_POST["tolog"])) {
             }
 
             if ($rol == 1 || $rol == 2) {
+                $Logearme->obtenerPermisos();
+                $_SESSION['permisos'] = $Logearme->getPermisos();
+                logger::info("Permisos del usuario: " . json_encode($_SESSION['permisos']));
+
                 $_SESSION['rol'] = $rol;
                 redireccionar("Usuarios/usuario.php");
             } elseif ($rol == 3){

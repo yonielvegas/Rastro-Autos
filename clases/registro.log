@@ -4798,3 +4798,186 @@ Array
     [rol] => 1
 )
 
+[2025-07-24 16:26:54] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:26:56] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:27:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:44:25] [INFO] Hash temporal generado para pruebas: $2y$13$IwEjhXyScvU.UpizES8oZ.QytsY9OpfaeFCMCvFFTm0Mo6eCRoO22
+[2025-07-24 16:44:25] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:44:25] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:44:25] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$H/pm0ydBBgz1eW.pJNxWA.lRaJwUTqJ3OuthUS4opexiHY9XhMokK'
+[2025-07-24 16:44:25] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-24 16:44:25] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:44:25] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-24 16:44:33] [INFO] Hash temporal generado para pruebas: $2y$13$q.ilJDYNjK/Rj6g5fPUbX.peHST0iLbgqwDBQcd5cCup7QrQV25wO
+[2025-07-24 16:44:33] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:44:33] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:44:33] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$H/pm0ydBBgz1eW.pJNxWA.lRaJwUTqJ3OuthUS4opexiHY9XhMokK'
+[2025-07-24 16:44:33] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 16:44:33] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:44:33] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 16:44:33] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 16:44:33] [INFO] Permisos del usuario: []
+[2025-07-24 16:44:33] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 16:44:33] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 16:45:29] [INFO] Hash temporal generado para pruebas: $2y$13$VmasQT9FcH4uoPeljm3tBOxIwOuoyYlIcl12i9l8QNlOOqs.SqBZO
+[2025-07-24 16:45:29] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:45:29] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:45:29] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$H/pm0ydBBgz1eW.pJNxWA.lRaJwUTqJ3OuthUS4opexiHY9XhMokK'
+[2025-07-24 16:45:30] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 16:45:30] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:45:30] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 16:45:30] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 16:45:30] [INFO] Permisos del usuario: []
+[2025-07-24 16:45:30] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 16:45:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 16:47:10] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 16:47:10] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 16:47:27] [INFO] Hash temporal generado para pruebas: $2y$13$4s.sl5d6/3MYyBAXXFAgk.Vp2O3U6iBgbHXBKHJapKRddny7GXax.
+[2025-07-24 16:47:27] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:47:27] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:47:27] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$H/pm0ydBBgz1eW.pJNxWA.lRaJwUTqJ3OuthUS4opexiHY9XhMokK'
+[2025-07-24 16:47:27] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 16:47:27] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:47:27] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 16:47:27] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 16:47:27] [INFO] Permisos obtenidos para el usuario: admin
+[2025-07-24 16:47:27] [INFO] Permisos del usuario: [1,2,3]
+[2025-07-24 16:47:27] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 16:47:27] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
