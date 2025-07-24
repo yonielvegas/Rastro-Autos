@@ -89,7 +89,17 @@ class mod_db implements ICRUD
 			echo "Error en query(): " . $e->getMessage();
 			return false;
 		}
-	}
+	}public function queryEspecifico($sql, $params = []) {
+    try {
+        $stmt = $this->conexion->prepare($sql);
+        $stmt->execute($params);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        echo "Error en queryEspecifico(): " . $e->getMessage();
+        return false;
+    }
+}
+
 	public function lastInsertId() {
 		try {
 			return $this->conexion->lastInsertId();

@@ -1,15 +1,18 @@
 <?php
 require_once '../clases/conexion.php';
-$db = new mod_db();
 
-$id_usuario = $_GET['id'] ?? '';
-if (empty($id_usuario)) {
-    echo "ID inválido";
+if (!isset($_GET['id'])) {
+    echo json_encode(['status' => 'error', 'msg' => 'ID no especificado']);
     exit;
 }
 
-$id_usuario = intval($id_usuario);
-$resultado = $db->updateSeguro("usuarios", ['activo' => 1], ['id_usuario' => $id_usuario]);
+$id = intval($_GET['id']);
+$db = new mod_db();
 
-echo $resultado ? "OK" : "ERROR";
-exit;
+$result = $db->updateSeguro("usuarios", ['activo' => 1], ['id_usuario' => $id]);
+
+if ($result) {
+    echo json_encode(['status' => 'success', 'msg' => 'Usuario activado correctamente']);
+} else {
+    echo json_encode(['status' => 'error', 'msg' => 'Error al activar el usuario']);
+}

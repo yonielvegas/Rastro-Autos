@@ -52,9 +52,6 @@ $roles = $db->query("SELECT * FROM roles WHERE id_rol IN (1, 2)");
       <div class="form-group">
         <label for="password">Contraseña</label>
         <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" />
-        <div class="password-strength">
-          <div class="strength-bar" id="strength-bar"></div>
-        </div>
       </div>
 
       <div class="form-group">
@@ -183,6 +180,10 @@ $roles = $db->query("SELECT * FROM roles WHERE id_rol IN (1, 2)");
       padding: 20px;
     }
   }
+
+      .swal2-container {
+      z-index: 100000 !important; /* Mucho más alto que 9999 del modal */
+    }
 </style>
 
 <script>
@@ -202,29 +203,6 @@ $roles = $db->query("SELECT * FROM roles WHERE id_rol IN (1, 2)");
     if (e.target === modal) {
       modal.style.display = 'none';
       document.body.style.overflow = 'auto';
-    }
-  });
-
-  // Password strength bar
-  passwordInput.addEventListener('input', function () {
-    const val = this.value;
-    let strength = 0;
-
-    if (val.length > 0) strength += 1;
-    if (val.length >= 8) strength += 1;
-    if (/[A-Z]/.test(val)) strength += 1;
-    if (/[0-9]/.test(val)) strength += 1;
-    if (/[^A-Za-z0-9]/.test(val)) strength += 1;
-
-    const percent = (strength / 5) * 100;
-    strengthBar.style.width = percent + '%';
-
-    if (strength <= 2) {
-      strengthBar.style.backgroundColor = '#e63946'; // Rojo
-    } else if (strength <= 4) {
-      strengthBar.style.backgroundColor = '#f4a261'; // Naranja
-    } else {
-      strengthBar.style.backgroundColor = '#2a9d8f'; // Verde
     }
   });
 
@@ -252,6 +230,7 @@ $roles = $db->query("SELECT * FROM roles WHERE id_rol IN (1, 2)");
       usuarioInput.value = usuario.usuario || '';
       rolGroup.style.display = 'none'; // Ocultar select rol al editar
       password.value = '';
+      rolSelect.removeAttribute('required'); // Quitar required al ocultar
       password2.value = '';
       strengthBar.style.width = '0%';
       strengthBar.style.backgroundColor = '#e0e0e0';
@@ -264,6 +243,7 @@ $roles = $db->query("SELECT * FROM roles WHERE id_rol IN (1, 2)");
       telefono.value = '';
       usuarioInput.value = '';
       rolGroup.style.display = 'block'; // Mostrar select rol al crear
+      rolSelect.setAttribute('required', 'required'); // Agregar required al mostrar
       rolSelect.value = ''; // Reset valor
       password.value = '';
       password2.value = '';
@@ -271,4 +251,45 @@ $roles = $db->query("SELECT * FROM roles WHERE id_rol IN (1, 2)");
       strengthBar.style.backgroundColor = '#e0e0e0';
     }
   }
+
+  document.getElementById('formUsuario').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const form = this;
+  const formData = new FormData(form);
+
+  // Validar que las contraseñas coincidan (si alguna está llena)
+  const pass = formData.get('password');
+  const pass2 = formData.get('password2');
+  if ((pass || pass2) && pass !== pass2) {
+    Swal.fire('Error', 'Las contraseñas no coinciden.', 'error');
+    return;
+  }
+
+  fetch(form.action, {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.status === 'success') {
+      Swal.fire({
+        icon: 'success',
+        title: '¡Éxito!',
+        text: data.msg,
+        confirmButtonText: 'Aceptar'
+      }).then(() => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+        location.reload(); // Recarga la página para actualizar la lista de usuarios
+      });
+    } else {
+      Swal.fire('Error', data.msg || 'Ocurrió un error al guardar el usuario.', 'error');
+    }
+  })
+  .catch(() => {
+    Swal.fire('Error', 'No se pudo conectar con el servidor.', 'error');
+  });
+});
+
 </script>
