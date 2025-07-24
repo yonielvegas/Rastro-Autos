@@ -23,7 +23,6 @@
     body {
       background-color: #f5f7ff;
       color: var(--dark);
-      line-height: 1.6;
     }
 
     .main-content {

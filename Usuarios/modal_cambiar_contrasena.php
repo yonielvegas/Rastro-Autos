@@ -10,7 +10,7 @@
       <input type="password" id="passNueva" name="pass_nueva" required>
 
       <div class="modal-actions">
-        <button type="submit" class="btn-confirm">Guardar</button>
+        <button type="submit" class="btn-confirm" style="background-color: #4361ee;">Guardar</button>
         <button type="button" id="closeModal" class="btn-cancel">Cancelar</button>
       </div>
     </form>

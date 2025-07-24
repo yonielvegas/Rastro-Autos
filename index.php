@@ -50,7 +50,7 @@ if (isset($_POST["tolog"])) {
                 logger::info("Permisos del usuario: " . json_encode($_SESSION['permisos']));
 
                 $_SESSION['rol'] = $rol;
-                redireccionar("Usuarios/usuario.php");
+                redireccionar("comunes/homeSistema.php");
             } elseif ($rol == 3){
                 $_SESSION['rol'] = $rol;
                 redireccionar("public/homePublic.php");

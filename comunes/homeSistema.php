@@ -12,6 +12,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f0f2f5;
+            
         }
         
         .main-content .dashboard {
@@ -80,6 +81,10 @@
             
             .module {
                 height: 220px;
+                  display: block;
+                    position: relative;
+                    text-decoration: none;
+                    color: inherit;
             }
             
             .module-title {
@@ -106,34 +111,34 @@
     <div class="dashboard">
         <?php if ($rol == 1): ?>
         <!-- Módulo 1 -->
-        <div class="module">
+        <a href="../Usuarios/usuario.php" class="module">
             <img src="../imagenes/usuarios.jpg" alt="Usuarios" class="module-img">
             <div class="module-overlay"></div>
             <h2 class="module-title">Usuarios</h2>
-        </div>
-        
+        </a>
+
         <!-- Módulo 2 -->
-        <div class="module">
-            <img src="../imagenes/roles.jpeg" alt="Analíticas" class="module-img">
+        <a href="../Roles/roles.php" class="module">
+            <img src="../imagenes/roles.jpeg" alt="Roles y Permisos" class="module-img">
             <div class="module-overlay"></div>
             <h2 class="module-title">Roles y Permisos</h2>
-        </div>
+        </a>
         <?php endif; ?>
-        
+
         <?php if (in_array($rol, [1, 2])): ?>
         <!-- Módulo 3 -->
-        <div class="module">
-            <img src="../imagenes/inventario.jpg" alt="Clientes" class="module-img">
+        <a href="../Inventario/inventario.php" class="module">
+            <img src="../imagenes/inventario.jpg" alt="Inventario" class="module-img">
             <div class="module-overlay"></div>
             <h2 class="module-title">Inventario</h2>
-        </div>
-        
+        </a>
+
         <!-- Módulo 4 -->
-        <div class="module">
-            <img src="../imagenes/seccion.jpeg" alt="Reportes" class="module-img">
+        <a href="../Seccion/seccionMarca.php" class="module">
+            <img src="../imagenes/seccion.jpeg" alt="Secciones" class="module-img">
             <div class="module-overlay"></div>
-            <h2 class="module-title">secciones</h2>
-        </div>
+            <h2 class="module-title">Secciones</h2>
+        </a>
         <?php endif; ?>
     </div>
 </div>

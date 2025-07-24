@@ -6242,19 +6242,5337 @@ Array
 [2025-07-24 16:49:43] [INFO] Intento de obtener factura para el usuario con ID 2: []
 [2025-07-24 16:49:53] [INFO] id de usuario detalles partes: 2
 [2025-07-24 16:49:53] [INFO] Intento de Registrar Trazabilidad: {"id_parte":18,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado mate en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"231.58","cantidad_stock":14,"codigo_serie":"MAZ-MX--2016-GU","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
-[2025-07-24 17:47:51] [INFO] id de usuario detalles partes: 2
-[2025-07-24 17:47:51] [INFO] Intento de Registrar Trazabilidad: {"id_parte":18,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado mate en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"231.58","cantidad_stock":14,"codigo_serie":"MAZ-MX--2016-GU","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
-[2025-07-24 17:48:02] [INFO] Hash temporal generado para pruebas: $2y$13$NiHuAHeP7agv8JArjdvKFufx4HvJC7LNdEVGsOLfTNmC.ehIKKgpG
-[2025-07-24 17:48:02] [INFO] ROL del usuario con ID 1 es: 1
-[2025-07-24 17:48:02] [INFO] Usuario encontrado en base de datos: admin
-[2025-07-24 17:48:02] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$H/pm0ydBBgz1eW.pJNxWA.lRaJwUTqJ3OuthUS4opexiHY9XhMokK'
-[2025-07-24 17:48:02] [INFO] Login exitoso para el usuario: admin
-[2025-07-24 17:48:02] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
-[2025-07-24 17:48:02] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
-[2025-07-24 17:48:02] [INFO] ERRORES DE BLOQUEO: []
-[2025-07-24 17:48:02] [INFO] Permisos obtenidos para el usuario: admin
-[2025-07-24 17:48:02] [INFO] Permisos del usuario: [1,2,3]
-[2025-07-24 17:48:02] [INFO] Contenido de la sesión EN USUARIO:
+[2025-07-24 17:12:54] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:12:55] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:12:56] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:12:56] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:13:45] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:13:45] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:13:46] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:13:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:13:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:13:53] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:13:53] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:13:54] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:14:28] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:14:30] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:14:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:14:31] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:14:33] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:15:03] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:15:05] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:15:09] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:15:17] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:15:19] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:15:21] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:15:23] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:12] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:14] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:20] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:21] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:22] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:22] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:23] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:24] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:24] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:24] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:25] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:25] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:26] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:26] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:26] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:27] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:28] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:29] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:29] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:48] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:16:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:18:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:18:51] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:18:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:18:55] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:18:55] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:18:59] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:18:59] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:19:00] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:15] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:16] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:17] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:18] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:19] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:23] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:27] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:28] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:31] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:31] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:34] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:35] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:36] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:41] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:37:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:38:17] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:38:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:29] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:34] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:35] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:35] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:36] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:38] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:38] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:39] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:40] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:40] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:40] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:41] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:41] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:42] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:42] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:42] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:43] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:43] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:43] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:44] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:44] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:44] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:45] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:46] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:46] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:46] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:39:46] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:49] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:54] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:55] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:55] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:56] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:56] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:56] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:57] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:57] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:57] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:58] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:58] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:59] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:59] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:41:59] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:00] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:00] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:01] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:41] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:43] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:43] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:44] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:45] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:45] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:45] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:46] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:46] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:46] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:47] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:42:50] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:43:21] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:43:22] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:04] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:04] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:21] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:22] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:22] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:24] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:26] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:28] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:28] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:28] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:29] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:29] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:31] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:31] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:31] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:32] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:44:32] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:45:49] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:45:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:47:33] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:47:33] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:48:01] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:48:01] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:50:05] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:50:05] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:50:31] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:50:31] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:50:33] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:50:39] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:50:39] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:50:44] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:50:47] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:50:50] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:50:53] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:50:53] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:50:53] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:51:57] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:51:58] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:51:58] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:00] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:00] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:00] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:01] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:02] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:02] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:03] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:03] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:03] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:04] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:04] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:04] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:12] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:14] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:15] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:24] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:24] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:28] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:32] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:35] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:35] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:37] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:37] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:37] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:38] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:39] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:39] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:40] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:40] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:40] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:40] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:41] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:41] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:41] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:42] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:42] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:53] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:53] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:54] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:54] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:54] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:52:55] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:53:01] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:53:01] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:53:02] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:53:03] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:53:19] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:53:20] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:53:22] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:53:22] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:53:22] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:53:23] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:53:38] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:53:40] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:54:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:54:25] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:54:30] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:54:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:16] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:16] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:18] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:19] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:20] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:20] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:20] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:21] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:21] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:26] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:26] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:27] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:27] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:27] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:28] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:29] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:29] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:35] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:40] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:40] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:42] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:43] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:55:43] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:38] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:38] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:39] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:42] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:42] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:43] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:44] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:44] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:44] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:45] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:45] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:46] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:47] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:47] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:48] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:50] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:50] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:50] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:51] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:52] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:57:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:07] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:07] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:48] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:49] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:50] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:50] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:50] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:51] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:52] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:53] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:54] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:54] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:55] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:55] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:55] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:58:56] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:59:55] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:59:56] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:59:56] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:59:57] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:59:57] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 17:59:57] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:17] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:17] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:17] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:17] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:18] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:18] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:18] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:18] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:18] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:19] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:00:19] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:08] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:08] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:09] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:09] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:10] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:10] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:10] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:10] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:11] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:12] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:12] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:12] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:13] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:14] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:14] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:15] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:15] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:15] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:16] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:16] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:17] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:17] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:19] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:19] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:20] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:21] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:21] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:21] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:22] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:22] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:31] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:34] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:36] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:36] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:37] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:38] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:39] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:40] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:41] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:41] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:42] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:44] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:44] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:45] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:46] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:47] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:52] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:01:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:03:11] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:03:11] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:03:13] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:03:14] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:03:14] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:03:15] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:03:16] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:03:16] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:03:17] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:03:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:03:19] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:04:15] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:04:18] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:04:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:04:19] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:04:20] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:04:20] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:04:21] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:04:21] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:04:21] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:04:50] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:04:50] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:05:02] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:05:42] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:16] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:20] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:20] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:21] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:21] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:21] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:22] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:23] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:24] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:25] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:26] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:26] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:26] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:27] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:28] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:28] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:29] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:31] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:31] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:31] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:32] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:48] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:50] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:55] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:56] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:07:57] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:08:00] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:08:00] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:08:03] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:08:03] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:08:03] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:08:03] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:10:03] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:13:08] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:13:08] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:13:09] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:13:10] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:13:10] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:13:11] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:13:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:13:31] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:13:31] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:13:33] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:13:33] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:13:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:14:14] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:14:14] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:02] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:02] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:03] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:03] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:03] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:03] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:03] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:03] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:05] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:06] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:06] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:06] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:07] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:08] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:10] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:10] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:11] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:11] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:12] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:13] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:13] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:13] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:14] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:14] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:15] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:17] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:19] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:19] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:42] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:45] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:16:46] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:02] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:04] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:31] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:32] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:33] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:33] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:33] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:34] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:35] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:36] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:36] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:37] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:37] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:37] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:37] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:37] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:37] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:38] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:38] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:38] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:38] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:41] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:41] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:46] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:46] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:46] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:46] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:47] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:47] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:47] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:48] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:48] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:50] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:50] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:52] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:52] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:52] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:52] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:52] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:17:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:19:34] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:19:35] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:19:35] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:19:36] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:19:37] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:19:37] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:19:38] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 18:19:49] [INFO] Hash temporal generado para pruebas: $2y$13$1Ct6gbMTa/s5zYXFWPiI7.dD0YF6zpDY9jwdmd8SqqZfxN17dfjbO
+[2025-07-24 18:19:49] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 18:19:49] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 18:19:49] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-24 18:19:50] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 18:19:50] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 18:19:50] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 18:19:50] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 18:19:50] [INFO] Permisos obtenidos para el usuario: admin
+[2025-07-24 18:19:50] [INFO] Permisos del usuario: [1,2,3]
+[2025-07-24 18:19:50] [INFO] Contenido de la sesión EN USUARIO:
 Array
 (
     [autenticado] => SI
@@ -6271,7 +11589,1625 @@ Array
     [rol] => 1
 )
 
-[2025-07-24 17:48:02] [INFO] Contenido de la sesión en Navbar:
+[2025-07-24 18:19:50] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:19:51] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:19:53] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:19:53] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:19:53] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:19:54] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:19:56] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:19:58] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:19:59] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:19:59] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:19:59] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:19:59] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:20:00] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:20:03] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:20:03] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:20:03] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:20:05] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:20:05] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:20:06] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:22:10] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:22:10] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:24:29] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:24:29] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:24:30] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:24:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:24:30] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:24:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:24:30] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:24:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:24:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:24:57] [INFO] Hash temporal generado para pruebas: $2y$13$DOnBGgkDMfJ4ALftaJ.4.uXEQXcO5ddeaVCTTLXOwKNI5uswN/XLC
+[2025-07-24 18:24:57] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 18:24:57] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 18:24:57] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-24 18:24:58] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 18:24:58] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 18:24:58] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 18:24:58] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 18:24:58] [INFO] Permisos obtenidos para el usuario: admin
+[2025-07-24 18:24:58] [INFO] Permisos del usuario: [1,2,3]
+[2025-07-24 18:24:58] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => 
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:24:58] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => 
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:25:59] [INFO] Hash temporal generado para pruebas: $2y$13$JAKcmDC4Cb2XXLG99/rNhuP9aeNk9Qf4H1apsGJmb48AFeAmBcGKS
+[2025-07-24 18:25:59] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 18:25:59] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 18:25:59] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-24 18:26:00] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 18:26:00] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 18:26:00] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 18:26:00] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 18:26:00] [INFO] Permisos obtenidos para el usuario: admin
+[2025-07-24 18:26:00] [INFO] Permisos del usuario: [1,2,3]
+[2025-07-24 18:26:00] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:32] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:32] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:33] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:33] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:34] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:38] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:39] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:40] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:40] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:40] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:41] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:41] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:41] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:42] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:43] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:46] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:47] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:47] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:48] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:48] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:49] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:50] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:50] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:51] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:51] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:52] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:53] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:54] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:54] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:54] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:55] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:55] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:58] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:58] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:26:58] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:28:55] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:28:56] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:28:56] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:28:56] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:15] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:16] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:16] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:18] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:19] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:21] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:21] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:22] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:23] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:26] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:27] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:35] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:35] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:36] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:37] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:42] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:42] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:44] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:46] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:48] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-24 18:30:52] [INFO] Contenido de la sesión en Navbar:
 Array
 (
     [autenticado] => SI

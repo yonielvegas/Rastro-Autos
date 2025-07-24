@@ -31,7 +31,10 @@ if (!in_array($rol, [1, 2])) {
 
 /* Aumentamos especificidad con el id del contenedor padre */
 #app-sidebar-container .sidebar {
+    line-height: 1.6;
+
   position: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   top: 0;
   left: 0;
   width: var(--sidebar-width);
