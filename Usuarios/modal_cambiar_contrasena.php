@@ -2,7 +2,7 @@
 <div class="modal-overlay">
   <div class="modal-content">
     <h3>Cambiar Contraseña</h3>
-    <form action="cambiar_contrasena.php" method="POST">
+    <form action="../Usuarios/cambiar_contrasena.php" method="POST">
       <label for="passActual">Contraseña Actual</label>
       <input type="password" id="passActual" name="pass_actual" required>
 

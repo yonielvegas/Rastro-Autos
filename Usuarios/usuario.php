@@ -1,7 +1,12 @@
 <?php
-session_start();
 
-if (!isset($_SESSION['rol']) || $_SESSION['rol'] != 1) {
+require_once '../clases/logger.php';
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+logger::info("Contenido de la sesión EN USUARIO:\n" . print_r($_SESSION, true));
+
+if (!isset($_SESSION['rol'])) {
     header("Location: ../Inventario/inventario.php"); //Cambiar Pagina
     exit();
 }

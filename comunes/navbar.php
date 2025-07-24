@@ -1,4 +1,20 @@
+<?php
+require_once '../clases/logger.php';
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+logger::info("Contenido de la sesión en Navbar:\n" . print_r($_SESSION, true));
+
+// Verificar si el usuario está autenticado
+if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !== "SI") {
+    header("Location: ../comunes/login.php");
+    exit();
+}
+
+?>
+
 <!-- Font Awesome para el ícono -->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 <nav class="navbar">
@@ -156,10 +172,19 @@
   }
 </style>
 
+<?php
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
 
+  if (!isset($_SESSION['usuario'])) {
+    header('Location: ../comunes/login.php');
+    exit;
+  }
+?>
 <script>
   const usuario = {
-    nombre: 'Juan Pérez',
+    nombre: "<?= $_SESSION['usuario'] ?>",
     foto: 'https://randomuser.me/api/portraits/men/75.jpg'
   };
 
@@ -180,7 +205,7 @@
       document.body.appendChild(modalContainer);
 
       try {
-        const response = await fetch('modal_cambiar_contrasena.php');
+        const response = await fetch('../Usuarios/modal_cambiar_contrasena.php');
         if (!response.ok) throw new Error('Error cargando el modal');
         const html = await response.text();
         modalContainer.innerHTML = html;

@@ -1,7 +1,6 @@
 <?php
 require_once '../clases/conexion.php';
 $db = new mod_db();
-session_start();
 
 $id_usuario = $_GET['id'] ?? '';
 if (empty($id_usuario)) {

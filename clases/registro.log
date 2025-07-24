@@ -3495,3 +3495,1306 @@
 [2025-07-24 14:15:57] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
 [2025-07-24 14:15:57] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
 [2025-07-24 14:15:57] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 14:50:04] [INFO] Hash temporal generado para pruebas: $2y$13$DvDSqEQ8a76PepEt3noJkeRTz.K2ul0ybt5AaBbytJMHgFnTpIhwO
+[2025-07-24 14:50:04] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 14:50:04] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 14:50:04] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-24 14:50:05] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 14:50:05] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 14:50:05] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 14:50:05] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 14:58:21] [WARNING] Contenido completo de la sesión: Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 14:58:40] [INFO] Hash temporal generado para pruebas: $2y$13$GTEEZYhVfYbh6OPobJG5yuYCNyX2b5rT4ZynGTEm2ylQ8OFuNkUX2
+[2025-07-24 14:58:40] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 14:58:40] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 14:58:40] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$TzZWIFPYccnfgEQgWQrA6epKS0jtMe4EkR0BkQFRiI73qS3PtlMX2'
+[2025-07-24 14:58:40] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 14:58:40] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 14:58:40] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 14:58:40] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 14:58:52] [INFO] Hash temporal generado para pruebas: $2y$13$RD5JECmToHuJvwJLQYZ2Wuok6y5OSqKQ0rnOp3Pa5.FkGeUXei09e
+[2025-07-24 14:58:52] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 14:58:52] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 14:58:52] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$TzZWIFPYccnfgEQgWQrA6epKS0jtMe4EkR0BkQFRiI73qS3PtlMX2'
+[2025-07-24 14:58:53] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-24 14:58:53] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 14:58:53] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-24 14:59:24] [INFO] Hash temporal generado para pruebas: $2y$13$n7jx2CzkRxdk/Fp7xpOlcukcfjNzpyuzKB8EzregA.qhJubcsDM2y
+[2025-07-24 14:59:24] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 14:59:24] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 14:59:24] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$TzZWIFPYccnfgEQgWQrA6epKS0jtMe4EkR0BkQFRiI73qS3PtlMX2'
+[2025-07-24 14:59:24] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 14:59:24] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 14:59:24] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 14:59:24] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 15:02:56] [INFO] Hash temporal generado para pruebas: $2y$13$MWF7dnZLTDXAGrP3acs1.uYX0QcyCtWEC3k2wjB3GSF2FpuKlKDSK
+[2025-07-24 15:02:56] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 15:02:56] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 15:02:56] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$TzZWIFPYccnfgEQgWQrA6epKS0jtMe4EkR0BkQFRiI73qS3PtlMX2'
+[2025-07-24 15:02:56] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 15:02:56] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 15:02:56] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 15:02:56] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 15:07:00] [INFO] Hash temporal generado para pruebas: $2y$13$1yDBdlY1nltuxqaY2tH9n.cl.ZvqU2Z7h/0.lBRgiayjSyl/LG4YG
+[2025-07-24 15:07:00] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 15:07:00] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 15:07:00] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$TzZWIFPYccnfgEQgWQrA6epKS0jtMe4EkR0BkQFRiI73qS3PtlMX2'
+[2025-07-24 15:07:00] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 15:07:00] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 15:07:00] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 15:07:00] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 15:17:20] [INFO] Hash temporal generado para pruebas: $2y$13$3vIN8Qnt37Gbpg1nlSCmK.DB4dNTLAtTOq27E17mCmhQu9d4.zZJW
+[2025-07-24 15:17:20] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 15:17:20] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 15:17:20] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$TzZWIFPYccnfgEQgWQrA6epKS0jtMe4EkR0BkQFRiI73qS3PtlMX2'
+[2025-07-24 15:17:20] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 15:17:20] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 15:17:20] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 15:17:20] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 15:17:20] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:26:11] [INFO] Hash temporal generado para pruebas: $2y$13$TtDbXydQNftqjf3t3Yf2Ru.x0t5xvDmEyLXU9tP8Dm5Z3dqdK7SVS
+[2025-07-24 15:26:11] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 15:26:11] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 15:26:11] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$TzZWIFPYccnfgEQgWQrA6epKS0jtMe4EkR0BkQFRiI73qS3PtlMX2'
+[2025-07-24 15:26:11] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 15:26:11] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 15:26:11] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 15:26:11] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 15:26:11] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:01] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:03] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:05] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:38] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:39] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:41] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:42] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:43] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:44] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:44] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:45] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:46] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:47] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:54] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:27:58] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:28:00] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:28:29] [INFO] Hash temporal generado para pruebas: $2y$13$9adOqVcV0aeMOEiG1tm7X.UBwoUtlzMOPCNFDiH57sytUyk8pBBqK
+[2025-07-24 15:28:29] [INFO] ROL del usuario con ID 4 es: 2
+[2025-07-24 15:28:29] [INFO] Usuario encontrado en base de datos: salmon
+[2025-07-24 15:28:29] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-24 15:28:30] [INFO] Login exitoso para el usuario: salmon
+[2025-07-24 15:28:30] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":4,"usuario":"salmon","ip_usuario":"::1"}
+[2025-07-24 15:28:30] [INFO] Intento de login registrado para el usuario: salmon ID : 4 con resultado: 1
+[2025-07-24 15:28:30] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 15:28:30] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => salmon
+    [id_usuario] => 4
+    [foto] => https://via.placeholder.com/32
+    [rol] => 2
+)
+
+[2025-07-24 15:29:19] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => salmon
+    [id_usuario] => 4
+    [foto] => https://via.placeholder.com/32
+    [rol] => 2
+)
+
+[2025-07-24 15:29:28] [INFO] Hash temporal generado para pruebas: $2y$13$HCniiBoZppJTXgGzKU92a.ybtH.dk8Kf8xPtRefNHWQrW5NTLaKpy
+[2025-07-24 15:29:28] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 15:29:28] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 15:29:28] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$TzZWIFPYccnfgEQgWQrA6epKS0jtMe4EkR0BkQFRiI73qS3PtlMX2'
+[2025-07-24 15:29:28] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 15:29:28] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 15:29:28] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 15:29:28] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 15:29:28] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:30] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:30] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:31] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:31] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:32] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:32] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:33] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:33] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:34] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:34] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:35] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:35] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:36] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:29:37] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:30:19] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:30:20] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:30:20] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:30:22] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:30:22] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:31:29] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:31:30] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:31:30] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:31:36] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:31:38] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:31:40] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:31:40] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:31:54] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:32:00] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:32:00] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:35:45] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:35:46] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:35:54] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:35:55] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:35:55] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:35:55] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:35:56] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:35:59] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:36:00] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:38:51] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:38:54] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:38:57] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:38:57] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:39:00] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:39:06] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:39:06] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:39:10] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:39:13] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:59:09] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:59:10] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:59:11] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:59:11] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:59:51] [INFO] Hash temporal generado para pruebas: $2y$13$.FnW/d8BAfZffIRXvd6DSOz4wZvAF6GSr6zJ2TeQcHopcZ4uenSbi
+[2025-07-24 15:59:51] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 15:59:51] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 15:59:51] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$TzZWIFPYccnfgEQgWQrA6epKS0jtMe4EkR0BkQFRiI73qS3PtlMX2'
+[2025-07-24 15:59:51] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-24 15:59:51] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 15:59:51] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-24 15:59:59] [INFO] Hash temporal generado para pruebas: $2y$13$R6tEBUXmW5Q5kqAWY6GZdu98ZQ.DC4ZfDLoEi0WPLyWSwomO6uKaW
+[2025-07-24 15:59:59] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 15:59:59] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 15:59:59] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$TzZWIFPYccnfgEQgWQrA6epKS0jtMe4EkR0BkQFRiI73qS3PtlMX2'
+[2025-07-24 15:59:59] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 15:59:59] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 15:59:59] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 15:59:59] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 15:59:59] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 15:59:59] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:09:04] [INFO] Hash temporal generado para pruebas: $2y$13$RkDP4/U.IpBrA2XAbpWXJObzgsZHhyazFuAOGHXBa8Gt6D7MWsXmu
+[2025-07-24 16:09:04] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:09:04] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:09:04] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$TzZWIFPYccnfgEQgWQrA6epKS0jtMe4EkR0BkQFRiI73qS3PtlMX2'
+[2025-07-24 16:09:04] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 16:09:04] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:09:04] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 16:09:04] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 16:09:04] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:09:04] [INFO] Contenido de la sesión:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:15:32] [INFO] Hash temporal generado para pruebas: $2y$13$Xg5PODDg/U3ClD9K3otvvewz0znsjWjcRl44cZZoZn8GooxXzR7bi
+[2025-07-24 16:15:32] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:15:32] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:15:32] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$TzZWIFPYccnfgEQgWQrA6epKS0jtMe4EkR0BkQFRiI73qS3PtlMX2'
+[2025-07-24 16:15:32] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 16:15:32] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:15:32] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 16:15:32] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 16:15:32] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:15:32] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:17:47] [INFO] Hash temporal generado para pruebas: $2y$13$t0Y7UEI6szV8dCkIJWcEhuEsqXr0QMBc3Fqxhojf26QmW/cL8ZjHe
+[2025-07-24 16:17:47] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:17:47] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:17:47] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$TzZWIFPYccnfgEQgWQrA6epKS0jtMe4EkR0BkQFRiI73qS3PtlMX2'
+[2025-07-24 16:17:47] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 16:17:47] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:17:47] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 16:17:47] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 16:17:47] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:17:47] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:18:03] [WARNING] Contenido completo de la sesión EN CAMBIAR CONTRASEÑA: Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:18:05] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:18:05] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:18:16] [INFO] Hash temporal generado para pruebas: $2y$13$H3b1KXmKaDjae7c21yE/g.d9drJidh/ooDMfA13rSFxaaJo76pkNa
+[2025-07-24 16:18:16] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:18:16] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:18:16] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$sYwqJYIqR4bj2nyzc0.JkevLTMsxCO0gajpHUFKFkk30eUXUJFPxO'
+[2025-07-24 16:18:17] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-24 16:18:17] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:18:17] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-24 16:18:25] [INFO] Hash temporal generado para pruebas: $2y$13$0Ls4bRfPK2x4i39JDjTEZeTHRJzkfnD7P.nF9.sLaxp2YJPo9M1s.
+[2025-07-24 16:18:25] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:18:25] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:18:25] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$sYwqJYIqR4bj2nyzc0.JkevLTMsxCO0gajpHUFKFkk30eUXUJFPxO'
+[2025-07-24 16:18:25] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 16:18:25] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:18:25] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 16:18:25] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 16:18:25] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:18:25] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:18:28] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:18:41] [WARNING] Contenido completo de la sesión EN CAMBIAR CONTRASEÑA: Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:18:42] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:18:42] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:18:51] [INFO] Hash temporal generado para pruebas: $2y$13$PrEJ.IttzP..5BD0/lpJwurhVwAE2ErsPp2En8vczZ4QW8pr4yS/O
+[2025-07-24 16:18:51] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:18:51] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:18:51] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$dRIW6xWq1gjfcuKGpNtFHO3KgZQhB0z32tcB5qrbDkGy7HetchwyS'
+[2025-07-24 16:18:51] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-24 16:18:51] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:18:51] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-24 16:19:15] [INFO] Hash temporal generado para pruebas: $2y$13$jVFjCYw97/7sNjONaHAqMeXN2AJCV46Np5e/FZ/VuTnszPhPVHCVy
+[2025-07-24 16:19:15] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:19:15] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:19:15] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-24 16:19:15] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 16:19:15] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:19:15] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 16:19:15] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 16:19:15] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:19:15] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:19:19] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:19:31] [WARNING] Contenido completo de la sesión EN CAMBIAR CONTRASEÑA: Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:19:34] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:19:34] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:19:44] [INFO] Hash temporal generado para pruebas: $2y$13$uWzqo24bMM5Vn.q1VurBpuA8yhkHNN9JE0akAg11qFn1FCzJGcwTy
+[2025-07-24 16:19:44] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:19:44] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:19:44] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$81NjuHxxaojKB1j7kFHckeF/A2wLiTIWe/VT9HRiPqfzkldNBuLhe'
+[2025-07-24 16:19:44] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 16:19:44] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:19:44] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 16:19:44] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 16:19:44] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:19:44] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:22:08] [INFO] Hash temporal generado para pruebas: $2y$13$YU46NKHB1BHNZMwxEZdg/.uRPRiJqZvw3Bx8FXMjlWbm16ON4gqMa
+[2025-07-24 16:22:08] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:22:08] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:22:08] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$81NjuHxxaojKB1j7kFHckeF/A2wLiTIWe/VT9HRiPqfzkldNBuLhe'
+[2025-07-24 16:22:08] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-24 16:22:08] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:22:08] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-24 16:22:15] [INFO] Hash temporal generado para pruebas: $2y$13$lGt3rdlkzVCjm1U6/tsvdu0/LGf6C3Nlu5uoxoDHLHmLtmyG9r4J2
+[2025-07-24 16:22:15] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-24 16:22:15] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-24 16:22:15] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$81NjuHxxaojKB1j7kFHckeF/A2wLiTIWe/VT9HRiPqfzkldNBuLhe'
+[2025-07-24 16:22:16] [INFO] Login exitoso para el usuario: admin
+[2025-07-24 16:22:16] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-24 16:22:16] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-24 16:22:16] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 16:22:16] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:22:16] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:22:27] [WARNING] Contenido completo de la sesión EN CAMBIAR CONTRASEÑA: Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:22:32] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:22:32] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:22:57] [WARNING] Contenido completo de la sesión EN CAMBIAR CONTRASEÑA: Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:23:50] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:23:50] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:23:51] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:23:51] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:24:05] [WARNING] Contenido completo de la sesión EN CAMBIAR CONTRASEÑA: Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:24:13] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:24:13] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:24:25] [WARNING] Contenido completo de la sesión EN CAMBIAR CONTRASEÑA: Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:24:27] [INFO] Contenido de la sesión EN USUARIO:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+
+[2025-07-24 16:24:27] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [rol] => 1
+)
+

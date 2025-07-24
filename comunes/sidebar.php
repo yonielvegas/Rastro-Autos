@@ -1,8 +1,26 @@
 <?php
-  //session_start();
-  $currentFile = basename($_SERVER['PHP_SELF']); // Nombre del archivo actual
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
+$currentFile = basename($_SERVER['PHP_SELF']); // ← Esto obtiene el nombre del archivo actual (ej: inventario.php)
+
+// Validación del rol
+if (!isset($_SESSION['rol'])) {
+    session_destroy();
+    header("Location: ../index.php");
+    exit;
+}
+
+$rol = $_SESSION['rol'];
+if (!in_array($rol, [1, 2])) {
+    session_destroy();
+    header("Location: ../index.php");
+    exit;
+}
 ?>
+
+
 <style>
 :root {
   --primary: #4361ee;
@@ -154,34 +172,43 @@
     </div>
 
     <div class="sidebar-menu">
-      <a href="../home.php" class="menu-item <?php if (in_array($currentFile, ['home.php'])) echo 'active'; ?>">
+      <!-- Menú siempre visible para todos -->
+      <a href="../home.php" class="menu-item <?php if ($currentFile == 'home.php') echo 'active'; ?>">
         <i class="fas fa-home"></i>
         <span>Inicio</span>
       </a>
-      <a href="../inventario/inventario.php" class="menu-item <?php if (in_array($currentFile, ['inventario.php'])) echo 'active'; ?>">
+
+      <a href="../inventario/inventario.php" class="menu-item <?php if ($currentFile == 'inventario.php') echo 'active'; ?>">
         <i class="fas fa-boxes"></i>
         <span>Inventario</span>
       </a>
 
-      <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == 1): ?>
-        <a href="../usuarios/usuario.php" class="menu-item <?php if (in_array($currentFile, ['usuario.php', 'usuario_form.php'])) echo 'active'; ?>">
+      <!-- Solo para rol 1 (Admin) -->
+      <?php if ($rol == 1): ?>
+        <a href="../Usuarios/usuario.php" class="menu-item <?php if (in_array($currentFile, ['usuario.php', 'usuario_form.php'])) echo 'active'; ?>">
           <i class="fas fa-user"></i>
           <span>Usuario</span>
         </a>
+
         <a href="../roles/roles.php" class="menu-item <?php if (in_array($currentFile, ['roles.php', 'roles_form.php'])) echo 'active'; ?>">
           <i class="fas fa-user-tag"></i>
           <span>Roles</span>
         </a>
       <?php endif; ?>
 
-      <a href="../seccion/seccionMarca.php" class="menu-item <?php if (in_array($currentFile, ['seccionMarca.php', 'seccionEspecifica.php'])) echo 'active'; ?>">
-        <i class="fas fa-th-large"></i>
-        <span>Secciones</span>
-      </a>
+      <!-- Para rol 1 y 2 -->
+      <?php if (in_array($rol, [1, 2])): ?>
+        <a href="../seccion/seccionMarca.php" class="menu-item <?php if (in_array($currentFile, ['seccionMarca.php', 'seccionEspecifica.php'])) echo 'active'; ?>">
+          <i class="fas fa-th-large"></i>
+          <span>Secciones</span>
+        </a>
+      <?php endif; ?>
+
       <a href="../comunes/logout.php" class="menu-item">
         <i class="fas fa-sign-out-alt"></i>
         <span>Cerrar Sesión</span>
       </a>
+
     </div>
   </div>
 </div>
