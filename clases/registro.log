@@ -4981,3 +4981,14 @@ Array
     [rol] => 1
 )
 
+[2025-07-24 16:49:35] [INFO] Hash temporal generado para pruebas: $2y$13$o1RaHWT5axxoWJtpdelZdOccPslUMytTGetLMorXsCcqzHln1HJXu
+[2025-07-24 16:49:35] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-24 16:49:35] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-24 16:49:35] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-24 16:49:36] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-24 16:49:36] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-24 16:49:36] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-24 16:49:36] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-24 16:49:43] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-24 16:49:53] [INFO] id de usuario detalles partes: 2
+[2025-07-24 16:49:53] [INFO] Intento de Registrar Trazabilidad: {"id_parte":18,"nombre":"Guardafangos","descripcion":"Guardafangos dise\u00f1ado espec\u00edficamente para veh\u00edculos Mazda modelo MX-5 Miata del a\u00f1o 2016. Forma parte de la categor\u00eda 'Carroceria' y ha sido fabricado con aluminio de alta calidad. Presenta un acabado mate en color gris met\u00e1lico, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"231.58","cantidad_stock":14,"codigo_serie":"MAZ-MX--2016-GU","id_marca":2,"id_modelo":5,"imagen":null,"imagen_thumbnail":null,"categoria":"Carroceria","marca":"Mazda","modelo":"MX-5 Miata","anio":"2016"}
