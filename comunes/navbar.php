@@ -184,7 +184,7 @@ if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !== "SI") {
 <script>
   const usuario = {
     nombre: "<?= $_SESSION['usuario'] ?>",
-    foto: 'https://randomuser.me/api/portraits/men/75.jpg'
+    foto: '../imagenes/foto_perfil.jpg'
   };
 
   document.getElementById('welcomeMessage').textContent = `Hola, ${usuario.nombre}`;

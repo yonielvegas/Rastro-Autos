@@ -16213,3 +16213,55 @@ Array
     [rol] => 2
 )
 
+[2025-07-25 00:14:02] [INFO] Hash temporal generado para pruebas: $2y$13$MehDh4upt/kzUayGto9ksujz8DHIOJwICE2hhaINlr0kwFjWt0NUu
+[2025-07-25 00:14:02] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-25 00:14:02] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-25 00:14:02] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$H/pm0ydBBgz1eW.pJNxWA.lRaJwUTqJ3OuthUS4opexiHY9XhMokK'
+[2025-07-25 00:14:02] [INFO] Login exitoso para el usuario: admin
+[2025-07-25 00:14:02] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-25 00:14:02] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-25 00:14:02] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-25 00:14:02] [INFO] Permisos obtenidos para el usuario: admin
+[2025-07-25 00:14:02] [INFO] Permisos del usuario: [1,2,3]
+[2025-07-25 00:14:02] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-25 00:17:42] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => https://via.placeholder.com/32
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-25 00:19:03] [INFO] Hash temporal generado para pruebas: $2y$13$uU8I5udM/HrGJ3XF.PvYY.GW1uqYeINX1D9Uow3KUQpSjF/UyPScq
+[2025-07-25 00:19:03] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-25 00:19:03] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-25 00:19:03] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-25 00:19:04] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-25 00:19:04] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-25 00:19:04] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-25 00:19:04] [INFO] ERRORES DE BLOQUEO: []

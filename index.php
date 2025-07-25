@@ -39,7 +39,7 @@ if (isset($_POST["tolog"])) {
             $_SESSION['autenticado'] = "SI";
             $_SESSION['usuario'] = $Logearme->getUsuario();
             $_SESSION['id_usuario'] = $Logearme->getIdUsuario();
-            $_SESSION['foto'] = "https://via.placeholder.com/32";
+            $_SESSION['foto'] = "../imagenes/foto_perfil.jpg"; // Puedes cambiar esto a una ruta dinámica si es necesario
             $Logearme->registrarIntentos(1);
             $tolog = false;
 
