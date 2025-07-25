@@ -16800,3 +16800,8 @@ Array
     [rol] => 1
 )
 
+[2025-07-25 03:10:19] [INFO] Usuario demasiado corto: gdg
+[2025-07-25 03:10:19] [INFO] Número de teléfono inválido: 35345
+[2025-07-25 03:10:19] [INFO] Falta la contraseña.
+[2025-07-25 03:15:43] [INFO] Número de teléfono inválido: 423242
+[2025-07-25 03:15:43] [INFO] Falta la contraseña.
