@@ -16924,6 +16924,121 @@ Array
     [rol] => 1
 )
 
+[2025-07-25 03:32:35] [DEBUG] Duplicado detectado en correo: pedro@gmail.com
+[2025-07-25 03:32:35] [INFO] Correo duplicado: pedro@gmail.com
+[2025-07-25 03:46:56] [INFO] Hash temporal generado para pruebas: $2y$13$Byt6V2wp3jUDKeUPqUOLb.YzXNMLDcmDko/ekoAmExyEaWQCqBhw2
+[2025-07-25 03:46:56] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-25 03:46:56] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-25 03:46:56] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$H/pm0ydBBgz1eW.pJNxWA.lRaJwUTqJ3OuthUS4opexiHY9XhMokK'
+[2025-07-25 03:46:56] [INFO] Login exitoso para el usuario: admin
+[2025-07-25 03:46:56] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-25 03:46:56] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-25 03:46:56] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-25 03:46:56] [INFO] Permisos obtenidos para el usuario: admin
+[2025-07-25 03:46:56] [INFO] Permisos del usuario: [1,2,3]
+[2025-07-25 03:46:56] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-25 03:46:59] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-25 03:47:01] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-25 03:47:40] [INFO] Hash temporal generado para pruebas: $2y$13$xU5qPzgtLyaZBcQqVdk6ReiojwW33SGKbkvh.ZRDsgGXu36wr8wf.
+[2025-07-25 03:47:40] [INFO] ROL del usuario con ID 4 es: 2
+[2025-07-25 03:47:40] [INFO] Usuario encontrado en base de datos: salmon
+[2025-07-25 03:47:40] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO'
+[2025-07-25 03:47:41] [INFO] Login exitoso para el usuario: salmon
+[2025-07-25 03:47:41] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":4,"usuario":"salmon","ip_usuario":"::1"}
+[2025-07-25 03:47:41] [INFO] Intento de login registrado para el usuario: salmon ID : 4 con resultado: 1
+[2025-07-25 03:47:41] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-25 03:47:41] [INFO] Permisos obtenidos para el usuario: salmon
+[2025-07-25 03:47:41] [INFO] Permisos del usuario: [1]
+[2025-07-25 03:47:41] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => salmon
+    [id_usuario] => 4
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+        )
+
+    [rol] => 2
+)
+
+[2025-07-25 03:49:17] [INFO] Hash temporal generado para pruebas: $2y$13$fVuw7SoLYZXTFyvK33XawOOaEUyC12MrgpBX24/6e1TcYUusrztkO
+[2025-07-25 03:49:17] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-25 03:49:17] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-25 03:49:17] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$H/pm0ydBBgz1eW.pJNxWA.lRaJwUTqJ3OuthUS4opexiHY9XhMokK'
+[2025-07-25 03:49:17] [INFO] Login exitoso para el usuario: admin
+[2025-07-25 03:49:17] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-25 03:49:17] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-25 03:49:17] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-25 03:49:17] [INFO] Permisos obtenidos para el usuario: admin
+[2025-07-25 03:49:17] [INFO] Permisos del usuario: [1,2,3]
+[2025-07-25 03:49:17] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
 [2025-07-25 03:31:34] [INFO] Contraseña sin mayúsculas.
 [2025-07-25 03:32:35] [INFO] Contraseña sin caracteres especiales.
 [2025-07-25 03:34:34] [INFO] Falta la contraseña.

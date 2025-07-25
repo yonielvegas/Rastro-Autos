@@ -73,9 +73,11 @@ foreach ($todasLasMarcas as $marca) {
   <div class="container">
     <header>
       <h1><i class="fas fa-car"></i> Gestión de Partes de Autos</h1>
-      <button class="btn btn-primary" id="addPartBtn">
-        <i class="fas fa-plus"></i> Agregar Parte
-      </button>
+      <?php if (isset($_SESSION['permisos']) && in_array(2, $_SESSION['permisos'])): ?>
+          <button class="btn btn-primary" id="addPartBtn">
+              <i class="fas fa-plus"></i> Agregar Parte
+          </button>
+      <?php endif; ?>
     </header>
 
     <div class="search-bar">
