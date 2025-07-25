@@ -118,13 +118,15 @@ class Inventario {
                 pa.precio,
                 pa.cantidad_stock,
                 pa.codigo_serie,
-                pa.id_cat,
                 pa.imagen,
+                pa.imagen_thumbnail, -- Asegúrate de obtener la ruta de la miniatura también
                 DATE(pa.fecha_registro) AS fecha_registro,
-                pa.imagen_thumbnail,
                 ca.categoria,
+                pa.id_cat, -- ¡Añadido!
                 ma.marca,
+                pa.id_marca, -- ¡Añadido!
                 mo.modelo,
+                pa.id_modelo, -- ¡Añadido!
                 mo.anio
             FROM partes_autos AS pa
             INNER JOIN categoria AS ca ON pa.id_cat = ca.id_cat
@@ -133,12 +135,11 @@ class Inventario {
             WHERE pa.id_parte = :id_parte";
 
             $stmt = $this->db->prepare($sql);
-            $stmt->bindValue(':id_parte', $id_parte, PDO::PARAM_INT);
+            $stmt->bindValue(':id_parte', (int)$id_parte, PDO::PARAM_INT);
             $stmt->execute();
-            
             return $stmt->fetch(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            error_log("Error en obtenerPartePorId: " . $e->getMessage());
+            error_log("Error al obtener parte por ID: " . $e->getMessage());
             return false;
         }
     }
@@ -152,6 +153,47 @@ class Inventario {
         return $stmt->fetch(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
         error_log("Error en obtenerModeloPorId: " . $e->getMessage());
+        return false;
+    }
+}
+
+public function actualizarParte(
+    $id_parte, $nombre, $descripcion, $precio, $cantidad_stock, 
+    $codigo_serie, $id_marca, $id_modelo, $id_cat, 
+    $imagen_original_path_db, $imagen_thumbnail_path_db, $fecha_registro
+) {
+    try {
+        $sql = "UPDATE partes_autos SET
+                    nombre = :nombre,
+                    descripcion = :descripcion,
+                    precio = :precio,
+                    cantidad_stock = :cantidad_stock,
+                    codigo_serie = :codigo_serie,
+                    id_marca = :id_marca,
+                    id_modelo = :id_modelo,
+                    id_cat = :id_cat,
+                    fecha_registro = :fecha_registro,
+                    imagen = :imagen,
+                    imagen_thumbnail = :imagen_thumbnail
+                WHERE id_parte = :id_parte";
+
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindValue(':id_parte', $id_parte, PDO::PARAM_INT);
+        $stmt->bindValue(':nombre', $nombre, PDO::PARAM_STR);
+        $stmt->bindValue(':descripcion', $descripcion, PDO::PARAM_STR);
+        $stmt->bindValue(':precio', $precio, PDO::PARAM_STR);
+        $stmt->bindValue(':cantidad_stock', $cantidad_stock, PDO::PARAM_INT);
+        $stmt->bindValue(':codigo_serie', $codigo_serie, PDO::PARAM_STR);
+        $stmt->bindValue(':id_marca', $id_marca, PDO::PARAM_INT);
+        $stmt->bindValue(':id_modelo', $id_modelo, PDO::PARAM_INT);
+        $stmt->bindValue(':id_cat', $id_cat, PDO::PARAM_INT);
+        $stmt->bindValue(':fecha_registro', $fecha_registro, PDO::PARAM_STR);
+        $stmt->bindValue(':imagen', $imagen_original_path_db, PDO::PARAM_STR);
+        $stmt->bindValue(':imagen_thumbnail', $imagen_thumbnail_path_db, PDO::PARAM_STR);
+
+        return $stmt->execute();
+    } catch (PDOException $e) {
+        error_log("Error al actualizar parte: " . $e->getMessage());
         return false;
     }
 }

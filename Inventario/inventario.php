@@ -192,19 +192,28 @@ function closeModal() {
 }
 
 function editarParte(parte) {
-  document.getElementById('modalTitle').textContent = 'Editar Parte';
-  document.getElementById('partId').value = parte.id_parte;
-  document.getElementById('partName').value = parte.nombre ?? '';
-  document.getElementById('partCode').value = parte.codigo_serie ?? '';
-  document.getElementById('carBrand').value = (parte.marca ?? '').toLowerCase();
-  document.getElementById('carBrand').dispatchEvent(new Event('change'));
-  document.getElementById('carModel').value = parte.modelo ?? '';
-  document.getElementById('carYear').value = parte.anio ?? '';
-  document.getElementById('entryDate').value = parte.fecha_registro ?? '';
-  document.getElementById('carCategory').value = (parte.categoria ?? '').toLowerCase();
-  document.getElementById('partStock').value = parte.cantidad_stock ?? 0;
-  document.getElementById('partPrice').value = parte.precio ?? '';
-  document.getElementById('partDescription').value = parte.descripcion ?? '';
+   openModal();
+    document.getElementById('modalTitle').textContent = 'Editar Parte';
+
+    document.getElementById('partId').value = parte.id_parte;
+    document.getElementById('partName').value = parte.nombre ?? '';
+    document.getElementById('partCode').value = parte.codigo_serie ?? '';
+
+    const marcaSeleccionadaEditar = (parte.marca ?? '').toLowerCase();
+    document.getElementById('carBrand').value = marcaSeleccionadaEditar;
+    document.getElementById('carBrand').dispatchEvent(new Event('change')); // Dispara para cargar modelos
+
+    // Pequeño retardo para asegurar que los modelos se cargaron antes de seleccionar
+    setTimeout(() => {
+        document.getElementById('carModel').value = parte.id_modelo ?? ''; // <-- Ahora usa id_modelo
+    }, 50);
+
+    document.getElementById('carYear').value = parte.anio ?? ''; // Asegúrate de cargar el año aquí
+    document.getElementById('entryDate').value = parte.fecha_registro ?? '';
+    document.getElementById('carCategory').value = (parte.categoria ?? '').toLowerCase();
+    document.getElementById('partStock').value = parte.cantidad_stock ?? 0;
+    document.getElementById('partPrice').value = parte.precio ?? '';
+    document.getElementById('partDescription').value = parte.descripcion ?? '';
   openModal();
 }
 
@@ -339,48 +348,59 @@ document.getElementById('partForm').addEventListener('submit', function (e) {
         return;
     }
 
-    const formData = new FormData(this); // Crea un objeto FormData con los datos del formulario
-    formData.append('action', 'agregar');
+    const formData = new FormData(this);
+    const partId = document.getElementById('partId').value; // Obtener el ID de la parte
 
-    // Añadir manualmente los valores de los select si no están mapeados a IDs en el HTML
-    // Esto es un ejemplo, necesitarías un mapeo real de marca/modelo/categoría a sus IDs numéricos de la BD
-    const brandName = document.getElementById('carBrand').value; // 'toyota', 'mazda', etc.
-    const modelId = document.getElementById('carModel').value;   // <-- Ahora este será el ID del modelo
+    // Determinar la acción (agregar o actualizar)
+    if (partId) {
+        formData.append('action', 'actualizar'); // Si hay un ID, es una actualización
+        formData.append('id_parte', partId);    // Asegúrate de enviar el ID
+    } else {
+        formData.append('action', 'agregar'); // Si no hay ID, es una nueva adición
+    }
+
+    // Añadir manualmente los valores de los select mapeados a IDs
+    const brandName = document.getElementById('carBrand').value;
+    const modelId = document.getElementById('carModel').value;
     const categoryName = document.getElementById('carCategory').value;
 
     const categoryIdMap = { 'carroceria': 1, 'motor': 2, 'puertas': 3, 'vidrios': 4, 'espejos': 5 };
 
     formData.append('nombre', document.getElementById('partName').value);
     formData.append('codigo_serie', document.getElementById('partCode').value);
-    formData.append('id_marca', marcaNameToIdMap[brandName] || 0); // Usar el mapeo de marca
-    formData.append('id_modelo', modelId); // <-- ¡Aquí usamos el ID real!
-    formData.append('anio', document.getElementById('carYear').value);
+    formData.append('id_marca', marcaNameToIdMap[brandName] || 0);
+    formData.append('id_modelo', modelId);
+    formData.append('anio', document.getElementById('carYear').value); // Asegúrate de que 'anio' se envíe
     formData.append('fecha_registro', document.getElementById('entryDate').value);
     formData.append('id_cat', categoryIdMap[categoryName] || 0);
     formData.append('cantidad_stock', document.getElementById('partStock').value);
     formData.append('precio', document.getElementById('partPrice').value);
     formData.append('descripcion', document.getElementById('partDescription').value);
-    
-    // Las imágenes necesitarían un tratamiento especial con FormData y subida de archivos
-    const fileInput = document.getElementById('partImage'); // Obtener el elemento del input de archivo
-    console.log("Contenido de fileInput.files[0]:", fileInput.files[0]);
+
+    const fileInput = document.getElementById('partImage');
     if (fileInput && fileInput.files && fileInput.files[0]) {
         formData.append('imagen', fileInput.files[0]);
     } else {
-        // Opcional: Puedes loguear un mensaje si no se seleccionó ninguna imagen
-        console.log("No se seleccionó ninguna imagen para subir.");
+        // Si no se selecciona una nueva imagen, pero es una actualización,
+        // no es necesario hacer nada aquí, PHP se encargará de mantener la existente.
+        console.log("No se seleccionó una nueva imagen para subir.");
     }
 
-    fetch('../clases/procesar_inventario.php', { // Ruta al nuevo script PHP
+    fetch('../clases/procesar_inventario.php', {
         method: 'POST',
         body: formData,
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            return response.text().then(text => { throw new Error(text) });
+        }
+        return response.json();
+    })
     .then(data => {
         if (data.success) {
             alert(data.message);
             closeModal();
-            location.reload(); // Recargar la página para ver los cambios
+            location.reload();
         } else {
             alert('Error: ' + data.message);
         }
