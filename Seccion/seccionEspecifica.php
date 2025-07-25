@@ -149,12 +149,14 @@ if ($orden === 'vendidas') {
         <button type="button" id="btnLimpiar" class="btn btn-secondary" style="margin-left: 10px;">
           <i class="fas fa-eraser"></i> Limpiar filtros
         </button>
+            <?php if (isset($_SESSION['permisos']) && in_array(3, $_SESSION['permisos'])): ?>
         <button type="submit" name="exportar" value="1" class="btn btn-secondary">
             <i class="fas fa-file-excel"></i> Exportar Inventario
         </button>
         <button type="submit" name="exportar" value="estadisticas" class="btn btn-secondary">
             <i class="fas fa-chart-bar"></i> Exportar Estadísticas
         </button>
+    <?php endif; ?>
       </form>
 
       <div class="table-container">
