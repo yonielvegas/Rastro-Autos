@@ -1,14 +1,14 @@
 <?php
-session_start();
 include("../clases/conexion.php");
 include("../comunes/sanitizar.php");
+session_start();
 
 if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !== "SI") {
     header("Location: ../login.php");
     exit();
 }
 
-Logger::warning("Contenido completo de la sesión: " . print_r($_SESSION, true));
+Logger::warning("Contenido completo de la sesión EN CAMBIAR CONTRASEÑA: " . print_r($_SESSION, true));
 
 
 $db = new mod_db();
@@ -46,7 +46,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mensaje = "Usuario no encontrado.";
         }
     }
-    echo "<script>alert('$mensaje');window.location.href='../Usuarios/usuario.php';</script>";
-    exit();
+    $mensaje_limpio = htmlspecialchars($mensaje, ENT_QUOTES, 'UTF-8');
+    $tipo_alerta = ($mensaje === "Contraseña cambiada exitosamente.") ? "success" : "error";
+    $titulo_alerta = ($mensaje === "Contraseña cambiada exitosamente.") ? "¡Éxito!" : "¡Error!";
+
+    echo "
+        <!DOCTYPE html>
+        <html lang='es'>
+        <head>
+            <meta charset='UTF-8'>
+            <title>Resultado</title>
+            <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+        </head>
+        <body>
+            <script>
+                Swal.fire({
+                    icon: '$tipo_alerta',
+                    title: '$titulo_alerta',
+                    text: '$mensaje_limpio',
+                    confirmButtonText: 'Aceptar'
+                }).then(() => {
+                    window.location.href = '../Usuarios/usuario.php';
+                });
+            </script>
+        </body>
+        </html>";
+        exit();
+
+
 }
 ?>

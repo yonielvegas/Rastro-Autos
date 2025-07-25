@@ -68,4 +68,26 @@ foreach ($permisos as $permisoNombre) {
     }
 }
 
-echo "Configuración guardada correctamente.";
+// Mostrar mensaje con SweetAlert2
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Configuración Guardada</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+<script>
+  Swal.fire({
+    icon: 'success',
+    title: '¡Éxito!',
+    text: 'Configuración guardada correctamente.',
+    confirmButtonText: 'Aceptar'
+  }).then(() => {
+    // Opcional: redirigir a la página de asignar roles, cambia la ruta según tu proyecto
+    window.location.href = 'roles.php';
+  });
+</script>
+</body>
+</html>

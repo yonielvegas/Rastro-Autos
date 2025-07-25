@@ -39,6 +39,16 @@
     *, *::before, *::after {
         box-sizing: border-box;
     }
+    .page-wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 700px;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 2rem;
+    }
 
     .main-footer {
         width: 100%;

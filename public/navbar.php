@@ -280,7 +280,7 @@ session_start();
         <div class="user-actions">
           <?php if (isset($_SESSION['autenticado']) && $_SESSION['autenticado'] == "SI"): ?>
             <div class="user-info">
-              <img src="<?= $_SESSION['foto'] ?? 'default-user.jpg' ?>" alt="Foto de usuario" class="user-photo">
+              <img src='../imagenes/foto_perfil.jpg' alt="Foto de usuario" class="user-photo">
               <span class="user-name"><?= htmlspecialchars($_SESSION['usuario']) ?></span>
             </div>
             <a href="carrito.php" class="icon-link" title="Carrito">

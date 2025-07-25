@@ -27,12 +27,19 @@ if (isset($_POST["tolog"])) {
 
         $Logearme->autenticar();
         $rol = $Logearme->getRol();
+        $activo = $Logearme->getActivo();
+
+        if($activo == 0) {
+            $_SESSION['errores_login'] = ["Este Usuario Está Desactivado"];
+            redireccionar("login.php");
+        }
 
         if ($Logearme->getIntentoLogin()) {
+
             $_SESSION['autenticado'] = "SI";
             $_SESSION['usuario'] = $Logearme->getUsuario();
             $_SESSION['id_usuario'] = $Logearme->getIdUsuario();
-            $_SESSION['foto'] = "https://via.placeholder.com/32";
+            $_SESSION['foto'] = "../imagenes/foto_perfil.jpg"; // Puedes cambiar esto a una ruta dinámica si es necesario
             $Logearme->registrarIntentos(1);
             $tolog = false;
 
@@ -44,8 +51,12 @@ if (isset($_POST["tolog"])) {
             }
 
             if ($rol == 1 || $rol == 2) {
+                $Logearme->obtenerPermisos();
+                $_SESSION['permisos'] = $Logearme->getPermisos();
+                logger::info("Permisos del usuario: " . json_encode($_SESSION['permisos']));
+
                 $_SESSION['rol'] = $rol;
-                redireccionar("Usuarios/usuario.php");
+                redireccionar("comunes/homeSistema.php");
             } elseif ($rol == 3){
                 $_SESSION['rol'] = $rol;
                 redireccionar("public/homePublic.php");

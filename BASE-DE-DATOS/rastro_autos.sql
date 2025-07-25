@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 24-07-2025 a las 01:09:01
+-- Tiempo de generación: 24-07-2025 a las 18:02:35
 -- Versión del servidor: 9.1.0
 -- Versión de PHP: 8.3.14
 
@@ -201,8 +201,8 @@ CREATE TABLE IF NOT EXISTS `partes_autos` (
   `id_marca` int NOT NULL,
   `id_modelo` int NOT NULL,
   `id_cat` int NOT NULL,
-  `imagen` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `imagen_thumbnail` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `imagen` varchar(750) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `imagen_thumbnail` varchar(750) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `fecha_registro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_parte`),
   KEY `id_marca` (`id_marca`),
@@ -572,7 +572,7 @@ CREATE TABLE IF NOT EXISTS `trazabilidad` (
   `registro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_traza`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=MyISAM AUTO_INCREMENT=133 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=162 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `trazabilidad`
@@ -710,7 +710,36 @@ INSERT INTO `trazabilidad` (`id_traza`, `tabla_afectada`, `accion`, `id_usuario`
 (129, 'parte_vendida', 'inserción', 8, '2', '::1', '2025-07-23 22:50:05'),
 (130, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-23 22:51:24'),
 (131, 'usuario_intentos', 'Select LOGIN_FAIL', 1, 'admin', '::1', '2025-07-24 00:00:13'),
-(132, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 00:00:28');
+(132, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 00:00:28'),
+(133, 'usuario_intentos', 'Select LOGIN_OK', 2, 'yonielvegas', '::1', '2025-07-24 14:15:57'),
+(134, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 14:50:05'),
+(135, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 14:58:40'),
+(136, 'usuario_intentos', 'Select LOGIN_FAIL', 1, 'admin', '::1', '2025-07-24 14:58:53'),
+(137, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 14:59:24'),
+(138, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 15:02:56'),
+(139, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 15:07:00'),
+(140, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 15:17:20'),
+(141, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 15:26:11'),
+(142, 'usuario_intentos', 'Select LOGIN_OK', 4, 'salmon', '::1', '2025-07-24 15:28:30'),
+(143, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 15:29:28'),
+(144, 'usuario_intentos', 'Select LOGIN_FAIL', 1, 'admin', '::1', '2025-07-24 15:59:51'),
+(145, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 15:59:59'),
+(146, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 16:09:04'),
+(147, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 16:15:32'),
+(148, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 16:17:47'),
+(149, 'usuario_intentos', 'Select LOGIN_FAIL', 1, 'admin', '::1', '2025-07-24 16:18:17'),
+(150, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 16:18:25'),
+(151, 'usuario_intentos', 'Select LOGIN_FAIL', 1, 'admin', '::1', '2025-07-24 16:18:51'),
+(152, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 16:19:15'),
+(153, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 16:19:44'),
+(154, 'usuario_intentos', 'Select LOGIN_FAIL', 1, 'admin', '::1', '2025-07-24 16:22:08'),
+(155, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 16:22:16'),
+(156, 'usuario_intentos', 'Select LOGIN_FAIL', 1, 'admin', '::1', '2025-07-24 16:44:25'),
+(157, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 16:44:33'),
+(158, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 16:45:30'),
+(159, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 16:47:27'),
+(160, 'usuario_intentos', 'Select LOGIN_OK', 2, 'yonielvegas', '::1', '2025-07-24 16:49:36'),
+(161, 'usuario_intentos', 'Select LOGIN_OK', 1, 'admin', '::1', '2025-07-24 17:48:02');
 
 -- --------------------------------------------------------
 
@@ -737,7 +766,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `correo`, `telefono`, `usuario`, `password`, `activo`) VALUES
-(1, 'Administrador', 'General', 'admin@example.com', '0000000000', 'admin', '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO', 1),
+(1, 'Administrador', 'General', 'admin@example.com', '0000000000', 'admin', '$2y$10$H/pm0ydBBgz1eW.pJNxWA.lRaJwUTqJ3OuthUS4opexiHY9XhMokK', 1),
 (2, 'Yoel', 'Samaniego', 'yoelsamaniego4@gmail.com', '62834187', 'yonielvegas', '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy', 1),
 (3, 'Ana', 'Pinto', 'anapinto@gmail.com', '62873192', 'anap', '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO', 1),
 (4, 'Irina', 'Fong', 'IrinaF@gmail.com', '34675632', 'salmon', '$2y$13$jt96g.ARqwh2EY2vsc5A6.imp1LNrUA05Qmn/aYdY5/OGCxaMMlgO', 1),

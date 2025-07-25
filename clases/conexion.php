@@ -77,10 +77,38 @@ class mod_db implements ICRUD
 			return true;
 		} catch (PDOException $e) {
 			echo "Error en INSERT: " . $e->getMessage();
-			Logger::error("Error al insertar en $tabla: " . $e->getMessage());
 			return false;
 		}
 	}
+
+		public function query($sql) {
+		try {
+			$stmt = $this->conexion->query($sql);
+			return $stmt->fetchAll(PDO::FETCH_ASSOC);
+		} catch (PDOException $e) {
+			echo "Error en query(): " . $e->getMessage();
+			return false;
+		}
+	}public function queryEspecifico($sql, $params = []) {
+    try {
+        $stmt = $this->conexion->prepare($sql);
+        $stmt->execute($params);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        echo "Error en queryEspecifico(): " . $e->getMessage();
+        return false;
+    }
+}
+
+	public function lastInsertId() {
+		try {
+			return $this->conexion->lastInsertId();
+		} catch (PDOException $e) {
+			echo "Error en lastInsertId(): " . $e->getMessage();
+			return false;
+		}
+	}
+
 
     public function updateSeguro($tabla, $data, $condiciones) {
 		// Construir partes de SET dinámicamente
@@ -533,6 +561,41 @@ class mod_db implements ICRUD
 		}
 	}
 
+	public function obtenerSeccion($id_seccion){
+        $sql = "SELECT 
+                pa.imagen_thumbnail, 
+                pa.nombre, 
+                ma.marca, 
+                mo.modelo, 
+                mo.anio, 
+                pa.cantidad_stock, 
+                pa.id_parte,
+                COUNT(pv.id_parte) AS cantidad_vendida
+            FROM partes_autos AS pa
+            INNER JOIN marca AS ma ON ma.id_marca = pa.id_marca
+            INNER JOIN modelo AS mo ON mo.id_modelo = pa.id_modelo
+            LEFT JOIN parte_vendida AS pv ON pv.id_parte = pa.id_parte
+            WHERE pa.id_cat = :id_seccion
+            GROUP BY 
+                pa.id_parte, 
+                pa.imagen_thumbnail, 
+                pa.nombre, 
+                ma.marca, 
+                mo.modelo, 
+                mo.anio, 
+                pa.cantidad_stock";
+            $stmt = $this->conexion->prepare($sql);
+            $stmt->bindParam(':id_seccion', $id_seccion, PDO::PARAM_INT);
+            $stmt->execute();
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            if ($result) {
+                return $result;
+            } else {
+                logger::error("No se encontraron partes para la sección con ID: " . $this->id_seccion);
+                return [];
+            }
+    }
+
 	public function registrarTrazabilidad($tabla, $accion, $codigoRegistro, $usuario) {
         $fechaSistema = date('Y-m-d H:i:s');
         $ip = $_SERVER['REMOTE_ADDR'] ?? gethostbyname(gethostname()) ?? 'IP_NO_DETECTADA';
@@ -552,5 +615,148 @@ class mod_db implements ICRUD
             Logger::error("❌ Error al registrar trazabilidad de $accion en '$tabla' para el usuario '$usuario'.", "ERROR");
         }
     }
+
+	//FUNCIONES PARA EL EXCEL
+	public function obtenerDatosParaExcel($filtros = []) {
+		// Construir la consulta base
+		$sql = "SELECT 
+					pa.id_parte,
+					pa.nombre,
+					ca.categoria,
+					ma.marca,
+					mo.modelo,
+					mo.anio,
+					pa.cantidad_stock,
+					pa.precio,
+					COUNT(pv.id_parte) AS cantidad_vendida,
+					SUM(pv.precio_total) AS total_ventas
+				FROM partes_autos AS pa
+				INNER JOIN categoria AS ca ON ca.id_cat = pa.id_cat
+				INNER JOIN marca AS ma ON ma.id_marca = pa.id_marca
+				INNER JOIN modelo AS mo ON mo.id_modelo = pa.id_modelo
+				LEFT JOIN parte_vendida AS pv ON pv.id_parte = pa.id_parte";
+		
+		// Añadir condiciones WHERE según filtros
+		$where = [];
+		$params = [];
+		
+		if (!empty($filtros['id_cat'])) {
+			$where[] = "pa.id_cat = :id_cat";
+			$params[':id_cat'] = $filtros['id_cat'];
+		}
+		
+		if (!empty($filtros['id_marca'])) {
+			$where[] = "pa.id_marca = :id_marca";
+			$params[':id_marca'] = $filtros['id_marca'];
+		}
+		
+		if (!empty($filtros['id_modelo'])) {
+			$where[] = "pa.id_modelo = :id_modelo";
+			$params[':id_modelo'] = $filtros['id_modelo'];
+		}
+		
+		if (!empty($filtros['fecha_inicio'])) {
+			$where[] = "pv.fecha_venta >= :fecha_inicio";
+			$params[':fecha_inicio'] = $filtros['fecha_inicio'];
+		}
+		
+		if (!empty($filtros['fecha_fin'])) {
+			$where[] = "pv.fecha_venta <= :fecha_fin";
+			$params[':fecha_fin'] = $filtros['fecha_fin'];
+		}
+		
+		if (!empty($where)) {
+			$sql .= " WHERE " . implode(" AND ", $where);
+		}
+		
+		// Agrupar resultados
+		$sql .= " GROUP BY 
+					pa.id_parte,
+					pa.nombre,
+					ca.categoria,
+					ma.marca,
+					mo.modelo,
+					mo.anio,
+					pa.cantidad_stock,
+					pa.precio";
+		
+		// Ordenar por más vendidos si se solicita
+		if (!empty($filtros['orden']) && $filtros['orden'] == 'vendidas') {
+			$sql .= " ORDER BY cantidad_vendida DESC";
+		}
+		
+		$stmt = $this->conexion->prepare($sql);
+		
+		foreach ($params as $key => $value) {
+			$stmt->bindValue($key, $value);
+		}
+		
+		$stmt->execute();
+		return $stmt->fetchAll(PDO::FETCH_ASSOC);
+	}
+
+	public function obtenerEstadisticasVentasPorMes() {
+		$sql = "SELECT 
+					DATE_FORMAT(pv.fecha_venta, '%Y-%m') AS mes,
+					ca.categoria,
+					COUNT(pv.id) AS total_ventas,
+					SUM(pv.precio_total) AS monto_total
+				FROM parte_vendida AS pv
+				INNER JOIN partes_autos AS pa ON pa.id_parte = pv.id_parte
+				INNER JOIN categoria AS ca ON ca.id_cat = pa.id_cat
+				WHERE pv.en_carrito = 0
+				GROUP BY mes, ca.categoria
+				ORDER BY mes, total_ventas DESC";
+		
+		$stmt = $this->conexion->prepare($sql);
+		$stmt->execute();
+		return $stmt->fetchAll(PDO::FETCH_ASSOC);
+	}
+
+
+	
+
+	public function obtenerPartesMasVendidas($limite = 10) {
+		$sql = "SELECT 
+					pa.id_parte,
+					pa.nombre,
+					ca.categoria,
+					ma.marca,
+					mo.modelo,
+					COUNT(pv.id) AS total_vendido,
+					SUM(pv.precio_total) AS monto_total
+				FROM parte_vendida AS pv
+				INNER JOIN partes_autos AS pa ON pa.id_parte = pv.id_parte
+				INNER JOIN categoria AS ca ON ca.id_cat = pa.id_cat
+				INNER JOIN marca AS ma ON ma.id_marca = pa.id_marca
+				INNER JOIN modelo AS mo ON mo.id_modelo = pa.id_modelo
+				WHERE pv.en_carrito = 0
+				GROUP BY pa.id_parte, pa.nombre, ca.categoria, ma.marca, mo.modelo
+				ORDER BY total_vendido DESC
+				LIMIT :limite";
+		
+		$stmt = $this->conexion->prepare($sql);
+		$stmt->bindValue(':limite', $limite, PDO::PARAM_INT);
+		$stmt->execute();
+		return $stmt->fetchAll(PDO::FETCH_ASSOC);
+	}
+
+	public function obtenerTotalesPorCategoria() {
+		$sql = "SELECT 
+				c.categoria AS Categoria,
+				COUNT(pv.id) AS TotalVentas,
+				SUM(pv.precio_total) AS MontoTotal
+				FROM parte_vendida pv
+				JOIN partes_autos pa ON pa.id_parte = pv.id_parte
+				JOIN categoria c ON c.id_cat = pa.id_cat
+				WHERE pv.en_carrito = 0
+				GROUP BY c.categoria
+				ORDER BY MontoTotal DESC";
+		
+		$stmt = $this->conexion->prepare($sql);
+		$stmt->execute();
+		return $stmt->fetchAll(PDO::FETCH_ASSOC);
+	}
+
 }
 ?>

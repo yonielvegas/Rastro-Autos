@@ -13,7 +13,9 @@ class ValidacionLogin {
     private $ip;
     private $db;
     private $rol;
+    private $activo;
     private $errores = [];
+    private $permisos = [];
 
     public function __construct($Usuario, $ClaveKey, $ipRemoto, $db) {
         $this->db = $db;
@@ -44,6 +46,7 @@ class ValidacionLogin {
         if ($usuariologueado) {
             $this->id = $usuariologueado->id_usuario ?? null;
             $this->hastGenerado = $usuariologueado->password ?? null;
+            $this->activo = $usuariologueado->activo ?? 0;
 
             // Asegúrate que id_usuario sea un número entero
             $idUsuario = (int) $this->id;
@@ -109,6 +112,29 @@ class ValidacionLogin {
 
     public function getRol(){
         return $this->rol;
+    }
+
+    public function getPermisos() {
+        return $this->permisos;
+    }
+
+    public function getActivo() {
+        return $this->activo;
+    }
+
+    public function obtenerPermisos(){
+        $idUsuario = (int) $this->id;
+        $permisos = $this->db->select("permisos_usuarios", "id_permiso", "id_usuario = $idUsuario");
+
+        if ($permisos) {
+            foreach ($permisos as $permiso) {
+                $this->permisos[] = $permiso['id_permiso'];
+            }
+            Logger::info("Permisos obtenidos para el usuario: $this->usuario");
+        } else {
+            Logger::warning("No se encontraron permisos para el usuario: $this->usuario");
+            $this->errores[] = "No se encontraron permisos para este usuario";
+        }
     }
 
 

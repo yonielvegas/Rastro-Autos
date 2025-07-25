@@ -26,7 +26,6 @@
 body {
   background-color: #f5f7fa;
   color: var(--text-color);
-  line-height: 1.6;
 }
 
 .main-content {
@@ -54,12 +53,10 @@ body.sidebar-collapsed .main-content {
   flex-wrap: wrap;
   gap: 20px;
 }
-
-h2 {
-  font-size: 20px;
-  color: var(--text-color);
-  font-weight: 600;
-  margin: 0;
+h1 {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 28px;
 }
 
 .card {

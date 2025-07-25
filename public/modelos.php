@@ -12,6 +12,8 @@
 
   $db = new mod_db();
   $partes = $db->partes($marca, $modelo);
+  $modelotitle = $db->select("modelo", "modelo, anio", "id_marca = '$marca' AND id_modelo = '$modelo'");
+  $marcatitle = $db->select("marca", "marca", "id_marca = '$marca'");
   $total_productos = $partes['total'] ?? 0;
 
   // --- Paginación ---
@@ -64,7 +66,7 @@
   <main class="container">
     <section class="hero">
       <div class="hero-content">
-        <h1 class="hero-title">Partes para Toyota Corolla 2023</h1>
+        <h1 class="hero-title">Partes Para <?php echo strtoupper($marcatitle[0]['marca']); echo "  "; echo strtoupper($modelotitle[0]['modelo']); echo " "; echo strtoupper($modelotitle[0]['anio'])  ?></h1>
         <p class="hero-subtitle">Explora las piezas disponibles para tu modelo.</p>
       </div>
     </section>

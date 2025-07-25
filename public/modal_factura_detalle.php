@@ -8,7 +8,7 @@ $id_cliente = $_SESSION['id_usuario'] ?? 'N/A';
 <div id="modal-factura-detalle" class="modal-factura-bg" style="display: none;">
   <div class="modal-factura" style="max-width: 700px;">
     <h2>FACTURA</h2>
-    <p><strong>Empresa:</strong> PARTSPRO</p>
+    <p><strong>Empresa:</strong>Rappi-Rastry</p>
     <p><strong>RUC:</strong> 123456789-1-2023 DV56</p>
     <p><strong>Fecha:</strong> <?= $fecha_actual ?></p>
     <p><strong>Cliente:</strong> <?= htmlspecialchars($nombre_cliente) ?> | <strong>ID:</strong> <?= $id_cliente ?></p>
