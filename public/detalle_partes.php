@@ -59,7 +59,7 @@ $stock = intval($detalles['cantidad_stock'] ?? 0);
 
   <div class="detail-content">
     <div class="detail-gallery">
-      <img src="<?= htmlspecialchars($detalles['imagen'] ?? 'https://via.placeholder.com/800') ?>" alt="<?= htmlspecialchars($detalles['nombre']) ?>" class="main-image" id="mainImage" />
+      <img src="../Inventario/<?= htmlspecialchars($detalles['imagen'] ?? 'https://via.placeholder.com/800') ?>" alt="<?= htmlspecialchars($detalles['nombre']) ?>" class="main-image" id="mainImage" />
     </div>
 
     <div class="detail-info">
