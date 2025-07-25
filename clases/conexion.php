@@ -741,5 +741,22 @@ class mod_db implements ICRUD
 		return $stmt->fetchAll(PDO::FETCH_ASSOC);
 	}
 
+	public function obtenerTotalesPorCategoria() {
+		$sql = "SELECT 
+				c.categoria AS Categoria,
+				COUNT(pv.id) AS TotalVentas,
+				SUM(pv.precio_total) AS MontoTotal
+				FROM parte_vendida pv
+				JOIN partes_autos pa ON pa.id_parte = pv.id_parte
+				JOIN categoria c ON c.id_cat = pa.id_cat
+				WHERE pv.en_carrito = 0
+				GROUP BY c.categoria
+				ORDER BY MontoTotal DESC";
+		
+		$stmt = $this->conexion->prepare($sql);
+		$stmt->execute();
+		return $stmt->fetchAll(PDO::FETCH_ASSOC);
+	}
+
 }
 ?>

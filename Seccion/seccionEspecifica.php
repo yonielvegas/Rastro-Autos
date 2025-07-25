@@ -2,6 +2,23 @@
 
 // Manejar exportaciones ANTES de cualquier salida HTML
 if (isset($_GET['exportar'])) {
+    // Verificar permisos de manera más robusta
+    session_start(); // Asegurar que la sesión esté iniciada
+    
+    $tienePermiso = false;
+    
+    if (isset($_SESSION['permisos'])) {
+        // Convertir todos los permisos a tipo int para comparación estricta
+        $permisos = array_map('intval', $_SESSION['permisos']);
+        $tienePermiso = in_array(3, $permisos, true); // Comparación estricta
+    }
+    
+    if (!$tienePermiso) {
+        // Mensaje de depuración más detallado
+        error_log("Intento de exportación sin permisos. Permisos actuales: " . print_r($_SESSION['permisos'] ?? 'No definidos', true));
+        die("No tienes permisos para realizar esta acción. Permisos requeridos: 3. Tus permisos: " . implode(', ', $_SESSION['permisos'] ?? []));
+    }
+    
     // Verificar si PhpSpreadsheet está disponible
     if (!file_exists(__DIR__ . '/../vendor/autoload.php')) {
         die("Error: PhpSpreadsheet no está instalado. Ejecuta 'composer require phpoffice/phpspreadsheet'");
@@ -13,15 +30,11 @@ if (isset($_GET['exportar'])) {
     $controller = new SeccionController($_GET['seccion'] ?? '');
     
     try {
-        if ($_GET['exportar'] == '1') {
-            $controller->generarReporteExcel([
-                'marca' => $_GET['marca'] ?? '',  // Cambiado de 'id_marca' a 'marca'
-                'modelo' => $_GET['modelo'] ?? '', // Cambiado de 'id_modelo' a 'modelo'
-                'orden' => $_GET['orden'] ?? ''
-            ]);
-        } elseif ($_GET['exportar'] == 'estadisticas') {
-            $controller->generarEstadisticasExcel();
-        }
+        $controller->generarExcelCompleto([
+            'marca' => $_GET['marca'] ?? '',
+            'modelo' => $_GET['modelo'] ?? '',
+            'orden' => $_GET['orden'] ?? ''
+        ]);
     } catch (Exception $e) {
         die("Error al generar el reporte: " . $e->getMessage());
     }
@@ -150,13 +163,10 @@ if ($orden === 'vendidas') {
           <i class="fas fa-eraser"></i> Limpiar filtros
         </button>
             <?php if (isset($_SESSION['permisos']) && in_array(3, $_SESSION['permisos'])): ?>
-        <button type="submit" name="exportar" value="1" class="btn btn-secondary">
-            <i class="fas fa-file-excel"></i> Exportar Inventario
-        </button>
-        <button type="submit" name="exportar" value="estadisticas" class="btn btn-secondary">
-            <i class="fas fa-chart-bar"></i> Exportar Estadísticas
-        </button>
-    <?php endif; ?>
+              <button type="submit" name="exportar" value="1" class="btn btn-secondary">
+                  <i class="fas fa-file-excel"></i> Generar Reporte Completo
+              </button>
+          <?php endif; ?>
       </form>
 
       <div class="table-container">
