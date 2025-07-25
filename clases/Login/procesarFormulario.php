@@ -13,6 +13,7 @@ class ValidacionLogin {
     private $ip;
     private $db;
     private $rol;
+    private $activo;
     private $errores = [];
     private $permisos = [];
 
@@ -45,6 +46,7 @@ class ValidacionLogin {
         if ($usuariologueado) {
             $this->id = $usuariologueado->id_usuario ?? null;
             $this->hastGenerado = $usuariologueado->password ?? null;
+            $this->activo = $usuariologueado->activo ?? 0;
 
             // Asegúrate que id_usuario sea un número entero
             $idUsuario = (int) $this->id;
@@ -114,6 +116,10 @@ class ValidacionLogin {
 
     public function getPermisos() {
         return $this->permisos;
+    }
+
+    public function getActivo() {
+        return $this->activo;
     }
 
     public function obtenerPermisos(){

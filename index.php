@@ -27,6 +27,12 @@ if (isset($_POST["tolog"])) {
 
         $Logearme->autenticar();
         $rol = $Logearme->getRol();
+        $activo = $Logearme->getActivo();
+
+        if($activo == 0) {
+            $_SESSION['errores_login'] = ["Este Usuario Está Desactivado"];
+            redireccionar("login.php");
+        }
 
         if ($Logearme->getIntentoLogin()) {
 
