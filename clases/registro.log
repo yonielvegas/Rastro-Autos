@@ -16805,3 +16805,122 @@ Array
 [2025-07-25 03:10:19] [INFO] Falta la contraseña.
 [2025-07-25 03:15:43] [INFO] Número de teléfono inválido: 423242
 [2025-07-25 03:15:43] [INFO] Falta la contraseña.
+[2025-07-25 03:20:20] [INFO] Hash temporal generado para pruebas: $2y$13$jbkjgoW5O4o5pcuW7QTKE.r8y5kPQlY0Y2yc1sUR0bV5I5q6a9bv6
+[2025-07-25 03:20:20] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-25 03:20:20] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-25 03:20:20] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$10$H/pm0ydBBgz1eW.pJNxWA.lRaJwUTqJ3OuthUS4opexiHY9XhMokK'
+[2025-07-25 03:20:20] [WARNING] Login fallido: contraseña incorrecta para el usuario: admin
+[2025-07-25 03:20:20] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_FAIL","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-25 03:20:20] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 0
+[2025-07-25 03:20:41] [INFO] Hash temporal generado para pruebas: $2y$13$0ZyHP/fnR/88Aw/wXZDhVeOC7C7OTqRfPIKAwki0EW2C6t2RANe36
+[2025-07-25 03:20:41] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-25 03:20:41] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-25 03:20:41] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$H/pm0ydBBgz1eW.pJNxWA.lRaJwUTqJ3OuthUS4opexiHY9XhMokK'
+[2025-07-25 03:20:41] [INFO] Login exitoso para el usuario: admin
+[2025-07-25 03:20:41] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-25 03:20:41] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-25 03:20:41] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-25 03:20:41] [INFO] Permisos obtenidos para el usuario: admin
+[2025-07-25 03:20:41] [INFO] Permisos del usuario: [1,2,3]
+[2025-07-25 03:20:41] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-25 03:20:43] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-25 03:20:52] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-25 03:21:00] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-25 03:21:30] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-25 03:21:44] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+

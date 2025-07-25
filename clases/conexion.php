@@ -187,7 +187,7 @@ class mod_db implements ICRUD
 			FROM partes_autos AS pa
 			INNER JOIN categoria AS ca ON pa.id_cat = ca.id_cat";
 		if (!empty($marca) && !empty($modelo)) {
-			$sql .= " WHERE pa.id_marca = :marca AND pa.id_modelo = :modelo";
+			$sql .= " WHERE pa.id_marca = :marca AND pa.id_modelo = :modelo AND pa.cantidad_stock > 0";
 			$params = [
 				':marca' => $marca,
 				':modelo' => $modelo
