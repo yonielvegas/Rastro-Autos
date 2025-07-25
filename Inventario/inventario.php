@@ -54,6 +54,29 @@ foreach ($todasLasMarcas as $marca) {
     $marcaNameToIdMap[strtolower($marca['marca'])] = $marca['id_marca'];
 }
 
+function tienePermiso($permisoRequerido) {
+    // Verificar si la sesión y los permisos existen
+    if (!isset($_SESSION) || !isset($_SESSION['permisos']) || !is_array($_SESSION['permisos'])) {
+        error_log("Sesión o permisos no definidos");
+        return false;
+    }
+    
+    // Depuración: Mostrar los permisos actuales
+    error_log("Permisos actuales: " . print_r($_SESSION['permisos'], true));
+    error_log("Buscando permiso: " . $permisoRequerido);
+    
+    // Verificación estricta del permiso
+    foreach ($_SESSION['permisos'] as $permiso) {
+        if ($permiso == $permisoRequerido) {
+            error_log("Permiso encontrado");
+            return true;
+        }
+    }
+    
+    error_log("Permiso NO encontrado");
+    return false;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -73,11 +96,11 @@ foreach ($todasLasMarcas as $marca) {
   <div class="container">
     <header>
       <h1><i class="fas fa-car"></i> Gestión de Partes de Autos</h1>
-      <?php if (isset($_SESSION['permisos']) && in_array(2, $_SESSION['permisos'])): ?>
-          <button class="btn btn-primary" id="addPartBtn">
-              <i class="fas fa-plus"></i> Agregar Parte
-          </button>
-      <?php endif; ?>
+      <?php if (tienePermiso(2) || $_SESSION['rol'] == 1){  ?>
+      <button class="btn btn-primary" id="addPartBtn">
+          <i class="fas fa-plus"></i> Agregar Parte
+      </button>
+      <?php }?>
     </header>
 
     <div class="search-bar">
@@ -125,15 +148,19 @@ foreach ($todasLasMarcas as $marca) {
                 <td><?= htmlspecialchars($parte['cantidad_stock'] ?? '') ?></td>
                 <td>
                   <div class="action-buttons">
+                    
                     <button class="btn btn-sm btn-view" onclick="viewPart(<?= $parte['id_parte'] ?>)">
                       <i class="fas fa-eye"></i>
                     </button>
+                    <?php if (tienePermiso(2) || $_SESSION['rol'] == 1){  ?>
                     <button class="btn btn-sm btn-edit" onclick='editarParte(<?= json_encode($parte, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>)'>
                       <i class="fas fa-edit"></i>
                     </button>
+                    
                     <button class="btn btn-sm btn-delete" onclick="deletePart(<?= $parte['id_parte'] ?>)">
                       <i class="fas fa-trash"></i>
                     </button>
+                    <?php }?>
                   </div>
                 </td>
               </tr>
