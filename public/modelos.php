@@ -116,7 +116,7 @@
         <?php if (!is_array($parte)) continue; ?>
         <div class="part-card" data-categoria="<?= strtolower($parte['categoria'] ?? 'otros') ?>">
           <div class="part-image-container">
-            <img src="../imagenes/<?= htmlspecialchars($parte['imagen'] ?? 'sin-imagen.jpg') ?>"
+            <img src="../Inventario/<?= htmlspecialchars($parte['imagen_thumbnail'] ?? 'sin-imagen.jpg') ?>"
                  alt="<?= htmlspecialchars($parte['nombre'] ?? 'Sin nombre') ?>" class="part-image" />
             <a href="detalle_partes.php?id=<?= $parte['id_parte'] ?? 0 ?>" class="zoom-btn" aria-label="Ver detalles">
               <i class="fas fa-search-plus"></i>

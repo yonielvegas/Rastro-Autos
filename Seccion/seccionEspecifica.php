@@ -187,7 +187,7 @@ if ($orden === 'vendidas') {
               <?php foreach ($partesFiltradas as $parte): ?>
                 <tr>
                   <td data-label="Miniatura">
-                    <img src="../imagenes/<?= htmlspecialchars($parte['imagen_thumbnail'] ?? '') ?>" class="parte-img" alt="<?= htmlspecialchars($parte['nombre'] ?? '') ?>" />
+                    <img src="../Inventario/<?= htmlspecialchars($parte['imagen_thumbnail'] ?? '') ?>" class="parte-img" alt="<?= htmlspecialchars($parte['nombre'] ?? '') ?>" />
                   </td>
                   <td data-label="Nombre"><?= htmlspecialchars($parte['nombre'] ?? '') ?></td>
                   <td data-label="Marca"><?= htmlspecialchars($parte['marca'] ?? '') ?></td>
