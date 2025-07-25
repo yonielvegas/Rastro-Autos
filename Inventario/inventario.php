@@ -1,6 +1,6 @@
-<?php 
-include '../comunes/navbar.php'; 
-require_once '../clases/Conexion.php';
+<?php
+include '../comunes/navbar.php';
+require_once '../clases/conexion.php';
 require_once '../clases/ClaseInventario.php';
 
 $conexion = new mod_db();
@@ -33,6 +33,27 @@ $offset = ($pagina - 1) * $mostrar;
 
 // Obtener partes paginadas (ajusta el método en tu clase Inventario)
 $partes = $inventario->obtenerPartesLimitOffset($mostrar, $offset);
+
+$todosLosModelos = $inventario->obtenerTodosLosModelos();
+$modelosPorMarcaId = [];
+foreach ($todosLosModelos as $mod) {
+    if (!isset($modelosPorMarcaId[$mod['id_marca']])) {
+        $modelosPorMarcaId[$mod['id_marca']] = [];
+    }
+    $modelosPorMarcaId[$mod['id_marca']][] = [
+        'id_modelo' => $mod['id_modelo'],
+        'modelo_nombre' => $mod['modelo']
+    ];
+}
+
+// También necesitarás un mapeo de marcas (nombre a ID) para el frontend,
+// similar a como ya tienes categoryIdMap
+$todasLasMarcas = $inventario->obtenerTodasLasMarcas(); // Necesitarías crear este método en ClaseInventario.php
+$marcaNameToIdMap = [];
+foreach ($todasLasMarcas as $marca) {
+    $marcaNameToIdMap[strtolower($marca['marca'])] = $marca['id_marca'];
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -61,7 +82,6 @@ $partes = $inventario->obtenerPartesLimitOffset($mostrar, $offset);
       <input type="text" id="searchInput" placeholder="Buscar por código, nombre, categoría, marca o modelo...">
     </div>
 
-    <!-- Selector para cantidad a mostrar -->
     <div class="show-select">
       <label for="mostrarSelect">Mostrar: </label>
         <select id="mostrarSelect" name="mostrar">
@@ -106,7 +126,7 @@ $partes = $inventario->obtenerPartesLimitOffset($mostrar, $offset);
                     <button class="btn btn-sm btn-view" onclick="viewPart(<?= $parte['id_parte'] ?>)">
                       <i class="fas fa-eye"></i>
                     </button>
-                    <button class="btn btn-sm btn-edit" onclick='editPart(<?= json_encode($parte, JSON_HEX_TAG | JSON_HEX_AMP) ?>)'>
+                    <button class="btn btn-sm btn-edit" onclick='editarParte(<?= json_encode($parte, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>)'>
                       <i class="fas fa-edit"></i>
                     </button>
                     <button class="btn btn-sm btn-delete" onclick="deletePart(<?= $parte['id_parte'] ?>)">
@@ -126,7 +146,6 @@ $partes = $inventario->obtenerPartesLimitOffset($mostrar, $offset);
       </div>
     </div>
 
-    <!-- Barra de paginación -->
     <div class="pagination">
       <?php if ($pagina > 1): ?>
         <a href="?mostrar=<?= $mostrar ?>&pagina=<?= $pagina - 1 ?>">&laquo; Anterior</a>
@@ -154,6 +173,9 @@ $partes = $inventario->obtenerPartesLimitOffset($mostrar, $offset);
 ?>
 
 <script>
+  const allModelsData = <?= json_encode($modelosPorMarcaId, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>;
+  const marcaNameToIdMap = <?= json_encode($marcaNameToIdMap, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>;
+
 // Al cambiar cantidad mostrar, reinicia a página 1 para evitar página inválida
 document.getElementById('mostrarSelect').addEventListener('change', function() {
   const mostrar = this.value;
@@ -169,7 +191,7 @@ function closeModal() {
   document.getElementById('imagePreview').innerHTML = '';
 }
 
-function editPart(parte) {
+function editarParte(parte) {
   document.getElementById('modalTitle').textContent = 'Editar Parte';
   document.getElementById('partId').value = parte.id_parte;
   document.getElementById('partName').value = parte.nombre ?? '';
@@ -187,14 +209,94 @@ function editPart(parte) {
 }
 
 function viewPart(id) {
-  alert('Implementa lógica AJAX para ver la parte con ID: ' + id);
-}
+    const viewModal = document.getElementById('viewPartModal');
+    if (!viewModal) {
+        alert('Error: No se encontró el modal de visualización (viewPartModal).');
+        return;
+    }
 
-function deletePart(id) {
-  if (confirm('¿Estás seguro de eliminar esta parte?')) {
-    alert(`Parte ${id} eliminada`);
-    // Aquí iría la lógica AJAX para eliminar
-  }
+    // Limpiar el contenido previo del modal
+    document.getElementById('viewModalTitle').textContent = 'Cargando Detalles...';
+    document.getElementById('viewPartName').textContent = 'Cargando...';
+    document.getElementById('viewPartCode').textContent = '';
+    document.getElementById('viewCarBrand').textContent = '';
+    document.getElementById('viewCarModel').textContent = '';
+    document.getElementById('viewCarYear').textContent = '';
+    document.getElementById('viewEntryDate').textContent = '';
+    document.getElementById('viewCarCategory').textContent = '';
+    document.getElementById('viewPartStock').textContent = '';
+    document.getElementById('viewPartPrice').textContent = '';
+    document.getElementById('viewPartDescription').textContent = '';
+    document.getElementById('viewThumbnail').src = '';
+    document.getElementById('viewImage').src = '';
+    document.getElementById('viewThumbnail').style.display = 'none';
+    document.getElementById('viewImage').style.display = 'none';
+
+    // Mostrar el modal mientras se cargan los datos
+    viewModal.style.display = 'flex';
+
+    const formData = new FormData();
+    formData.append('action', 'ver');
+    formData.append('id_parte', id);
+
+    fetch('../clases/procesar_inventario.php', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => {
+        if (!response.ok) {
+            return response.text().then(text => { throw new Error(text) });
+        }
+        return response.json();
+    })
+    .then(data => {
+        // CORRECCIÓN: Usar data.data en lugar de data.parte
+        if (data.success && data.data) {
+            const parte = data.data; // <--- ¡AQUÍ ESTÁ LA CORRECCIÓN!
+            document.getElementById('viewModalTitle').textContent = 'Detalles de ' + (parte.nombre ?? 'Parte');
+            document.getElementById('viewPartName').textContent = parte.nombre ?? 'N/A';
+            document.getElementById('viewPartCode').textContent = parte.codigo_serie ?? 'N/A';
+            document.getElementById('viewCarBrand').textContent = parte.marca ?? 'N/A';
+            document.getElementById('viewCarModel').textContent = parte.modelo ?? 'N/A';
+            document.getElementById('viewCarYear').textContent = parte.anio ?? 'N/A';
+            document.getElementById('viewEntryDate').textContent = parte.fecha_registro ?? 'N/A';
+            document.getElementById('viewCarCategory').textContent = parte.categoria ?? 'N/A';
+            document.getElementById('viewPartStock').textContent = parte.cantidad_stock ?? '0';
+            document.getElementById('viewPartPrice').textContent = `$${(parseFloat(parte.precio ?? 0)).toFixed(2)}`;
+            document.getElementById('viewPartDescription').textContent = parte.descripcion ?? 'Sin descripción.';
+
+            const thumbImg = document.getElementById('viewThumbnail');
+            const mainImg = document.getElementById('viewImage');
+
+            // Manejo de imágenes (sin el prefijo "../" porque la carpeta "uploads" está dentro de "inventario")
+            if (parte.imagen_thumbnail) {
+                thumbImg.src = parte.imagen_thumbnail;
+                thumbImg.style.display = 'block';
+            } else {
+                thumbImg.src = '';
+                thumbImg.style.display = 'none';
+            }
+
+            if (parte.imagen) {
+                mainImg.src = parte.imagen;
+                mainImg.style.display = 'block';
+            } else {
+                mainImg.src = '';
+                mainImg.style.display = 'none';
+            }
+
+        } else {
+            // Este bloque maneja los casos en los que el servidor dice que hubo un error
+            alert('Error al cargar la parte: ' + (data.message || 'No se encontraron datos.'));
+            viewModal.style.display = 'none';
+        }
+    })
+    .catch(error => {
+        // Este bloque se ejecuta para errores de red
+        console.error('Error en la solicitud de visualización:', error);
+        alert('Hubo un problema al intentar ver la parte. Consulta la consola para más detalles.');
+        viewModal.style.display = 'none';
+    });
 }
 
 document.getElementById('addPartBtn').addEventListener('click', () => {
@@ -204,7 +306,7 @@ document.getElementById('addPartBtn').addEventListener('click', () => {
   openModal();
 });
 
-document.getElementById('fileInput').addEventListener('change', function () {
+document.getElementById('partImage').addEventListener('change', function () {
   const preview = document.getElementById('imagePreview');
   preview.innerHTML = '';
   Array.from(this.files).forEach(file => {
@@ -221,16 +323,105 @@ document.getElementById('fileInput').addEventListener('change', function () {
   });
 });
 
-document.getElementById('partForm').addEventListener('submit', function (e) {
-  e.preventDefault();
-  const stock = parseInt(document.getElementById('partStock').value);
-  if (isNaN(stock) || stock < 0) {
-    alert('El stock debe ser un número válido y no negativo.');
-    return;
-  }
-  alert('Parte guardada exitosamente.');
-  closeModal();
+document.getElementById('addPartBtn').addEventListener('click', () => {
+  document.getElementById('modalTitle').textContent = 'Agregar Nueva Parte';
+  document.getElementById('partForm').reset();
+  document.getElementById('partId').value = '';
+  openModal();
 });
+
+document.getElementById('partForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const stock = parseInt(document.getElementById('partStock').value);
+    if (isNaN(stock) || stock < 0) {
+        alert('El stock debe ser un número válido y no negativo.');
+        return;
+    }
+
+    const formData = new FormData(this); // Crea un objeto FormData con los datos del formulario
+    formData.append('action', 'agregar');
+
+    // Añadir manualmente los valores de los select si no están mapeados a IDs en el HTML
+    // Esto es un ejemplo, necesitarías un mapeo real de marca/modelo/categoría a sus IDs numéricos de la BD
+    const brandName = document.getElementById('carBrand').value; // 'toyota', 'mazda', etc.
+    const modelId = document.getElementById('carModel').value;   // <-- Ahora este será el ID del modelo
+    const categoryName = document.getElementById('carCategory').value;
+
+    const categoryIdMap = { 'carroceria': 1, 'motor': 2, 'puertas': 3, 'vidrios': 4, 'espejos': 5 };
+
+    formData.append('nombre', document.getElementById('partName').value);
+    formData.append('codigo_serie', document.getElementById('partCode').value);
+    formData.append('id_marca', marcaNameToIdMap[brandName] || 0); // Usar el mapeo de marca
+    formData.append('id_modelo', modelId); // <-- ¡Aquí usamos el ID real!
+    formData.append('anio', document.getElementById('carYear').value);
+    formData.append('fecha_registro', document.getElementById('entryDate').value);
+    formData.append('id_cat', categoryIdMap[categoryName] || 0);
+    formData.append('cantidad_stock', document.getElementById('partStock').value);
+    formData.append('precio', document.getElementById('partPrice').value);
+    formData.append('descripcion', document.getElementById('partDescription').value);
+    
+    // Las imágenes necesitarían un tratamiento especial con FormData y subida de archivos
+    const fileInput = document.getElementById('partImage'); // Obtener el elemento del input de archivo
+    console.log("Contenido de fileInput.files[0]:", fileInput.files[0]);
+    if (fileInput && fileInput.files && fileInput.files[0]) {
+        formData.append('imagen', fileInput.files[0]);
+    } else {
+        // Opcional: Puedes loguear un mensaje si no se seleccionó ninguna imagen
+        console.log("No se seleccionó ninguna imagen para subir.");
+    }
+
+    fetch('../clases/procesar_inventario.php', { // Ruta al nuevo script PHP
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert(data.message);
+            closeModal();
+            location.reload(); // Recargar la página para ver los cambios
+        } else {
+            alert('Error: ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Hubo un problema al guardar la parte.');
+    });
+});
+
+
+function deletePart(id) {
+    if (confirm('¿Estás seguro de eliminar esta parte? Esta acción es irreversible.')) {
+        const formData = new FormData();
+        formData.append('action', 'eliminar'); // Indicar la acción
+        formData.append('id_parte', id);     // Enviar el ID de la parte a eliminar
+
+        fetch('../clases/procesar_inventario.php', { // Asegúrate que la ruta sea correcta
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => {
+            if (!response.ok) { // Si la respuesta no es 2xx, lanzar un error
+                return response.text().then(text => { throw new Error(text) });
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data.success) {
+                alert(data.message);
+                location.reload(); // Recargar la página para ver el cambio
+            } else {
+                alert('Error al eliminar: ' + data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error en la solicitud de eliminación:', error);
+            alert('Hubo un problema al intentar eliminar la parte. Consulta la consola para más detalles.');
+        });
+    }
+}
 
 // Filtro búsqueda simple (en la tabla ya cargada)
 document.getElementById('searchInput').addEventListener('input', function () {
