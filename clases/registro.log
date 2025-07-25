@@ -16739,3 +16739,64 @@ Array
 [2025-07-25 02:21:54] [INFO] Intento de Registrar Trazabilidad: {"id_parte":102,"nombre":"Cristal de espejo de repuesto","descripcion":"Cristal de espejo de repuesto dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Espejos' y ha sido fabricado con acero reforzado de alta calidad. Presenta un acabado liso en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"44.91","cantidad_stock":9,"codigo_serie":"FOR-F-1-2010-CR","id_marca":3,"id_modelo":9,"imagen":"uploads\/imagenes\/cristal_de_espejo_de_repuesto_f-150_2010.jpg","imagen_thumbnail":"uploads\/thumbnails\/thumb_cristal_de_espejo_de_repuesto_f-150_2010.jpg","categoria":"Espejos","marca":"Ford","modelo":"F-150","anio":"2010"}
 [2025-07-25 02:22:57] [INFO] id de usuario detalles partes: 2
 [2025-07-25 02:22:57] [INFO] Intento de Registrar Trazabilidad: {"id_parte":102,"nombre":"Cristal de espejo de repuesto","descripcion":"Cristal de espejo de repuesto dise\u00f1ado espec\u00edficamente para veh\u00edculos Ford modelo F-150 del a\u00f1o 2010. Forma parte de la categor\u00eda 'Espejos' y ha sido fabricado con acero reforzado de alta calidad. Presenta un acabado liso en color plateado, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"44.91","cantidad_stock":9,"codigo_serie":"FOR-F-1-2010-CR","id_marca":3,"id_modelo":9,"imagen":"uploads\/imagenes\/cristal_de_espejo_de_repuesto_f-150_2010.jpg","imagen_thumbnail":"uploads\/thumbnails\/thumb_cristal_de_espejo_de_repuesto_f-150_2010.jpg","categoria":"Espejos","marca":"Ford","modelo":"F-150","anio":"2010"}
+[2025-07-25 02:27:34] [INFO] Hash temporal generado para pruebas: $2y$13$NjWXEsHxRxi7FF1j.wNp8eDj4qdSop9Fn96ECjdYZozfX3y8L5uGC
+[2025-07-25 02:27:34] [INFO] ROL del usuario con ID 1 es: 1
+[2025-07-25 02:27:34] [INFO] Usuario encontrado en base de datos: admin
+[2025-07-25 02:27:34] [INFO] Verificando contraseña: entrada: 'Brochin2429' vs hash: '$2y$10$H/pm0ydBBgz1eW.pJNxWA.lRaJwUTqJ3OuthUS4opexiHY9XhMokK'
+[2025-07-25 02:27:34] [INFO] Login exitoso para el usuario: admin
+[2025-07-25 02:27:34] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":1,"usuario":"admin","ip_usuario":"::1"}
+[2025-07-25 02:27:34] [INFO] Intento de login registrado para el usuario: admin ID : 1 con resultado: 1
+[2025-07-25 02:27:34] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-25 02:27:34] [INFO] Permisos obtenidos para el usuario: admin
+[2025-07-25 02:27:34] [INFO] Permisos del usuario: [1,2,3]
+[2025-07-25 02:27:34] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-25 02:27:36] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-25 02:27:39] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
