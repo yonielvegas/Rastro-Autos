@@ -18929,3 +18929,42 @@ Array
     [rol] => 1
 )
 
+[2025-07-25 05:23:10] [INFO] Contenido de la sesión en Navbar:
+Array
+(
+    [autenticado] => SI
+    [usuario] => admin
+    [id_usuario] => 1
+    [foto] => ../imagenes/foto_perfil.jpg
+    [permisos] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+        )
+
+    [rol] => 1
+)
+
+[2025-07-25 05:23:22] [INFO] Hash temporal generado para pruebas: $2y$13$s.EN0uRQy9GZhGWvoX61zeV721eIDVAKEjU48bLpvwKUueZGNqUuu
+[2025-07-25 05:23:22] [INFO] ROL del usuario con ID 2 es: 3
+[2025-07-25 05:23:22] [INFO] Usuario encontrado en base de datos: yonielvegas
+[2025-07-25 05:23:22] [INFO] Verificando contraseña: entrada: 'Opciones-2415' vs hash: '$2y$13$oLl9aizqjfwO1FSfpNBkYOZ1BW2umti5ivUxHuPpq7th1KKp6fiHy'
+[2025-07-25 05:23:23] [INFO] Login exitoso para el usuario: yonielvegas
+[2025-07-25 05:23:23] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"usuario_intentos","accion":"Select LOGIN_OK","id_usuario":2,"usuario":"yonielvegas","ip_usuario":"::1"}
+[2025-07-25 05:23:23] [INFO] Intento de login registrado para el usuario: yonielvegas ID : 2 con resultado: 1
+[2025-07-25 05:23:23] [INFO] ERRORES DE BLOQUEO: []
+[2025-07-25 05:25:07] [INFO] id de usuario detalles partes: 2
+[2025-07-25 05:25:07] [INFO] Intento de Registrar Trazabilidad: {"id_parte":44,"nombre":"Manija exterior","descripcion":"Manija exterior dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Rav4 del a\u00f1o 2022. Forma parte de la categor\u00eda 'Puertas' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado brillante en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"78.17","cantidad_stock":20,"codigo_serie":"TOY-RAV-2022-MA","id_marca":1,"id_modelo":2,"imagen":"uploads\/imagenes\/manija_exterior_rav4_2022.png","imagen_thumbnail":"uploads\/thumbnails\/thumb_manija_exterior_rav4_2022.png","categoria":"Puertas","marca":"Toyota","modelo":"Rav4","anio":"2022"}
+[2025-07-25 05:25:13] [INFO] Intento de obtener factura para el usuario con ID 2: []
+[2025-07-25 05:25:15] [INFO] id de usuario detalles partes: 2
+[2025-07-25 05:25:15] [INFO] Intento de Registrar Trazabilidad: {"id_parte":44,"nombre":"Manija exterior","descripcion":"Manija exterior dise\u00f1ado espec\u00edficamente para veh\u00edculos Toyota modelo Rav4 del a\u00f1o 2022. Forma parte de la categor\u00eda 'Puertas' y ha sido fabricado con vidrio templado de alta calidad. Presenta un acabado brillante en color blanco, que asegura no solo resistencia y durabilidad, sino tambi\u00e9n una integraci\u00f3n est\u00e9tica con el dise\u00f1o original del veh\u00edculo. Ideal para reparaciones, mejoras o restauraciones completas, manteniendo el rendimiento y la apariencia del auto en condiciones \u00f3ptimas.","precio":"78.17","cantidad_stock":20,"codigo_serie":"TOY-RAV-2022-MA","id_marca":1,"id_modelo":2,"imagen":"uploads\/imagenes\/manija_exterior_rav4_2022.png","imagen_thumbnail":"uploads\/thumbnails\/thumb_manija_exterior_rav4_2022.png","categoria":"Puertas","marca":"Toyota","modelo":"Rav4","anio":"2022"}
+[2025-07-25 05:25:18] [INFO] Ejecutando agregar_carrito.php
+[2025-07-25 05:25:18] [INFO] Intento de agregar al carrito: Usuario ID 2, Parte ID 44, Cantidad 1
+[2025-07-25 05:25:18] [INFO] Intento EN CARRITO COMUNES de agregar al carrito: Usuario ID 2, Parte ID 44, Cantidad 1
+[2025-07-25 05:25:18] [INFO] EN CONEXION Intento de agregar al carrito: Usuario ID 2, Parte ID 44, Cantidad 1
+[2025-07-25 05:25:18] [INFO] Intento de Registrar Trazabilidad: {"tabla_afectada":"parte_vendida","accion":"inserci\u00f3n","id_usuario":44,"usuario":2,"ip_usuario":"::1"}
+[2025-07-25 05:25:18] [INFO] ✅ Producto con ID 44 agregado al carrito del usuario con ID 2.
+[2025-07-25 05:25:18] [INFO] Producto se envia a COnexion esta en Carrito: Usuario ID 2, Parte ID 44, Cantidad 1
+[2025-07-25 05:25:19] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":66,"fecha":"2025-07-25 00:25:18","total_factura":"78.17","estado":0}]
+[2025-07-25 05:25:46] [INFO] Intento de obtener factura para el usuario con ID 2: [{"id_factura":66,"fecha":"2025-07-25 00:25:18","total_factura":"78.17","estado":0}]

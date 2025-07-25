@@ -40,7 +40,7 @@ $nombre_cliente = $_SESSION['usuario'] ?? 'Cliente Desconocido';
         <div class="cart-items">
           <?php foreach ($productos_carrito as $producto): ?>
             <div class="cart-item">
-              <img src="<?= $producto['imagen_thumbnail'] ?>" alt="<?= $producto['nombre'] ?>" class="cart-item-img">
+              <img src="../Inventario/<?= $producto['imagen_thumbnail'] ?>" alt="<?= $producto['nombre'] ?>" class="cart-item-img">
               <div class="cart-item-details">
                 <h3 class="cart-item-name"><?= $producto['nombre'] ?></h3>
                 <p class="cart-item-price">$<?= number_format($producto['precio'], 2) ?></p>
